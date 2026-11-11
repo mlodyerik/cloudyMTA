@@ -116,8 +116,11 @@ function drawGridInventory(unique, x, y, w, h, xc, yc, gap, items)
 end
 
 function renderInventory()
+    -- cloudyMTA inventory redesign
     exports['since-blur']:dxDrawBlur(sx - 550/zoom, sy/2 - 605/2/zoom, 500/zoom, 675/zoom, maskTex)
-    dxDrawImage(sx - 550/zoom, sy/2 - 605/2/zoom, 500/zoom, 675/zoom, 'data/background.png')
+    dxDrawRectangle(sx - 550/zoom, sy/2 - 605/2/zoom, 500/zoom, 675/zoom, tocolor(25, 36, 38, 255))
+    -- Teal accent bar
+    dxDrawRectangle(sx - 550/zoom, sy/2 - 605/2/zoom, 500/zoom, 3/zoom, tocolor(46, 117, 111, 255))
     dxDrawText('Ekwipunek', sx - 532/zoom, sy/2 - 280/zoom, nil, nil, white, 1, regular)
 
     drawGridInventory('inventory', sx - 532/zoom, sy/2 - 232/zoom, 460/zoom, 578/zoom, 5, 6, 5/zoom, getPlayerInventory())

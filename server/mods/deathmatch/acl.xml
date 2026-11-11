@@ -33,6 +33,14 @@
         <acl name="RPC"></acl>
         <object name="user.Console"></object>
     </group>
+    <group name="Owner">
+        <acl name="Moderator"></acl>
+        <acl name="SuperModerator"></acl>
+        <acl name="Admin"></acl>
+        <acl name="RPC"></acl>
+        <acl name="Owner"></acl>
+        <object name="user.*"></object>
+    </group>
     <group name="RPC">
         <acl name="RPC"></acl>
         <object name="resource.ip2c"></object>
@@ -907,6 +915,13 @@
         <right name="command.deleteallscreenshot" access="false"></right>
         <right name="command.viewscreenshot" access="false"></right>
         <right name="command.listscreenshots" access="false"></right>
+    </acl>
+    <acl name="Owner">
+        <right name="general.ModifyOtherObjects" access="true"></right>
+        <right name="general.http" access="true"></right>
+        <right name="function.*" access="true"></right>
+        <right name="command.*" access="true"></right>
+        <right name="general.*" access="true"></right>
     </acl>
     <acl name="autoACL_runcode">
         <right name="function.loadstring" access="false" who="" pending="true" date=""></right>

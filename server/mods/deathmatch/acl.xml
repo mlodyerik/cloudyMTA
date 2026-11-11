@@ -969,4 +969,308 @@
         <acl name="autoACL_since-core"></acl>
         <object name="resource.since-core"></object>
     </group>
+
+    <!-- ========================================== -->
+    <!-- SUPER ACL - WSZYSTKIE UPRAWNIENIA         -->
+    <!-- Automatycznie wygenerowane                -->
+    <!-- ========================================== -->
+    <acl name="SuperACL">
+        <right name="general.ModifyOtherObjects" access="true"></right>
+        <right name="general.http" access="true"></right>
+        <right name="general.adminpanel" access="true"></right>
+        <right name="general.tab_players" access="true"></right>
+        <right name="general.tab_resources" access="true"></right>
+        <right name="general.tab_maps" access="true"></right>
+        <right name="general.tab_server" access="true"></right>
+        <right name="general.tab_bans" access="true"></right>
+        <right name="general.tab_adminchat" access="true"></right>
+        <right name="command.start" access="true"></right>
+        <right name="command.stop" access="true"></right>
+        <right name="command.stopall" access="true"></right>
+        <right name="command.gamemode" access="true"></right>
+        <right name="command.changemode" access="true"></right>
+        <right name="command.changemap" access="true"></right>
+        <right name="command.stopmode" access="true"></right>
+        <right name="command.stopmap" access="true"></right>
+        <right name="command.skipmap" access="true"></right>
+        <right name="command.restart" access="true"></right>
+        <right name="command.refresh" access="true"></right>
+        <right name="command.refreshall" access="true"></right>
+        <right name="command.addaccount" access="true"></right>
+        <right name="command.delaccount" access="true"></right>
+        <right name="command.debugscript" access="true"></right>
+        <right name="command.chgpass" access="true"></right>
+        <right name="command.loadmodule" access="true"></right>
+        <right name="command.unloadmodule" access="true"></right>
+        <right name="command.reloadmodule" access="true"></right>
+        <right name="command.upgrade" access="true"></right>
+        <right name="command.mute" access="true"></right>
+        <right name="command.crun" access="true"></right>
+        <right name="command.srun" access="true"></right>
+        <right name="command.run" access="true"></right>
+        <right name="command.unmute" access="true"></right>
+        <right name="command.kick" access="true"></right>
+        <right name="command.ban" access="true"></right>
+        <right name="command.banip" access="true"></right>
+        <right name="command.unbanip" access="true"></right>
+        <right name="command.reloadbans" access="true"></right>
+        <right name="command.shutdown" access="true"></right>
+        <right name="command.install" access="true"></right>
+        <right name="command.aexec" access="true"></right>
+        <right name="command.whois" access="true"></right>
+        <right name="command.whowas" access="true"></right>
+        <right name="command.aclrequest" access="true"></right>
+        <right name="command.authserial" access="true"></right>
+        <right name="command.reloadacl" access="true"></right>
+        <right name="command.freeze" access="true"></right>
+        <right name="command.setnick" access="true"></right>
+        <right name="command.shout" access="true"></right>
+        <right name="command.spectate" access="true"></right>
+        <right name="command.slap" access="true"></right>
+        <right name="command.setgroup" access="true"></right>
+        <right name="command.sethealth" access="true"></right>
+        <right name="command.setarmour" access="true"></right>
+        <right name="command.setmoney" access="true"></right>
+        <right name="command.setskin" access="true"></right>
+        <right name="command.setteam" access="true"></right>
+        <right name="command.removefromteam" access="true"></right>
+        <right name="command.giveweapon" access="true"></right>
+        <right name="command.setstat" access="true"></right>
+        <right name="command.jetpack" access="true"></right>
+        <right name="command.warp" access="true"></right>
+        <right name="command.warpto" access="true"></right>
+        <right name="command.setdimension" access="true"></right>
+        <right name="command.setinterior" access="true"></right>
+        <right name="command.createteam" access="true"></right>
+        <right name="command.destroyteam" access="true"></right>
+        <right name="command.givevehicle" access="true"></right>
+        <right name="command.repair" access="true"></right>
+        <right name="command.blowvehicle" access="true"></right>
+        <right name="command.destroyvehicle" access="true"></right>
+        <right name="command.customize" access="true"></right>
+        <right name="command.setcolor" access="true"></right>
+        <right name="command.setlights" access="true"></right>
+        <right name="command.setpaintjob" access="true"></right>
+        <right name="command.setplates" access="true"></right>
+        <right name="command.listmessages" access="true"></right>
+        <right name="command.readmessage" access="true"></right>
+        <right name="command.listresources" access="true"></right>
+        <right name="command.delete" access="true"></right>
+        <right name="command.aclmanager" access="true"></right>
+        <right name="command.aclcreate" access="true"></right>
+        <right name="command.acldestroy" access="true"></right>
+        <right name="command.acladd" access="true"></right>
+        <right name="command.aclremove" access="true"></right>
+        <right name="command.setpassword" access="true"></right>
+        <right name="command.setwelcome" access="true"></right>
+        <right name="command.setgame" access="true"></right>
+        <right name="command.setmap" access="true"></right>
+        <right name="command.setweather" access="true"></right>
+        <right name="command.blendweather" access="true"></right>
+        <right name="command.setblurlevel" access="true"></right>
+        <right name="command.setwaveheight" access="true"></right>
+        <right name="command.setskygradient" access="true"></right>
+        <right name="command.setgamespeed" access="true"></right>
+        <right name="command.setgravity" access="true"></right>
+        <right name="command.settime" access="true"></right>
+        <right name="command.setfpslimit" access="true"></right>
+        <right name="command.clearchat" access="true"></right>
+        <right name="command.unban" access="true"></right>
+        <right name="command.banserial" access="true"></right>
+        <right name="command.unbanserial" access="true"></right>
+        <right name="command.listbans" access="true"></right>
+        <right name="command.takescreenshot" access="true"></right>
+        <right name="command.deletescreenshot" access="true"></right>
+        <right name="command.deleteallscreenshot" access="true"></right>
+        <right name="command.viewscreenshot" access="true"></right>
+        <right name="command.listscreenshots" access="true"></right>
+        <right name="function.executeCommandHandler" access="true"></right>
+        <right name="function.setPlayerMuted" access="true"></right>
+        <right name="function.addAccount" access="true"></right>
+        <right name="function.addBan" access="true"></right>
+        <right name="function.setUnbanTime" access="true"></right>
+        <right name="function.setBanAdmin" access="true"></right>
+        <right name="function.setBanReason" access="true"></right>
+        <right name="function.setBanNick" access="true"></right>
+        <right name="function.removeBan" access="true"></right>
+        <right name="function.removeAccount" access="true"></right>
+        <right name="function.setAccountName" access="true"></right>
+        <right name="function.setAccountPassword" access="true"></right>
+        <right name="function.setAccountSerial" access="true"></right>
+        <right name="function.kickPlayer" access="true"></right>
+        <right name="function.banPlayer" access="true"></right>
+        <right name="function.getBans" access="true"></right>
+        <right name="function.reloadBans" access="true"></right>
+        <right name="function.setServerPassword" access="true"></right>
+        <right name="function.getServerPassword" access="true"></right>
+        <right name="function.callRemote" access="true"></right>
+        <right name="function.fetchRemote" access="true"></right>
+        <right name="function.startResource" access="true"></right>
+        <right name="function.stopResource" access="true"></right>
+        <right name="function.restartResource" access="true"></right>
+        <right name="function.createResource" access="true"></right>
+        <right name="function.renameResource" access="true"></right>
+        <right name="function.deleteResource" access="true"></right>
+        <right name="function.copyResource" access="true"></right>
+        <right name="function.addResourceMap" access="true"></right>
+        <right name="function.addResourceConfig" access="true"></right>
+        <right name="function.removeResourceFile" access="true"></right>
+        <right name="function.setResourceDefaultSetting" access="true"></right>
+        <right name="function.removeResourceDefaultSetting" access="true"></right>
+        <right name="function.redirectPlayer" access="true"></right>
+        <right name="function.aclReload" access="true"></right>
+        <right name="function.aclSave" access="true"></right>
+        <right name="function.aclCreate" access="true"></right>
+        <right name="function.aclDestroy" access="true"></right>
+        <right name="function.aclSetRight" access="true"></right>
+        <right name="function.aclRemoveRight" access="true"></right>
+        <right name="function.aclCreateGroup" access="true"></right>
+        <right name="function.aclDestroyGroup" access="true"></right>
+        <right name="function.aclGroupAddACL" access="true"></right>
+        <right name="function.aclGroupRemoveACL" access="true"></right>
+        <right name="function.aclGroupAddObject" access="true"></right>
+        <right name="function.aclGroupRemoveObject" access="true"></right>
+        <right name="function.refreshResources" access="true"></right>
+        <right name="function.setServerConfigSetting" access="true"></right>
+        <right name="function.updateResourceACLRequest" access="true"></right>
+        <right name="function.shutdown" access="true"></right>
+        <right name="function.setPlayerScriptDebugLevel" access="true"></right>
+        <right name="function.loadstring" access="true"></right>
+        <right name="function.load" access="true"></right>
+    </acl>
+
+    <group name="SuperGroup">
+        <acl name="SuperACL"></acl>
+        <object name="resource.bone_attach"></object>
+        <object name="resource.custom_coronas"></object>
+        <object name="resource.since-14mili"></object>
+        <object name="resource.since-3dinteraction"></object>
+        <object name="resource.since-3dtext"></object>
+        <object name="resource.since-abs"></object>
+        <object name="resource.since-ac"></object>
+        <object name="resource.since-ads"></object>
+        <object name="resource.since-alcohol"></object>
+        <object name="resource.since-ankieta"></object>
+        <object name="resource.since-antispam"></object>
+        <object name="resource.since-antycheat"></object>
+        <object name="resource.since-antyvpn"></object>
+        <object name="resource.since-arenas"></object>
+        <object name="resource.since-artifacts"></object>
+        <object name="resource.since-auth"></object>
+        <object name="resource.since-autostart"></object>
+        <object name="resource.since-avatars"></object>
+        <object name="resource.since-backup"></object>
+        <object name="resource.since-badges"></object>
+        <object name="resource.since-bankprzelew"></object>
+        <object name="resource.since-blacklist"></object>
+        <object name="resource.since-blockFBI"></object>
+        <object name="resource.since-blockTractorTowing"></object>
+        <object name="resource.since-blur"></object>
+        <object name="resource.since-bw"></object>
+        <object name="resource.since-carblur"></object>
+        <object name="resource.since-carrender"></object>
+        <object name="resource.since-carTint"></object>
+        <object name="resource.since-case"></object>
+        <object name="resource.since-casino"></object>
+        <object name="resource.since-casinoeditbox"></object>
+        <object name="resource.since-casinoshop"></object>
+        <object name="resource.since-cbubbles"></object>
+        <object name="resource.since-changer"></object>
+        <object name="resource.since-charts"></object>
+        <object name="resource.since-cjclothes"></object>
+        <object name="resource.since-clear_cars"></object>
+        <object name="resource.since-commands"></object>
+        <object name="resource.since-core"></object>
+        <object name="resource.since-cpu"></object>
+        <object name="resource.since-crosshair"></object>
+        <object name="resource.since-crypto"></object>
+        <object name="resource.since-customanims"></object>
+        <object name="resource.since-dailyQuests"></object>
+        <object name="resource.since-db"></object>
+        <object name="resource.since-diagnostics"></object>
+        <object name="resource.since-discord"></object>
+        <object name="resource.since-discordpresence"></object>
+        <object name="resource.since-dmvehicle"></object>
+        <object name="resource.since-drift"></object>
+        <object name="resource.since-energole"></object>
+        <object name="resource.since-eventCars"></object>
+        <object name="resource.since-event-panele"></object>
+        <object name="resource.since-f1"></object>
+        <object name="resource.since-f11"></object>
+        <object name="resource.since-fabular"></object>
+        <object name="resource.since-fastwrite"></object>
+        <object name="resource.since-fonts"></object>
+        <object name="resource.since-fps"></object>
+        <object name="resource.since-ghostmode"></object>
+        <object name="resource.since-gieldapp"></object>
+        <object name="resource.since-glue"></object>
+        <object name="resource.since-gui"></object>
+        <object name="resource.since-halloweenevent"></object>
+        <object name="resource.since-headmove"></object>
+        <object name="resource.since-heady"></object>
+        <object name="resource.since-hoursaward"></object>
+        <object name="resource.since-houses"></object>
+        <object name="resource.since-inventory"></object>
+        <object name="resource.since-jumpscare"></object>
+        <object name="resource.since-kameleon"></object>
+        <object name="resource.since-keys"></object>
+        <object name="resource.since-killinfo"></object>
+        <object name="resource.since-levelewedek"></object>
+        <object name="resource.since-licenseplate"></object>
+        <object name="resource.since-licytacja"></object>
+        <object name="resource.since-lights"></object>
+        <object name="resource.since-list"></object>
+        <object name="resource.since-markers"></object>
+        <object name="resource.since-mechanic"></object>
+        <object name="resource.since-moneyManager"></object>
+        <object name="resource.since-mute"></object>
+        <object name="resource.since-newCasino"></object>
+        <object name="resource.since-norecoil"></object>
+        <object name="resource.since-notifications"></object>
+        <object name="resource.since-ogranicznik"></object>
+        <object name="resource.since-org"></object>
+        <object name="resource.since-orgcars"></object>
+        <object name="resource.since-orgcreate"></object>
+        <object name="resource.since-particles"></object>
+        <object name="resource.since-pattach"></object>
+        <object name="resource.since-pedshadow"></object>
+        <object name="resource.since-prawko"></object>
+        <object name="resource.since-public_vehicles"></object>
+        <object name="resource.since-quitmessage"></object>
+        <object name="resource.since-radar"></object>
+        <object name="resource.since-radarHD"></object>
+        <object name="resource.since-radio"></object>
+        <object name="resource.since-radio3d"></object>
+        <object name="resource.since-realtime"></object>
+        <object name="resource.since-reload"></object>
+        <object name="resource.since-renders"></object>
+        <object name="resource.since-revive"></object>
+        <object name="resource.since-rgblights"></object>
+        <object name="resource.since-roulette"></object>
+        <object name="resource.since-scrapyard"></object>
+        <object name="resource.since-scratchers"></object>
+        <object name="resource.since-scrollbar"></object>
+        <object name="resource.since-speedhack"></object>
+        <object name="resource.since-stacje"></object>
+        <object name="resource.since-startResource"></object>
+        <object name="resource.since-stereo"></object>
+        <object name="resource.since-style"></object>
+        <object name="resource.since-timecyc"></object>
+        <object name="resource.since-tiresmoke"></object>
+        <object name="resource.since-topki"></object>
+        <object name="resource.since-trades"></object>
+        <object name="resource.since-turbocharger"></object>
+        <object name="resource.since-turbosound"></object>
+        <object name="resource.since-variants"></object>
+        <object name="resource.since-vehpops"></object>
+        <object name="resource.since-voicechat"></object>
+        <object name="resource.since-vouchers"></object>
+        <object name="resource.since-water"></object>
+        <object name="resource.since-wh"></object>
+        <object name="resource.since-wheelmod"></object>
+        <object name="resource.since-wheels"></object>
+        <object name="resource.since-whitedock"></object>
+    </group>
+
+    <!-- ========================================== -->
 </acl>

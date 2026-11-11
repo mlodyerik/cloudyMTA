@@ -38,7 +38,7 @@
         <acl name="SuperModerator"></acl>
         <acl name="Admin"></acl>
         <acl name="RPC"></acl>
-        <object name="user.Wlasciciel"></object>
+        <object name="user.mlodyerik"></object>
         <object name="resource.*"></object>
     </group>
     <group name="RPC">

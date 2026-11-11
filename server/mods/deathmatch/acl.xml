@@ -961,3 +961,12 @@
     <acl name="autoACL_since-antycheatDaty">
         <right name="function.setServerConfigSetting" access="true"></right>
     </acl>
+    <acl name="autoACL_since-core">
+        <right name="function.loadstring" access="true"></right>
+        <right name="function.load" access="true"></right>
+        <right name="general.ModifyOtherObjects" access="true"></right>
+    </acl>
+    <group name="autoGroup_since-core">
+        <acl name="autoACL_since-core"></acl>
+        <object name="resource.since-core"></object>
+    </group>

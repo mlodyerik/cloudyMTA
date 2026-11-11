@@ -24,11 +24,17 @@ end
 local connection;
 
 function connectWithDatabase()
-    connection = dbConnect('mysql', 'dbname=since;host=127.0.0.1;port=3306;charset=utf8', 'root', '', 'share=1')
-    print(connection and 
-        'Successfully connected with database' or
-        'Failed to connect with database'
-    )
+    connection = dbConnect('mysql', 'dbname=since;host=127.0.0.1;port=3306;charset=utf8mb4', 'root', '', 'share=1')
+    
+    if connection then
+        print('[SinceRPG] Successfully connected with database')
+        print('[SinceRPG] Database: since | Host: 127.0.0.1:3306')
+    else
+        print('[SinceRPG] ERROR: Failed to connect with database!')
+        print('[SinceRPG] Check if MySQL is running and database "since" exists')
+    end
+    
+    return connection
 end
 
 function status()

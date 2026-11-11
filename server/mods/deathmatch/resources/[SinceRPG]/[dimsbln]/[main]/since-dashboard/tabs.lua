@@ -245,7 +245,7 @@ tabs = {
                     local name = k == 'L' and 'Licencja lotnicza' or 'Prawo jazdy kat.'
                     dxDrawText(name..' '..utf8.upper(k)..': ', sx/2 + 138/zoom, sy/2 - 165/zoom + offset, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
                     local textWidth = dxGetTextWidth(name..' '..utf8.upper(k)..': ', 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom)) + 1/zoom
-                    dxDrawText(v == true and 'Posiadane' or 'Nie posiadane', sx/2 + 138/zoom + textWidth, sy/2 - 165/zoom + offset, nil, nil, v == true and tocolor(155, 255, 155, 200*alpha) or tocolor(255, 155, 155, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
+                    dxDrawText(v == true and 'Posiadane' or 'Nie posiadane', sx/2 + 138/zoom + textWidth, sy/2 - 165/zoom + offset, nil, nil, v == true and tocolor(67, 143, 135, 200*alpha) or tocolor(255, 155, 155, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
     
                     offset = offset + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom))
                 end
@@ -1470,7 +1470,7 @@ tabs = {
             dxDrawText('Twój kod: #2E756F'.. (isIn and discordCode or string.sub(discordCode, 1, 5)..'..'), sx/2 - 60/zoom, sy/2 + 197/zoom, nil, nil, tocolor(255, 255, 255, isIn and 175*alpha or 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center', false, false, false, true)
 
             local isDiscord = getElementData(localPlayer, 'player:discord')
-            dxDrawImage(sx/2 + 85/zoom, sy/2 + 176/zoom, 360/zoom, 42/zoom, 'data/info_button.png', 0, 0, 0, isDiscord and tocolor(155, 255, 155, 255*alpha) or tocolor(255, 155, 155, 255*alpha))
+            dxDrawImage(sx/2 + 85/zoom, sy/2 + 176/zoom, 360/zoom, 42/zoom, 'data/info_button.png', 0, 0, 0, isDiscord and tocolor(67, 143, 135, 255*alpha) or tocolor(255, 155, 155, 255*alpha))
             dxDrawText(isDiscord and 'Konto pomyślnie zsynchronizowane' or 'Konto nie zostało zsynchronizowane', sx/2 + 265/zoom, sy/2 + 197/zoom, nil, nil, isDiscord and tocolor(46, 117, 111, 255*alpha) or tocolor(255, 125, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center')
         
             if isIn then

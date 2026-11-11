@@ -43,49 +43,72 @@ function renderUI()
     if data.loginWindow == 'login' then
         savedNick = exports['since-gui']:getEditboxText(uiElements['edit_login'])
         
-        dxDrawImage(0, 0, sx - 300/zoom, sy, 'data/background.png')
-        -- exports['since-blur']:dxDrawBlur(0, 0, sx, sy)
-        -- dxDrawImage(0, 0, sx, sy, 'data/background.png')
+        -- cloudyMTA - NOWY EKRAN LOGOWANIA
+        -- Ciemne tło #101719
+        dxDrawRectangle(0, 0, sx, sy, tocolor(16, 23, 25, 255))
         
-        dxDrawImage(0, 0, 1085/zoom, 854/zoom, 'data/glow.png')
-        dxDrawImage(66/zoom + 514/zoom/2 - 374/zoom/2, sy/2-410/zoom, 374/zoom, 98/zoom, 'data/logo.png')
+        -- Gradient overlay dla głębi
+        dxDrawRectangle(0, 0, sx, sy/2, tocolor(25, 36, 38, 80))
         
-        -- cloudyMTA branding colors
-        local cloudyColor = {46, 117, 111} -- #2E756F
+        -- Główne logo cloudyMTA (oryginalne PNG)
+        local logoW, logoH = 500/zoom, 141/zoom
+        dxDrawImage(sx/2 - logoW/2, sy/2 - 350/zoom, logoW, logoH, 'data/logo.png')
         
-        local avatar = exports['since-avatars']:getPlayerCircleAvatar(findPlayerInTable(savedNick), textures.mask)
-        dxDrawImage(66/zoom + 514/zoom/2 - 147/zoom/2, sy/2-310/zoom, 147/zoom, 147/zoom, avatar and avatar or noAv, 0, 0, 0, avatar and tocolor(255, 255, 255) or tocolor(255, 255, 255, 255))
-        dxDrawImage(66/zoom + 514/zoom/2 - 147/zoom/2, sy/2-310/zoom, 150/zoom, 150/zoom, textures.border)
-
+        -- Subtelny efekt glow pod logo
+        dxDrawRectangle(sx/2 - 250/zoom, sy/2 - 240/zoom, 500/zoom, 2/zoom, tocolor(46, 117, 111, 150))
+        
+        -- cloudyMTA paleta kolorów
+        local cloudyPrimary = {46, 117, 111}    -- #2E756F
+        local cloudyAccent = {67, 143, 135}     -- #438F87
+        local cloudyBg = {16, 23, 25}           -- #101719
+        local cloudyPanel = {25, 36, 38}        -- #192426
+        local cloudyText = {241, 245, 244}      -- #F1F5F4
+        local cloudyTextSec = {145, 163, 160}   -- #91A3A0
+        
+        -- Avatar użytkownika (jeśli istnieje)
         if findPlayerInTable(savedNick) then
-            dxDrawText('Zaloguj się jako '..savedNick, 66/zoom + 514/zoom/2 + 1, sy/2-135/zoom + 1, nil, nil, tocolor(0, 0, 0, 175), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
-            dxDrawText('Zaloguj się jako #2E756F'..savedNick, 66/zoom + 514/zoom/2, sy/2-135/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center', false, false, false, true)    
+            local avatar = exports['since-avatars']:getPlayerCircleAvatar(findPlayerInTable(savedNick), textures.mask)
+            local avSize = 120/zoom
+            dxDrawImage(sx/2 - avSize/2, sy/2 - 200/zoom, avSize, avSize, avatar and avatar or noAv)
+            -- Turkusowa ramka avatara
+            dxDrawCircle(sx/2, sy/2 - 140/zoom, avSize/2 + 2/zoom, 0, 360, tocolor(46, 117, 111, 200), tocolor(46, 117, 111, 200), 2)
+            
+            -- Powitanie
+            dxDrawText('Witaj ponownie!', sx/2, sy/2 - 60/zoom, nil, nil, tocolor(145, 163, 160, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
+            dxDrawText(savedNick, sx/2, sy/2 - 40/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'center')
         end
     
         -- dxDrawImage(66/zoom + 514/zoom/2 - 356/zoom, sy - 103/zoom, 712/zoom, 103/zoom, 'data/green_shadow.png')
         -- dxDrawText('Na serwerze znajduje się '..#getElementsByType('player')..' graczy', 66/zoom + 514/zoom/2 + 1, sy - 25/zoom + 1, nil, nil, tocolor(0, 0, 0, 175), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
         -- dxDrawText('Na serwerze znajduje się #438F87'..#getElementsByType('player')..'#ffffff graczy', 66/zoom + 514/zoom/2, sy - 25/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center', false, false, false, true)
     
-        local loginIn = isMouseInPosition(66/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom)
-        dxDrawImage(66/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom, 'data/login_button.png', 0, 0, 0, tocolor(255, 255, 255, loginIn and 175 or 255))
-        dxDrawText('Wejdź do gry', 66/zoom + 245/zoom/2, sy/2 - 99/zoom + 235/zoom + 52/zoom/2, nil, nil, tocolor(255, 255, 255, loginIn and 175 or 255), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center')
-    
-        local registerIn = isMouseInPosition(66/zoom + 245/zoom + 25/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom)
-        dxDrawImage(66/zoom + 245/zoom + 25/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom, 'data/register_button.png', 0, 0, 0, tocolor(255, 255, 255, registerIn and 175 or 255))
-        dxDrawText('Stwórz konto', 66/zoom + 245/zoom + 25/zoom + 245/zoom/2, sy/2 - 99/zoom + 235/zoom + 52/zoom/2, nil, nil, tocolor(255, 255, 255, registerIn and 175 or 255), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center')
-    
-        dxDrawImage(66/zoom + 4/zoom, sy/2 - 99/zoom + 4/zoom, 66/zoom, 66/zoom, 'data/editbox_icon.png')
-        dxDrawImage(66/zoom + 4/zoom + 66/zoom/2 - 30/zoom/2, sy/2 - 80/zoom, 30/zoom, 36/zoom, 'data/username.png')
-        dxDrawImage(66/zoom + 4/zoom, sy/2 - 19/zoom + 4/zoom, 66/zoom, 66/zoom, 'data/editbox_icon.png')
-        dxDrawImage(66/zoom + 4/zoom + 66/zoom/2 - 30/zoom/2, sy/2 + 3/zoom, 30/zoom, 30/zoom, 'data/password.png')
+        -- NOWE PRZYCISKI cloudyMTA - nowoczesne, minimalistyczne
+        local btnW, btnH = 280/zoom, 55/zoom
+        local btnGap = 15/zoom
         
-    
-        dxDrawText('Zapomniałeś hasła?', 66/zoom + 514/zoom/2, sy/2 + 243/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
-        dxDrawText('Utwórz ticket na naszym discordzie i poczekaj aż ktoś się tym zajmie!', 66/zoom + 514/zoom/2, sy/2 + 244/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Regular', 11/zoom), 'center', 'top')
-    
-        local copyIn = isMouseInPosition(66/zoom + 514/zoom/2 - 66/zoom, sy/2 + 275/zoom, 132/zoom, 32/zoom)
-        dxDrawImage(66/zoom + 514/zoom/2 - 66/zoom, sy/2 + 275/zoom, 132/zoom, 32/zoom, 'data/button_copy.png', 0, 0, 0, tocolor(255, 255, 255, copyIn and 175 or 255))
-        dxDrawText('Skopiuj link', 66/zoom + 514/zoom/2, sy/2 + 292/zoom, nil, nil, tocolor(255, 255, 255, copyIn and 175 or 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 11/zoom), 'center', 'center')
+        -- Przycisk ZALOGUJ (turkusowy, primary)
+        local loginIn = isMouseInPosition(sx/2 - btnW - btnGap/2, sy/2 + 120/zoom, btnW, btnH)
+        local loginColor = loginIn and tocolor(67, 143, 135, 255) or tocolor(46, 117, 111, 255)
+        dxDrawRoundedRectangle(sx/2 - btnW - btnGap/2, sy/2 + 120/zoom, btnW, btnH, 8/zoom, loginColor)
+        dxDrawText('ZALOGUJ SIĘ', sx/2 - btnW/2 - btnGap/2, sy/2 + 120/zoom + btnH/2, nil, nil, tocolor(241, 245, 244, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
+        
+        -- Przycisk REJESTRACJA (przezroczysty z obramowaniem)
+        local registerIn = isMouseInPosition(sx/2 + btnGap/2, sy/2 + 120/zoom, btnW, btnH)
+        local regBorder = registerIn and tocolor(67, 143, 135, 255) or tocolor(46, 117, 111, 255)
+        local regBg = registerIn and tocolor(46, 117, 111, 40) or tocolor(25, 36, 38, 180)
+        dxDrawRoundedRectangle(sx/2 + btnGap/2, sy/2 + 120/zoom, btnW, btnH, 8/zoom, regBg)
+        dxDrawRectangleBorder(sx/2 + btnGap/2, sy/2 + 120/zoom, btnW, btnH, regBorder, 2/zoom, 8/zoom)
+        dxDrawText('STWÓRZ KONTO', sx/2 + btnW/2 + btnGap/2, sy/2 + 120/zoom + btnH/2, nil, nil, tocolor(241, 245, 244, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
+        
+        -- Ikony pól (subtelne, turkusowe)
+        
+        -- Informacja o Discord (subtelna, na dole)
+        dxDrawText('Zapomniałeś hasła?', sx/2, sy - 80/zoom, nil, nil, tocolor(145, 163, 160, 180), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
+        dxDrawText('discord.gg/cloudymta', sx/2, sy - 60/zoom, nil, nil, tocolor(46, 117, 111, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center')
+        
+        -- Licznik graczy (subtelny)
+        local playerCount = #getElementsByType('player')
+        dxDrawText('Graczy online: '..playerCount, sx/2, sy - 30/zoom, nil, nil, tocolor(145, 163, 160, 150), 1, exports['since-fonts']:getFont('Inter-Regular', 11/zoom), 'center', 'center')
     elseif data.loginWindow == 'spawn' then
 	    dxDrawImage(0, 0, sx, sy, 'data/shadow.png')
         --dxDrawImage(sx / 2 - 356/zoom, sy - 103/zoom, 712/zoom, 103/zoom, 'data/green_shadow.png', 0, 0, 0, tocolor(241, 245, 244, 200))
@@ -111,7 +134,7 @@ function onClick(btn,state)
     if (btn == 'left' and state == 'down' and countDown < getTickCount()) then
         countDown = getTickCount() + 300
 
-        if isMouseInPosition(66/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom) and data.loginWindow == 'login' then
+        if isMouseInPosition(sx/2 - btnW - btnGap/2, sy/2 + 120/zoom, btnW, btnH) and data.loginWindow == 'login' then
             local text = exports['since-gui']:getEditboxText(uiElements['edit_login'])
             local text2 = exports['since-gui']:getEditboxText(uiElements['edit_password'])
             if getElementData(localPlayer, 'player:sid') then return end
@@ -119,14 +142,11 @@ function onClick(btn,state)
             if exports['since-gui']:isCheckboxChecked(uiElements['checkbox']) then
                 saveData(text, text2)
             end 
-        elseif isMouseInPosition(66/zoom + 245/zoom + 25/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom) and data.loginWindow == 'login' then
+        elseif isMouseInPosition(sx/2 + btnGap/2, sy/2 + 120/zoom, btnW, btnH) and data.loginWindow == 'login' then
             local text = exports['since-gui']:getEditboxText(uiElements['edit_login'])
             local text2 = exports['since-gui']:getEditboxText(uiElements['edit_password'])
             if getElementData(localPlayer, 'player:sid') then return end
             triggerServerEvent('auth:register', resourceRoot, text, text2)
-        elseif isMouseInPosition(66/zoom + 514/zoom/2 - 66/zoom, sy/2 + 275/zoom, 132/zoom, 32/zoom) and data.loginWindow == 'login' then
-            setClipboard(data.discordLink)
-            exports['since-notifications']:sendNotification('success', 'Link skopiowany do schowka')
         elseif isMouseInPosition(sx/2 + (dxGetTextWidth(spawns[data.selectedSpawn].name, 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom))/2 + 15/zoom), sy - 35/zoom, 21/zoom, 19/zoom) and data.loginWindow == 'spawn' then
             data.selectedSpawn = math.min(data.selectedSpawn + 1, #spawns)
         elseif isMouseInPosition(sx/2 - (dxGetTextWidth(spawns[data.selectedSpawn].name, 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom))/2 + 15/zoom) - 22/zoom, sy - 35/zoom, 21/zoom, 19/zoom) and data.loginWindow == 'spawn' then
@@ -211,38 +231,46 @@ function toggleUI(visible)
     if visible and data.loginWindow == 'login' then
         music = playSound( 'data/music.mp3', true )
         setSoundVolume( music, 0.12 )
-        uiElements['edit_password'] = exports['since-gui']:createEditbox('Wprowadź hasło...', 66/zoom, sy/2 - 19/zoom, 514/zoom, 74/zoom, {255, 255, 255}, {
+        
+        -- NOWE POLA - cloudyMTA design
+        local fieldW = 580/zoom
+        local fieldH = 60/zoom
+        
+        uiElements['edit_password'] = exports['since-gui']:createEditbox('Hasło', sx/2 - fieldW/2, sy/2 + 20/zoom, fieldW, fieldH, {241, 245, 244}, {
             alignX = 'left',
-            paddingX = 85/zoom,
-            caretColor = {255, 255, 255, 55},
+            paddingX = 20/zoom,
+            caretColor = {46, 117, 111, 200},
             caretWidth = 2,
-            font = exports['since-fonts']:getFont('Inter-Regular', 13/zoom),
-            image = textures['editbox'],
-            placeholderColor = {255, 255, 255},
-            specialCharacters = '.*[_].*',
-            passworded = true
+            font = exports['since-fonts']:getFont('Inter-Regular', 14/zoom),
+            backgroundColor = {25, 36, 38, 230},
+            borderColor = {46, 117, 111, 150},
+            borderWidth = 2,
+            placeholderColor = {145, 163, 160, 200},
+            passworded = true,
+            radius = 8
         })
 
-        uiElements['edit_login'] = exports['since-gui']:createEditbox('Wprowadź login...', 66/zoom, sy/2 - 99/zoom, 514/zoom, 74/zoom, {255, 255, 255}, {
+        uiElements['edit_login'] = exports['since-gui']:createEditbox('Login lub email', sx/2 - fieldW/2, sy/2 - 50/zoom, fieldW, fieldH, {241, 245, 244}, {
             alignX = 'left',
-            paddingX = 85/zoom,
-            caretColor = {255, 255, 255, 55},
+            paddingX = 20/zoom,
+            caretColor = {46, 117, 111, 200},
             caretWidth = 2,
-            font = exports['since-fonts']:getFont('Inter-Regular', 13/zoom),
-            image = textures['editbox'],
-            placeholderColor = {255, 255, 255},
-            specialCharacters = '.*[_].*',
-            passworded = false
+            font = exports['since-fonts']:getFont('Inter-Regular', 14/zoom),
+            backgroundColor = {25, 36, 38, 230},
+            borderColor = {46, 117, 111, 150},
+            borderWidth = 2,
+            placeholderColor = {145, 163, 160, 200},
+            radius = 8
         })
 
-        uiElements['checkbox'] = exports['since-gui']:createCheckbox('Zapamiętaj mnie', 66/zoom, sy/2 + 65/zoom, 64/zoom, 64/zoom, {255, 255, 255, 255}, {
-            gap = 2/zoom,
-            font = exports['since-fonts']:getFont('Inter-Medium', 14/zoom),
-            textColor = {255, 255, 255, 200},
-            hoverColor = {255, 255, 255, 155},
-            textHoverColor = {255, 255, 255, 155},
-            image = textures['checkbox'],
-            activeImage = textures['checkbox_active']
+        uiElements['checkbox'] = exports['since-gui']:createCheckbox('Zapamiętaj mnie', sx/2 - fieldW/2, sy/2 + 200/zoom, 24/zoom, 24/zoom, {46, 117, 111, 255}, {
+            gap = 12/zoom,
+            font = exports['since-fonts']:getFont('Inter-Medium', 13/zoom),
+            textColor = {145, 163, 160, 200},
+            hoverColor = {67, 143, 135, 255},
+            textHoverColor = {241, 245, 244, 255},
+            checkColor = {46, 117, 111, 255},
+            backgroundColor = {25, 36, 38, 180}
         })
 
         local data = loadAccountData()

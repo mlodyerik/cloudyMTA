@@ -11,5 +11,5 @@ function drawBWRectangle(x, y, w, h, color, postgui)
 	dxUpdateScreenSource(blackWhiteScreen, true)
 	dxSetShaderValue(blackWhiteShader, "screenSource", blackWhiteScreen)
 
-	dxDrawImageSection (x, y, w, h, x, y, w, h, blackWhiteShader, 0, 0, 0, tocolor(155, 255, 155), type(postgui) == "boolean" and postgui or false)
+	dxDrawImageSection (x, y, w, h, x, y, w, h, blackWhiteShader, 0, 0, 0, tocolor(67, 143, 135), type(postgui) == "boolean" and postgui or false)
 end

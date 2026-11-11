@@ -90,7 +90,7 @@ addEventHandler("onClientPreRender", root, function()
         dxDrawImage(0, 0, 512, 50, szambo.rt2, 0, 0, 0, tocolor(255,255,255,155))
         dxDrawImageSection(0, 0, 512*(szambo.zapelnienie/szambo.max), 50, 0, 0, 512*(szambo.zapelnienie/szambo.max), 50, szambo.rt2)
         dxDrawText(str, 0, 0, 512, 50, white, 1, exports["since-fonts"]:getFont("Inter-Bold", 20), "center", "center")
-        dxDrawText('Wąż ssący', 512/2, 125, nil, nil, tocolor(155, 255, 155), 1, exports["since-fonts"]:getFont("Inter-Black", 18), "center", "bottom")
+        dxDrawText('Wąż ssący', 512/2, 125, nil, nil, tocolor(67, 143, 135), 1, exports["since-fonts"]:getFont("Inter-Black", 18), "center", "bottom")
         dxDrawText('Podejdź aby wyciągnąc wąż', 512/2, 125, nil, nil, white, 1, exports["since-fonts"]:getFont("Inter-SemiBold", 14), "center", "top")
         dxSetRenderTarget()
 

@@ -5,14 +5,20 @@ local toggled = false
 local alpha = 0
 
 function renderUI()
+    -- cloudyMTA new design - dark background with teal accents
     exports['since-blur']:dxDrawBlur(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, textures['mask'], 255*alpha)
-	dxDrawImage(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, 'data/background.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
+	-- Dark background panel (#192426)
+	dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, tocolor(25, 36, 38, 255*alpha))
 
-    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(145, 163, 160, 65*alpha))
-    dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom - 1, 247/zoom, 1, tocolor(255, 255, 255, 65*alpha))
+    -- Vertical divider line
+    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(67, 143, 135, 65*alpha))
+    -- Horizontal divider line under logo
+    dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom - 1, 247/zoom, 1, tocolor(67, 143, 135, 65*alpha))
     
-    dxDrawImage(sx/2 - 455/zoom, sy/2 - 232/zoom, 218/zoom, 75/zoom, 'data/logo.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
-    dxDrawImage(sx/2 - 223/zoom, sy/2 - 250/zoom, 694/zoom, 47/zoom, 'data/toprectangle.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
+    -- cloudyMTA logo - centered in left panel
+    dxDrawImage(sx/2 - 455/zoom, sy/2 - 235/zoom, 218/zoom, 82/zoom, 'data/cloudyMTA_logo.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
+    -- Teal header accent bar
+    dxDrawRectangle(sx/2 - 223/zoom, sy/2 - 250/zoom, 694/zoom, 3/zoom, tocolor(46, 117, 111, 255*alpha))
     
     local offset = 0
     for k, v in ipairs(tabs) do

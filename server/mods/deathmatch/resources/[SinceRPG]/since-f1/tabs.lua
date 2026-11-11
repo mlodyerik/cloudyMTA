@@ -58,7 +58,7 @@ tabs = {
             dxDrawText('Skrypt: #2E756Fzexty, Hixagon#ffffff\nModele: #2E756Fdamix10#ffffff\nMapy: #2E756Fzexty, damix10#ffffff\nGrafiki: #2E756Fzexty, Hixagon#ffffff', sx/2 - 210/zoom, sy/2 - 65/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
             
             dxDrawText('Statystyki graczy', sx/2 - 210/zoom, sy/2 + 25/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
-            dxDrawText('Liczba graczy w przeciągu ostatnich 7 dni', sx/2 - 210/zoom, sy/2 + 25/zoom, nil, nil, tocolor(155, 255, 155, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true) 
+            dxDrawText('Liczba graczy w przeciągu ostatnich 7 dni', sx/2 - 210/zoom, sy/2 + 25/zoom, nil, nil, tocolor(67, 143, 135, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true) 
         end,
 
         onOpen = function()
@@ -72,11 +72,11 @@ tabs = {
                     radius = 10,
                     blur = false,
                     type = 'line',
-                    background = tocolor(125, 125, 125, 25),
-                    color = tocolor(155, 255, 155, 175),
-                    bottomColor = tocolor(155, 255, 155, 75),
-                    line = tocolor(155, 255, 155, 175),
-                    point = tocolor(155, 255, 155, 255),
+                    background = tocolor(25, 36, 38, 125),
+                    color = tocolor(67, 143, 135, 175),
+                    bottomColor = tocolor(46, 117, 111, 75),
+                    line = tocolor(67, 143, 135, 175),
+                    point = tocolor(46, 117, 111, 255),
                     pointSize = 10,
                     min = 0,
                     max = 225,

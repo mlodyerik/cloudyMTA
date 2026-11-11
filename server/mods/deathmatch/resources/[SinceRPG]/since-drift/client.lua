@@ -159,11 +159,11 @@ local function drawMeter()
 			dxDrawText('Tracisz punkty przez kolizje!', sx/2 + 1, sy/2 - 325/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "top", false, false, false, false, false)
 			dxDrawText('Tracisz punkty przez kolizje!', sx/2, sy/2 - 325/zoom, nil, nil, tocolor(255, 155, 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "top", false, false, false, false, false)
 		else
-			dxDrawCircle(sx/2 + textWidth/2 + 5/zoom, sy/2 - 352/zoom, 20/zoom, 0, 360, tocolor(155, 255, 155, 0), tocolor(155, 255, 155, 125), 128)
+			dxDrawCircle(sx/2 + textWidth/2 + 5/zoom, sy/2 - 352/zoom, 20/zoom, 0, 360, tocolor(67, 143, 135, 0), tocolor(67, 143, 135, 125), 128)
 			dxDrawText('x'..scoreMultipler, sx/2 + textWidth/2 + 5/zoom + 1, sy/2 - 352/zoom + 1, nil, nil, tocolor(0, 0, 0, 125), 1, exports['since-fonts']:getFont('Inter-Black', 12/zoom), "center", "center", false, false, false, false, false)
-			dxDrawText('x'..scoreMultipler, sx/2 + textWidth/2 + 5/zoom, sy/2 - 352/zoom, nil, nil, tocolor(155, 255, 155, 255), 1, exports['since-fonts']:getFont('Inter-Black', 12/zoom), "center", "center", false, false, false, false, false)
+			dxDrawText('x'..scoreMultipler, sx/2 + textWidth/2 + 5/zoom, sy/2 - 352/zoom, nil, nil, tocolor(67, 143, 135, 255), 1, exports['since-fonts']:getFont('Inter-Black', 12/zoom), "center", "center", false, false, false, false, false)
 			dxDrawText(scoreText, sx/2 + 1, sy/2 - 325/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "top", false, false, false, false, false)
-			dxDrawText(scoreText, sx/2, sy/2 - 325/zoom, nil, nil, tocolor(155, 255, 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "top", false, false, false, false, false)
+			dxDrawText(scoreText, sx/2, sy/2 - 325/zoom, nil, nil, tocolor(67, 143, 135), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "top", false, false, false, false, false)
 		end
 	end
 end
@@ -212,7 +212,7 @@ function render()
     if not loaded then
         dxDrawText("Trwa wczytywanie danych..", sx/2, sy/2, center, center, white, 1/zoom, exports['since-fonts']:getFont('Inter-SemiBold', 16/zoom), "center", "center", false, false, false, false)
     else
-        dxDrawText("Lista najlepszych drifterów", sx/2 - 400/zoom, sy/2 - 185/zoom, left, center, tocolor(155, 255, 155), 1, exports['since-fonts']:getFont('Inter-Bold', 17/zoom), "left", "center", false, false, false, false)
+        dxDrawText("Lista najlepszych drifterów", sx/2 - 400/zoom, sy/2 - 185/zoom, left, center, tocolor(67, 143, 135), 1, exports['since-fonts']:getFont('Inter-Bold', 17/zoom), "left", "center", false, false, false, false)
         for i = 1, 10 do
             local v = loaded[i]
 			if not v then

@@ -2,11 +2,15 @@ local toggled = false
 local alpha = 0
 
 function renderUI()
+    -- cloudyMTA redesigned dashboard
     exports['since-blur']:dxDrawBlur(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, textures['mask'], 255*alpha)
-	dxDrawImage(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, 'data/background.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
+	-- Dark background (#192426)
+	dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, tocolor(25, 36, 38, 255*alpha))
 
-    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(145, 163, 160, 65*alpha))
-    dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 150/zoom - 1, 247/zoom, 1, tocolor(255, 255, 255, 65*alpha))
+    -- Vertical divider - teal accent
+    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(67, 143, 135, 65*alpha))
+    -- Horizontal divider under user info
+    dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 150/zoom - 1, 247/zoom, 1, tocolor(67, 143, 135, 65*alpha))
 
     local rankColor = exports['since-core']:getRankColor(getElementData(localPlayer, 'player:admin'), getElementData(localPlayer, 'player:diamond'))
     local rankName = exports['since-core']:getRankName(getElementData(localPlayer, 'player:admin'), getElementData(localPlayer, 'player:diamond'))
@@ -16,6 +20,7 @@ function renderUI()
     local textWidth = dxGetTextWidth(getPlayerName(localPlayer), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom))
     local idText = (getElementData(localPlayer, 'id') or 0)
     local idWidth = dxGetTextWidth(idText, 1, exports['since-fonts']:getFont('Inter-ExtraBold', 12/zoom)) + 4/zoom
+    -- Teal badge for ID
     dxDrawRoundedRectangle(sx/2 - 388/zoom + textWidth, sy/2 - 228/zoom, idWidth, 21/zoom, 4, tocolor(46, 117, 111, 75*alpha))
     dxDrawText(idText, sx/2 - 385/zoom + textWidth, sy/2 - 208/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 12/zoom), 'left', 'bottom')
 
@@ -24,7 +29,8 @@ function renderUI()
 
     dxDrawText('$ #ffffff'..addCommas(getPlayerMoney(localPlayer)), sx/2 - 390/zoom, sy/2 - 170/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
     
-    dxDrawImage(sx/2 - 223/zoom, sy/2 - 250/zoom, 694/zoom, 47/zoom, 'data/toprectangle.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
+    -- Teal header accent bar
+    dxDrawRectangle(sx/2 - 223/zoom, sy/2 - 250/zoom, 694/zoom, 3/zoom, tocolor(46, 117, 111, 255*alpha))
     
     local offset = 0
     for k, v in ipairs(tabs) do

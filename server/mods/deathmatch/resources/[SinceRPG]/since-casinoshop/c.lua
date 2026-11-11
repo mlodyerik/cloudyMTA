@@ -348,7 +348,7 @@ local button_zetony = {
 
 local bank = 0
 function render_zetony()
-	roundedRectangle(sx/2 - 350/zoom, sy/2- 150/zoom, 700/zoom, 300/zoom, tocolor(25, 25, 25, 190))
+	roundedRectangle(sx/2 - 350/zoom, sy/2- 150/zoom, 700/zoom, 300/zoom, tocolor(25, 36, 38, 190))
 		dxDrawText("Kasyno", sx/2 - (150+1)/zoom, sy/2 - (140+1)/zoom, sx/2 + (150+1)/zoom, sy/2 - (130+1)/zoom, tocolor(0, 0, 0,255), 1/zoom, font, "center", "center")	
 		dxDrawText("Kasyno", sx/2 - 150/zoom, sy/2 - 140/zoom, sx/2 + 150/zoom, sy/2 - 130/zoom, tocolor(180, 180, 180,255), 1/zoom, font, "center", "center")	
 		local zeton = getElementData(localPlayer,"client:coin") or 0
@@ -359,11 +359,11 @@ function render_zetony()
 
 		for k,v in pairs(button_zetony) do
 			if mysz(v[1],v[2],v[3]/zoom,v[4]/zoom) then
-				roundedRectangle(v[1],v[2],v[3]/zoom,v[4]/zoom, tocolor(25, 25, 25, 150))
-				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(200, 200, 200,255), 1/zoom, font0, "center", "center")		
+				roundedRectangle(v[1],v[2],v[3]/zoom,v[4]/zoom, tocolor(25, 36, 38, 150))
+				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(145, 163, 160,255), 1/zoom, font0, "center", "center")		
 			else
 				roundedRectangle(v[1],v[2],v[3]/zoom,v[4]/zoom, tocolor(10, 10, 10, 150))
-				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(200, 200, 200,255), 1/zoom, font0, "center", "center")		
+				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(145, 163, 160,255), 1/zoom, font0, "center", "center")		
 			end
 		end
 

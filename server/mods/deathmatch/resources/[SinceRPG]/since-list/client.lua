@@ -26,7 +26,7 @@ local editbox = dxCreateTexture("data/images/editbox.png")
 function render()
     dxDrawImage(sx/2-329/zoom/2, sy/2-259/zoom/2, 329/zoom, 259/zoom, 'data/images/bg.png')
     dxDrawText('List do Mikołaja', sx/2, sy/2-259/zoom/2 + 25/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
-    dxDrawText('Napisz list do świętego mikołaja, pamiętaj\nżeby go jakoś przekonać!', sx/2, sy/2-259/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom))/2, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'top')
+    dxDrawText('Napisz list do świętego mikołaja, pamiętaj\nżeby go jakoś przekonać!', sx/2, sy/2-259/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom))/2, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'top')
     
     dxDrawImage(sx/2-249/zoom/2, sy/2-44/zoom + 44/zoom + 10/zoom, 249/zoom, 44/zoom, 'data/images/button_buy.png', 0, 0, 0, tocolor(255, 255, 255, isMouseInPosition(sx/2-249/zoom/2, sy/2-44/zoom + 44/zoom + 10/zoom, 249/zoom, 44/zoom) and 200 or 255))
     dxDrawText('Wyślij!', sx/2, sy/2-44/zoom + 44/zoom + 10/zoom + 44/zoom/2, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')

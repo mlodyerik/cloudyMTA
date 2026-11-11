@@ -170,7 +170,7 @@ local function renders()
 		local distance = getDistanceBetweenPoints3D(rootx, rooty, rootz, x, y, z)       									 
 		if(distance <= 12) then
 			if isLineOfSightClear(rootx,rooty,rootz, x,y,z, true, false, false, true, false, false, true, localPlayer) then
-				dxDrawText("#ff0000Strażnik więzienny", sxc+1, syc+1, sxc+1, syc+1, tocolor(255, 255, 255, 200), 1.00/zoom, light, "center", "center", false, false, false, true)	  
+				dxDrawText("#ff0000Strażnik więzienny", sxc+1, syc+1, sxc+1, syc+1, tocolor(241, 245, 244, 200), 1.00/zoom, light, "center", "center", false, false, false, true)	  
 			end
 		end
 	end]]

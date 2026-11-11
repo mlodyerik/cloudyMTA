@@ -83,18 +83,18 @@ function renderUI()
 		end
     	dxDrawText(workingTime, sx/2 - 0/zoom, sy/2 - 87/zoom, nil, nil, tocolor(229, 151, 35, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'top')
     	dxDrawText('Kwota do wypłacenia', sx/2 - 115/zoom, sy/2 - 57/zoom, nil, nil, tocolor(255, 255, 255, 191), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'left', 'top')
-    	dxDrawText('$ '..przecinek(money) , sx/2 - 0/zoom, sy/2 - 30/zoom, nil, nil, tocolor(35, 229, 82, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'top')
+    	dxDrawText('$ '..przecinek(money) , sx/2 - 0/zoom, sy/2 - 30/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'top')
     	dxDrawText('Twój stopień', sx/2 - 70/zoom, sy/2 + 2/zoom, nil, nil, tocolor(255, 255, 255, 191), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'left', 'top')
     	dxDrawText(factionRank, sx/2 - 0/zoom, sy/2 + 29/zoom, nil, nil, tocolor(229, 152, 35, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'top')
 
     	if isMouseIn(sx/2 - 124/zoom, sy/2 + 88/zoom, 249/zoom, 50/zoom) then
-    		dxDrawImage(sx/2 - 124/zoom, sy/2 + 88/zoom, 249/zoom, 50/zoom, 'data/button_on.png', 0, 0, 0, tocolor(255, 255, 255, 200), false)
+    		dxDrawImage(sx/2 - 124/zoom, sy/2 + 88/zoom, 249/zoom, 50/zoom, 'data/button_on.png', 0, 0, 0, tocolor(241, 245, 244, 200), false)
     	else
     		dxDrawImage(sx/2 - 124/zoom, sy/2 + 88/zoom, 249/zoom, 50/zoom, 'data/button_on.png', 0, 0, 0, tocolor(255, 255, 255, 255), false)
     	end
 
     	if isMouseIn(sx/2 - 124/zoom, sy/2 + 147/zoom, 249/zoom, 50/zoom) then
-    		dxDrawImage(sx/2 - 124/zoom, sy/2 + 147/zoom, 249/zoom, 50/zoom, 'data/button_off.png', 0, 0, 0, tocolor(255, 255, 255, 200), false)
+    		dxDrawImage(sx/2 - 124/zoom, sy/2 + 147/zoom, 249/zoom, 50/zoom, 'data/button_off.png', 0, 0, 0, tocolor(241, 245, 244, 200), false)
     	else
     		dxDrawImage(sx/2 - 124/zoom, sy/2 + 147/zoom, 249/zoom, 50/zoom, 'data/button_off.png', 0, 0, 0, tocolor(255, 255, 255, 255), false)
     	end

@@ -310,7 +310,7 @@ end
 local tabsColors = {
 
     ['quit'] = {255, 125, 125},
-    ['other'] = {125, 255, 125},
+    ['other'] = {46, 117, 111},
 
 }
 
@@ -319,7 +319,7 @@ local drawInteractionTab = function(name, text, x, y, w, h, alignX, alignY)
         tab_hover = nil
     end
 
-    local color = tabsColors[name] or {125, 255, 125}
+    local color = tabsColors[name] or {46, 117, 111}
     local alpha = 175
 
     if isMouseInPosition(x, y, w, h) then
@@ -560,14 +560,14 @@ end
 
 interaction.onRender = function()
     if not interaction.enabled then return end
-    drawBWRectangle(0, 0, sx, sy, tocolor(1, 255, 255, 55), false)
+    drawBWRectangle(0, 0, sx, sy, tocolor(67, 143, 135, 55), false)
     dxDrawImage(0, 0, sx, sy, 'assets/images/vignette.png', 0, 0, 0, tocolor(46, 117, 111, interaction.animations.vig_alpha))
     dxDrawImage(sx / 2 - (632/2)/zoom, sy - 177/zoom, 632/zoom, 177/zoom, 'assets/images/green_shadow.png', 0, 0, 0, tocolor(46, 117, 111, interaction.animations.vig_alpha))
 
     dxDrawImage(0, 0, screen.x, screen.y, shader, 0, 0, 0, tocolor(255, 255, 255, 255))
 
     dxDrawText("Interakcja z otoczeniem", 0, screen.y - 65/zoom, screen.x, screen.y - 65/zoom, tocolor(46, 117, 111, 255), 1, interaction.fonts.bold_big, "center", "bottom")
-    dxDrawText("Kliknij lewym przyciskiem myszy na podświetlony\nobiekt, aby wykonać z nim interakcję.", 0, screen.y - 65/zoom, screen.x, screen.y - 65/zoom, tocolor(255, 255, 255, 225), 1, interaction.fonts.light_tip, "center", "top")
+    dxDrawText("Kliknij lewym przyciskiem myszy na podświetlony\nobiekt, aby wykonać z nim interakcję.", 0, screen.y - 65/zoom, screen.x, screen.y - 65/zoom, tocolor(241, 245, 244, 225), 1, interaction.fonts.light_tip, "center", "top")
 end
 
 interaction.renderInteractions = function()

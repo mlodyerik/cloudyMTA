@@ -41,14 +41,14 @@ function renderUI()
         local text = i..'. '..item.name..' ('..values..')\n'..color..''..getRareName(item.rareLevel)..''..color..''..' ('..chance..'%)'
 
         dxDrawText(text:gsub('#%x%x%x%x%x%x', ''), sx/2  + 1, sy/2 + 145/zoom + offset  + 1, nil, nil, tocolor(0, 0, 0, 125), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, false, false, true)
-        dxDrawText(text, sx/2, sy/2 + 145/zoom + offset, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, false, false, true)
+        dxDrawText(text, sx/2, sy/2 + 145/zoom + offset, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, false, false, true)
 
         offset = offset + 40/zoom
     end
 
     if data.tick then
         dxDrawText('Panel zamknie się za '..(string.format('%.2f', (data.tick-getTickCount())/1000))..' sek.', sx/2 + 1, sy/2 - 125/zoom + 1, nil, nil, tocolor(0, 0, 0, 125), 1, exports['since-fonts']:getFont('Inter-SemiBold', 12/zoom), 'center', 'bottom', false, false, false, true)
-        dxDrawText('Panel zamknie się za '..(string.format('%.2f', (data.tick-getTickCount())/1000))..' sek.', sx/2, sy/2 - 125/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-SemiBold', 12/zoom), 'center', 'bottom', false, false, false, true)
+        dxDrawText('Panel zamknie się za '..(string.format('%.2f', (data.tick-getTickCount())/1000))..' sek.', sx/2, sy/2 - 125/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-SemiBold', 12/zoom), 'center', 'bottom', false, false, false, true)
     end
 
     if data.tickCount < getTickCount() then

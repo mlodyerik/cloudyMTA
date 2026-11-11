@@ -1,4 +1,4 @@
--- SinceRPG Resource Auto-Starter
+-- cloudyMTA Resource Auto-Starter
 -- Fixed version for proper dependency management
 
 local resources = [[

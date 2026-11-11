@@ -51,7 +51,7 @@ function renderUI()
                         end
 
                         dxDrawText('Sprzedający', 15/zoom, 31/zoom + offset, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'left', 'bottom')
-                        dxDrawText(v.player, 15/zoom, 31/zoom + offset, nil, nil, tocolor(125, 200, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')
+                        dxDrawText(v.player, 15/zoom, 31/zoom + offset, nil, nil, tocolor(67, 143, 135, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')
 
                         dxDrawText('Cena', 110/zoom, 31/zoom + offset, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'left', 'bottom')
                         dxDrawText('$ '..v.price, 110/zoom, 31/zoom + offset, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')

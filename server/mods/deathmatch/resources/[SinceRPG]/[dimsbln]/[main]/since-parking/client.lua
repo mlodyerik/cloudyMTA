@@ -107,8 +107,8 @@ local main = {
             borderline = dxCreateTexture('data/images/borderline.png','argb',false,'clamp'),
             groundPos = {158.18, -174.64, 1.58},
             lookingAt = {151.89, -174.64, 1.58},
-            color = {125, 255, 125},
-            color2 = {125, 255, 125},
+            color = {46, 117, 111},
+            color2 = {46, 117, 111},
         },
 
         ['odbieranieBB'] = {
@@ -125,8 +125,8 @@ local main = {
             borderline = dxCreateTexture('data/images/borderline.png','argb',false,'clamp'),
             groundPos = {982.20, -1434.52, 13.55},
             lookingAt = {982.20, -1439.02, 13.55},
-            color = {125, 255, 125},
-            color2 = {125, 255, 125},
+            color = {46, 117, 111},
+            color2 = {46, 117, 111},
         },
 
         ['odbieranieLS'] = {
@@ -143,8 +143,8 @@ local main = {
             borderline = dxCreateTexture('data/images/borderline.png','argb',false,'clamp'),
             groundPos = {1950.46, 2145.62, 10.82},
             lookingAt = {1950.46, 2150.31, 10.82},
-            color = {125, 255, 125},
-            color2 = {125, 255, 125},
+            color = {46, 117, 111},
+            color2 = {46, 117, 111},
         },
 
         ['odbieranieLV'] = {
@@ -161,8 +161,8 @@ local main = {
             borderline = dxCreateTexture('data/images/borderline.png','argb',false,'clamp'),
             groundPos = {-2631.56, 1350.64, 7.12},
             lookingAt = {-2631, 1350.64, 7.11},
-            color = {125, 255, 125},
-            color2 = {125, 255, 125},
+            color = {46, 117, 111},
+            color2 = {46, 117, 111},
         },
 
         ['odbieranieSF'] = {
@@ -179,8 +179,8 @@ local main = {
             borderline = dxCreateTexture('data/images/borderline.png','argb',false,'clamp'),
             groundPos = {1382.57, 732.1, 10.82, -0.00, 0.00, 0},
             lookingAt = {1376.16, 732.1, 10.82, -0.00, 0.00, 0},
-            color = {125, 255, 125},
-            color2 = {125, 255, 125},
+            color = {46, 117, 111},
+            color2 = {46, 117, 111},
         },
         
         ['odbieranieLVSPORT'] = {

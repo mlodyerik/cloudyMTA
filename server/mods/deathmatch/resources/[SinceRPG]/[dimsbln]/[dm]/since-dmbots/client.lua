@@ -27,8 +27,8 @@ function initBotsNametags()
 
             if sx and sy then
                 dxDrawRoundedRectangle(sx - 75*scale, sy - 5*scale, 42*scale, 42*scale, 5*scale, tocolor(65, 35, 35, 255), false, true)
-                dxDrawText(level, sx - 75*scale + 21*scale, sy - 5*scale + 26*scale, nil, nil, tocolor(255, 255, 255, 200), scale, exports['since-fonts']:getFont('Inter-Black', 12), 'center', 'bottom', false, false, false, false, true)
-                dxDrawText('POZIOM', sx - 75*scale + 21*scale, sy - 5*scale + 26*scale, nil, nil, tocolor(255, 255, 255, 200), scale, exports['since-fonts']:getFont('Inter-Medium', 6), 'center', 'top', false, false, false, false, true)
+                dxDrawText(level, sx - 75*scale + 21*scale, sy - 5*scale + 26*scale, nil, nil, tocolor(241, 245, 244, 200), scale, exports['since-fonts']:getFont('Inter-Black', 12), 'center', 'bottom', false, false, false, false, true)
+                dxDrawText('POZIOM', sx - 75*scale + 21*scale, sy - 5*scale + 26*scale, nil, nil, tocolor(241, 245, 244, 200), scale, exports['since-fonts']:getFont('Inter-Medium', 6), 'center', 'top', false, false, false, false, true)
 
                 dxDrawText(name:gsub('#%x%x%x%x%x%x', ''), sx - 26*scale + 1, sy + 1, nil, nil, tocolor(0,0,0,200), scale, exports['since-fonts']:getFont('Inter-SemiBold', 12), 'left', 'top', false, false, false, false, true)
                 dxDrawText(name, sx - 26*scale, sy, nil, nil, tocolor(255, 255, 255), scale, exports['since-fonts']:getFont('Inter-SemiBold', 12), 'left', 'top', false, false, false, true, true)

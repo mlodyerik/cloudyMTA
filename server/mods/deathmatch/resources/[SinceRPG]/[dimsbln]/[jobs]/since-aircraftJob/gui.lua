@@ -39,7 +39,7 @@ function renderInterface()
         progress = math.min(progress, 1)
         dxDrawImageSection(sxh-155/zoom, syh-80/zoom, 580/zoom*progress, 40/zoom, 0, 0, 580*progress, 40, textures.bar, 0, 0, 0, tocolor(255, 255, 255, 255))
     end
-    dxDrawText('Postęp EXP do poziomu '..saveData.stats.level, sxh-140/zoom, syh-80/zoom+20/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, fonts[4], 'left', 'center')
+    dxDrawText('Postęp EXP do poziomu '..saveData.stats.level, sxh-140/zoom, syh-80/zoom+20/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, fonts[4], 'left', 'center')
     dxDrawText(saveData.stats.levelExp..'/'..levels[saveData.stats.level], sxh+410/zoom, syh-80/zoom+20/zoom, nil, nil, tocolor(165, 255, 157, 225), 1, fonts[4], 'right', 'center')
 
     animations[2] = interpolateBetween(animations[2] or 0.75, 0, 0, isMouseIn(sxh-170/zoom, syh-15/zoom, 300/zoom, 250/zoom) and 1 or 0.75, 0, 0, 0.1, 'Linear')

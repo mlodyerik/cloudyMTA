@@ -52,7 +52,7 @@ function reloadRenderTarget(object)
         dxDrawText('Event halloweenowy', 256, 253, nil, nil, tocolor(255, 175, 0, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15), 'center', 'center')
         --dxDrawImage(238+textWidth/2+7, 244, 18, 18, 'files/images/egg_icon.png', 0, 0, 0, tocolor(255, 255, 255, 255))
         dxDrawText('Zbierz wszystkie '..#positions..' dyń i otrzymaj unikatowe nagrody!', 256, 280, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'center')
-        dxDrawText('W puli nagród znajdziesz: #68D65EwPLN#FFFFFF, #FFC700Unikalne pojazdy#ffffff oraz #FFC700Gotówkę#ffffff', 256, 305, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'center', false, false, false, true)
+        dxDrawText('W puli nagród znajdziesz: #68D65EwPLN#FFFFFF, #FFC700Unikalne pojazdy#ffffff oraz #FFC700Gotówkę#ffffff', 256, 305, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'center', false, false, false, true)
 
     --    dxDrawRectangle(0, 0, 512, 324, tocolor(0, 0, 0, 155))
     --    dxDrawText('Start 20:00', 256-1, 162-1, nil, nil, tocolor(0, 0, 0, 155), 1, exports['since-fonts']:getFont('Inter-Black', 55), 'center', 'center')

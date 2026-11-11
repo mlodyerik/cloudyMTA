@@ -29,7 +29,7 @@ function pokazOpcjePomocnicza()
 				local sx, sy, sz = getScreenFromWorldPosition(x, y, z, 30, false)
 		        if (sx) and (sy) and (sz) and (sz) < 30 then
 			        dxDrawText("Zasób: "..getElementID(elementParent).." \nModel: "..model, sx+2, sy+2, sx, sy, tocolor(0, 0, 0, 255), 1, "default-bold", "center", "center", false, false, false, false)
-                    dxDrawText("Zasób: "..getElementID(elementParent).." \nModel: "..model, sx, sy, sx, sy, tocolor(128, 230, 48, 255), 1, "default-bold", "center", "center", false, false, false, false)
+                    dxDrawText("Zasób: "..getElementID(elementParent).." \nModel: "..model, sx, sy, sx, sy, tocolor(46, 117, 111, 255), 1, "default-bold", "center", "center", false, false, false, false)
                 end
             end
 		end
@@ -44,7 +44,7 @@ function pokazOpcjePomocnicza()
 				local sx, sy, sz = getScreenFromWorldPosition(x, y, z, 30, false)
 				if (sx) and (sy) and (sz) and (sz) < 30 then
 				dxDrawText("Zasób: "..getElementID(elementParent), sx+2, sy+2, sx, sy, tocolor(0, 0, 0, 255), 1, "default-bold", "center", "center", false, false, false, false)
-                dxDrawText("Zasób: "..getElementID(elementParent), sx, sy, sx, sy, tocolor(128, 230, 48, 255), 1, "default-bold", "center", "center", false, false, false, false)
+                dxDrawText("Zasób: "..getElementID(elementParent), sx, sy, sx, sy, tocolor(46, 117, 111, 255), 1, "default-bold", "center", "center", false, false, false, false)
 				end
 			end
 		end
@@ -58,7 +58,7 @@ function pokazOpcjePomocnicza()
 				local sx, sy, sz = getScreenFromWorldPosition(x, y, z, 30, false)
 		        if (sx) and (sy) and (sz) and (sz) < 30 then
 			        dxDrawText("Zasób: "..getElementID(elementParent), sx+2, sy+2, sx, sy, tocolor(0, 0, 0, 255), 1, "default-bold", "center", "center", false, false, false, false)
-                    dxDrawText("Zasób: "..getElementID(elementParent), sx, sy, sx, sy, tocolor(128, 230, 48, 255), 1, "default-bold", "center", "center", false, false, false, false)
+                    dxDrawText("Zasób: "..getElementID(elementParent), sx, sy, sx, sy, tocolor(46, 117, 111, 255), 1, "default-bold", "center", "center", false, false, false, false)
                 end
             end
 
@@ -73,7 +73,7 @@ function pokazOpcjePomocnicza()
 				local sx, sy, sz = getScreenFromWorldPosition(x, y, z, 30, false)
 		        if (sx) and (sy) and (sz) and (sz) < 30 then
 			        dxDrawText("Zasób: "..getElementID(elementParent), sx+2, sy+2, sx, sy, tocolor(0, 0, 0, 255), 1, "default-bold", "center", "center", false, false, false, false)
-                    dxDrawText("Zasób: "..getElementID(elementParent), sx, sy, sx, sy, tocolor(128, 230, 48, 255), 1, "default-bold", "center", "center", false, false, false, false)
+                    dxDrawText("Zasób: "..getElementID(elementParent), sx, sy, sx, sy, tocolor(46, 117, 111, 255), 1, "default-bold", "center", "center", false, false, false, false)
                 end
             end
 

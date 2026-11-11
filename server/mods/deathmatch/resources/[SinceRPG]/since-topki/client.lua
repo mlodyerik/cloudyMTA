@@ -32,7 +32,7 @@ function refreshBoardRT(renderTarget, tbl)
             dxSetBlendMode('modulate_add')
                 dxDrawImage(0, 0, 512, 324, 'tex/board.png')
                 dxDrawText(tbl[1].title, 256, 35, nil, nil, tocolor(46, 117, 111, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 15), 'center', 'bottom')
-                dxDrawText('Najaktywniejsi gracze', 256, 35, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'top')
+                dxDrawText('Najaktywniejsi gracze', 256, 35, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'top')
                 
                 local offset = 0
                 for i, v in ipairs(tbl) do
@@ -43,7 +43,7 @@ function refreshBoardRT(renderTarget, tbl)
                     dxDrawImage(15, 75 + offset, 75, 75, exports['since-avatars']:getPlayerAvatar(v.sid))
                     dxDrawImage(15, 75 + offset, 75, 75, 'tex/border.png', 0, 0, 0, color)
                     dxDrawText(i..'. '.. (isYou and v.name..' ◦' or v.name), 100, 117 + offset, nil, nil, color, 1, exports['since-fonts']:getFont('Inter-Bold', 20), 'left', 'bottom')
-                    dxDrawText('↳ Posiada #2E756F'..addCommas(tonumber(v.value))..'#ffffff przegranych godzin', 100, 117 + offset, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'left', 'top', false, false, false, true)
+                    dxDrawText('↳ Posiada #2E756F'..addCommas(tonumber(v.value))..'#ffffff przegranych godzin', 100, 117 + offset, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'left', 'top', false, false, false, true)
                     
                     offset = offset + 80
                 end
@@ -54,7 +54,7 @@ function refreshBoardRT(renderTarget, tbl)
             dxSetBlendMode('modulate_add')
                 dxDrawImage(0, 0, 512, 324, 'tex/board.png')
                 dxDrawText(tbl[1].title, 256, 35, nil, nil, tocolor(46, 117, 111, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 15), 'center', 'bottom')
-                dxDrawText('Nagroda za pierwsze miejsce wynosi: #2E756F$ 10,000,000', 256, 35, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'top', false, false, false, true)
+                dxDrawText('Nagroda za pierwsze miejsce wynosi: #2E756F$ 10,000,000', 256, 35, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'top', false, false, false, true)
                     
                 if #tbl > 0 then
                     local offset = 0
@@ -66,12 +66,12 @@ function refreshBoardRT(renderTarget, tbl)
                         dxDrawImage(15, 75 + offset, 75, 75, exports['since-avatars']:getPlayerAvatar(v.sid))
                         dxDrawImage(15, 75 + offset, 75, 75, 'tex/border.png', 0, 0, 0, color)
                         dxDrawText(i..'. '.. (isYou and v.name..' ◦' or v.name), 100, 117 + offset, nil, nil, color, 1, exports['since-fonts']:getFont('Inter-Bold', 20), 'left', 'bottom')
-                        dxDrawText('↳ Czas: #2E756F'..convertTimer(tonumber(v.value))..'#ffffff #54a1ff('..v.vehicle..')', 100, 117 + offset, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'left', 'top', false, false, false, true)
+                        dxDrawText('↳ Czas: #2E756F'..convertTimer(tonumber(v.value))..'#ffffff #54a1ff('..v.vehicle..')', 100, 117 + offset, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'left', 'top', false, false, false, true)
                             
                         offset = offset + 80
                     end
                 else
-                    dxDrawText('Brak wyników', 256, 162, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'center', 'center')
+                    dxDrawText('Brak wyników', 256, 162, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'center', 'center')
                 end
             dxSetBlendMode('blend')
         dxSetRenderTarget()
@@ -80,7 +80,7 @@ function refreshBoardRT(renderTarget, tbl)
             dxSetBlendMode('modulate_add')
                 dxDrawImage(0, 0, 512, 324, 'tex/board.png')
                 dxDrawText(tbl[1].title, 256, 35, nil, nil, tocolor(46, 117, 111, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 15), 'center', 'bottom')
-                dxDrawText('Najaktywniejsi gracze z eventu', 256, 35, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'top')
+                dxDrawText('Najaktywniejsi gracze z eventu', 256, 35, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9), 'center', 'top')
                 
                 local offset = 0
                 for i, v in ipairs(tbl) do
@@ -91,7 +91,7 @@ function refreshBoardRT(renderTarget, tbl)
                     dxDrawImage(15, 75 + offset, 75, 75, exports['since-avatars']:getPlayerAvatar(v.sid))
                     dxDrawImage(15, 75 + offset, 75, 75, 'tex/border.png', 0, 0, 0, color)
                     dxDrawText(i..'. '.. (isYou and v.name..' ◦' or v.name), 100, 117 + offset, nil, nil, color, 1, exports['since-fonts']:getFont('Inter-Bold', 20), 'left', 'bottom')
-                    dxDrawText('↳ Posiada #2E756F'..addCommas(tonumber(v.value))..'#ffffff przegranych godzin', 100, 117 + offset, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'left', 'top', false, false, false, true)
+                    dxDrawText('↳ Posiada #2E756F'..addCommas(tonumber(v.value))..'#ffffff przegranych godzin', 100, 117 + offset, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12), 'left', 'top', false, false, false, true)
                     
                     offset = offset + 80
                 end

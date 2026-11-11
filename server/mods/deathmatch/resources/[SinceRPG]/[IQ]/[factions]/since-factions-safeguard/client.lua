@@ -66,11 +66,11 @@ local settings = {
 
 function render()
 	dxDrawText(settings[fraction][state].name, sx/2, sy - 200/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'center')
-	dxDrawText("Ustawiono obiektów - #438F87"..settings[fraction][state].count.."/"..settings[fraction][state].max, sx/2, sy - 180/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
-	dxDrawText("Aby postawić wybrany obiekt użyj #438F87LPM", sx/2, sy - 160/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
-	dxDrawText("Aby poruszać się między obiektami użyj #438F87kółka myszy", sx/2, sy - 140/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
-	dxDrawText("Aby usunąć wszystkie obiekty wybranego typu użyj #438F87PPM", sx/2, sy - 120/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
-	dxDrawText("Aby zamknąć panel użyj #438F87F10", sx/2, sy - 100/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
+	dxDrawText("Ustawiono obiektów - #438F87"..settings[fraction][state].count.."/"..settings[fraction][state].max, sx/2, sy - 180/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
+	dxDrawText("Aby postawić wybrany obiekt użyj #438F87LPM", sx/2, sy - 160/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
+	dxDrawText("Aby poruszać się między obiektami użyj #438F87kółka myszy", sx/2, sy - 140/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
+	dxDrawText("Aby usunąć wszystkie obiekty wybranego typu użyj #438F87PPM", sx/2, sy - 120/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
+	dxDrawText("Aby zamknąć panel użyj #438F87F10", sx/2, sy - 100/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
 end
 
 addEventHandler("onClientElementStreamIn", resourceRoot, function()

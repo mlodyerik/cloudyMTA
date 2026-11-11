@@ -44,9 +44,9 @@ function onRender()
 		
 			blur:dxDrawBlur(sw - recWidth - 15/zoom, 200/zoom + sY, recWidth, 35/zoom)
 			dxDrawRectangle(sw - recWidth - 15/zoom, 200/zoom + sY, recWidth, 35/zoom, tocolor(rgb[1], rgb[2], rgb[3], 50))
-			dxDrawRectangle(sw - recWidth - 15/zoom, 200/zoom + sY, recWidth, 35/zoom, tocolor(25, 25, 25, 125))
+			dxDrawRectangle(sw - recWidth - 15/zoom, 200/zoom + sY, recWidth, 35/zoom, tocolor(25, 36, 38, 125))
 			dxDrawImage(sw - recWidth - 48	/zoom, 200/zoom + sY, 35/zoom, 35/zoom, av)
-			dxDrawText(name, sw - recWidth - 5/zoom, 217/zoom + sY, nil, nil, tocolor(255, 255, 255, 200), 1, font, "left", "center", false, false, false, true)
+			dxDrawText(name, sw - recWidth - 5/zoom, 217/zoom + sY, nil, nil, tocolor(241, 245, 244, 200), 1, font, "left", "center", false, false, false, true)
 
 			if(not isVoiceEnabled(player))then
 				voicePlayers[player] = nil

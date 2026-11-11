@@ -9,7 +9,7 @@ function render()
     dxDrawImage(sx/2+190/zoom, sy/2-220/zoom, 20/zoom, 20/zoom, main['textures']['close'], 0,0,0, tocolor(255,255,255,255*main['anim'][1]))
     dxDrawImage(sx/2-210/zoom, sy/2-217/zoom, 34/zoom, 34/zoom, main['textures']['icon'], 0,0,0, tocolor(255,255,255,255))
     dxDrawText('Przebieralnia', sx/2-170/zoom, sy/2-220/zoom, _, _, tocolor(255,255,255,255), 1, main['fonts'][1], 'left', 'top')
-    dxDrawText('Skiny frakcyjne', sx/2-170/zoom, sy/2-180/zoom, _, _, tocolor(125,255,125,255), 1, main['fonts'][2], 'left', 'bottom')
+    dxDrawText('Skiny frakcyjne', sx/2-170/zoom, sy/2-180/zoom, _, _, tocolor(46,117,111,255), 1, main['fonts'][2], 'left', 'bottom')
 
     local x=0
     for i, v in ipairs(tbl) do
@@ -21,7 +21,7 @@ function render()
 
             dxDrawText(v[1], sx/2-200/zoom, sy/2-140/zoom + offset, nil, nil, tocolor(255,255,255,200), 1, main['fonts'][3], 'left', 'center')
 
-            dxDrawImage(sx/2-200/zoom, sy/2-127/zoom + offset, 15/zoom, 15/zoom, main['textures']['icon2'], 0,0,0, tocolor(125,255,125,255))
+            dxDrawImage(sx/2-200/zoom, sy/2-127/zoom + offset, 15/zoom, 15/zoom, main['textures']['icon2'], 0,0,0, tocolor(46,117,111,255))
 
             local rank = 'Officer'
             dxDrawText('Dostępny od rangi: #2E756F'..exports['since-factions']:getRankData(playerFaction, v[2]), sx/2-180/zoom, sy/2-118/zoom + offset, nil, nil, tocolor(255,255,255,200), 1, main['fonts'][2], 'left', 'center', false, false, false, true)

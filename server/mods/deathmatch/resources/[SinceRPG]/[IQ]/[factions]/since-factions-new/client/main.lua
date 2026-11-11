@@ -9,8 +9,8 @@ end
 
 function render()
     dxDrawText('Duty frakcji '..getFactionData(getElementData(localPlayer, 'player:faction')).colors.hex..''..getElementData(localPlayer, 'player:faction'), sx/2, 30/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-ExtraBold', 14/zoom), 'center', 'center', false, false, false, true)
-    dxDrawText(getFactionData(getElementData(localPlayer, 'player:faction')).ranks[getElementData(localPlayer, 'player:rank')], sx/2, 30/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-ExtraBold', 14/zoom)), nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center', false, false, false, true)
-    dxDrawText('Przepracowany czas: '..formatMinutes(getElementData(localPlayer, 'player:factionTime')), sx/2, 30/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-ExtraBold', 14/zoom)) + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom)), nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center', false, false, false, true)
+    dxDrawText(getFactionData(getElementData(localPlayer, 'player:faction')).ranks[getElementData(localPlayer, 'player:rank')], sx/2, 30/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-ExtraBold', 14/zoom)), nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center', false, false, false, true)
+    dxDrawText('Przepracowany czas: '..formatMinutes(getElementData(localPlayer, 'player:factionTime')), sx/2, 30/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-ExtraBold', 14/zoom)) + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom)), nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center', false, false, false, true)
 end
 
 addEvent('onClientStartFaction', true)

@@ -1,5 +1,5 @@
 <meta>
-    <info author="SinceRPG" version="2.1" name="Since Start Resource" description="Auto-start system for SinceRPG resources - Fixed for XAMPP" />
+    <info author="cloudyMTA" version="2.1" name="Since Start Resource" description="Auto-start system for cloudyMTA resources - Fixed for XAMPP" />
     <script src="server.lua" type="server" />
     
     <!-- Critical dependencies - must start BEFORE this resource -->

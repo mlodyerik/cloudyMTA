@@ -22,7 +22,7 @@ local function render()
     dxDrawImage(sx/2-302/zoom, sy-80/zoom, 604/zoom, 29/zoom, data.images[1], 180, 0, 0, tocolor(255, 255, 255, data.alpha), false)
     dxDrawImage(sx/2-13/zoom+data.barPos/zoom, sy-65/zoom, 26/zoom, 26/zoom, data.images[2], 0, 0, 0, tocolor(255, 255, 255, data.alpha), false)
     if data.boost then
-        dxDrawText('Boost łodzi',sx/2,sy-145/zoom, _, _, tocolor(125,255,125,data.alpha), 1, data.fonts[1], 'center', 'bottom', false,false,false,false,false)
+        dxDrawText('Boost łodzi',sx/2,sy-145/zoom, _, _, tocolor(46,117,111,data.alpha), 1, data.fonts[1], 'center', 'bottom', false,false,false,false,false)
     end
     dxDrawText('Połów ryb',sx/2,sy-120/zoom, _, _, tocolor(255,255,255,data.alpha), 1, data.fonts[1], 'center', 'bottom', false,false,false,false,false)
     dxDrawText('Utrzymaj strzałkę na zielonej strefie klikaj lewy przycisk myszy lub spację',sx/2,sy-115/zoom, _, _, tocolor(255,255,255,data.alpha), 1, data.fonts[2], 'center', 'top', false,false,false,false,false)

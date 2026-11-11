@@ -26,7 +26,7 @@ function renderWywozUI()
 	dxDrawText('Wynajem ciężarówki', sx/2, sy/2 - 7/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
 	dxDrawText('Koszt wynajęcia ciężarówki: #68EB5D$ 5 000', sx/2, sy/2 - 7/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top', false, false, false, true)
 	dxDrawText('Magazyn górniczy', sx/2, sy/2 - 191/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
-	dxDrawText('Wywóz surowców do skupu', sx/2, sy/2 - 191/zoom, nil, nil, tocolor(128, 241, 118, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+	dxDrawText('Wywóz surowców do skupu', sx/2, sy/2 - 191/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 	dxDrawText('Wybierz ilość węgla, którą chcesz sprzedać', sx/2, sy/2 + 62/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 12/zoom), 'center', 'bottom')
     
     local value = (magazineCoal * exports['since-scrollbar']:getScrollProgress(scrollbar))/100

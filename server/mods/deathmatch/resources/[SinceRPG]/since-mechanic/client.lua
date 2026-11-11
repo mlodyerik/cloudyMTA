@@ -13,23 +13,23 @@ function renderUI()
 	local isIn = isMouseInPosition(sx/2 + 262/zoom, sy/2 - 200/zoom, 20/zoom, 20/zoom)
 	dxDrawImage(sx/2 + 262/zoom, sy/2 - 200/zoom, 20/zoom, 20/zoom, 'data/close.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 185 or 255))
 	dxDrawText('Mechanik samochodowy', sx/2 - 284/zoom, sy/2 - 185/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom')
-	dxDrawText(zoneName, sx/2 - 284/zoom, sy/2 - 185/zoom, nil, nil, tocolor(132, 255, 122, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'left', 'top')
+	dxDrawText(zoneName, sx/2 - 284/zoom, sy/2 - 185/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'left', 'top')
 
 	if #data.toFix == 0 then
 		dxDrawText('⚠ #ffffffPojazd jest sprawny', sx/2, sy/2, nil, nil, tocolor(255, 200, 0, 255), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 14/zoom), 'center', 'bottom', false, false, false, true)
-		dxDrawText('Twój pojazd jest w pełni sprawny!', sx/2, sy/2, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
+		dxDrawText('Twój pojazd jest w pełni sprawny!', sx/2, sy/2, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
 	else
-		dxDrawText('NAZWA CZĘŚCI', sx/2 - 251/zoom, sy/2 - 137/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 10/zoom), 'left', 'top')
-		dxDrawText('STAN CZĘŚCI', sx/2 - 84/zoom, sy/2 - 137/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 10/zoom), 'left', 'top')
-		dxDrawText('KOSZT NAPRAWY', sx/2 + 120/zoom, sy/2 - 137/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 10/zoom), 'left', 'top')
+		dxDrawText('NAZWA CZĘŚCI', sx/2 - 251/zoom, sy/2 - 137/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 10/zoom), 'left', 'top')
+		dxDrawText('STAN CZĘŚCI', sx/2 - 84/zoom, sy/2 - 137/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 10/zoom), 'left', 'top')
+		dxDrawText('KOSZT NAPRAWY', sx/2 + 120/zoom, sy/2 - 137/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 10/zoom), 'left', 'top')
 	
 		local offset = 0
 		for i, v in ipairs(data.toFix) do
 			if i >= k and i <= n then 
 				local isIn = isMouseInPosition(sx/2 - 258/zoom, sy/2 - 115/zoom + offset, 516/zoom, 24/zoom) and 0.5 or 1
-				dxDrawImage(sx/2 - 258/zoom, sy/2 - 115/zoom + offset, 516/zoom, 24/zoom, 'data/selected.png', 0, 0, 0, data.selectedParts[i] and tocolor(255, 255, 255, 225) or tocolor(255, 255, 255, 100*isIn))
+				dxDrawImage(sx/2 - 258/zoom, sy/2 - 115/zoom + offset, 516/zoom, 24/zoom, 'data/selected.png', 0, 0, 0, data.selectedParts[i] and tocolor(241, 245, 244, 225) or tocolor(255, 255, 255, 100*isIn))
 	
-				dxDrawText(data.selectedParts[i] and '#5cfa6c● #ffffff'..v[1] or '#b4b4b4● #ffffff'..v[1], sx/2 - 251/zoom, sy/2 - 104/zoom + offset, nil, nil, data.selectedParts[i] and tocolor(255, 255, 255, 225) or tocolor(255, 255, 255, 155*isIn), 1, exports['since-fonts']:getFont('Inter-Medium', 9.333/zoom), 'left', 'center', false, false, false, true)
+				dxDrawText(data.selectedParts[i] and '#5cfa6c● #ffffff'..v[1] or '#b4b4b4● #ffffff'..v[1], sx/2 - 251/zoom, sy/2 - 104/zoom + offset, nil, nil, data.selectedParts[i] and tocolor(241, 245, 244, 225) or tocolor(255, 255, 255, 155*isIn), 1, exports['since-fonts']:getFont('Inter-Medium', 9.333/zoom), 'left', 'center', false, false, false, true)
 		   
 				local r, g, b = unpack(getColorNumer(v[69]))
 				dxDrawText('⛊ #ffffff'..v[69]..' %', sx/2 - 84/zoom, sy/2 - 104/zoom + offset, nil, nil, data.selectedParts[i] and tocolor(r, g, b, 225) or tocolor(r, g, b, 155*isIn), 1, exports['since-fonts']:getFont('Inter-Medium', 9.333/zoom), 'left', 'center', false, false, false, true)
@@ -47,8 +47,8 @@ function renderUI()
 		dxDrawImage(sx/2 - 131/zoom, sy/2 + 164/zoom, 145/zoom, 30/zoom, 'data/button_selectall.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 190 or 255))
 		dxDrawText(selectedCount == #data.toFix and 'Odznacz wszystko' or 'Zaznacz wszystko', sx/2 - 58/zoom, sy/2 + 179/zoom, nil, nil, tocolor(255, 255, 255, isIn and 190 or 225), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'center', 'center')
 	
-		dxDrawText('Podsumowanie kosztów', sx/2 + 258/zoom, sy/2 + 175/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'right', 'bottom')
-		dxDrawText('Do zapłaty #5cfa6c$ '..addCommas(data.cost), sx/2 + 258/zoom, sy/2 + 175/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'right', 'top', false, false, false, true)	
+		dxDrawText('Podsumowanie kosztów', sx/2 + 258/zoom, sy/2 + 175/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'right', 'bottom')
+		dxDrawText('Do zapłaty #5cfa6c$ '..addCommas(data.cost), sx/2 + 258/zoom, sy/2 + 175/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'right', 'top', false, false, false, true)	
 		
 		drawScrollbar(data.toFix, sx/2 + 263/zoom, sy/2 - 115/zoom, 2, 247/zoom, m, k, 255)
 	end

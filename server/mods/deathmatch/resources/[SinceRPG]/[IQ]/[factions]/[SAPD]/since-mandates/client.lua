@@ -45,7 +45,7 @@ end
 function render()
     dxDrawImage(sx/2-496/zoom/2, sy/2-398/zoom/2, 496/zoom, 398/zoom, 'data/images/background.png')
     dxDrawText('Panel mandatów', sx/2-496/zoom/2 + 15/zoom, sy/2-398/zoom/2 + 25/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'left', 'center')
-    dxDrawText('Tutaj wystawisz mandaty', sx/2-496/zoom/2 + 15/zoom, sy/2-398/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom)), nil, nil, tocolor(128, 241, 119), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
+    dxDrawText('Tutaj wystawisz mandaty', sx/2-496/zoom/2 + 15/zoom, sy/2-398/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom)), nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
     dxDrawImage(sx/2-496/zoom/2, sy/2-398/zoom/2 + 60/zoom, 496/zoom, 2/zoom, "data/images/line.png")
     
     dxDrawImage(sx/2-496/zoom/2 + 496/zoom - 15/zoom - 15/zoom, sy/2-398/zoom/2 + 25/zoom, 15/zoom, 15/zoom, "data/images/close.png", 0, 0, 0, tocolor(255, 255, 255, (isMouseInPosition(sx/2-496/zoom/2 + 496/zoom - 15/zoom - 15/zoom, sy/2-398/zoom/2 + 25/zoom, 15/zoom, 15/zoom) and 255 or 200)))
@@ -77,7 +77,7 @@ function render()
 
     if (not Mandates.selected) then
         dxDrawText('Błąd', sx/2-496/zoom/2 + 147/zoom + 347/zoom/2, sy/2-398/zoom/2 + 62/zoom + 337/zoom/2 - dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom)), nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'center')
-        dxDrawText('Wybierz kogoś z listy', sx/2-496/zoom/2 + 147/zoom + 347/zoom/2, sy/2-398/zoom/2 + 62/zoom + 337/zoom/2, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center')
+        dxDrawText('Wybierz kogoś z listy', sx/2-496/zoom/2 + 147/zoom + 347/zoom/2, sy/2-398/zoom/2 + 62/zoom + 337/zoom/2, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center')
     else
         local x, y = sx/2-496/zoom/2 + 147/zoom, sy/2-398/zoom/2 + 62/zoom
         local padding = 10/zoom
@@ -85,20 +85,20 @@ function render()
         dxDrawImage(x, y + 45/zoom, 347/zoom, 2/zoom, "data/images/line.png")
 
         dxDrawText('Nadawanie mandatu', x + padding, y + padding + 10/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'center')
-        dxDrawText('Wypełnianie danych dotyczących mandatu.', x + padding, y + padding + 10/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'center')
+        dxDrawText('Wypełnianie danych dotyczących mandatu.', x + padding, y + padding + 10/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'center')
 
         dxDrawText('Podsumowanie', x + padding, y + padding + 160/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'center')
-        dxDrawText('Podsumowanie twojego mandatu.', x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'center')
+        dxDrawText('Podsumowanie twojego mandatu.', x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'center')
 
         local text, linesHeight = splitText(exports['since-gui']:getEditboxText(Mandates.elements[2]), 200/zoom)
 
-        dxDrawText('Gracz #ffffff'..getPlayerName(Mandates.selected)..'#c8c8c8 otrzyma mandat w wysokości #ffffff'..getPlayerName(Mandates.selected)..'#c8c8c8\nz powodem: #ffffff'..text, x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) + 5/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true)
+        dxDrawText('Gracz #ffffff'..getPlayerName(Mandates.selected)..'#c8c8c8 otrzyma mandat w wysokości #ffffff'..getPlayerName(Mandates.selected)..'#c8c8c8\nz powodem: #ffffff'..text, x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) + 5/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true)
 
         dxDrawText('Opis sytuacji jest następujący', x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) + 40/zoom + linesHeight + 5/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'center')
 
         local text2, linesHeight2 = splitText(exports['since-gui']:getEditboxText(Mandates.elements[3]), 320/zoom)
 
-        dxDrawText(text2, x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) + 40/zoom + linesHeight + 15/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true)
+        dxDrawText(text2, x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) + 40/zoom + linesHeight + 15/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true)
         
         dxDrawImage(x + padding, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3), 'data/images/button.png', 0, 0, 0, tocolor(46, 117, 111, (isMouseInPosition(x + padding, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3)) and 255 or 150)))
         dxDrawText('Wystaw', x + padding + (128/(zoom * 1.3))/2, y + 275/zoom + linesHeight + linesHeight2 + (32/(zoom * 1.3))/2, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 9/zoom), 'center', 'center')

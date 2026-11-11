@@ -48,8 +48,8 @@ addEventHandler('onClientRender', root, function()
     if not getAdmin(localPlayer) or not reportsVisible then return end
 
     local alpha = isCursorShowing() and 200 or 0
-    dxDrawRectangle(window[1], window[2], window[3], window[4], tocolor(25, 25, 25, alpha/4))
-    dxDrawRectangle(window[1], window[2], window[3], dxGetFontHeight(1, getFigmaFont('Inter-Medium', rfs)) + 5/zoom, tocolor(25, 25, 25, alpha))
+    dxDrawRectangle(window[1], window[2], window[3], window[4], tocolor(25, 36, 38, alpha/4))
+    dxDrawRectangle(window[1], window[2], window[3], dxGetFontHeight(1, getFigmaFont('Inter-Medium', rfs)) + 5/zoom, tocolor(25, 36, 38, alpha))
     dxDrawText('/reports | /rfs [n]', window[1] + 6/zoom, window[2] + 2.5/zoom, nil, nil, white, 1, getFigmaFont('Inter-Medium', rfs), 'left', 'top')
 
     if holdingAny ~= 'logs' then

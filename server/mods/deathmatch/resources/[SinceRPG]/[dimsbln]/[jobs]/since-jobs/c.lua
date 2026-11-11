@@ -18,9 +18,9 @@ function render()
 	local zone = getElementData(localPlayer, 'interior:location')
 
 	if zone then
-		dxDrawText(zone.name, sx/2-305/zoom, sy/2-135/zoom, _, _, tocolor(125,255,125,anim), 0.9, main['fonts'][2], 'left', 'bottom')
+		dxDrawText(zone.name, sx/2-305/zoom, sy/2-135/zoom, _, _, tocolor(46,117,111,anim), 0.9, main['fonts'][2], 'left', 'bottom')
 	else
-		dxDrawText(getZoneName(x,y,z,true)..', '..getZoneName(x,y,z), sx/2-305/zoom, sy/2-135/zoom, _, _, tocolor(125,255,125,anim), 0.9, main['fonts'][2], 'left', 'bottom')
+		dxDrawText(getZoneName(x,y,z,true)..', '..getZoneName(x,y,z), sx/2-305/zoom, sy/2-135/zoom, _, _, tocolor(46,117,111,anim), 0.9, main['fonts'][2], 'left', 'bottom')
 	end
 
 	local isIn = isMouseIn(sx/2 + 283/zoom, sy/2 - 168/zoom, 24/zoom, 24/zoom)

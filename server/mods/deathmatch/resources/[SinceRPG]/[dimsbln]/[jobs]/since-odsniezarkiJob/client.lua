@@ -149,8 +149,8 @@ function render()
 		local speed = predkosc * 158
 		dxDrawText("Przebyty dystans", sx/2 + 1, sy - 135/zoom + 1, nil, nil, tocolor(0, 0, 0, 125), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), "center", "bottom", false, false, false, false)
 		dxDrawText(""..string.format("%.2f", getElementData(localPlayer, "player:snieg")).." km", sx/2 + 1, sy - 135/zoom + 1, nil, nil, tocolor(0, 0, 0, 125), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), "center", "top", false, false, false, false)
-		dxDrawText("Przebyty dystans", sx/2, sy - 135/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), "center", "bottom", false, false, false, false)
-		dxDrawText(""..string.format("%.2f", getElementData(localPlayer, "player:snieg")).." km", sx/2, sy - 135/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), "center", "top", false, false, false, false)
+		dxDrawText("Przebyty dystans", sx/2, sy - 135/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), "center", "bottom", false, false, false, false)
+		dxDrawText(""..string.format("%.2f", getElementData(localPlayer, "player:snieg")).." km", sx/2, sy - 135/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), "center", "top", false, false, false, false)
 		
 		local text = ""
 		if math.floor(speed) > 60 then

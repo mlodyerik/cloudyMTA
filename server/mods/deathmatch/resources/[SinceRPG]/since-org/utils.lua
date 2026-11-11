@@ -14,7 +14,7 @@ function showNotification(text, type)
 end
 
 function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
-    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100,alpha*0.2))
+    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111,alpha*0.2))
 
     if #table > m_ then
         local scrollbarHeight = height/#table
@@ -30,9 +30,9 @@ function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
             scrollbarHeight = height
         end
         
-        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), w/2, tocolor(46, 117, 111, alpha))
     else
-        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111, alpha))
     end
 end
 

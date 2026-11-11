@@ -38,7 +38,7 @@ function renderNoti()
             
             v.y = math.min(v.y + 0.15, 0)
             exports['since-blur']:dxDrawBlur(0, 0 + (25/zoom)*v.y + offset, sx, 25/zoom, mask, 255*v.alpha)
-            dxDrawRectangle(0, 0 + (25/zoom)*v.y + offset, sx, 25/zoom, tocolor(25, 25, 25, 155*v.alpha), true)
+            dxDrawRectangle(0, 0 + (25/zoom)*v.y + offset, sx, 25/zoom, tocolor(25, 36, 38, 155*v.alpha), true)
             dxDrawImage(0, 0 + (25/zoom)*v.y + offset, sx, 25/zoom, 'data/noti_color.png', 0, 0, 0, tocolor(v.color[1], v.color[2], v.color[3], 255*v.alpha))
             dxDrawImage(0, 0 + (25/zoom)*v.y + offset, sx, 25/zoom, 'data/noti_color.png', 0, 0, 0, tocolor(v.color[1], v.color[2], v.color[3], 200*v.alpha))
             dxDrawText(v.text, sx/2, 12/zoom + (25/zoom)*v.y + offset, nil, nil, tocolor(v.color[1], v.color[2], v.color[3], 255*v.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'center', false, false, true)

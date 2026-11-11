@@ -43,14 +43,14 @@ addEventHandler('onClientRender', root, function()
     dxDrawText('Służba '..faction, sx / 2 + 1, 25/zoom + 1, nil, nil, tocolor(0, 0, 0, 75), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'bottom')
     dxDrawText('Służba '..color..''..faction, sx / 2, 25/zoom, nil, nil, tocolor(255, 255, 255, 175), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'bottom', false, false, false, true)
     dxDrawText(factionRank, sx / 2 + 1, 26/zoom + 1, nil, nil, tocolor(0, 0, 0, 75), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'top')
-    dxDrawText(color..''..factionRank, sx / 2, 26/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'top', false, false, false, true)
+    dxDrawText(color..''..factionRank, sx / 2, 26/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'top', false, false, false, true)
 
     dxDrawLine(sx / 2 - 50/zoom, 50/zoom, sx / 2 + 50/zoom, 50/zoom, tocolor(255, 255, 255, 100), 1)
 
     dxDrawText('Czas na służbie', sx / 2 + 1, 70/zoom + 1, nil, nil, tocolor(0, 0, 0, 75), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'bottom')
     dxDrawText('Czas na służbie', sx / 2, 70/zoom, nil, nil, tocolor(255, 255, 255, 175), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'bottom', false, false, false, true)
     dxDrawText(time, sx / 2 + 1, 70/zoom + 1, nil, nil, tocolor(0, 0, 0, 75), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'top')
-    dxDrawText(time, sx / 2, 70/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'top', false, false, false, true)
+    dxDrawText(time, sx / 2, 70/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'top', false, false, false, true)
 
     if not timerState then 
         return 

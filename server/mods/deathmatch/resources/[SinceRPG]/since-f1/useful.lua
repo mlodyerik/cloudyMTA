@@ -4,7 +4,7 @@ textures = {
 
 }
 
-discordLink = 'https://discord.gg/cbhR4Gqj9e'
+discordLink = 'https://discord.gg/cloudymta'
 
 renderID, renderData = nil, nil
 renderInfo = nil

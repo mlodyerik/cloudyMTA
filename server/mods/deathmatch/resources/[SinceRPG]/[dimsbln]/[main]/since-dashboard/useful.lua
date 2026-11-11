@@ -1,6 +1,6 @@
 textures = {}
 
-discordLink = 'https://discord.gg/cbhR4Gqj9e'
+discordLink = 'https://discord.gg/cloudymta'
 
 uiElements = {}
 
@@ -63,7 +63,7 @@ addEventHandler("onClientRender", root, function( )
 end)
 
 function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
-    dxDrawRectangle(x, y, w, height, tocolor(100, 255, 100,alpha*0.2))
+    dxDrawRectangle(x, y, w, height, tocolor(46, 117, 111,alpha*0.2))
 
 	if #table > m_ then
     	local scrollbarHeight = height/#table
@@ -78,9 +78,9 @@ function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
         	scrollbarHeight = height
     	end
 		
-        dxDrawRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), tocolor(100, 255, 100, alpha))
+        dxDrawRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), tocolor(46, 117, 111, alpha))
     else
-        dxDrawRectangle(x, y, w, height, tocolor(100, 255, 100, alpha))
+        dxDrawRectangle(x, y, w, height, tocolor(46, 117, 111, alpha))
 	end
 end
 

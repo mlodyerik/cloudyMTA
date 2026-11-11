@@ -13,7 +13,7 @@ function renderUI()
 	local engine = string.format("%.1f", vehData.engine)
 	local engine = tonumber(engine)
 
-	dxDrawText('Pojemność silnika: '..engine..' dm3\nPrzebieg: '..addCommas(vehData.mileage)..' km\nPojemność baku: '..vehData.tank..' dm3', sx/2, sy/2 - 27/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
+	dxDrawText('Pojemność silnika: '..engine..' dm3\nPrzebieg: '..addCommas(vehData.mileage)..' km\nPojemność baku: '..vehData.tank..' dm3', sx/2, sy/2 - 27/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
 	dxDrawText('Cena', sx/2 + 174/zoom, sy/2 - 89/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'right', 'bottom')
 	dxDrawText('$ #ffffff'..addCommas(vehData.cost), sx/2 + 174/zoom, sy/2 - 89/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'top', false, false, false, true)
 	dxDrawText('Pojazd', sx/2 - 175/zoom, sy/2 - 89/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'left', 'bottom')

@@ -287,7 +287,7 @@ function setVehicleGieldaInfo(veh)
         local vehicleModel = getElementData(veh, 'vehicleID') or getElementModel(veh)
         local textWidth = dxGetTextWidth(vehicleID, 1, exports['since-fonts']:getFont('Inter-Black', 18)) + 10
         dxDrawRoundedRectangle(15, 30, textWidth, 44, 5, tocolor(90, 145, 225, 125))
-        dxDrawText(vehicleID, 15, 52,  17 + textWidth, nil, tocolor(125, 175, 255, 255), 1, exports['since-fonts']:getFont('Inter-Black', 16), "center", "center")
+        dxDrawText(vehicleID, 15, 52,  17 + textWidth, nil, tocolor(67, 143, 135, 255), 1, exports['since-fonts']:getFont('Inter-Black', 16), "center", "center")
 
         local name = exports['since-vehiclenames']:getVehicleName(vehicleModel)
         local carName = vehicleUpgrades['sport'] and name..' Sport' or name
@@ -311,7 +311,7 @@ function setVehicleGieldaInfo(veh)
         end
         
         dxDrawText(nick, 500 - 67, 55, nil, nil, tocolor(255,255,255), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 10), "right", "bottom", false, false, false, true)
-        dxDrawText(playerOnline and '● #ffffffDostępny' or '● #ffffffNiedostępny', 500 - 67, 55, nil, nil, playerOnline and tocolor(125,255,125) or tocolor(255, 125, 125), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "right", "top", false, false, false, true)
+        dxDrawText(playerOnline and '● #ffffffDostępny' or '● #ffffffNiedostępny', 500 - 67, 55, nil, nil, playerOnline and tocolor(46,117,111) or tocolor(255, 125, 125), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "right", "top", false, false, false, true)
 
         dxDrawRectangle(15, 96, 470, 1, tocolor(255, 255, 255, 100))
         
@@ -339,14 +339,14 @@ function setVehicleGieldaInfo(veh)
 
         if gieldaInfo.offline and playerOnline then
             dxDrawText('Zakup offline jest niedostępny', 250, 265, nil, nil, tocolor(255, 125, 125, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10), "center", "bottom", false, false, false, true)
-            dxDrawText('Aby móc skorzystać z tej opcji sprzedający musi być offline', 250, 265, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "center", "top", false, false, false, true)
+            dxDrawText('Aby móc skorzystać z tej opcji sprzedający musi być offline', 250, 265, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "center", "top", false, false, false, true)
         else
             if gieldaInfo.offline then
                 dxDrawText('Zakup offline jest dostępny', 250, 265, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10), "center", "bottom", false, false, false, true)
-                dxDrawText('Zakup offline dostępny, kliknij #7dafffK#ffffff aby zakupic pojazd!', 250, 265, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "center", "top", false, false, false, true)
+                dxDrawText('Zakup offline dostępny, kliknij #7dafffK#ffffff aby zakupic pojazd!', 250, 265, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "center", "top", false, false, false, true)
             else
                 dxDrawText('Zakup offline jest niedostępny', 250, 265, nil, nil, tocolor(255, 125, 125, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10), "center", "bottom", false, false, false, true)
-                dxDrawText('Napisz prywatną wiadomośc do właściciela pojazdu gdy będzie dostępny', 250, 265, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "center", "top", false, false, false, true)
+                dxDrawText('Napisz prywatną wiadomośc do właściciela pojazdu gdy będzie dostępny', 250, 265, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9), "center", "top", false, false, false, true)
             end
         end
         

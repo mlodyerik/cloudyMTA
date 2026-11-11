@@ -24,7 +24,7 @@ function renderUI()
 	dxDrawImage(sx/2 + 326/zoom, sy/2 - 142/zoom, 20/zoom, 20/zoom, 'data/close.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 175 or 255))
 
 	dxDrawText('Stereo', sx/2 - 352/zoom, sy/2 - 128/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom')
-	dxDrawText('Panel odtwarzania muzyki', sx/2 - 352/zoom, sy/2 - 129/zoom, nil, nil, tocolor(128, 241, 118, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'left', 'top')
+	dxDrawText('Panel odtwarzania muzyki', sx/2 - 352/zoom, sy/2 - 129/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'left', 'top')
 
 	dxDrawImage(sx/2 - 346/zoom, sy/2 - 99/zoom, 692/zoom, 2/zoom, 'data/line_top.png')
 	dxDrawImage(sx/2, sy/2 - 97/zoom, 2/zoom, 234/zoom, 'data/line_center.png')
@@ -349,7 +349,7 @@ function changeStereoToggle(state)
 end
 
 function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
-    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100,alpha*0.2))
+    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111,alpha*0.2))
 
 	if #table > m_ then
     	local scrollbarHeight = height/#table
@@ -364,9 +364,9 @@ function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
         	scrollbarHeight = height
     	end
 		
-        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), w/2, tocolor(46, 117, 111, alpha))
     else
-        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111, alpha))
 	end
 end
 

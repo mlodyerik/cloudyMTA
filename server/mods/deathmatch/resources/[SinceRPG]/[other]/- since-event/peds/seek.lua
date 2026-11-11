@@ -1,6 +1,6 @@
 function isClear(x, y, z, ex, ey, ez)
     local clear = isLineOfSightClear(x, y, z, ex, ey, ez, true, true, false, true, false, false, false, localPlayer)
-    dxDrawLine3D(x, y, z, ex, ey, ez, clear and tocolor(0, 255, 0) or tocolor(255, 0, 0), 2)
+    dxDrawLine3D(x, y, z, ex, ey, ez, clear and tocolor(46, 117, 111) or tocolor(255, 0, 0), 2)
     return clear
 end
 

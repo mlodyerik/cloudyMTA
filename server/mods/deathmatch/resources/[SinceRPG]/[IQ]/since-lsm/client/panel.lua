@@ -23,7 +23,7 @@ function renderPanel()
             dxDrawImage(sx/2-451/zoom/2, sy/2-420/zoom/2 + 85/zoom + offset, 451/zoom, 48/zoom, "data/images/list_bg.png")
 
             dxDrawText(exports['since-vehiclenames']:getVehicleName(v.model)..' #b4b4bd('..math.round(getDistanceFromPosition(v.position[1], v.position[2], v.position[3])/1000, 2, "floor")..'km)', sx/2-451/zoom/2 + 10/zoom, sy/2-420/zoom/2 + 85/zoom + offset + 48/zoom/2 + 3/zoom - dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom))/2, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'center', false, false, false, true)
-            dxDrawText(getZoneName(v.position[1], v.position[2], v.position[3])..', Zarobek: #00FF00$'..addCommas(v.money), sx/2-451/zoom/2 + 10/zoom, sy/2-420/zoom/2 + 85/zoom + offset + 48/zoom/2 + 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom))/2 - 3/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center', false, false, false, true)
+            dxDrawText(getZoneName(v.position[1], v.position[2], v.position[3])..', Zarobek: #00FF00$'..addCommas(v.money), sx/2-451/zoom/2 + 10/zoom, sy/2-420/zoom/2 + 85/zoom + offset + 48/zoom/2 + 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom))/2 - 3/zoom, nil, nil, tocolor(145, 163, 160), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center', false, false, false, true)
 
             local isSelected = (savedData.actual and savedData.actual.type == current and savedData.actual.current == i)
             local buttonW = dxGetTextWidth((isSelected and 'AKTUALNE' or 'JEDZ'), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom)) + 20/zoom

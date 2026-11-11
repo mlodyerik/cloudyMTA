@@ -92,7 +92,7 @@ Panel.pages.renderMembersPage = function()
     for i, v in pairs(members) do
         if i >= Panel.scrolls.members.k and i <= Panel.scrolls.members.n then
             local alpha = isMouseInPosition(x + padding, y + padding + offset, 674/zoom, 47/zoom) and 15 or 0
-            local color = (isSelected(v.uid) and tocolor(100, 200, 100, 25 + alpha) or tocolor(200, 200, 200, 25 + alpha))
+            local color = (isSelected(v.uid) and tocolor(46, 117, 111, 25 + alpha) or tocolor(145, 163, 160, 25 + alpha))
 
             dxDrawRectangle(x + padding, y + padding + offset, 674/zoom, 47/zoom, color)
             dxDrawRectangle(x + padding, y + padding + 45/zoom + offset, 674/zoom, 1, tocolor(255, 255, 255, 65))
@@ -105,14 +105,14 @@ Panel.pages.renderMembersPage = function()
     end
 
     if (#Panel.selectedMembers > 0) then
-        dxDrawButton(x + padding, y + 405/zoom, 128/zoom, 32/zoom, 'Awansuj', {125, 255, 125})
+        dxDrawButton(x + padding, y + 405/zoom, 128/zoom, 32/zoom, 'Awansuj', {46, 117, 111})
         dxDrawButton(x + padding + 128/zoom + 5/zoom, y + 405/zoom, 128/zoom, 32/zoom, 'Degraduj', {255, 175, 125})
         dxDrawButton(x + padding + 128/zoom + 10/zoom + 128/zoom + 5/zoom, y + 405/zoom, 128/zoom, 32/zoom, 'Wyrzuć', {255, 125, 125})
         dxDrawButton(x + padding + 128/zoom + 10/zoom + 128/zoom + 5/zoom + 128/zoom + 5/zoom, y + 405/zoom, 128/zoom, 32/zoom, (#Panel.selectedMembers > 0 and 'Odznacz' or 'Zaznacz'), {125, 125, 255})
-        dxDrawButton(x + padding + 128/zoom + 10/zoom + 128/zoom + 5/zoom + 128/zoom + 5/zoom + 128/zoom + 5/zoom, y + 405/zoom, 128/zoom, 32/zoom, 'Dodaj', {125, 255, 125})
+        dxDrawButton(x + padding + 128/zoom + 10/zoom + 128/zoom + 5/zoom + 128/zoom + 5/zoom + 128/zoom + 5/zoom, y + 405/zoom, 128/zoom, 32/zoom, 'Dodaj', {46, 117, 111})
     else
         dxDrawButton(x + padding, y + 405/zoom, 128/zoom, 32/zoom, (#Panel.selectedMembers > 0 and 'Odznacz' or 'Zaznacz'), {125, 125, 255})
-        dxDrawButton(x + padding + 128/zoom + 5/zoom, y + 405/zoom, 128/zoom, 32/zoom, 'Dodaj', {125, 255, 125})
+        dxDrawButton(x + padding + 128/zoom + 5/zoom, y + 405/zoom, 128/zoom, 32/zoom, 'Dodaj', {46, 117, 111})
     end
 end
 

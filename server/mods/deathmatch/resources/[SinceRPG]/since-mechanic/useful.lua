@@ -100,12 +100,12 @@ function getColorNumer(number)
     elseif (number > 20 and numer < 59) then
         return {255, 175, 55}
     else
-        return {125, 255, 125}
+        return {46, 117, 111}
     end
 end
 
 function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
-    dxDrawRectangle(x, y, w, height, tocolor(100, 255, 100,alpha*0.2))
+    dxDrawRectangle(x, y, w, height, tocolor(46, 117, 111,alpha*0.2))
 
 	if #table > m_ then
     	local scrollbarHeight = height/#table
@@ -120,9 +120,9 @@ function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
         	scrollbarHeight = height
     	end
 		
-        dxDrawRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), tocolor(100, 255, 100, alpha))
+        dxDrawRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), tocolor(46, 117, 111, alpha))
     else
-        dxDrawRectangle(x, y, w, height, tocolor(100, 255, 100, alpha))
+        dxDrawRectangle(x, y, w, height, tocolor(46, 117, 111, alpha))
 	end
 end
 

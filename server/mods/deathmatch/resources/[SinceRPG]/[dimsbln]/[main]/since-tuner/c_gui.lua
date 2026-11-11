@@ -480,7 +480,7 @@ function renderUI()
     if tuning['selectedCategoryName'] == 'category' then
         offsetY = 0
         for i, v in ipairs(tuning[tuning['selectedCategoryName']]) do
-            local ifElse = tuning['selectedCategory'] == i and tocolor(125, 200, 125, 100) or tocolor(155, 155, 155, 100)
+            local ifElse = tuning['selectedCategory'] == i and tocolor(46, 117, 111, 100) or tocolor(155, 155, 155, 100)
             dxDrawRectangle(0, 185/zoom + offsetY, 350/zoom, 50/zoom, ifElse)
             local ifElse = tuning['selectedCategory'] == i and 255 or 155
             dxDrawText(v['name'], 10/zoom, 211/zoom + offsetY, nil, nil, tocolor(255, 255, 255, ifElse), 1, font2, "left", "center", false, false, false, false, false)
@@ -490,7 +490,7 @@ function renderUI()
     elseif type(tuning['selectedCategoryName']) == "table" then
         offsetY = 0
         for i, v in ipairs(tuning['selectedCategoryName']['subCategory']) do
-            local ifElse = tuning['selectedCategory'] == i and tocolor(125, 200, 125, 100) or tocolor(155, 155, 155, 100)
+            local ifElse = tuning['selectedCategory'] == i and tocolor(46, 117, 111, 100) or tocolor(155, 155, 155, 100)
             dxDrawRectangle(0, 185/zoom + offsetY, 350/zoom, 50/zoom, ifElse)
             local ifElse = tuning['selectedCategory'] == i and 255 or 155
             if v.desc and #v.desc > 0 then
@@ -518,7 +518,7 @@ function renderUI()
             offsetY = 0
             for i, v in ipairs(c) do
                 if i >= (scroll or 1) and i <= (scroll or 1)+11 then
-                    local ifElse = tuning['selectedCategory'] == i and tocolor(125, 200, 125, 100) or tocolor(155, 155, 155, 100)
+                    local ifElse = tuning['selectedCategory'] == i and tocolor(46, 117, 111, 100) or tocolor(155, 155, 155, 100)
                     dxDrawRectangle(0, 185/zoom + offsetY, 350/zoom, 50/zoom, ifElse)
                     local ifElse = tuning['selectedCategory'] == i and 255 or 155
                     dxDrawText(v.name, 10/zoom, 211/zoom + offsetY, nil, nil, tocolor(255, 255, 255, ifElse), 1, font2, "left", "center", false, false, false, false, false)
@@ -554,7 +554,7 @@ function renderUI()
                     if v.id == "demontaz" then
                         price = getDemontPrice(v.demont)
                     end
-                    dxDrawText(price .. " $", 10/zoom, 210/zoom + offsetY, 340/zoom, nil, price > 0 and tocolor(125,255,125,ifElse) or (price == 0 and tocolor(255, 255, 255, ifElse) or tocolor(125,255,125,ifElse)), 1, font5, "right", "center", false, false, false, false, false)
+                    dxDrawText(price .. " $", 10/zoom, 210/zoom + offsetY, 340/zoom, nil, price > 0 and tocolor(46,117,111,ifElse) or (price == 0 and tocolor(255, 255, 255, ifElse) or tocolor(46,117,111,ifElse)), 1, font5, "right", "center", false, false, false, false, false)
 
                     offsetY = offsetY + (50/zoom + 1)
                 end
@@ -562,12 +562,12 @@ function renderUI()
         end
     end
 
-    dxDrawText("Portfel", 0, sy - 30/zoom, 350/zoom, nil, tocolor(200, 200, 200, 255), 1, font3, "center", "bottom", false, false, false, false, false)
-    dxDrawText(convertNumber(getPlayerMoney(localPlayer)).." $", 0, sy - 30/zoom, 350/zoom, nil, tocolor(100, 255, 100, 255), 1, font2, "center", "top", false, false, false, false, false)
-    dxDrawText("Koszt tuningu", 0, sy - 85/zoom, 350/zoom, nil, tocolor(200, 200, 200, 255), 1, font3, "center", "bottom", false, false, false, false, false)
-    dxDrawText(convertNumber(calculateCost()).." $", 0, sy - 85/zoom, 350/zoom, nil, tocolor(100, 255, 100, 255), 1, font2, "center", "top", false, false, false, false, false)
-    dxDrawText("Klawiszologia", sx - 20/zoom, sy - 115/zoom, nil, nil, tocolor(125, 200, 125, 255), 1, font3, "right", "bottom", false, false, false, false, false)
-    dxDrawText("LPM - Poruszanie kamerą\nScroll - Przybliżanie/Oddalanie kamery\nEnter - Zatwierdź\nBackspace - Cofnij", sx - 20/zoom, sy - 115/zoom, nil, nil, tocolor(200, 200, 200, 255), 1, font4, "right", "top", false, false, false, false, false)
+    dxDrawText("Portfel", 0, sy - 30/zoom, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font3, "center", "bottom", false, false, false, false, false)
+    dxDrawText(convertNumber(getPlayerMoney(localPlayer)).." $", 0, sy - 30/zoom, 350/zoom, nil, tocolor(46, 117, 111, 255), 1, font2, "center", "top", false, false, false, false, false)
+    dxDrawText("Koszt tuningu", 0, sy - 85/zoom, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font3, "center", "bottom", false, false, false, false, false)
+    dxDrawText(convertNumber(calculateCost()).." $", 0, sy - 85/zoom, 350/zoom, nil, tocolor(46, 117, 111, 255), 1, font2, "center", "top", false, false, false, false, false)
+    dxDrawText("Klawiszologia", sx - 20/zoom, sy - 115/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, font3, "right", "bottom", false, false, false, false, false)
+    dxDrawText("LPM - Poruszanie kamerą\nScroll - Przybliżanie/Oddalanie kamery\nEnter - Zatwierdź\nBackspace - Cofnij", sx - 20/zoom, sy - 115/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, font4, "right", "top", false, false, false, false, false)
 
     dxDrawRoundedRectangle(20/zoom, sy - 320/zoom, 310/zoom, 200/zoom, 8/zoom, tocolor(55, 55, 55, 155))
     local vehData = getElementData(veh, 'vehicle:data') or {}
@@ -575,11 +575,11 @@ function renderUI()
     local vehicleName = exports['since-vehiclenames']:getVehicleName(model)
     local engine = string.format("%.1f", vehData.engine or 1.2)
 
-    dxDrawText(vehicleName.." "..(engine or "1.2").." dm³", 0, sy - 300/zoom, 350/zoom, nil, tocolor(200, 200, 200, 255), 1, font3, "center", "center", false, false, false, false, false)
+    dxDrawText(vehicleName.." "..(engine or "1.2").." dm³", 0, sy - 300/zoom, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font3, "center", "center", false, false, false, false, false)
 
     offsetY = 0
     for i, v in ipairs(tuning['statistic']) do
-        dxDrawText(v[1], 0, sy - 265/zoom + offsetY, 350/zoom, nil, tocolor(200, 200, 200, 255), 1, font5, "center", "center", false, false, false, false, false)
+        dxDrawText(v[1], 0, sy - 265/zoom + offsetY, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font5, "center", "center", false, false, false, false, false)
         dxDrawRectangle(25/zoom, sy - 250/zoom + offsetY, 300/zoom, 5/zoom, tocolor(46, 117, 111, 75))
 
         local progress = (300/zoom*getVehicleHandlingProperty(veh, v[3])/v[2])

@@ -171,7 +171,7 @@ function renderWindow()
     drawScrollbar(skins, sx-30/zoom, sy/2-200/zoom, 3/zoom, 448/zoom, data.scrollPos.m, data.scrollPos.k, anim)
 
 	dxDrawText('Przebieralnia', sx-403/zoom, sy/2-228/zoom, nil, nil, tocolor(255, 255, 255, anim), 1, data.fonts[1], 'left', 'bottom')
-    dxDrawText('Ubierz się człowieku!', sx-403/zoom, sy/2-228/zoom, nil, nil, tocolor(128, 241, 118, anim), 1, data.fonts[2], 'left', 'top')
+    dxDrawText('Ubierz się człowieku!', sx-403/zoom, sy/2-228/zoom, nil, nil, tocolor(46, 117, 111, anim), 1, data.fonts[2], 'left', 'top')
 
     local x = 0
     for i,v in ipairs(skins) do
@@ -372,7 +372,7 @@ function isMouseIn( x, y, width, height )
 end
 
 function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
-    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100,alpha*0.2))
+    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111,alpha*0.2))
 
 	if #table > m_ then
     	local scrollbarHeight = height/#table
@@ -387,9 +387,9 @@ function drawScrollbar(table, x, y, w, height, m_, k_, alpha)
         	scrollbarHeight = height
     	end
 		
-        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-1), w/2, tocolor(46, 117, 111, alpha))
     else
-        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111, alpha))
 	end
 end
 

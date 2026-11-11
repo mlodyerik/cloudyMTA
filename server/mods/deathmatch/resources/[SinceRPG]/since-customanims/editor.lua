@@ -110,7 +110,7 @@
 --         dxDrawRectangle(18/zoom, sy - 167/zoom + y, 395/zoom * (editor.rx+360)/720, 29/zoom, tocolor(255, 0, 0, 155))
 
 --         dxDrawRectangle(15/zoom, sy - 120/zoom + y, 400/zoom, 35/zoom, tocolor(0, 0, 0, 155))
---         dxDrawRectangle(18/zoom, sy - 117/zoom + y, 395/zoom * (editor.ry+360)/720, 29/zoom, tocolor(0, 255, 0, 155))
+--         dxDrawRectangle(18/zoom, sy - 117/zoom + y, 395/zoom * (editor.ry+360)/720, 29/zoom, tocolor(46, 117, 111, 155))
 
 --         dxDrawRectangle(15/zoom, sy - 70/zoom + y, 400/zoom, 35/zoom, tocolor(0, 0, 0, 155))
 --         dxDrawRectangle(18/zoom, sy - 67/zoom + y, 395/zoom * (editor.rz+360)/720, 29/zoom, tocolor(0, 0, 255, 155))

@@ -25,7 +25,7 @@ function renderUI()
 
 	bankMoney = math.floor(newMoney)
 
-	dxDrawText('$ #ffffff'..addCommas(bankMoney), sx/2, sy/2 - 174/zoom, nil, nil, tocolor(125, 215, 125, 225), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), 'center', 'bottom', false, false, false, true)
+	dxDrawText('$ #ffffff'..addCommas(bankMoney), sx/2, sy/2 - 174/zoom, nil, nil, tocolor(46, 117, 111, 225), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), 'center', 'bottom', false, false, false, true)
 	dxDrawText('Stan konta '..(selected == 0 and 'Prywatnego' or 'Organizacyjnego'), sx/2, sy/2 - 180/zoom, nil, nil, tocolor(255, 255, 255, 190), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
 	dxDrawText('Bankomat', sx/2 - 190/zoom, sy/2 - 264/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'bottom')
 	dxDrawText(city..', '..county, sx/2 - 190/zoom, sy/2 - 264/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
@@ -41,12 +41,12 @@ function renderUI()
 	dxDrawImage(sx/2 - 225/zoom, sy/2 - 277/zoom, 24/zoom, 24/zoom, 'data/atm.png')
 
 	local isIn = isMouseInPosition(sx/2 - 197/zoom, sy/2 - 80/zoom, 194/zoom, 40/zoom) and 255 or 200
-	dxDrawImage(sx/2 - 197/zoom, sy/2 - 80/zoom, 194/zoom, 40/zoom, 'data/button.png', 0, 0, 0, tocolor(125, 225, 125, isIn))
-	dxDrawText('Wpłać', sx/2 - 100/zoom, sy/2 - 60/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center')
+	dxDrawImage(sx/2 - 197/zoom, sy/2 - 80/zoom, 194/zoom, 40/zoom, 'data/button.png', 0, 0, 0, tocolor(46, 117, 111, isIn))
+	dxDrawText('Wpłać', sx/2 - 100/zoom, sy/2 - 60/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center')
 
 	local isIn = isMouseInPosition(sx/2 + 2/zoom, sy/2 - 80/zoom, 194/zoom, 40/zoom) and 255 or 200
-	dxDrawImage(sx/2 + 2/zoom, sy/2 - 80/zoom, 194/zoom, 40/zoom, 'data/button.png', 0, 0, 0, tocolor(135, 185, 255, isIn))
-	dxDrawText('Wypłać', sx/2 + 99/zoom, sy/2 - 60/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center')
+	dxDrawImage(sx/2 + 2/zoom, sy/2 - 80/zoom, 194/zoom, 40/zoom, 'data/button.png', 0, 0, 0, tocolor(67, 143, 135, isIn))
+	dxDrawText('Wypłać', sx/2 + 99/zoom, sy/2 - 60/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center')
 
 	dxDrawImage(sx/2 - 233/zoom, sy/2 - 3/zoom, 466/zoom, 277/zoom, 'data/history_bg.png')
 	dxDrawText('↻ Historia konta bankowego', sx/2 - 220/zoom, sy/2 + 28/zoom, nil, nil, tocolor(225, 225, 225, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom')

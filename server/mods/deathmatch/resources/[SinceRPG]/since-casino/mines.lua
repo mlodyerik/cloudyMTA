@@ -84,7 +84,7 @@ function renderMines(alpha)
                     dxDrawImage(posX, posY, 128/zoom, 128/zoom, mineTextures.rectangle, 0, 0, 0, tocolor(46, 117, 111, 155*a))
                     dxDrawImage(posX + 32/zoom, posY + 32/zoom, 64/zoom, 64/zoom, mineTextures.bomb)
                 else
-                    dxDrawImage(posX, posY, 128/zoom, 128/zoom, mineTextures.rectangle, 0, 0, 0, tocolor(125, 215, 255, 155*a))
+                    dxDrawImage(posX, posY, 128/zoom, 128/zoom, mineTextures.rectangle, 0, 0, 0, tocolor(67, 143, 135, 155*a))
                     dxDrawImage(posX + 32/zoom, posY + 32/zoom, 64/zoom, 64/zoom, mineTextures.diamond)
                 end
             end

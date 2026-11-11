@@ -208,7 +208,7 @@ tabs = {
                 dxDrawText('Dostępne akcje', sx/2 - 210/zoom, sy/2 + 210/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom', false, false, false, true) 
                 dxDrawText('Kliknij na członka ekipy aby wyświetlić dostępne opcje', sx/2 - 210/zoom, sy/2 + 210/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true) 
             else
-               drawButton('Awansuj', sx/2 - 210/zoom, sy/2 + 196/zoom, 128/zoom, 32/zoom, {125, 255, 125}, 225*alpha)
+               drawButton('Awansuj', sx/2 - 210/zoom, sy/2 + 196/zoom, 128/zoom, 32/zoom, {46, 117, 111}, 225*alpha)
                drawButton('Degraduj', sx/2 - 80/zoom, sy/2 + 196/zoom, 128/zoom, 32/zoom, {255, 175, 125}, 225*alpha)
                drawButton('Wyrzuć', sx/2 + 50/zoom, sy/2 + 196/zoom, 128/zoom, 32/zoom, {255, 125, 125}, 225*alpha)
             end
@@ -396,7 +396,7 @@ tabs = {
             dxDrawText('Podsumowanie', sx/2 - 215/zoom, sy/2 + 15/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
             dxDrawText('Karany gracz: '..punish..'#ffffff\nTyp kary: #7dd2ff'..(exports['since-gui']:getEditboxText(uiElements['edit_type']) or 'Brak')..'#ffffff\nDługośc kary: #ff7d7d'..timeType..'#ffffff\nPowód: #7dd2ff'..editReason, sx/2 - 215/zoom, sy/2 + 15/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
         
-            drawButton('Nadaj karę', sx/2 - 215/zoom, sy/2 + 90/zoom, 128/zoom, 32/zoom, {125, 255, 125}, 225*alpha)
+            drawButton('Nadaj karę', sx/2 - 215/zoom, sy/2 + 90/zoom, 128/zoom, 32/zoom, {46, 117, 111}, 225*alpha)
         end,
 
         onOpen = function()

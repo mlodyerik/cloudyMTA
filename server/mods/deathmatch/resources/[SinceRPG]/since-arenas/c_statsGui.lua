@@ -28,7 +28,7 @@ function renderStats()
     dxDrawImage(sx/2+57/zoom, sy-97/zoom, 87/zoom, 87/zoom, 'files/images/arena_3.png', 0, 0, 0, tocolor(255, 255, 255, 255))
 
     dxDrawImage(sx/2-52/zoom, sy-97/zoom, 50/zoom, 36/zoom, 'files/images/arena_4.png', 0, 0, 0, tocolor(255, 255, 255, 255))
-    dxDrawText(stats.points[1], sx/2-52/zoom, sy-97/zoom, sx/2-2/zoom, sy-61/zoom, tocolor(117, 205, 255, 255), 1, stats.fonts[2], 'center', 'center', false, false, false, true)
+    dxDrawText(stats.points[1], sx/2-52/zoom, sy-97/zoom, sx/2-2/zoom, sy-61/zoom, tocolor(67, 143, 135, 255), 1, stats.fonts[2], 'center', 'center', false, false, false, true)
 
     dxDrawImage(sx/2+2/zoom, sy-97/zoom, 50/zoom, 36/zoom, 'files/images/arena_5.png', 0, 0, 0, tocolor(255, 255, 255, 255))
     dxDrawText(stats.points[2], sx/2+2/zoom, sy-97/zoom, sx/2+52/zoom, sy-61/zoom, tocolor(214, 94, 94, 255), 1, stats.fonts[2], 'center', 'center', false, false, false, true)

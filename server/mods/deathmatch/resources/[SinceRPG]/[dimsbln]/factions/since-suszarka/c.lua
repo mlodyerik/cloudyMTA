@@ -44,14 +44,14 @@ function renderUI()
 	local driver = getElementData(ui.vehicle, 'vehicle:driver') or 'Brak'
 
 	dxDrawImage(sx/2 - 216/zoom, sy/2 + 342/zoom, 431.000/zoom, 178.000/zoom, 'data/bg.png')
-	dxDrawText('Informacje o pojeździe', sx/2, sy/2 + 347/zoom, nil, nil, tocolor(35, 229, 82, 216), 1, getFigmaFont('Inter-Bold', 13.333/zoom), 'center', 'top')
+	dxDrawText('Informacje o pojeździe', sx/2, sy/2 + 347/zoom, nil, nil, tocolor(46, 117, 111, 216), 1, getFigmaFont('Inter-Bold', 13.333/zoom), 'center', 'top')
 	dxDrawText('Model:', sx/2 - 212/zoom, sy/2 + 375/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'left', 'top')
 	dxDrawText('ID:', sx/2 - 212/zoom, sy/2 + 400/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'left', 'top')
 	dxDrawText('Tablica rejestracyjna:', sx/2 - 212/zoom, sy/2 + 424/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'left', 'top')
 	dxDrawText('Akcja: Spuść ręczny', sx/2 .5/zoom, sy/2 + 481/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'center', 'top')
 	dxDrawText('Ostatni kierowca:', sx/2 - 212/zoom, sy/2 + 448/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'left', 'top')
-	dxDrawText('123', sx/2 + 154/zoom, sy/2 + 371/zoom, nil, nil, tocolor(207, 207, 207, 255), 1, getFigmaFont('Inter-Medium', 32/zoom), 'center', 'top')
-	dxDrawText('km/h', sx/2 + 156.5/zoom, sy/2 + 419/zoom, nil, nil, tocolor(35, 229, 82, 255), 1, getFigmaFont('Inter-Medium', 17.333/zoom), 'center', 'top')
+	dxDrawText('123', sx/2 + 154/zoom, sy/2 + 371/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, getFigmaFont('Inter-Medium', 32/zoom), 'center', 'top')
+	dxDrawText('km/h', sx/2 + 156.5/zoom, sy/2 + 419/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, getFigmaFont('Inter-Medium', 17.333/zoom), 'center', 'top')
 end
 
 local ui={}

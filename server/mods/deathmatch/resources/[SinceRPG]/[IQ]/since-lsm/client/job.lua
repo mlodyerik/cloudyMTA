@@ -13,7 +13,7 @@ function renderWaypoint()
 
             dxDrawText(math.round(distance, 2, "floor") .. 'm', x, y - 20, x, y - 20, tocolor(255, 255, 255, 255), 1.0, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'center')
             if (distance < 5) then
-                dxDrawText('Kliknij #68D65EE#c8c8c8 aby rozpocząć naprawe pojazdu!', x, y - 20 + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom)), x, y - 20 + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom)), tocolor(200, 200, 200), 1.0, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center', false, false, false, true)
+                dxDrawText('Kliknij #68D65EE#c8c8c8 aby rozpocząć naprawe pojazdu!', x, y - 20 + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom)), x, y - 20 + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom)), tocolor(145, 163, 160), 1.0, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center', false, false, false, true)
             end
         end
     else

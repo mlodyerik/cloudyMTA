@@ -450,8 +450,8 @@ function renderPaczki()
     local isIn = isMouseInPosition(sx/2+232/zoom, sy/2-237/zoom, 24/zoom, 24/zoom)
     dxDrawImage(sx/2+234/zoom, sy/2-235/zoom, 20/zoom, 20/zoom, 'files/images/close.png', 0,0,0, tocolor(255,255,255, isIn and 255 or 155))
 
-    dxDrawText("Paczki w ciężarówce", sx/2-254/zoom, sy/2-210/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), "left", "bottom", false, false, false, false, false)
-    dxDrawText("#438F87Wybierz paczkę, którą chcesz dostarczyć", sx/2-254/zoom, sy/2-210/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "left", "top", false, false, false, true, false)
+    dxDrawText("Paczki w ciężarówce", sx/2-254/zoom, sy/2-210/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), "left", "bottom", false, false, false, false, false)
+    dxDrawText("#438F87Wybierz paczkę, którą chcesz dostarczyć", sx/2-254/zoom, sy/2-210/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "left", "top", false, false, false, true, false)
     
     local x = 0
     for i,v in ipairs(paczki) do

@@ -236,9 +236,9 @@ function render()
     if nitro == 1010 or nitro == 1009 or nitro == 1008 then
         local nitroCount = getVehicleNitroLevel(veh)
 
-        dxDrawImage(sx-565/zoom,sy-109 /zoom,20/zoom,20/zoom,main['textures']['nitro'], -35, 0, 0, tocolor(125, 200, 255, 255*alpha))
-        dxCircle(sx-300/zoom, sy-32/zoom, 530/zoom, 530/zoom, tocolor(125, 200, 255, 55*alpha), 200, 95, 6/zoom, 1)
-        dxCircle(sx-300/zoom, sy-32/zoom, 530/zoom, 530/zoom, tocolor(125, 200, 255, 175*alpha), 200, 95 * nitroCount, 6/zoom, 1)
+        dxDrawImage(sx-565/zoom,sy-109 /zoom,20/zoom,20/zoom,main['textures']['nitro'], -35, 0, 0, tocolor(67, 143, 135, 255*alpha))
+        dxCircle(sx-300/zoom, sy-32/zoom, 530/zoom, 530/zoom, tocolor(67, 143, 135, 55*alpha), 200, 95, 6/zoom, 1)
+        dxCircle(sx-300/zoom, sy-32/zoom, 530/zoom, 530/zoom, tocolor(67, 143, 135, 175*alpha), 200, 95 * nitroCount, 6/zoom, 1)
     end
 
     dxCircle(sx-300/zoom, sy-32/zoom, 530/zoom, 530/zoom, tocolor(255, 255, 255, 55*alpha), 300, 55*100/100, 6/zoom, 1)

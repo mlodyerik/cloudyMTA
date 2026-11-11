@@ -34,8 +34,8 @@ addEventHandler('onClientRender', root, function()
 
     local alpha = isCursorShowing() and 200 or 0
     local top = dxGetFontHeight(1, getFigmaFont('Inter-Medium', lfs)) + 5/zoom
-    dxDrawRectangle(window[1], window[2], window[3], window[4], tocolor(25, 25, 25, alpha/4))
-    dxDrawRectangle(window[1], window[2], window[3], top, tocolor(25, 25, 25, alpha))
+    dxDrawRectangle(window[1], window[2], window[3], window[4], tocolor(25, 36, 38, alpha/4))
+    dxDrawRectangle(window[1], window[2], window[3], top, tocolor(25, 36, 38, alpha))
     dxDrawText('/logs | /lfs [n]', window[1] + window[3] - 6/zoom, window[2] + 2.5/zoom, nil, nil, white, 1, getFigmaFont('Inter-Medium', lfs), 'right', 'top')
 
     -- add window resizing

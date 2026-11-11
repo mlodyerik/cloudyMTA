@@ -289,7 +289,7 @@ function render()
     dxDrawImage(sx/2+190/zoom, sy/2-220/zoom, 20/zoom, 20/zoom, main['textures']['close'], 0,0,0, tocolor(255,255,255,255*main['anim'][1]))
     dxDrawImage(sx/2-210/zoom, sy/2-217/zoom, 34/zoom, 34/zoom, main['textures']['icon'], 0,0,0, tocolor(255,255,255,255))
     dxDrawText('Firma logistyczna', sx/2-170/zoom, sy/2-220/zoom, _, _, tocolor(255,255,255,255), 1, main['fonts'][1], 'left', 'top')
-    dxDrawText('Since Logistics', sx/2-170/zoom, sy/2-180/zoom, _, _, tocolor(125,255,125,255), 1, main['fonts'][2], 'left', 'bottom')
+    dxDrawText('Since Logistics', sx/2-170/zoom, sy/2-180/zoom, _, _, tocolor(46,117,111,255), 1, main['fonts'][2], 'left', 'bottom')
 
     local x=0
     for i, v in ipairs(data.tbl) do

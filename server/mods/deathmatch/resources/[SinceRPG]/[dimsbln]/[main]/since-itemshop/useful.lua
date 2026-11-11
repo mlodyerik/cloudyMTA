@@ -42,7 +42,7 @@ end
 
 
 function drawScrollbar(table, x, y, w, height, m_, k_, alpha, todel)
-    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100,alpha*0.2))
+    dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111,alpha*0.2))
 
     if not todel then todel = 3 end
 
@@ -59,9 +59,9 @@ function drawScrollbar(table, x, y, w, height, m_, k_, alpha, todel)
         	scrollbarHeight = height
     	end
 		
-        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-todel), w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, scrollbarPos, w, scrollbarHeight*(m_-todel), w/2, tocolor(46, 117, 111, alpha))
     else
-        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(100, 255, 100, alpha))
+        dxDrawRoundedRectangle(x, y, w, height, w/2, tocolor(46, 117, 111, alpha))
 	end
 end
 

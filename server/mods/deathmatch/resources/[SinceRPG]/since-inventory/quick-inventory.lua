@@ -52,7 +52,7 @@ function renderQuickInventory()
 
     if isInventoryVisible() then
         dxDrawText('Najedź myszka na item oraz nacisnij przycisk 1-6 aby dodac go do szybkiego wyboru', sx/2 + 1, sy - 125/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'center', 'bottom')
-        dxDrawText('Najedź myszka na item oraz nacisnij przycisk 1-6 aby dodac go do szybkiego wyboru', sx/2, sy - 125/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'center', 'bottom')
+        dxDrawText('Najedź myszka na item oraz nacisnij przycisk 1-6 aby dodac go do szybkiego wyboru', sx/2, sy - 125/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'center', 'bottom')
     end
 end
 

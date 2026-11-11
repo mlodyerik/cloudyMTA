@@ -200,8 +200,8 @@ function renderBigMap()
 	exports['since-blur']:dxDrawBlur(0, 0, sx, sy)
 	dxDrawImage(0,0,sx,sy, 'images/winieta.png', 0, 0, 0, tocolor(0, 0, 0, 155))
 	dxDrawRectangle(0,0,sx,sy,tocolor(35,35,35,155))
-	dxDrawImageSection(mapPos.x, mapPos.y, mapPos.w, mapPos.h, mapX, mapY, mapWidth, mapHeight, textures.map, 0, 0, 0, tocolor(255, 255, 255, 200)) -- mapka
-	dxDrawImage(0, 0, sx, sy, 'images/rectangle.png', 0, 0, 0, tocolor(25, 25, 25, 255))
+	dxDrawImageSection(mapPos.x, mapPos.y, mapPos.w, mapPos.h, mapX, mapY, mapWidth, mapHeight, textures.map, 0, 0, 0, tocolor(241, 245, 244, 200)) -- mapka
+	dxDrawImage(0, 0, sx, sy, 'images/rectangle.png', 0, 0, 0, tocolor(25, 36, 38, 255))
 	-- dxDrawText('Mapa serwera', 0 + 351/2/zoom, 17/zoom, nil, (17/zoom) + (32/zoom), tocolor(215, 215, 215, 255), 1, main['fonts'][1], 'center', 'top')
     -- dxDrawText('Legenda mapy', 0 + 351/2/zoom, 43/zoom, nil, (43/zoom) + (26/zoom), tocolor(215, 215, 215, 255), 1, main['fonts'][2], 'center', 'top')
 
@@ -294,7 +294,7 @@ function renderBigMap()
 					width = math.max(width, descriptionWidth)
 
 					local height = #blipOptions * (dxGetFontHeight(1, main['fonts'][2]) + 7/zoom) + 35/zoom
-					dxDrawRectangle(centerX - (blipSize/2) - 5/zoom, centerY - (blipSize/2) - 5/zoom, blipSize + 5/zoom + width, blipSize + 10/zoom + height, tocolor(25, 25, 25, 240), true)
+					dxDrawRectangle(centerX - (blipSize/2) - 5/zoom, centerY - (blipSize/2) - 5/zoom, blipSize + 5/zoom + width, blipSize + 10/zoom + height, tocolor(25, 36, 38, 240), true)
 					dxDrawRectangle(centerX - (blipSize/2) - 5/zoom, centerY - 10/zoom + blipSize, blipSize + 5/zoom + width, 1, tocolor(45, 45, 45, 240), true)
 					
 					if not description then
@@ -354,7 +354,7 @@ function renderBigMap()
 	local textWidth = dxGetTextWidth('Legenda', 1, main['fonts'][1])
 	local x, y, z = getElementPosition(localPlayer)
 	local zoneName = getZoneName(x, y, z, true)..', '..getZoneName(x, y, z, false)
-	dxDrawText(zoneName, 40/zoom+textWidth, 25/zoom, nil, nil, tocolor(125,255,125),1,main['fonts'][3],'left','center')
+	dxDrawText(zoneName, 40/zoom+textWidth, 25/zoom, nil, nil, tocolor(46,117,111),1,main['fonts'][3],'left','center')
 
 	x = 0
 	for i = 1, 70 do
@@ -365,7 +365,7 @@ function renderBigMap()
 			local name = blips[i].name or "Brak"
 			local textWidth = dxGetTextWidth(name, 1, main['fonts'][3])
 			dxDrawImage(mapPos.x + 10/zoom + 25/zoom, mapPos.y + 30/zoom + 12/zoom + offsetY, 34/zoom, 34/zoom, BLIP_TEXTURES[blips[i].texture], 0, 0, 0, tocolor(255, 255, 255, 255))
-			dxDrawText(name, mapPos.x + 50/zoom + 25/zoom, mapPos.y + 34/zoom + 25/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 200), 1, main['fonts'][3], "left", "center", false, true, false, false, false)
+			dxDrawText(name, mapPos.x + 50/zoom + 25/zoom, mapPos.y + 34/zoom + 25/zoom + offsetY, nil, nil, tocolor(241, 245, 244, 200), 1, main['fonts'][3], "left", "center", false, true, false, false, false)
 		end
 	end
 

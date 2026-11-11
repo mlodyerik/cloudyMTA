@@ -29,7 +29,7 @@ energy.render = (function()
 
     dxDrawImageSection(sx/2-50/zoom, 10/zoom, 100/zoom, 100/zoom, 0, 0, 512, 512, energy.img["bar_bg"], 0, 0, 0, tocolor(255,255,255,155*energy.alpha))
     dxDrawImageSection(sx/2-50/zoom, 10/zoom, 100/zoom, 100/zoom*x, 0, 0, 512, 512*x, energy.img["bar"], 0, 0, 0, tocolor(255,255,255,225*energy.alpha))
-    dxDrawText(string.format("%.2f", time).." sek.", sx/2, 120/zoom, _, _, tocolor(200, 200, 200, 245*energy.alpha), 1, energy.fonts[1], "center", "top")
+    dxDrawText(string.format("%.2f", time).." sek.", sx/2, 120/zoom, _, _, tocolor(145, 163, 160, 245*energy.alpha), 1, energy.fonts[1], "center", "top")
 end)
 
 energy.turnEffect = (function(state)

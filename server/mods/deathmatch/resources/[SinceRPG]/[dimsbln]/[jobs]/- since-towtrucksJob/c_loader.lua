@@ -80,7 +80,7 @@ end
 
 function renderScroll(table, x, y, height, m_, k_, anim)
     anim = (anim or 1)
-    dxDrawRoundedRectangle(x, y, 5/zoom, height, 2/zoom, tocolor(25, 25, 25, 55*anim))
+    dxDrawRoundedRectangle(x, y, 5/zoom, height, 2/zoom, tocolor(25, 36, 38, 55*anim))
 	if table and #table > m_ then
     	local scrollbarHeight = (#table <= m_) and height or (height/#table)
         local scrollbarPos = ((k_ == 1) and y or (k_ > 0) and ((k_)*scrollbarHeight)+y)

@@ -47,7 +47,7 @@ function renderKeys()
 
                 if isIn then
                     dxDrawRoundedRectangle(sx/2 + 44/zoom, sy/2 - 76/zoom + offset, 100/zoom, 20/zoom, 10/zoom, tocolor(200, 75, 75, 175))
-                    dxDrawText('Zabierz klucz', sx/2 + 44/zoom + 51/zoom, sy/2 - 66/zoom + offset, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'center')
+                    dxDrawText('Zabierz klucz', sx/2 + 44/zoom + 51/zoom, sy/2 - 66/zoom + offset, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'center')
                 else
                     dxDrawRoundedRectangle(sx/2 + 44/zoom, sy/2 - 76/zoom + offset, 100/zoom, 20/zoom, 10/zoom, tocolor(155, 55, 55, 100))
                     dxDrawText('Zabierz klucz', sx/2 + 44/zoom + 51/zoom, sy/2 - 66/zoom + offset, nil, nil, tocolor(255, 255, 255, 155), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'center')
@@ -58,7 +58,7 @@ function renderKeys()
         end
 
         local isIn = isMouseInPosition(sx/2 + 55/zoom, sy/2 + 70/zoom, 94/zoom, 35/zoom)
-        dxDrawRoundedRectangle(sx/2 + 55/zoom, sy/2 + 70/zoom, 94/zoom, 35/zoom, 4/zoom, tocolor(125, 185, 255, isIn and 175 or 125))
+        dxDrawRoundedRectangle(sx/2 + 55/zoom, sy/2 + 70/zoom, 94/zoom, 35/zoom, 4/zoom, tocolor(67, 143, 135, isIn and 175 or 125))
         dxDrawText('Udostępnij', sx/2 + 55/zoom + (94/zoom)/2, sy/2 + 87/zoom, nil, nil, tocolor(255, 255, 255, isIn and 255 or 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'center')
     else
         toggleUI(false)

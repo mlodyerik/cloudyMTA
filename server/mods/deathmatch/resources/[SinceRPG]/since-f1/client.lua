@@ -8,7 +8,7 @@ function renderUI()
     exports['since-blur']:dxDrawBlur(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, textures['mask'], 255*alpha)
 	dxDrawImage(sx/2 - 471/zoom, sy/2 - 250/zoom, 942/zoom, 500/zoom, 'data/background.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
 
-    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(200, 200, 200, 65*alpha))
+    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(145, 163, 160, 65*alpha))
     dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom - 1, 247/zoom, 1, tocolor(255, 255, 255, 65*alpha))
     
     dxDrawImage(sx/2 - 455/zoom, sy/2 - 232/zoom, 218/zoom, 75/zoom, 'data/logo.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
@@ -17,7 +17,7 @@ function renderUI()
     local offset = 0
     for k, v in ipairs(tabs) do
         local isMouse = isMouseInPosition(sx/2 - 471/zoom, sy/2 - 135/zoom + offset, 247/zoom, 45/zoom) and 15*alpha or 0
-        local tabColor = (activeTab == k and tocolor(100, 200, 100, 25*alpha + isMouse) or tocolor(200, 200, 200, 25*alpha + isMouse))
+        local tabColor = (activeTab == k and tocolor(46, 117, 111, 25*alpha + isMouse) or tocolor(145, 163, 160, 25*alpha + isMouse))
         local iconColor = (activeTab == k and tocolor(255, 255, 255, 225*alpha + isMouse) or tocolor(255, 255, 255, 175*alpha + isMouse))
 
         dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom + offset, 247/zoom, 45/zoom, tabColor)

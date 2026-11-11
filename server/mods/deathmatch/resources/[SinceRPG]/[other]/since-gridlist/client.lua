@@ -135,10 +135,10 @@ function drawGridlist(id)
                 local textWidth = dxGetTextWidth(removeHex(v.name), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom))
                 
                 if isIn and string.len(removeHex(v.name)) > 20 then
-                    dxDrawRectangle(grid.x, grid.y + 30/zoom + offset, textWidth + 16/zoom, 30/zoom, tocolor(35, 35, 35, isIn and 200*grid.rollPrg or 125*grid.rollPrg), true)
+                    dxDrawRectangle(grid.x, grid.y + 30/zoom + offset, textWidth + 16/zoom, 30/zoom, tocolor(25, 36, 38, isIn and 200*grid.rollPrg or 125*grid.rollPrg), true)
                     dxDrawText(v.name, grid.x + 10/zoom, grid.y + 45/zoom + offset, nil, nil, tocolor(255, 255, 255, isIn and 200*grid.rollPrg or 155*grid.rollPrg), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "left", "center", false, false, true, true)
                 else
-                    dxDrawRectangle(grid.x, grid.y + 30/zoom + offset, grid.w - 3, 30/zoom, tocolor(35, 35, 35, isIn and 200*grid.rollPrg or 125*grid.rollPrg), true)
+                    dxDrawRectangle(grid.x, grid.y + 30/zoom + offset, grid.w - 3, 30/zoom, tocolor(25, 36, 38, isIn and 200*grid.rollPrg or 125*grid.rollPrg), true)
                     local name = 'Brak danych'
 
                     if string.len(removeHex(v.name)) > 20 then
@@ -161,7 +161,7 @@ function drawGridlist(id)
         drawScrollbar(grid.items, grid.x + grid.w - 3, grid.y + 30/zoom, 3, bgHeight - 30/zoom, grid.scroll.maxItems + 1, grid.scroll.offset, 155*grid.rollPrg)
         
         local isIn = isMouseIn(grid.x, grid.y, grid.w, 30/zoom)
-        dxDrawImage(grid.x, grid.y, grid.w, 30/zoom, 'img/background.png', 0, 0, 0, tocolor(35, 35, 35, isIn and 245 or 200), true)
+        dxDrawImage(grid.x, grid.y, grid.w, 30/zoom, 'img/background.png', 0, 0, 0, tocolor(25, 36, 38, isIn and 245 or 200), true)
         
         if not grid.selectedItem or grid.selectedItem == '---' then
             dxDrawText(grid.text, grid.x + 10/zoom, grid.y + 15/zoom, nil, nil, tocolor(255, 255, 255, isIn and 200 or 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), "left", "center", false, false, true, true)

@@ -27,7 +27,7 @@ function renderOffer()
     dxDrawRectangle(sx / 2 - 255/zoom, sy / 2 + 42/zoom, 510/zoom, 3, tocolor(46, 117, 111, 100))
 
     local r, g = getRGColorFromPercentage(timeout*100)
-	dxDrawText('Pozostały czas na zaakceptowanie: '..RGBToHex(r, g, 0)..' ' .. string.format("%.2f", timeout*10) .. ' sek.', sx/2, sy/2 + 35, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'center', 'bottom', false, false, false, true)
+	dxDrawText('Pozostały czas na zaakceptowanie: '..RGBToHex(r, g, 0)..' ' .. string.format("%.2f", timeout*10) .. ' sek.', sx/2, sy/2 + 35, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'center', 'bottom', false, false, false, true)
 
     if timeout == 0 then
         removeEventHandler('onClientRender', root, renderOffer)

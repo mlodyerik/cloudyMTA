@@ -134,7 +134,7 @@ function renderInventory()
     -- local capacity = getInventoryMaxWeight(localPlayer)
     -- local progress = used/capacity
     
-    -- dxDrawText('Zapełnienie ekwipunku', sx - 532/zoom, sy/2 + 345/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom), 'left', 'bottom')
+    -- dxDrawText('Zapełnienie ekwipunku', sx - 532/zoom, sy/2 + 345/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom), 'left', 'bottom')
     -- dxDrawText(('%.1f / %.1f KG'):format(used, capacity), sx - 72/zoom, sy/2 + 345/zoom, nil, nil, tocolor(46, 117, 111, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'right', 'bottom')
     -- dxDrawImage(sx - 532/zoom, sy/2 + 358/zoom, 464/zoom, 10/zoom, 'data/progress-bg.png')
     -- dxDrawImageSection(sx - 532/zoom, sy/2 + 358/zoom, 464/zoom * progress, 10/zoom, 0, 0, 320 * progress, 6, 'data/progress.png')

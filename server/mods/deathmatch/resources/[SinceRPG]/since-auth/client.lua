@@ -80,20 +80,20 @@ function renderUI()
         dxDrawImage(66/zoom + 4/zoom + 66/zoom/2 - 30/zoom/2, sy/2 + 3/zoom, 30/zoom, 30/zoom, 'data/password.png')
         
     
-        dxDrawText('Zapomniałeś hasła?', 66/zoom + 514/zoom/2, sy/2 + 243/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
-        dxDrawText('Utwórz ticket na naszym discordzie i poczekaj aż ktoś się tym zajmie!', 66/zoom + 514/zoom/2, sy/2 + 244/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Regular', 11/zoom), 'center', 'top')
+        dxDrawText('Zapomniałeś hasła?', 66/zoom + 514/zoom/2, sy/2 + 243/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
+        dxDrawText('Utwórz ticket na naszym discordzie i poczekaj aż ktoś się tym zajmie!', 66/zoom + 514/zoom/2, sy/2 + 244/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Regular', 11/zoom), 'center', 'top')
     
         local copyIn = isMouseInPosition(66/zoom + 514/zoom/2 - 66/zoom, sy/2 + 275/zoom, 132/zoom, 32/zoom)
         dxDrawImage(66/zoom + 514/zoom/2 - 66/zoom, sy/2 + 275/zoom, 132/zoom, 32/zoom, 'data/button_copy.png', 0, 0, 0, tocolor(255, 255, 255, copyIn and 175 or 255))
         dxDrawText('Skopiuj link', 66/zoom + 514/zoom/2, sy/2 + 292/zoom, nil, nil, tocolor(255, 255, 255, copyIn and 175 or 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 11/zoom), 'center', 'center')
     elseif data.loginWindow == 'spawn' then
 	    dxDrawImage(0, 0, sx, sy, 'data/shadow.png')
-        --dxDrawImage(sx / 2 - 356/zoom, sy - 103/zoom, 712/zoom, 103/zoom, 'data/green_shadow.png', 0, 0, 0, tocolor(255, 255, 255, 200))
-	    dxDrawText('Wybór spawnu', 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'left', 'bottom')
-	    dxDrawText('Wybierz miejsce gdzie chcesz się zrespić', 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'left', 'top')
+        --dxDrawImage(sx / 2 - 356/zoom, sy - 103/zoom, 712/zoom, 103/zoom, 'data/green_shadow.png', 0, 0, 0, tocolor(241, 245, 244, 200))
+	    dxDrawText('Wybór spawnu', 10/zoom, sy - 40/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'left', 'bottom')
+	    dxDrawText('Wybierz miejsce gdzie chcesz się zrespić', 10/zoom, sy - 40/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'left', 'top')
 
 	    dxDrawText('Wybrana lokalizacja', sx/2, sy - 65/zoom, nil, nil, tocolor(46, 117, 111, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'center')
-	    dxDrawText(spawns[data.selectedSpawn].name, sx/2, sy - 27/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom), 'center', 'center')
+	    dxDrawText(spawns[data.selectedSpawn].name, sx/2, sy - 27/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom), 'center', 'center')
 
         local textWidth = dxGetTextWidth(spawns[data.selectedSpawn].name, 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom))/2 + 15/zoom
         local inRight = isMouseInPosition(sx/2 + textWidth, sy - 35/zoom, 21/zoom, 19/zoom) or (getKeyState('arrow_r') == true)
@@ -101,8 +101,8 @@ function renderUI()
 	    dxDrawImage(sx/2 + textWidth, sy - 35/zoom, 21/zoom, 19/zoom, 'data/arrowr.png', 0, 0, 0, inRight and tocolor(67, 143, 135, 255) or tocolor(255, 255, 255))
 	    dxDrawImage(sx/2 - textWidth - 22/zoom, sy - 35/zoom, 21/zoom, 19/zoom, 'data/arrowl.png', 0, 0, 0, inLeft and tocolor(67, 143, 135, 255) or tocolor(255, 255, 255))
 
-	    dxDrawText('Klawiszologia', sx - 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'right', 'bottom')
-	    dxDrawText('Użyj #438F87strzałek lub kursora#ffffff aby zmieniać spawn następnie zatwiedź #438F87enterem', sx - 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
+	    dxDrawText('Klawiszologia', sx - 10/zoom, sy - 40/zoom, nil, nil, tocolor(241, 245, 244, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'right', 'bottom')
+	    dxDrawText('Użyj #438F87strzałek lub kursora#ffffff aby zmieniać spawn następnie zatwiedź #438F87enterem', sx - 10/zoom, sy - 40/zoom, nil, nil, tocolor(241, 245, 244, 200), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
     end
 end
 

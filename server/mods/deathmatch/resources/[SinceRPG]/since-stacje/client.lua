@@ -24,13 +24,13 @@ function renderUI()
         dxDrawImage(sx/2 - 263/zoom, sy - 213/zoom, 527/zoom, 33/zoom, 'data/progressbar.png', 0, 0, 0, tocolor(255, 255, 255, 55))
 
         if fuelData.selected == 'PB' then
-            dxDrawImageSection(sx/2 - 263/zoom, sy - 213/zoom, 527/zoom * (fuel.count + fuelData.toTank or 100) / fuel.tank, 33/zoom, 0, 0, 527 * (fuel.count + fuelData.toTank or 100) / fuel.tank, 33, 'data/progressbar.png', 0, 0, 0, tocolor(255, 255, 255, 200))
+            dxDrawImageSection(sx/2 - 263/zoom, sy - 213/zoom, 527/zoom * (fuel.count + fuelData.toTank or 100) / fuel.tank, 33/zoom, 0, 0, 527 * (fuel.count + fuelData.toTank or 100) / fuel.tank, 33, 'data/progressbar.png', 0, 0, 0, tocolor(241, 245, 244, 200))
             dxDrawText((math.floor(fuel.count + fuelData.toTank) or 100)..' / '..(fuel.tank or 100)..' L (Dotankowano: '..math.floor(fuelData.toTank)..' L - $ '..addCommas(math.floor(fuelData.toTank * fuelData.benzCost))..')', sx/2 + 1, sy - 195/zoom + 1, nil, nil, tocolor(0, 0, 0, 100), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'center', 'center')
             dxDrawText((math.floor(fuel.count + fuelData.toTank) or 100)..' / '..(fuel.tank or 100)..' L (Dotankowano: '..math.floor(fuelData.toTank)..' L - $ '..addCommas(math.floor(fuelData.toTank * fuelData.benzCost))..')', sx/2, sy - 195/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'center', 'center')
             dxDrawText('Aby tankować pojazd trzymaj spację\nAby zapłacić $ '..addCommas(math.floor(fuelData.toTank * fuelData.benzCost))..' za paliwo kliknij Enter', sx/2 + 1, sy - 135/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'top', false, false, false, true)
             dxDrawText('Aby tankować pojazd trzymaj spację\nAby zapłacić #88ff82$ '..addCommas(math.floor(fuelData.toTank * fuelData.benzCost))..'#ffffff za paliwo kliknij #82b2ffEnter', sx/2, sy - 135/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'top', false, false, false, true)
         else
-            dxDrawImageSection(sx/2 - 263/zoom, sy - 213/zoom, 527/zoom * (fuel.countLPG + fuelData.toTank or 100) / 100, 33/zoom, 0, 0, 527 * (fuel.countLPG + fuelData.toTank or 100) / 100, 33, 'data/progressbar.png', 0, 0, 0, tocolor(255, 255, 255, 200))
+            dxDrawImageSection(sx/2 - 263/zoom, sy - 213/zoom, 527/zoom * (fuel.countLPG + fuelData.toTank or 100) / 100, 33/zoom, 0, 0, 527 * (fuel.countLPG + fuelData.toTank or 100) / 100, 33, 'data/progressbar.png', 0, 0, 0, tocolor(241, 245, 244, 200))
             dxDrawText((math.floor(fuel.countLPG + fuelData.toTank) or 100)..' / '..(100)..' L (Dotankowano: '..math.floor(fuelData.toTank)..' L - $ '..addCommas(math.floor(fuelData.toTank * fuelData.lpgCost))..')', sx/2 + 1, sy - 195/zoom + 1, nil, nil, tocolor(0, 0, 0, 100), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'center', 'center')
             dxDrawText((math.floor(fuel.countLPG + fuelData.toTank) or 100)..' / '..(100)..' L (Dotankowano: '..math.floor(fuelData.toTank)..' L - $ '..addCommas(math.floor(fuelData.toTank * fuelData.lpgCost))..')', sx/2, sy - 195/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'center', 'center')
             dxDrawText('Aby tankować pojazd trzymaj spację\nAby zapłacić $ '..addCommas(math.floor(fuelData.toTank * fuelData.lpgCost))..' za paliwo kliknij Enter', sx/2 + 1, sy - 135/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'top', false, false, false, true)
@@ -44,13 +44,13 @@ function renderUI()
         local alpha = isIn and 200 or 255
         dxDrawImage(sx/2 - 262/zoom, sy - 296/zoom, 260/zoom, 72/zoom, fuelData.selected == 'LPG' and 'data/select_selected.png' or 'data/select.png', 0, 0, 0, tocolor(255, 255, 255, fuelData.selected ~= 'LPG' and alpha or 255))
         dxDrawText('LPG', sx/2 - 132/zoom, sy - 255/zoom, nil, nil, tocolor(255, 255, 255, fuelData.selected ~= 'LPG' and alpha or 255), 1, exports['since-fonts']:getFont('Inter-Black', 15/zoom), 'center', 'bottom')
-        dxDrawText('$ '..fuelData.lpgCost..' / litr', sx/2 - 132/zoom, sy - 255/zoom, nil, nil, tocolor(127, 255, 116, fuelData.selected ~= 'LPG' and alpha or 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText('$ '..fuelData.lpgCost..' / litr', sx/2 - 132/zoom, sy - 255/zoom, nil, nil, tocolor(46, 117, 111, fuelData.selected ~= 'LPG' and alpha or 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
         
         local isIn = isMouseInPosition(sx/2 + 2/zoom, sy - 296/zoom, 260/zoom, 72/zoom)
         local alpha = isIn and 200 or 255
         dxDrawImage(sx/2 + 2/zoom, sy - 296/zoom, 260/zoom, 72/zoom, fuelData.selected == 'PB' and 'data/select_selected.png' or 'data/select.png', 0, 0, 0, tocolor(255, 255, 255, fuelData.selected ~= 'PB' and alpha or 255))
         dxDrawText('Benzyna', sx/2 + 132/zoom, sy - 255/zoom, nil, nil, tocolor(255, 255, 255, fuelData.selected ~= 'PB' and alpha or 255), 1, exports['since-fonts']:getFont('Inter-Black', 15/zoom), 'center', 'bottom')
-        dxDrawText('$ '..fuelData.benzCost..' / litr', sx/2 + 132/zoom, sy - 255/zoom, nil, nil, tocolor(127, 255, 116, fuelData.selected ~= 'PB' and alpha or 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText('$ '..fuelData.benzCost..' / litr', sx/2 + 132/zoom, sy - 255/zoom, nil, nil, tocolor(46, 117, 111, fuelData.selected ~= 'PB' and alpha or 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 
         if getKeyState( 'space' ) == true then
             fuelData.tankSpeed = math.min(fuelData.tankSpeed + 0.0002, 0.3)

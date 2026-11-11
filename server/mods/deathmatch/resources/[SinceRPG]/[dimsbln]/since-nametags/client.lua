@@ -240,7 +240,7 @@ function renderVehicleDesc(veh, data)
         end
 
         dxDrawText(desc:gsub("#%x%x%x%x%x%x", ''), x + 1, y + 1, nil, nil, tocolor(0,0,0,100), scale, exports['since-fonts']:getFont('Inter-SemiBold', 13), 'center', 'top', false, false, false, false, true)
-        dxDrawText(desc, x, y, nil, nil, tocolor(255, 255, 255, 200), scale, exports['since-fonts']:getFont('Inter-SemiBold', 13), 'center', 'top', false, false, false, true, true)
+        dxDrawText(desc, x, y, nil, nil, tocolor(241, 245, 244, 200), scale, exports['since-fonts']:getFont('Inter-SemiBold', 13), 'center', 'top', false, false, false, true, true)
     end
 end
 

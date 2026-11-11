@@ -12,10 +12,10 @@ local settings = {
 }
 
 local data = {
-    info = {{125,185,255}, 'Informacja', 'data/info.png'},
-    success = {{75,215,75}, 'Sukces', 'data/success.png'},
-    error = {{255,125,125}, 'Błąd', 'data/error.png'},
-    warning = {{255,165,83}, 'Ostrzeżenie', 'data/warning.png'},
+    info = {{46,117,111}, 'Informacja', 'data/info.png'},        -- cloudyMTA primary
+    success = {{67,143,135}, 'Sukces', 'data/success.png'},      -- cloudyMTA accent
+    error = {{229,82,82}, 'Błąd', 'data/error.png'},             -- Red
+    warning = {{229,151,35}, 'Ostrzeżenie', 'data/warning.png'}, -- Orange
 }
 
 function findSameNotification(type, text)

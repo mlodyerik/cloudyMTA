@@ -56,7 +56,7 @@ function render()
     if display then
         if tonumber(display) then 
             text = '$#ffffff '..przecinek(display)
-            dxDrawText(text, sx/2, sy/2 + 90/zoom, center, center, tocolor(125, 255, 125, 255), 1.25, "pricedown", "center", "center", false, false, false, true)
+            dxDrawText(text, sx/2, sy/2 + 90/zoom, center, center, tocolor(46, 117, 111, 255), 1.25, "pricedown", "center", "center", false, false, false, true)
         else 
             text = display 
             dxDrawText(text, sx/2, sy/2 + 90/zoom, center, center, tocolor(0, 0, 0, 255), 1.25, "pricedown", "center", "center", false, false, false, true)

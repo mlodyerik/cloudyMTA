@@ -2,7 +2,7 @@
 
 --[[
     Author: EnoNeK
-    For: SinceRPG
+    For: cloudyMTA
 ]]
 getResourceName(getThisResource(), true, 948241732);-- if true then return end
 

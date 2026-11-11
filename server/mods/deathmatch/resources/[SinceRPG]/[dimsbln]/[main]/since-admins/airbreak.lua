@@ -79,14 +79,14 @@ addEventHandler('onClientRender', root, function()
 
     local rx, ry, rz = getElementRotation(element)
     dxDrawText('Airbreak', 10/zoom + 1, sy/2 - 20/zoom + 1, nil, nil, black, 1, getFigmaFont('Inter-Black', 13/zoom), 'left', 'bottom')
-    dxDrawText('Airbreak', 10/zoom, sy/2 - 20/zoom, nil, nil, tocolor(125, 255, 125), 1, getFigmaFont('Inter-Black', 13/zoom), 'left', 'bottom')
+    dxDrawText('Airbreak', 10/zoom, sy/2 - 20/zoom, nil, nil, tocolor(46, 117, 111), 1, getFigmaFont('Inter-Black', 13/zoom), 'left', 'bottom')
     dxDrawText(('Pozycja gracza: %.3f, %.3f, %.3f\nRotacja: %.3f, %.3f, %.3f'):format(x, y, z, rx, ry, rz), 10/zoom + 1, sy/2 - 20/zoom + 1, nil, nil, black, 1, getFigmaFont('Inter-Medium', 11/zoom), 'left', 'top')
     dxDrawText(('Pozycja gracza: %.3f, %.3f, %.3f\nRotacja: %.3f, %.3f, %.3f'):format(x, y, z, rx, ry, rz), 10/zoom, sy/2 - 20/zoom, nil, nil, white, 1, getFigmaFont('Inter-Medium', 11/zoom), 'left', 'top')
 
     local controls = 'W - Do przodu\nS - Do tyłu\nD - W prawo\nA - W lewo\nSpacja - W góre\nShift - W dół\nCTRL - Szybciej\nALT - Wolniej\nX - Wyłącz airbreak'
 
     dxDrawText('Klawiszologia', 10/zoom + 1, sy/2 + 40/zoom + 1, nil, nil, black, 1, getFigmaFont('Inter-Black', 12/zoom), 'left', 'bottom')
-    dxDrawText('Klawiszologia', 10/zoom, sy/2 + 40/zoom, nil, nil, tocolor(125, 255, 125), 1, getFigmaFont('Inter-Black', 12/zoom), 'left', 'bottom')
+    dxDrawText('Klawiszologia', 10/zoom, sy/2 + 40/zoom, nil, nil, tocolor(46, 117, 111), 1, getFigmaFont('Inter-Black', 12/zoom), 'left', 'bottom')
     dxDrawText(controls, 10/zoom + 1, sy/2 + 40/zoom + 1, nil, nil, black, 1, getFigmaFont('Inter-Medium', 10/zoom), 'left', 'top')
     dxDrawText(controls, 10/zoom, sy/2 + 40/zoom, nil, nil, white, 1, getFigmaFont('Inter-Medium', 10/zoom), 'left', 'top')
 

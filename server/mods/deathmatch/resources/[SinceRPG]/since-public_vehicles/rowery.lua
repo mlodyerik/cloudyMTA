@@ -42,7 +42,7 @@ end
 
 function enterFaggio(plr, seat)
     if seat ~= 0 then return end
-    setVehicleDesc(source, "Pojazd publiczny\nZajęty przez: #7dff7d" .. getPlayerName(plr):gsub("#%x%x%x%x%x%x", ""))
+    setVehicleDesc(source, "Pojazd publiczny\nZajęty przez: #2E756F" .. getPlayerName(plr):gsub("#%x%x%x%x%x%x", ""))
     setElementData(source, "vehicle:public:owner", plr)
     exports['since-notifications']:sendNotification(plr, 'error', "Publiczny motor został zajęty")
 

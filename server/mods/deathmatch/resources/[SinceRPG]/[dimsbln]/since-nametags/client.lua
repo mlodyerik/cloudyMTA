@@ -149,7 +149,7 @@ function renderNametag(player, data)
             end
 
             if rp then
-                rankName = rankName..' #7dff7d(RP)#ffffff'
+                rankName = rankName..' #2E756F(RP)#ffffff'
             end
 
             if mechanic then
@@ -189,7 +189,7 @@ function renderNametag(player, data)
             end
 
             if rp then
-                rankName = rankName..' #7dff7d(RP)#ffffff'
+                rankName = rankName..' #2E756F(RP)#ffffff'
             end
 
             if mechanic then

@@ -1,6 +1,6 @@
 --[[
     Author: EnoNeK
-    For: SinceRPG
+    For: cloudyMTA
 ]]
 
 --createBlip(-2722.43, 216.99, 4.64, 33, 2, 255, 255, 255, 255, 0, 200)

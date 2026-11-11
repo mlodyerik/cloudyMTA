@@ -3,7 +3,7 @@ local main = {}
 local function render()
     dxDrawImage(sx/2-165/zoom, sy/2-325/2/zoom, 330/zoom, 325/zoom, main.textures['bg'], 0, 0, 0, tocolor(255, 255, 255, main.alpha))
 	dxDrawText('Wybierz tryb pracy', sx/2, sy/2-128/zoom, nil, nil, tocolor(255, 255, 255, main.alpha), 1, main.fonts[1], 'center', 'bottom')
-	dxDrawText('Stwórz grupę lub dołącz do istniejącej', sx/2, sy/2-125/zoom, nil, nil, tocolor(103, 213, 94, main.alpha), 1, main.fonts[2], 'center', 'top')
+	dxDrawText('Stwórz grupę lub dołącz do istniejącej', sx/2, sy/2-125/zoom, nil, nil, tocolor(46, 117, 111, main.alpha), 1, main.fonts[2], 'center', 'top')
 
     local groups = main.gropus
     if #groups > 0 then

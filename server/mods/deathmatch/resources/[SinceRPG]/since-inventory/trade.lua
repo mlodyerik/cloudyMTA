@@ -95,7 +95,7 @@ local function renderTrade()
     drawGridInventory('they-trade', sx/2 - 567/zoom, sy/2 + 27/zoom, 460/zoom, 205/zoom, 5, 2, 10/zoom, tradeB.items)
 
     drawButton('Anuluj', sx/2 - 567/zoom, sy/2 - 75/zoom, 225/zoom, 50/zoom, regular2, tocolor(225, 25, 25, 75), tocolor(255, 55, 55, 100))
-    drawButton(trade.state == 'waiting' and 'Akceptuj' or 'Anuluj', sx/2 - 332/zoom, sy/2 - 75/zoom, 225/zoom, 50/zoom, regular2, tocolor(125, 255, 125, 100), tocolor(125, 255, 125, 125), tocolor(255, 255, 255, 180))
+    drawButton(trade.state == 'waiting' and 'Akceptuj' or 'Anuluj', sx/2 - 332/zoom, sy/2 - 75/zoom, 225/zoom, 50/zoom, regular2, tocolor(46, 117, 111, 100), tocolor(46, 117, 111, 125), tocolor(255, 255, 255, 180))
 
     dxDrawImage(sx/2 - 567/zoom, sy/2 + 245/zoom, 460/zoom, 100/zoom, 'data/info.png')
     dxDrawText('Wymienianie', sx/2 - 555/zoom, sy/2 + 255/zoom, nil, nil, white, 1, regular2, 'left', 'top')

@@ -1,6 +1,6 @@
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 engineImportTXD(engineLoadTXD("model/r1z.txd"), 1210)

@@ -183,12 +183,12 @@ function render()
     dxDrawImage(sx/2+195/zoom, sy/2-250/zoom, 20/zoom, 20/zoom, main['textures']['close'], 0, 0, 0, tocolor(255,255,255,anim*main['anim'][2]))
 
     dxDrawText('Ładunek', sx/2-205/zoom, sy/2-241/zoom, _, _, tocolor(215,215,215,anim), 1, main['fonts'][1], 'left', 'top')
-    dxDrawText('Załaduj ładunek na lawetę', sx/2-205/zoom, sy/2-199/zoom, _, _, tocolor(104, 214, 94,anim), 1, main['fonts'][2], 'left', 'bottom')
+    dxDrawText('Załaduj ładunek na lawetę', sx/2-205/zoom, sy/2-199/zoom, _, _, tocolor(46, 117, 111,anim), 1, main['fonts'][2], 'left', 'bottom')
 
-    dxDrawText('Aktualny poziom', sx/2, sy/2-140/zoom, nil, nil, tocolor(104, 214, 94,anim), 1, main['fonts'][1], 'center', 'bottom')
+    dxDrawText('Aktualny poziom', sx/2, sy/2-140/zoom, nil, nil, tocolor(46, 117, 111,anim), 1, main['fonts'][1], 'center', 'bottom')
     dxDrawText(getLevel(), sx/2-200/zoom, sy/2-139/zoom, sx/2+200/zoom, nil, tocolor(255, 255, 255,anim), 1, main['fonts'][3], 'center', 'top', false, true)
 
-    dxDrawText('Etap poziomu', sx/2, sy/2-70/zoom, nil, nil, tocolor(104, 214, 94,anim), 1, main['fonts'][1], 'center', 'bottom')
+    dxDrawText('Etap poziomu', sx/2, sy/2-70/zoom, nil, nil, tocolor(46, 117, 111,anim), 1, main['fonts'][1], 'center', 'bottom')
     dxDrawImageSection(sx/2-215/zoom, sy/2-60/zoom, 430/zoom, 40/zoom, 0, 0, 430, 40, main['textures']['bar'], 0,0,0, tocolor(255,255,255,anim*main['anim'][2]))
     dxDrawImageSection(sx/2-215/zoom, sy/2-60/zoom, 430/zoom*math.min(getCourses()/getLevelLimit(), 1), 40/zoom, 0, 0, 430*math.min(getCourses()/getLevelLimit(), 1), 40, main['textures']['bar'], 0,0,0, tocolor(255,255,255,anim*main['anim'][2]))
 
@@ -196,7 +196,7 @@ function render()
 
     dxDrawText('Ładując załadunek losowany jest punkt dostawy, do którego musisz dotrzeć. Każde uszkodzenie towaru będzie odliczone od twojego wynagrodzenia. Każdy kurs to jeden punkt do poziomu pracy.', sx/2-200/zoom, sy/2-5/zoom, sx/2+200/zoom, nil, tocolor(255, 255, 255,anim), 1, main['fonts'][2], 'center', 'top', false, true)
 
-    dxDrawText('Lokalizacja', sx/2, sy/2+130/zoom, nil, nil, tocolor(104, 214, 94,anim), 1, main['fonts'][1], 'center', 'bottom')
+    dxDrawText('Lokalizacja', sx/2, sy/2+130/zoom, nil, nil, tocolor(46, 117, 111,anim), 1, main['fonts'][1], 'center', 'bottom')
     dxDrawText(getZoneName(x, y, z, true)..', '..getZoneName(x, y, z), sx/2-200/zoom, sy/2+130/zoom, sx/2+200/zoom, nil, tocolor(255, 255, 255,anim), 1, main['fonts'][2], 'center', 'top', false, true)
 
     local isIn = isMouseIn(sx/2-185/zoom, sy/2+170/zoom, 370/zoom, 100/zoom)

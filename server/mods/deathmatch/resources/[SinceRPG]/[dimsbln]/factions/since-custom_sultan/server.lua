@@ -1,6 +1,6 @@
 --[[
     Author: EnoNeK
-    For: SinceRPG
+    For: cloudyMTA
 ]]
 
 addEvent("enonek-custom_sultan:setHandling", true)

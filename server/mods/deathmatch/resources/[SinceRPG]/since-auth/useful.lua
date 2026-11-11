@@ -11,7 +11,7 @@ textures = {
 
 }
 
-data = {loginWindow = 'login', discordLink = 'https://discord.gg/cbhR4Gqj9e', selectedSpawn = 1}
+data = {loginWindow = 'login', discordLink = 'https://discord.gg/cloudymta', selectedSpawn = 1}
 
 spawns = {
 

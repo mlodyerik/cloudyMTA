@@ -451,7 +451,7 @@ function renderPaczki()
     dxDrawImage(sx/2+234/zoom, sy/2-235/zoom, 20/zoom, 20/zoom, 'files/images/close.png', 0,0,0, tocolor(255,255,255, isIn and 255 or 155))
 
     dxDrawText("Paczki w ciężarówce", sx/2-254/zoom, sy/2-210/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), "left", "bottom", false, false, false, false, false)
-    dxDrawText("#80F177Wybierz paczkę, którą chcesz dostarczyć", sx/2-254/zoom, sy/2-210/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "left", "top", false, false, false, true, false)
+    dxDrawText("#438F87Wybierz paczkę, którą chcesz dostarczyć", sx/2-254/zoom, sy/2-210/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "left", "top", false, false, false, true, false)
     
     local x = 0
     for i,v in ipairs(paczki) do
@@ -463,7 +463,7 @@ function renderPaczki()
             dxDrawImage(sx/2-235/zoom, sy/2-158/zoom+offsetY, 30/zoom, 30/zoom, 'files/images/box.png', 0,0,0, tocolor(255,255,255, isIn and 255 or 200))
 
             dxDrawText(v.imie, sx/2-190/zoom, sy/2-142/zoom+offsetY, nil, nil, tocolor(255, 255, 255, isIn and 200 or 155), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), "left", "bottom", false, false, false, true, false)
-            dxDrawText('#80F177Kliknij aby wyciągnąć paczkę z ciężarówki', sx/2-190/zoom, sy/2-142/zoom+offsetY, nil, nil, tocolor(255, 255, 255, isIn and 255 or 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), "left", "top", false, false, false, true, false)
+            dxDrawText('#438F87Kliknij aby wyciągnąć paczkę z ciężarówki', sx/2-190/zoom, sy/2-142/zoom+offsetY, nil, nil, tocolor(255, 255, 255, isIn and 255 or 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), "left", "top", false, false, false, true, false)
 
         end
     end

@@ -16,13 +16,13 @@ function renderUI()
     local textWidth = dxGetTextWidth(getPlayerName(localPlayer), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom))
     local idText = (getElementData(localPlayer, 'id') or 0)
     local idWidth = dxGetTextWidth(idText, 1, exports['since-fonts']:getFont('Inter-ExtraBold', 12/zoom)) + 4/zoom
-    dxDrawRoundedRectangle(sx/2 - 388/zoom + textWidth, sy/2 - 228/zoom, idWidth, 21/zoom, 4, tocolor(125, 255, 125, 75*alpha))
-    dxDrawText(idText, sx/2 - 385/zoom + textWidth, sy/2 - 208/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 12/zoom), 'left', 'bottom')
+    dxDrawRoundedRectangle(sx/2 - 388/zoom + textWidth, sy/2 - 228/zoom, idWidth, 21/zoom, 4, tocolor(46, 117, 111, 75*alpha))
+    dxDrawText(idText, sx/2 - 385/zoom + textWidth, sy/2 - 208/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 12/zoom), 'left', 'bottom')
 
 
     dxDrawText(rankName, sx/2 - 390/zoom, sy/2 - 206/zoom, nil, nil, tocolor(rankColor[1], rankColor[2], rankColor[3], 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
 
-    dxDrawText('$ #ffffff'..addCommas(getPlayerMoney(localPlayer)), sx/2 - 390/zoom, sy/2 - 170/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
+    dxDrawText('$ #ffffff'..addCommas(getPlayerMoney(localPlayer)), sx/2 - 390/zoom, sy/2 - 170/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
     
     dxDrawImage(sx/2 - 223/zoom, sy/2 - 250/zoom, 694/zoom, 47/zoom, 'data/toprectangle.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
     

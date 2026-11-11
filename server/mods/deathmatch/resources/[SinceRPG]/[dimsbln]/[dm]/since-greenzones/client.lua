@@ -84,7 +84,7 @@ function startGreenZones()
         end
 
         dxDrawText('Greenzone', sx/2 + 1, 50/zoom + 1, nil, nil, tocolor(0, 0, 0, 155 * cacheData.greenzoneAlpha), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
-        dxDrawText('Greenzone', sx/2, 50/zoom, nil, nil, tocolor(125, 255, 125, 255 * cacheData.greenzoneAlpha), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
+        dxDrawText('Greenzone', sx/2, 50/zoom, nil, nil, tocolor(46, 117, 111, 255 * cacheData.greenzoneAlpha), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
         dxDrawText('Znajdujesz się w bezpiecznej strefie', sx/2 + 1, 50/zoom + 1, nil, nil, tocolor(0, 0, 0, 155 * cacheData.greenzoneAlpha), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
         dxDrawText('Znajdujesz się w bezpiecznej strefie', sx/2, 50/zoom, nil, nil, tocolor(255, 255, 255, 255 * cacheData.greenzoneAlpha), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
     end)

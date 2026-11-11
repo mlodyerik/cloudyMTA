@@ -1,6 +1,6 @@
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 local col = createColSphere(404.26, 2467.14, 16.51, 30)

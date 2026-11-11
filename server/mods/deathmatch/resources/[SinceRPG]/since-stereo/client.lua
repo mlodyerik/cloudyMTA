@@ -29,17 +29,17 @@ function renderUI()
 	dxDrawImage(sx/2 - 346/zoom, sy/2 - 99/zoom, 692/zoom, 2/zoom, 'data/line_top.png')
 	dxDrawImage(sx/2, sy/2 - 97/zoom, 2/zoom, 234/zoom, 'data/line_center.png')
 
-	dxDrawText('Lista utworów', sx/2 + 9/zoom, sy/2 - 73/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'left', 'bottom')
+	dxDrawText('Lista utworów', sx/2 + 9/zoom, sy/2 - 73/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'left', 'bottom')
 	dxDrawText('Zapisane utwory', sx/2 + 9/zoom, sy/2 - 74/zoom, nil, nil, tocolor(255, 255, 255, 229), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'left', 'top')
-	dxDrawText('Odtwarzanie', sx/2 - 7/zoom, sy/2 - 73/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'right', 'bottom')
+	dxDrawText('Odtwarzanie', sx/2 - 7/zoom, sy/2 - 73/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'right', 'bottom')
 	dxDrawText('Zarządzaj odtwarzaniem', sx/2 - 7/zoom, sy/2 - 74/zoom, nil, nil, tocolor(255, 255, 255, 229), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'right', 'top')
-	dxDrawText('Dodawanie utworu', sx/2 - 7/zoom, sy/2 + 78/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'right', 'bottom')
+	dxDrawText('Dodawanie utworu', sx/2 - 7/zoom, sy/2 + 78/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'right', 'bottom')
 	dxDrawText('Dodaj swój utwór do listy utworów!', sx/2 - 7/zoom, sy/2 + 77/zoom, nil, nil, tocolor(255, 255, 255, 229), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'right', 'top')
 
     local offset = 0
     for i,v in ipairs(songs) do
         if i >= k and i <= n then 
-            dxDrawImage(sx/2 + 10/zoom, sy/2 - 49/zoom + offset, 336/zoom, 30/zoom, 'data/song_bg.png', 0, 0, 0, data.play == i and tocolor(125, 255, 125, 255) or tocolor(255, 255, 255, 255))
+            dxDrawImage(sx/2 + 10/zoom, sy/2 - 49/zoom + offset, 336/zoom, 30/zoom, 'data/song_bg.png', 0, 0, 0, data.play == i and tocolor(46, 117, 111, 255) or tocolor(255, 255, 255, 255))
             dxDrawImage(sx/2 + 20/zoom, sy/2 - 42/zoom + offset, 14/zoom, 14/zoom, 'data/song_icon.png')
 
             local isIn = isMouseIn(sx/2 + 322/zoom, sy/2 - 44/zoom + offset, 18/zoom, 18/zoom)
@@ -49,7 +49,7 @@ function renderUI()
             dxDrawImage(sx/2 + 305/zoom, sy/2 - 41/zoom + offset, 12/zoom, 12/zoom, 'data/off.png', 0, 0, 0, tocolor(255, 100, 100, isIn and 175 or 255))
 
             dxDrawText(v.name, sx/2 + 41/zoom, sy/2 - 33.5/zoom + offset, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 8/zoom), 'left', 'bottom')
-            dxDrawText('Data dodania: #7dff7d'..v.added, sx/2 + 41/zoom, sy/2 - 33.5/zoom + offset, nil, nil, tocolor(255, 255, 255, 175), 1, exports['since-fonts']:getFont('Inter-Medium', 7/zoom), 'left', 'top', false, false, false, true)
+            dxDrawText('Data dodania: #2E756F'..v.added, sx/2 + 41/zoom, sy/2 - 33.5/zoom + offset, nil, nil, tocolor(255, 255, 255, 175), 1, exports['since-fonts']:getFont('Inter-Medium', 7/zoom), 'left', 'top', false, false, false, true)
 
             offset = offset + 30/zoom + 2
         end
@@ -59,10 +59,10 @@ function renderUI()
     
 	dxDrawImage(sx/2 - 108/zoom, sy/2 - 50/zoom, 100/zoom, 100/zoom, 'data/album_bg.png')
 	dxDrawText(data.actualSong, sx/2 - 115/zoom, sy/2 - 30/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'right', 'bottom')
-	dxDrawText('Aktualnie odtwarzane', sx/2 - 115/zoom, sy/2 - 30/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'right', 'top')
+	dxDrawText('Aktualnie odtwarzane', sx/2 - 115/zoom, sy/2 - 30/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'right', 'top')
 	dxDrawText('0', sx/2 - 305/zoom, sy/2 + 4/zoom, nil, nil, tocolor(255, 255, 255, 191), 1, exports['since-fonts']:getFont('Inter-SemiBold', 7/zoom), 'left', 'top')
 	dxDrawText('100', sx/2 - 115/zoom, sy/2 + 4/zoom, nil, nil, tocolor(255, 255, 255, 191), 1, exports['since-fonts']:getFont('Inter-SemiBold', 7/zoom), 'right', 'top')
-	dxDrawText('Głośność', sx/2 - 209.5/zoom, sy/2 + 4/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 6/zoom), 'center', 'top')
+	dxDrawText('Głośność', sx/2 - 209.5/zoom, sy/2 + 4/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 6/zoom), 'center', 'top')
 	dxDrawImage(sx/2 - 91/zoom, sy/2 - 33/zoom, 66/zoom, 66/zoom, 'data/album_cover.png')
 
     local isIn = isMouseIn(sx/2 - 52/zoom, sy/2 + 97/zoom, 44/zoom, 44/zoom)

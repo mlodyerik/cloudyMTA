@@ -76,7 +76,7 @@ addEventHandler("getData", resourceRoot, function(eType, ...)
             local przeglad = getPrzegladDate(vehicle)
 
             if przeglad then
-                triggerClientEvent(client, 'getData', resourceRoot, 'get', przeglad and 'Przegląd ważny do #7dff7d'..przeglad..'' or 'Przegląd przedawniony')
+                triggerClientEvent(client, 'getData', resourceRoot, 'get', przeglad and 'Przegląd ważny do #2E756F'..przeglad..'' or 'Przegląd przedawniony')
             else
                 triggerClientEvent(client, 'getData', resourceRoot, 'get', 'Brak przeglądu')
             end
@@ -116,7 +116,7 @@ addEventHandler("getData", resourceRoot, function(eType, ...)
             setTimer(function(vehicle, plr)
                 local date = getPrzegladDate(vehicle)
 
-                triggerClientEvent(plr, 'getData', resourceRoot, 'get', 'Przegląd ważny do #7dff7d'..date..'')
+                triggerClientEvent(plr, 'getData', resourceRoot, 'get', 'Przegląd ważny do #2E756F'..date..'')
             end, 100, 1, vehicle, client)
         end
     end

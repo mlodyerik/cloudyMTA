@@ -638,7 +638,7 @@ addEventHandler('buyDiamond', resourceRoot, function(plr, cost, days)
 	setDiamondDay(client, days)
 	outputChatBox(" ", client, 0, 255, 0, true)
 	local spr = exports["since-db"]:query("SELECT * from `since-users` WHERE uid=? LIMIT 1", getElementData(plr, "player:sid"))
-	outputChatBox("✓ #ffffffZakupiono usługę #59acffDiamond#ffffff na okres #7dff7d"..days.." dni#ffffff #bfbfbf(Ważne do "..spr[1].premium..")#ffffff", client, 0, 255, 0, true)
+	outputChatBox("✓ #ffffffZakupiono usługę #59acffDiamond#ffffff na okres #2E756F"..days.." dni#ffffff #bfbfbf(Ważne do "..spr[1].premium..")#ffffff", client, 0, 255, 0, true)
 	outputChatBox(" ", client, 0, 255, 0, true)
 
 	if not getElementData(client, 'player:diamond') then

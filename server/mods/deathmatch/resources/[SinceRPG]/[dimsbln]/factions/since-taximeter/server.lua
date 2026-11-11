@@ -110,9 +110,9 @@ addEventHandler('onTaxiRequest', resourceRoot, function(ev, args)
                 end
 
                 if byDriver then
-                    outputChatBox('✓#ffffff #5EABD6'..getPlayerName(driver)..'#ffffff zakończył twój kurs. Pobrano: #7dff7d'..addComma(money)..'$', player, 55, 255, 55, true)
+                    outputChatBox('✓#ffffff #5EABD6'..getPlayerName(driver)..'#ffffff zakończył twój kurs. Pobrano: #2E756F'..addComma(money)..'$', player, 55, 255, 55, true)
                 else
-                    outputChatBox('✓#ffffff Twój kurs został zakończony. Pobrano: #7dff7d'..addComma(money)..'$', player, 55, 255, 55, true)
+                    outputChatBox('✓#ffffff Twój kurs został zakończony. Pobrano: #2E756F'..addComma(money)..'$', player, 55, 255, 55, true)
                 end
             end
 

@@ -18,8 +18,8 @@ Reports.renderList = function ()
     for i, v in pairs(Reports.list) do
         if i >= k and i <= n then
             dxDrawImage(sx/2-590/zoom/2 - 3/zoom, sy/2-120/zoom + offset, 590/zoom, 48/zoom, "data/images/element-bg.png")
-            dxDrawText('Osoba zgłaszająca: #80F177'..getPlayerName(v.player), sx/2-590/zoom/2 + 8/zoom, sy/2-120/zoom + 15/zoom + offset, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'center', false, false, false, true)
-            dxDrawText('Treść zgłoszenia: #80F177'..v.text, sx/2-590/zoom/2 + 8/zoom, sy/2-120/zoom + 35/zoom + offset, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center', false, false, false, true)
+            dxDrawText('Osoba zgłaszająca: #438F87'..getPlayerName(v.player), sx/2-590/zoom/2 + 8/zoom, sy/2-120/zoom + 15/zoom + offset, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'center', false, false, false, true)
+            dxDrawText('Treść zgłoszenia: #438F87'..v.text, sx/2-590/zoom/2 + 8/zoom, sy/2-120/zoom + 35/zoom + offset, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center', false, false, false, true)
 
             dxDrawImage(sx/2-590/zoom/2 - 3/zoom + 590/zoom - 30/zoom - 8/zoom, sy/2-120/zoom + offset + 48/zoom/2 - 30/zoom/2, 30/zoom, 30/zoom, "data/images/accept.png", 0, 0, 0, tocolor(255, 255, 255, (isMouseInPosition(sx/2-590/zoom/2 - 3/zoom + 590/zoom - 30/zoom - 8/zoom, sy/2-120/zoom + offset + 48/zoom/2 - 30/zoom/2, 30/zoom, 30/zoom) and 255 or 150)))
             dxDrawToolTip(sx/2-590/zoom/2 - 3/zoom + 590/zoom - 30/zoom - 8/zoom, sy/2-120/zoom + offset + 48/zoom/2 - 30/zoom/2, 30/zoom, 30/zoom, 'Zaakceptuj zgłoszenie')

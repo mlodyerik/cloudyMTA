@@ -552,7 +552,7 @@ local items = {
         useServer = function(player)
             local random = math.random(1000, 5000)
             givePlayerMoney(player, random)
-            exports['since-notifications']:sendNotification(player, 'success', 'Otwierasz torbę z pieniędzmi, znajdujesz #7dff7d$ '..addCommas(random)..'')
+            exports['since-notifications']:sendNotification(player, 'success', 'Otwierasz torbę z pieniędzmi, znajdujesz #2E756F$ '..addCommas(random)..'')
         end,
         class = 'gray'
     },

@@ -1,7 +1,7 @@
 
 --[[
     Author: EnoNeK
-    For: SinceRPG
+    For: cloudyMTA
 ]]
 
 local sounds, sounds_pog = {}, {}

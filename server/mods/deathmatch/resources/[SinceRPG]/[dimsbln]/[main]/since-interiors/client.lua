@@ -25,12 +25,12 @@ function renderLoading()
 
     rot = rot + 0.5
 
-    dxDrawRectangle(0, 0, sx, sy, tocolor(15, 15, 15, 255*alpha))
+    dxDrawRectangle(0, 0, sx, sy, tocolor(16, 23, 25, 255*alpha))
     dxDrawImage(0, 0, sx, sy, 'data/image.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
     dxDrawImage(sx / 2 - 139/zoom, sy / 2 - 160/zoom, 278/zoom, 280/zoom, 'data/logo.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
     dxDrawImage(sx / 2 - 179/zoom, sy / 2 - 199/zoom, 358/zoom, 358/zoom, 'data/circles2.png', rot, 0, 0, tocolor(255, 255, 255, 255*alpha))
     dxDrawImage(sx / 2 - 201/zoom, sy / 2 - 221/zoom, 402/zoom, 402/zoom, 'data/circles1.png', -rot, 0, 0, tocolor(255, 255, 255, 255*alpha))
-	dxDrawText('Trwa wczytywanie, zaczekaj chwilę', sx/2, sy - 100/zoom, nil, nil, tocolor(103, 213, 94, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom), 'center', 'bottom')
+	dxDrawText('Trwa wczytywanie, zaczekaj chwilę', sx/2, sy - 100/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom), 'center', 'bottom')
 	dxDrawText('To nie potrwa długo...', sx/2, sy - 100/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'top')
 end
 
@@ -39,8 +39,8 @@ function renderUI()
 	dxDrawImage(sx/2 - 256/zoom, sy - 198/zoom, 512/zoom, 125/zoom, 'data/bg.png')
 	dxDrawImage(sx/2 - 256/zoom, sy - 149/zoom, 512/zoom, 1, 'data/line.png')
 	dxDrawImage(sx/2 + 221/zoom, sy - 188/zoom, 26/zoom, 30/zoom, 'data/building.png')
-	dxDrawText(data.name, sx/2 + 214/zoom, sy - 171/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'right', 'bottom')
-	dxDrawText('Wejście do pomieszczenia', sx/2 - 214/zoom, sy - 171/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'bottom')
+	dxDrawText(data.name, sx/2 + 214/zoom, sy - 171/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'right', 'bottom')
+	dxDrawText('Wejście do pomieszczenia', sx/2 - 214/zoom, sy - 171/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'bottom')
 	dxDrawText(data.desc, sx/2 + 214/zoom, sy - 171/zoom, nil, nil, tocolor(255, 255, 255, 204), 1, exports['since-fonts']:getFont('Inter-SemiBold', 8/zoom), 'right', 'top')
 	
     dxDrawText(enterType == 'enter' and 'Aby wejść do pomieszczenia wciśnij #5eff45Q' or 'Aby wyjść z pomieszczenia wciśnij #5eff45Q', sx/2 - 214/zoom, sy - 171/zoom, nil, nil, tocolor(255, 255, 255, 204), 1, exports['since-fonts']:getFont('Inter-SemiBold', 8/zoom), 'left', 'top', false, false, false, true)

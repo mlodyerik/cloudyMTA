@@ -269,7 +269,7 @@ if SSIDE then
         outputChatBox('★#ffffff Aktywne premie zarobkowe: ', root, 255, 175, 0, true)
         
         for _, data in pairs(multipliers) do
-            outputChatBox('★#ffffff '..data.job..': #7dff7d+'..(data.multiplier*100)..'%', root, 255, 175, 0, true)
+            outputChatBox('★#ffffff '..data.job..': #2E756F+'..(data.multiplier*100)..'%', root, 255, 175, 0, true)
         end
         outputChatBox(' ', root, 255, 175, 0, true)
     end

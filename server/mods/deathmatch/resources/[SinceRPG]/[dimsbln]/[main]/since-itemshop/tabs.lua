@@ -30,7 +30,7 @@ tabs = {
                     dxDrawImage(sx/2 - 427/zoom + offsetX, sy/2 - 199/zoom + offsetY, 252/zoom, 236/zoom, 'data/item_bg.png', 0, 0, 0, tocolor(255, 255, 255, onItem[i] * 255))
                     dxDrawImage(sx/2 - 427/zoom + offsetX, sy/2 - 199/zoom + offsetY, 252/zoom, 128/zoom, v.image)
                     dxDrawText(v.name, sx/2 - 300/zoom + offsetX, sy/2 - 41/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
-                    dxDrawText(v.price .. ' wPLN', sx/2 - 301/zoom + offsetX, sy/2 - 41/zoom + offsetY, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
+                    dxDrawText(v.price .. ' wPLN', sx/2 - 301/zoom + offsetX, sy/2 - 41/zoom + offsetY, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
 
                     local isIn = isMouseInPosition(sx/2 - 375/zoom + offsetX, sy/2 - 11/zoom + offsetY, 148/zoom, 29/zoom)
                     dxDrawImage(sx/2 - 375/zoom + offsetX, sy/2 - 11/zoom + offsetY, 148/zoom, 29/zoom, 'data/buy_button.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 175))
@@ -126,9 +126,9 @@ tabs = {
                     end
 
                     dxDrawImage(sx/2 - 427/zoom + offsetX, sy/2 - 199/zoom + offsetY, 252/zoom, 180/zoom, 'data/item_bg2.png', 0, 0, 0, tocolor(255, 255, 255, onItem[i] * 255))
-                    dxDrawText(v.name, sx/2 - 300/zoom + offsetX, sy/2 - 161/zoom + offsetY, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
+                    dxDrawText(v.name, sx/2 - 300/zoom + offsetX, sy/2 - 161/zoom + offsetY, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
                     dxDrawText(v.desc, sx/2 - 420/zoom + offsetX, sy/2 - 161/zoom + offsetY, sx/2 - 180/zoom + offsetX, nil, tocolor(200, 200, 200, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, true)
-                    dxDrawText(v.price .. ' wPLN', sx/2 - 301/zoom + offsetX, sy/2 - 85/zoom + offsetY, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'bottom')
+                    dxDrawText(v.price .. ' wPLN', sx/2 - 301/zoom + offsetX, sy/2 - 85/zoom + offsetY, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'bottom')
 
                     local isIn = isMouseInPosition(sx/2 - 375/zoom + offsetX, sy/2 - 75/zoom + offsetY, 148/zoom, 29/zoom)
                     dxDrawImage(sx/2 - 375/zoom + offsetX, sy/2 - 75/zoom + offsetY, 148/zoom, 29/zoom, 'data/buy_button.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 175))
@@ -147,7 +147,7 @@ tabs = {
 
             dxDrawImage(sx/2 - 479/zoom, sy/2 + 255/zoom, 958/zoom, 2/zoom, 'data/line.png')
 
-            dxDrawText('Przedmioty w koszyku', sx/2 - 161/zoom, sy/2 + 297/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom')
+            dxDrawText('Przedmioty w koszyku', sx/2 - 161/zoom, sy/2 + 297/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom')
             dxDrawText(#buyData, sx/2 - 161/zoom, sy/2 + 298/zoom, nil, nil, tocolor(200, 200, 200, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'top')
             local textWidth = dxGetTextWidth(#buyData, 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom))
 
@@ -175,7 +175,7 @@ tabs = {
             end
 
             local textWidth = dxGetTextWidth('Przedmioty w koszyku', 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom))
-            dxDrawText('Do zapłaty', sx/2 - 141/zoom + textWidth, sy/2 + 297/zoom , nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom')
+            dxDrawText('Do zapłaty', sx/2 - 141/zoom + textWidth, sy/2 + 297/zoom , nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom')
             dxDrawText(money..' wPLN', sx/2 - 141/zoom + textWidth, sy/2 + 298/zoom, nil, nil, tocolor(200, 200, 200, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'top')
 
             local isIn = isMouseInPosition(sx/2 + 295/zoom, sy/2 + 275/zoom, 155/zoom, 40/zoom)
@@ -299,7 +299,7 @@ tabs = {
             dxDrawImage(sx/2 - 100/zoom, sy/2 + 10/zoom, 200/zoom, 40/zoom, 'data/buy_button.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 175))
             dxDrawText('Wymień', sx/2, sy/2 + 28/zoom, nil, nil, tocolor(255, 255, 255, isIn and 255 or 175), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), 'center', 'center')
 
-            dxDrawText('Jak wymienić wPLN na Punkty premium?', sx/2, sy/2 + 120/zoom, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
+            dxDrawText('Jak wymienić wPLN na Punkty premium?', sx/2, sy/2 + 120/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
             dxDrawText('Za pomocą suwaka, który znajduje się wyżej wybierz ilość wPLN, na którą chcesz wymienić\nPunkty Premium. Przy większych wymianach otrzymasz bonusowe Punkty Premium.', sx/2, sy/2 + 120/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'top')
             
             dxDrawText('Uwaga!', sx/2, sy/2 + 225/zoom, nil, nil, tocolor(255, 125, 125, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
@@ -351,10 +351,10 @@ tabs = {
 
         name = "Zakupy SMS'em",
         draw = function()
-            dxDrawText('Itemshop SMS', sx/2 - 500/zoom + 25/zoom, sy/2 - 250/zoom + 52/zoom + 33/zoom, nil, nil, tocolor(125, 255, 125), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'left', 'bottom')
+            dxDrawText('Itemshop SMS', sx/2 - 500/zoom + 25/zoom, sy/2 - 250/zoom + 52/zoom + 33/zoom, nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'left', 'bottom')
             dxDrawText('Zakup wPLN wysyłając SMS!', sx/2 - 500/zoom + 25/zoom, sy/2 - 250/zoom + 52/zoom + 33/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'top')
 
-            dxDrawText('Informacja', sx/2 - 500/zoom + 25/zoom, sy/2 - 250/zoom + 52/zoom + 153/zoom, nil, nil, tocolor(125, 255, 125), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'left', 'bottom')
+            dxDrawText('Informacja', sx/2 - 500/zoom + 25/zoom, sy/2 - 250/zoom + 52/zoom + 153/zoom, nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'left', 'bottom')
             
             if (exports['since-gridlist']:getSelectedItem(uiElements['gridlist']) ~= 'Brak') then
                 dxDrawText('Aby zakupić #68D65E'..getData().wpln..' wPLN#ffffff, wyślij SMS o treści #68D65E'..getData().code..' #ffffffna numer #68D65E'..getData().number..'#ffffff.', sx/2 - 500/zoom + 25/zoom, sy/2 - 250/zoom + 52/zoom + 153/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'top', false, false, false, true)
@@ -367,7 +367,7 @@ tabs = {
             dxDrawText('Sprawdź kod', sx/2 - 500/zoom + 25/zoom + 249/zoom + 10/zoom + 118/zoom/2, sy/2 - 250/zoom + 47/zoom + 195/zoom + 44/zoom/2 - 38/zoom/2 + 38/zoom/2, nil, nil, tocolor(255, 255, 255, isIn and 225 or 200), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'center')
 
             dxDrawRectangle(sx/2 - 400/zoom, sy/2 + 80/zoom, 800/zoom, 2, tocolor(255, 255, 255, 55))
-            dxDrawText('Regulamin płatności', sx/2, sy/2 - 250/zoom + 95/zoom + 255/zoom + 30/zoom, nil, nil, tocolor(104, 214, 94), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
+            dxDrawText('Regulamin płatności', sx/2, sy/2 - 250/zoom + 95/zoom + 255/zoom + 30/zoom, nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
             dxDrawText('Nasz regulamin płantości znajdziesz na naszym forum internetowym, które\nznajdziesz pod adresem: #68D65Ehttps://since-mta.pl/', sx/2, sy/2 - 250/zoom + 95/zoom + 255/zoom + 30/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'top', false, false, false, true)
     
             local isin = isMouseInPosition(sx/2 - 100/zoom, sy/2 + 200/zoom, 200/zoom, 40/zoom)

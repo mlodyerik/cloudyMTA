@@ -11,7 +11,7 @@ function renderEventUI()
 	dxDrawText('Wydarzenie fabularne', sx - 20/zoom, eventUiY, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'right', 'bottom')
 	
     for k, v in ipairs(eventText) do
-        dxDrawText(v, sx - 20/zoom, eventUiY + (k-1) * fontHeight, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
+        dxDrawText(v, sx - 20/zoom, eventUiY + (k-1) * fontHeight, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
     end
 end
 

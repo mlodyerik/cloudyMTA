@@ -183,7 +183,7 @@ pages = {
         dxDrawText('Dorób klucz', sx/2, sy/2 - 33/zoom, nil, nil, tocolor(255,255,255,anim*animin), 1, main['fonts'][5], 'center', 'center')
 
         dxDrawText('Dorobienie klucza', sx/2, sy/2+20/zoom, nil, nil, tocolor(255,255,255,anim), 1, main['fonts'][1], 'center', 'bottom')
-        dxDrawText('Dorobienie kolejnego klucza będzie kosztować #7dff7d$ '.. numberofkeys * 75000 ..'', sx/2, sy/2+20/zoom, nil, nil, tocolor(200,200,200,anim), 1, main['fonts'][2], 'center', 'top', false, false, false, true)
+        dxDrawText('Dorobienie kolejnego klucza będzie kosztować #2E756F$ '.. numberofkeys * 75000 ..'', sx/2, sy/2+20/zoom, nil, nil, tocolor(200,200,200,anim), 1, main['fonts'][2], 'center', 'top', false, false, false, true)
 
         dxDrawText('Informacje', sx/2, sy/2+70/zoom, nil, nil, tocolor(255,255,255,anim), 1, main['fonts'][1], 'center', 'bottom')
         dxDrawText('Dorobienie klucza jest nieodwracalne, dorabiając klucz musisz liczyć się\nz tym, że nie otrzymasz zwrotu pieniędzy.\nAby udostępnic komuś klucze wpisz #c680ff/klucze#c8c8c8 a następnie\nwprowadź UID osoby, której chcesz podarować klucze.', sx/2, sy/2+70/zoom, nil, nil, tocolor(200,200,200,anim), 1, main['fonts'][2], 'center', 'top', false, false, false, true)

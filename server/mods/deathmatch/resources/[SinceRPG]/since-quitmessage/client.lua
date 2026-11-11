@@ -22,7 +22,7 @@ function addMessage(name, uid, pos, type)
 
     }
 
-    text = "Gracz #7dff7d"..name.."#ffffff (#7dff7d"..uid.."#ffffff) opuścił gre\n(#ff6363"..types[type].."#ffffff)"
+    text = "Gracz #2E756F"..name.."#ffffff (#2E756F"..uid.."#ffffff) opuścił gre\n(#ff6363"..types[type].."#ffffff)"
 
     setElementData(messages[uid].element, 'name', text)
 

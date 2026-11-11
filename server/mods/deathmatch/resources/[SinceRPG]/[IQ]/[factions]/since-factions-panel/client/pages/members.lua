@@ -98,7 +98,7 @@ Panel.pages.renderMembersPage = function()
             dxDrawRectangle(x + padding, y + padding + 45/zoom + offset, 674/zoom, 1, tocolor(255, 255, 255, 65))
 
             dxDrawText(v.name, x + padding + 10/zoom, y + padding + 16/zoom + offset, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'center')
-            dxDrawText(v.rank, x + padding + 10/zoom, y + padding + 16/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom)) + offset, nil, nil, tocolor(104, 214, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
+            dxDrawText(v.rank, x + padding + 10/zoom, y + padding + 16/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom)) + offset, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
 
             offset = offset + 47/zoom + 1
         end

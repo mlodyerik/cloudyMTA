@@ -21,14 +21,14 @@ function renderUI()
 	dxDrawImage(sx - 354/zoom, sy/2 - 58/zoom, 325/zoom, 116/zoom, 'data/background.png', 0, 0, 0, tocolor(255, 255, 255, 255*cache.alphaAnimation), false)
     
 	dxDrawImage(sx - 246/zoom, sy/2 - 52/zoom, 21/zoom, 21/zoom, 'data/keyboard_icon.png', 0, 0, 0, tocolor(255, 255, 255, 255*cache.alphaAnimation), false)
-	dxDrawText('Szybkie palce', sx - 220/zoom, sy/2 - 40.5/zoom, nil, nil, tocolor(103, 213, 94, 255*cache.alphaAnimation), 1, exports['since-fonts']:getFont('Inter-Bold', 9/zoom), 'left', 'center')
+	dxDrawText('Szybkie palce', sx - 220/zoom, sy/2 - 40.5/zoom, nil, nil, tocolor(46, 117, 111, 255*cache.alphaAnimation), 1, exports['since-fonts']:getFont('Inter-Bold', 9/zoom), 'left', 'center')
     
 	dxDrawText('Przepisz podany poniżej tekst', sx - 354/zoom + (325/zoom / 2), sy/2 - 31/zoom, nil, nil, tocolor(255, 255, 255, 255*cache.alphaAnimation), 1, exports['since-fonts']:getFont('Inter-Medium', 7/zoom), 'center', 'top')
     
 	dxDrawImage(sx - 241/zoom, sy/2 - 10/zoom, 100/zoom, 24/zoom, 'data/text_bg.png', 0, 0, 0, tocolor(255, 255, 255, 255*cache.alphaAnimation), false)
 	dxDrawText(cache.word, sx - 241/zoom + 50/zoom, sy/2 + 1/zoom, nil, nil, tocolor(114, 255, 102, 255*cache.alphaAnimation), 1, exports['since-fonts']:getFont('Inter-SemiBold', 11/zoom), 'center', 'center')
 
-	dxDrawText('Aby udzielić odpowiedzi i zgarnąć '..(cache.typeO == 1 and '#7dff7d' or '#47b3ff')..''..addCommas(cache.price)..' '..(cache.typeO == 1 and '$' or 'SRP')..'#ffffff wpisz\n#7dff7d/odp '..cache.word, sx - 354/zoom + (325/zoom / 2), sy/2 + 26/zoom, nil, nil, tocolor(255, 255, 255, 255*cache.alphaAnimation), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'center', 'top', false, false, false, true)
+	dxDrawText('Aby udzielić odpowiedzi i zgarnąć '..(cache.typeO == 1 and '#2E756F' or '#47b3ff')..''..addCommas(cache.price)..' '..(cache.typeO == 1 and '$' or 'SRP')..'#ffffff wpisz\n#2E756F/odp '..cache.word, sx - 354/zoom + (325/zoom / 2), sy/2 + 26/zoom, nil, nil, tocolor(255, 255, 255, 255*cache.alphaAnimation), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'center', 'top', false, false, false, true)
 end
 
 addEvent('onServerSendData:words', true)

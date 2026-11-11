@@ -10,7 +10,7 @@ function writePlayerData(plr, target)
 
     outputChatBox(' ', plr)
     outputChatBox(' ', plr)
-    outputChatBox('⚠#ffffff Rozpoczynasz obserwowanie gracza:#7dff7d '..getPlayerName(target), plr, 255, 175, 0, true)
+    outputChatBox('⚠#ffffff Rozpoczynasz obserwowanie gracza:#2E756F '..getPlayerName(target), plr, 255, 175, 0, true)
     outputChatBox('---------------------', plr, 255, 255, 255, true)
     outputChatBox('➥#ffffff UID Gracza: #91c8ff'..playerSID, plr, 95, 154, 255, true)
     outputChatBox('➥#ffffff Numer seryjny: #91c8ff'..getPlayerSerial(target), plr, 95, 154, 255, true)

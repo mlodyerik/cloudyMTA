@@ -95,11 +95,11 @@ addEventHandler('onPlayerConnect', root, function(name, ip, username, serial)
     if check ~= 0 then
         if check == 1 then
             local q = exports['since-db']:query('SELECT *, NOW() > time AS timePassed FROM `since-ban` WHERE `serial` = ?', serial)
-            outputConsole('\n\n------------------------\nZostałeś zbanowany na tym serwerze.\nAdministrator: ' .. q[1]['admin_name'] .. '\nPowód: '..q[1].reason..'\nCzas: '..q[1].time..' (/time)\n\nJeśli uważasz, że to błąd, skontaktuj się z administracją.\nDiscord: dsc.gg/sincerpg', getPlayerFromName(name))
+            outputConsole('\n\n------------------------\nZostałeś zbanowany na tym serwerze.\nAdministrator: ' .. q[1]['admin_name'] .. '\nPowód: '..q[1].reason..'\nCzas: '..q[1].time..' (/time)\n\nJeśli uważasz, że to błąd, skontaktuj się z administracją.\nDiscord: discord.gg/cloudymta', getPlayerFromName(name))
             cancelEvent(true, 'Jesteś zbanowany!\nSprawdź konsolę (F8)')
         elseif check == 2 then
             local q = exports['since-db']:query('SELECT * FROM `since-ban` WHERE serial = ? AND type = 2', serial)
-            outputConsole('\n\n------------------------\nZostałeś permanentnie zbanowany na tym serwerze.\nAdministrator: ' .. q[1]['admin_name'] .. '\nPowód: '..q[1].reason..'\n\nJeśli uważasz, że to błąd, skontaktuj się z administracją.\nDiscord: dsc.gg/sincerpg', getPlayerFromName(name))
+            outputConsole('\n\n------------------------\nZostałeś permanentnie zbanowany na tym serwerze.\nAdministrator: ' .. q[1]['admin_name'] .. '\nPowód: '..q[1].reason..'\n\nJeśli uważasz, że to błąd, skontaktuj się z administracją.\nDiscord: discord.gg/cloudymta', getPlayerFromName(name))
             cancelEvent(true, 'Jesteś permanentnie zbanowany!\nSprawdź konsolę (F8)')
         end
     end

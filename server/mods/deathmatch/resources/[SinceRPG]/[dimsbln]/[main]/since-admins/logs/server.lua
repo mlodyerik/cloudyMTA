@@ -104,8 +104,8 @@ function addMoneyTransferLog(player, target, money, isWPLN)
         target = getElementData(target, 'player:sid'),
         textNoHex = '[PRZELEW] '..getPlayerName(player) .. ' (' .. getElementData(player, 'id') .. ') >> '..getPlayerName(target) .. ' (' .. getElementData(target, 'id') .. ') >> '.. isWPLN ..' ' .. comma_value(money),
         text = {
-            {tocolor(125, 255, 125), '[PRZELEW]#ffffff '..getPlayerName(player) .. ' (' .. getElementData(player, 'id') .. ') >> '..getPlayerName(target) .. ' (' .. getElementData(target, 'id') .. ') >>'},
-            {tocolor(125, 255, 125), ' '..isWPLN..' ' .. comma_value(money)},
+            {tocolor(46, 117, 111), '[PRZELEW]#ffffff '..getPlayerName(player) .. ' (' .. getElementData(player, 'id') .. ') >> '..getPlayerName(target) .. ' (' .. getElementData(target, 'id') .. ') >>'},
+            {tocolor(46, 117, 111), ' '..isWPLN..' ' .. comma_value(money)},
         },
         sendTime = getRealTime().timestamp
     })

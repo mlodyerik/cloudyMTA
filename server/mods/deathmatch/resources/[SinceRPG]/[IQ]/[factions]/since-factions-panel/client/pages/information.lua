@@ -4,7 +4,7 @@ local function renderCard(x, y, title, value)
 
     dxDrawImage(x, y, w, h, 'data/images/element-bg.png')
     dxDrawText(title, x + 10/zoom, y + 16/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'center')
-    dxDrawText(value, x + 10/zoom, y + 16/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom)), nil, nil, tocolor(104, 214, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
+    dxDrawText(value, x + 10/zoom, y + 16/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom)), nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
 
     return w
 end

@@ -31,7 +31,7 @@ addEventHandler('fixMechVehicle', resourceRoot, function(_, veh, tbl, cost)
             if cost == 0 then
                 exports['since-notifications']:sendNotification(client, 'success', 'Pomyslnie naprawiono wybrane części.')
             else
-                exports['since-notifications']:sendNotification(client, 'success', 'Pomyslnie naprawiono wybrane części za kwotę #7dff7d$ '..addCommas(cost)..'')
+                exports['since-notifications']:sendNotification(client, 'success', 'Pomyslnie naprawiono wybrane części za kwotę #2E756F$ '..addCommas(cost)..'')
             end
             triggerClientEvent(client, 'updateMechanicGUI', client)
         else

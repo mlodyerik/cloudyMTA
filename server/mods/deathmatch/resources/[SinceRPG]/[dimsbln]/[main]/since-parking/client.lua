@@ -273,10 +273,10 @@ function render()
     local textWidth = dxGetTextWidth( 'Pojazdy prywatne', 1, exports['since-fonts']:getFont('Inter-SemiBold', 11/zoom) ) + 26/zoom
     local textWidth2 = dxGetTextWidth( 'Pojazdy organizacyjne', 1, exports['since-fonts']:getFont('Inter-SemiBold', 11/zoom) ) + 26/zoom
 
-    dxDrawRoundedRectangle(sx - 278/zoom - textWidth/2-textWidth2/2-5/zoom, sy/2 + 264/zoom, textWidth, 28/zoom, 14/zoom, main['category']==1 and  tocolor(125, 255, 125, 85)or tocolor(255, 255, 255, 85))
+    dxDrawRoundedRectangle(sx - 278/zoom - textWidth/2-textWidth2/2-5/zoom, sy/2 + 264/zoom, textWidth, 28/zoom, 14/zoom, main['category']==1 and  tocolor(46, 117, 111, 85)or tocolor(255, 255, 255, 85))
     dxDrawText('Pojazdy prywatne', sx - 278/zoom-textWidth2/2-5/zoom, sy/2 + 278/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'center')
 
-    dxDrawRoundedRectangle(sx - 278/zoom - textWidth2/2+textWidth/2+5/zoom, sy/2 + 264/zoom, textWidth2, 28/zoom, 14/zoom, main['category']==2 and tocolor(125, 255, 125, 85) or tocolor(255, 255, 255, 85))
+    dxDrawRoundedRectangle(sx - 278/zoom - textWidth2/2+textWidth/2+5/zoom, sy/2 + 264/zoom, textWidth2, 28/zoom, 14/zoom, main['category']==2 and tocolor(46, 117, 111, 85) or tocolor(255, 255, 255, 85))
     dxDrawText('Pojazdy organizacyjne', sx - 278/zoom+textWidth/2+5/zoom, sy/2 + 278/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'center')
    
     dxDrawText('Użyj strzałek, aby zmienić zakladkę', sx - 278/zoom, sy/2 + 300/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 11/zoom), 'center', 'top')

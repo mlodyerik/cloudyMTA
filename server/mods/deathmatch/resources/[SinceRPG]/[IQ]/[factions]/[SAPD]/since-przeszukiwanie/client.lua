@@ -4,7 +4,7 @@ local scrollData = {k = 1, n = 6, m = 6}
 
 function renderUI()
 	dxDrawImage(sx/2 - 165/zoom, sy/2 - 174/zoom, 330/zoom, 349/zoom, 'data/bg.png')
-	dxDrawText('Przeszukiwanie', sx/2, sy/2 - 150/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'center', 'bottom')
+	dxDrawText('Przeszukiwanie', sx/2, sy/2 - 150/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'center', 'bottom')
 	dxDrawText('Przedmioty gracza '..getPlayerName(selectedPlayer), sx/2, sy/2 - 150/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 7/zoom), 'center', 'top')
 
     local offset =  0

@@ -58,7 +58,7 @@ main['pages'] = {
             dxDrawText(isTurned and 'Pracuje' or 'Nie pracuje', sx/2-482/zoom, sy/2+30/zoom, nil, nil, tocolor(r, g, b, anim), 1, main['fonts'][2], 'left', 'top')
 
             dxDrawText('Łączny dochód', sx/2-509/zoom, sy/2+100/zoom, nil, nil, tocolor(255, 255, 255, anim), 1, main['fonts'][1], 'left', 'bottom')
-            dxDrawText('$ '..formatNumber(jobStats['crypto']['earned']), sx/2-509/zoom, sy/2+100/zoom, nil, nil, tocolor(104, 214, 94, anim), 1, main['fonts'][2], 'left', 'top')
+            dxDrawText('$ '..formatNumber(jobStats['crypto']['earned']), sx/2-509/zoom, sy/2+100/zoom, nil, nil, tocolor(46, 117, 111, anim), 1, main['fonts'][2], 'left', 'top')
 
             dxDrawImage(sx/2-242/zoom, sy/2-240/zoom, 230/zoom, 130/zoom, main['textures']['bg2'], 0, 0, 0, tocolor(255, 255, 255, anim))
 
@@ -82,7 +82,7 @@ main['pages'] = {
             dxDrawImage(sx/2+376/zoom, sy/2-245/zoom, 138/zoom, 138/zoom, main['textures']['bg3'], 0, 0, 0, tocolor(255, 255, 255, anim))
             dxDrawImage(sx/2+383/zoom, sy/2-238/zoom, 124/zoom, 124/zoom, main['textures']['graphics1'], 0, 0, 0, tocolor(255, 255, 255, anim))
             dxDrawText('Karta graficzna', sx/2+366/zoom, sy/2-205/zoom, nil, nil, tocolor(255, 255, 255, anim), 1, main['fonts'][4], 'right', 'bottom')
-            dxDrawText(graphicsCard[jobStats['crypto']['parts']['graphicsCard']]['name'], sx/2+366/zoom, sy/2-205/zoom, nil, nil, tocolor(104, 214, 94, anim), 1, main['fonts'][5], 'right', 'top')
+            dxDrawText(graphicsCard[jobStats['crypto']['parts']['graphicsCard']]['name'], sx/2+366/zoom, sy/2-205/zoom, nil, nil, tocolor(46, 117, 111, anim), 1, main['fonts'][5], 'right', 'top')
 
             if not main['powerSave'] then main['powerSave'] = {math.random(30,80)/100, math.random(30,80)/100} end
 
@@ -108,7 +108,7 @@ main['pages'] = {
             dxDrawImage(sx/2+376/zoom, sy/2-87/zoom, 138/zoom, 138/zoom, main['textures']['bg3'], 0, 0, 0, tocolor(255, 255, 255, anim))
             dxDrawImage(sx/2+383/zoom, sy/2-80/zoom, 124/zoom, 124/zoom, main['textures']['power1'], 0, 0, 0, tocolor(255, 255, 255, anim))
             dxDrawText('Zasilacz koparki', sx/2+366/zoom, sy/2-47/zoom, nil, nil, tocolor(255, 255, 255, anim), 1, main['fonts'][4], 'right', 'bottom')
-            dxDrawText(powerSupply[jobStats['crypto']['parts']['powerSupply']]['name'], sx/2+366/zoom, sy/2-47/zoom, nil, nil, tocolor(104, 214, 94, anim), 1, main['fonts'][5], 'right', 'top')
+            dxDrawText(powerSupply[jobStats['crypto']['parts']['powerSupply']]['name'], sx/2+366/zoom, sy/2-47/zoom, nil, nil, tocolor(46, 117, 111, anim), 1, main['fonts'][5], 'right', 'top')
 
             dxDrawImage(sx/2+161/zoom, sy/2-7/zoom, 196/zoom, 10/zoom, main['textures']['power_bar'], 0, 0, 0, tocolor(255, 255, 255, anim))
             dxDrawImageSection(sx/2+161/zoom, sy/2-7/zoom, 196/zoom*main['powerSave'][2], 10/zoom, 0, 0, 196*main['powerSave'][2], 10, main['textures']['power_bar2'], 0, 0, 0, tocolor(255, 255, 255, anim))
@@ -325,7 +325,7 @@ function reloadRenderTarget()
                 dxDrawRoundedRectangle(2/zoom, offset, 754/zoom, 81/zoom, 10/zoom, tocolor(76, 76, 76, 225))
                 dxDrawImage(20/zoom, offset + 10/zoom, 61/zoom, 61/zoom, 'files/images/graphics1.png', 0, 0, 0, tocolor(255, 255, 255, 255))
 
-                dxDrawText(tbl[i].name, 95/zoom, offset + 44/zoom, nil, nil, tocolor(104, 214, 94, anim), 1, exports['since-fonts']:getFont('Inter-Bold', 17/zoom), 'left', 'bottom')
+                dxDrawText(tbl[i].name, 95/zoom, offset + 44/zoom, nil, nil, tocolor(46, 117, 111, anim), 1, exports['since-fonts']:getFont('Inter-Bold', 17/zoom), 'left', 'bottom')
 
                 dxDrawText('Najedź kursorem aby wyświetlić statystyki', 95/zoom, offset + 44/zoom, nil, nil, tocolor(255, 255, 255, 185), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'left', 'top')
 

@@ -20,7 +20,7 @@ function renderGui()
     dxDrawImage(sx-280/zoom, sy/2-420/zoom/2, 266/zoom, 440/zoom, "data/background.png")
     dxDrawImage(sx-280/zoom, sy/2-294/zoom/2, 266/zoom, 1/zoom, "data/line.png")
     dxDrawText('Top #9', sx-280/zoom + 12/zoom, sy/2-420/zoom/2 + 25/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'left', 'center')
-    dxDrawText('Topka kili SinceRPG', sx-280/zoom + 12/zoom, sy/2-420/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom)), nil, nil, tocolor(104, 214, 94), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'center')
+    dxDrawText('Topka kili SinceRPG', sx-280/zoom + 12/zoom, sy/2-420/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom)), nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'center')
 
     dxDrawText('Aktualnie posiadasz\n#68D65E ' ..top.clientKills .. '#ffffff Zabójstw', sx-140/zoom, sy/2+470/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom)), nil, nil, tocolor(255,255,255), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center', false, false, false, true )
     dxDrawText('Kliknij #68D65EP#FFFFFF aby schować', sx-140/zoom, sy/2+400/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom)), nil, nil, tocolor(255,255,255), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center', false, false, false, true )

@@ -50,10 +50,10 @@ function reloadDiscordPresence()
     setDiscordRichPresenceDetails('» '..location)
 
     setDiscordRichPresenceButton(1, "Dołącz do gry", "mtasa://146.59.4.27:20236")
-    setDiscordRichPresenceButton(2, "Dołącz na discorda", "https://discord.gg/sincerpg-play-with-us-1143611641393586356")
+    setDiscordRichPresenceButton(2, "Dołącz na discorda", "https://discord.gg/cloudymta-community")
 
-    setDiscordRichPresenceAsset("logo", "SinceRPG")
-    setDiscordRichPresenceSmallAsset("my_small_logo", "SinceRPG")
+    setDiscordRichPresenceAsset("logo", "cloudyMTA")
+    setDiscordRichPresenceSmallAsset("my_small_logo", "cloudyMTA")
     setDiscordRichPresencePartySize(1, #getElementsByType('player'))
 end
 
@@ -71,10 +71,10 @@ function reloadPresenceTimer()
         setDiscordRichPresenceDetails('Loguje się...')
 
         setDiscordRichPresenceButton(1, "Dołącz do gry", "mtasa://146.59.4.27:20236")
-        setDiscordRichPresenceButton(2, "Dołącz na discorda", "https://discord.gg/sincerpg-play-with-us-1143611641393586356")
+        setDiscordRichPresenceButton(2, "Dołącz na discorda", "https://discord.gg/cloudymta-community")
         
-        setDiscordRichPresenceAsset("logo", "SinceRPG")
-        setDiscordRichPresenceSmallAsset("my_small_logo", "SinceRPG")
+        setDiscordRichPresenceAsset("logo", "cloudyMTA")
+        setDiscordRichPresenceSmallAsset("my_small_logo", "cloudyMTA")
         setDiscordRichPresencePartySize(1, #getElementsByType('player'))
     end
 end

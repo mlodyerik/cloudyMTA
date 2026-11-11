@@ -22,7 +22,7 @@ function render()
     exports['since-blur']:dxDrawBlur(sx/2 - 250/zoom, sy/2 - 316/zoom, 497/zoom, 632/zoom, mask)
 	dxDrawImage(sx/2 - 250/zoom, sy/2 - 316/zoom, 497/zoom, 632/zoom, 'files/images/bg.png')
 	dxDrawText('Przepisywanie pojazdów', sx/2, sy/2 - 270/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
-	dxDrawText('Przepisz pojazd na organizację', sx/2, sy/2 - 270/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
+	dxDrawText('Przepisz pojazd na organizację', sx/2, sy/2 - 270/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
     
     local isIn = isMouseIn(sx/2 - 151/zoom, sy/2 + 265/zoom, 299/zoom, 35/zoom)
 	dxDrawImage(sx/2 - 151/zoom, sy/2 + 265/zoom, 299/zoom, 35/zoom, 'files/images/button_cancel.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 215 or 255))

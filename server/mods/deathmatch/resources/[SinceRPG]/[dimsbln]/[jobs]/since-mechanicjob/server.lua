@@ -161,7 +161,7 @@ addEventHandler('fixMechVehicle', resourceRoot, function(veh, tbl, cost)
             if cost == 0 then
                 exports['since-notifications']:sendNotification(client, 'success', 'Pomyslnie naprawiono wybrane części.')
             else
-                exports['since-notifications']:sendNotification(client, 'success', 'Pomyslnie naprawiono wybrane części za kwotę #7dff7d$ '..addCommas(cost)..'')
+                exports['since-notifications']:sendNotification(client, 'success', 'Pomyslnie naprawiono wybrane części za kwotę #2E756F$ '..addCommas(cost)..'')
             end
         else
             exports['since-notifications']:sendNotification(client, 'error', 'Nie posiadasz wystarczającej gotówki!')
@@ -191,7 +191,7 @@ function constructJob()
                 local text = createElement("text")
                 local x, y, z = unpack(v.text)
                 setElementPosition(text, x, y, z)
-                setElementData(text, "name", "Stanowisko naprawy\n#7dff7d#"..id)
+                setElementData(text, "name", "Stanowisko naprawy\n#2E756F#"..id)
 
                 setElementData(marker, 'marker:id', id..name)
                 setElementData(cuboid, 'cuboid:id', id..name)

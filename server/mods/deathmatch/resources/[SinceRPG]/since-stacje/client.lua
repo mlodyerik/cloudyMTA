@@ -38,7 +38,7 @@ function renderUI()
         end
 
         dxDrawText('Tankowanie', sx/2 + 1, sy - 135/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
-        dxDrawText('Tankowanie', sx/2, sy - 135/zoom, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
+        dxDrawText('Tankowanie', sx/2, sy - 135/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
 
         local isIn = isMouseInPosition(sx/2 - 262/zoom, sy - 296/zoom, 260/zoom, 72/zoom)
         local alpha = isIn and 200 or 255

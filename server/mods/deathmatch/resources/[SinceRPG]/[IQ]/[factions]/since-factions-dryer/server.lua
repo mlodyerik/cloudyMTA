@@ -2,7 +2,7 @@
 
 --[[
     Author: EnoNeK
-    For: SinceRPG
+    For: cloudyMTA
 ]]
 
 local SPEED_LIMIT = 90

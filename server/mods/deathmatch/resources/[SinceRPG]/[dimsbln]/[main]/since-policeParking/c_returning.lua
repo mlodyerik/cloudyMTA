@@ -32,7 +32,7 @@ function render2()
     dxDrawImage(sx/2+155/zoom, sy/2-304/2/zoom+20/zoom, 20/zoom, 20/zoom, main['textures']['close'], 0, 0, 0, tocolor(255, 255, 255, isIn and 195 or 255), false)
 
     dxDrawText('Parking policyjny', sx/2, sy/2 - 118/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, main['fonts'][1], 'center', 'bottom')
-	dxDrawText('Oddawanie pojazdów', sx/2, sy/2 - 118/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, main['fonts'][2], 'center', 'top')
+	dxDrawText('Oddawanie pojazdów', sx/2, sy/2 - 118/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, main['fonts'][2], 'center', 'top')
     
     local mileage = getElementData(veh, 'vehicle:data') and getElementData(veh, 'vehicle:data').mileage or 0
     local model = getElementData(veh, 'vehicle:model')

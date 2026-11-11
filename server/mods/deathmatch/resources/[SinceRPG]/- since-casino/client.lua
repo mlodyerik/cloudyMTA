@@ -1,6 +1,6 @@
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 --[[if getElementData(localPlayer, "player:sid") == 25 or getElementData(localPlayer, "player:sid") == 1 or getElementData(localPlayer, "player:sid") == 8029 or getElementData(localPlayer, "player:sid") == 8219 or getElementData(localPlayer, "player:sid") == 9264 or getElementData(localPlayer, "player:sid") == 8096 or getElementData(localPlayer, "player:sid") == 7877 then
@@ -81,7 +81,7 @@ function render()
 
 
     if state == "roulette" then
-        dxDrawImage(150/zoom, 35/zoom, 26/zoom, 26/zoom, textures[3], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)    
+        dxDrawImage(150/zoom, 35/zoom, 26/zoom, 26/zoom, textures[3], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)    
         dxDrawText("Roulette", 190/zoom, 50/zoom, left, center, tocolor(205, 205, 205, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(150/zoom, 35/zoom, 26/zoom, 26/zoom, textures[3], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)    
@@ -89,7 +89,7 @@ function render()
     end
 
     if state == "coinflip" then
-        dxDrawImage(320/zoom, 35/zoom, 26/zoom, 26/zoom, textures[4], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)
+        dxDrawImage(320/zoom, 35/zoom, 26/zoom, 26/zoom, textures[4], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)
         dxDrawText("Coinflip", 360/zoom, 50/zoom, left, center, tocolor(212, 212, 212, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(320/zoom, 35/zoom, 26/zoom, 26/zoom, textures[4], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)
@@ -97,7 +97,7 @@ function render()
     end
 
     if state == "slots" then
-        dxDrawImage(490/zoom, 35/zoom, 26/zoom, 26/zoom, textures[40], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)
+        dxDrawImage(490/zoom, 35/zoom, 26/zoom, 26/zoom, textures[40], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)
         dxDrawText("Slots", 530/zoom, 50/zoom, left, center, tocolor(212, 212, 212, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(490/zoom, 35/zoom, 26/zoom, 26/zoom, textures[40], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)
@@ -105,7 +105,7 @@ function render()
     end
 
     if state == "mines" then
-        dxDrawImage(620/zoom, 35/zoom, 26/zoom, 26/zoom, textures[39], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)
+        dxDrawImage(620/zoom, 35/zoom, 26/zoom, 26/zoom, textures[39], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)
         dxDrawText("Mines", 660/zoom, 50/zoom, left, center, tocolor(212, 212, 212, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(620/zoom, 35/zoom, 26/zoom, 26/zoom, textures[39], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)

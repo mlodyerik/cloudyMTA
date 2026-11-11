@@ -38,7 +38,7 @@ function renderDialogUI()
             text = text:sub(1, math.floor(progress * #text))
         end
 
-        dxDrawText(dialogueText.npcName, sx/2 - 450/zoom, yBottom + 65/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, getFigmaFont('Inter-Bold', 26/zoom), 'left', 'bottom')
+        dxDrawText(dialogueText.npcName, sx/2 - 450/zoom, yBottom + 65/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, getFigmaFont('Inter-Bold', 26/zoom), 'left', 'bottom')
         dxDrawText(text, sx/2 - 450/zoom, yBottom + 65/zoom, sx/2 + 450/zoom, yBottom + 250/zoom, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 17/zoom), 'left', 'top', false, true)
     end
 
@@ -49,7 +49,7 @@ function renderDialogUI()
             dxDrawText(option[1], x, y, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 17/zoom), 'left', 'top')
             local width = dxGetTextWidth(option[1], 1, getFigmaFont('Inter-Medium', 17/zoom))
             local mouseIn = isMouseInPosition(x, y, 350/zoom, fontHeight + 5/zoom)
-            dxDrawRectangle(x - 12/zoom, y, 4/zoom, fontHeight, mouseIn and tocolor(103, 213, 94, 255) or tocolor(155, 155, 155, 200))
+            dxDrawRectangle(x - 12/zoom, y, 4/zoom, fontHeight, mouseIn and tocolor(46, 117, 111, 255) or tocolor(155, 155, 155, 200))
             
             y = y + fontHeight + 10/zoom
         end

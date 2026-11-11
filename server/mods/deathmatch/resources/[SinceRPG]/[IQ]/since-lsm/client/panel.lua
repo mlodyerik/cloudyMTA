@@ -15,7 +15,7 @@ function renderPanel()
     if (panelState) then
         dxDrawImage(sx/2-490/zoom/2, sy/2-420/zoom/2, 490/zoom, 420/zoom, "data/images/bg.png")
         dxDrawText('Panel zgloszen LSM', sx/2-490/zoom/2 + 15/zoom, sy/2-420/zoom/2 + 25/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'left', 'center')
-        dxDrawText('Since Los Santos Mechs', sx/2-490/zoom/2 + 15/zoom, sy/2-420/zoom/2 + 23/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom)), nil, nil, tocolor(104, 214, 94), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'center')
+        dxDrawText('Since Los Santos Mechs', sx/2-490/zoom/2 + 15/zoom, sy/2-420/zoom/2 + 23/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom)), nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'center')
         dxDrawImage(sx/2-490/zoom/2, sy/2-145/zoom, 490/zoom, 2/zoom, "data/images/line.png")
 
         local offset = 0

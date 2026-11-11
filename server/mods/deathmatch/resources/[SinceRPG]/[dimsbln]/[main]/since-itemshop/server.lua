@@ -106,7 +106,7 @@ function returnShopData(playerUID, wPLN)
 
         if wPLN >= 1000 then
             local theBonus = getBonus(wPLN)
-            outputChatBox("✓ #ffffffZakupiono #7dff7d"..wPLN.." wPLN#ffffff #fca503(+ Bonusowe "..theBonus.." wPLN)#ffffff. Dziękujemy za zakupy!", player, 0, 255, 0, true)
+            outputChatBox("✓ #ffffffZakupiono #2E756F"..wPLN.." wPLN#ffffff #fca503(+ Bonusowe "..theBonus.." wPLN)#ffffff. Dziękujemy za zakupy!", player, 0, 255, 0, true)
             exports['since-db']:query('UPDATE `since-users` SET wPLN = wPLN + ? WHERE uid = ?', theBonus, playerUID)
 
             print('[ITEMSHOP]: Gracz UID ' .. playerUID .. ' zakupił ' .. wPLN .. ' wPLN. Bonus: '..theBonus..' wPLN.')
@@ -114,12 +114,12 @@ function returnShopData(playerUID, wPLN)
 
             giveBonus('xmass')
         else
-            outputChatBox("✓ #ffffffZakupiono #7dff7d"..wPLN.." wPLN#ffffff. Dziękujemy za zakupy!", player, 0, 255, 0, true)
+            outputChatBox("✓ #ffffffZakupiono #2E756F"..wPLN.." wPLN#ffffff. Dziękujemy za zakupy!", player, 0, 255, 0, true)
             exports['since-logs']:sendDiscordLog('shop', 'Sklep', 'Gracz UID ' .. playerUID .. ' zakupił ' .. wPLN .. ' wPLN.')
             print('[ITEMSHOP]: Gracz UID ' .. playerUID .. ' zakupił ' .. wPLN .. ' wPLN.')
         end
     
-        outputChatBox("✉ #ffffffItemshop dostępny jest pod klawiszem #7dff7dF7", player, 125, 125, 255, true)
+        outputChatBox("✉ #ffffffItemshop dostępny jest pod klawiszem #2E756FF7", player, 125, 125, 255, true)
         outputChatBox(' ', player)
         outputChatBox(' ', player)
     end
@@ -143,11 +143,11 @@ function checkPromotion(plr, cmd)
     outputChatBox('Aktywne promocje: ', plr, 255, 255, 255, true)
     
     for i, v in ipairs(result) do
-        outputChatBox('➥ #ffffffZ kodem #7dff7d'..v.code..'#ffffff zyskujesz #7dff7d-'..v.promotion..'%#ffffff na zakup wPLN', plr, 125 * 0.75, 185 * 0.75, 255 * 0.75, true)
+        outputChatBox('➥ #ffffffZ kodem #2E756F'..v.code..'#ffffff zyskujesz #2E756F-'..v.promotion..'%#ffffff na zakup wPLN', plr, 125 * 0.75, 185 * 0.75, 255 * 0.75, true)
     end
     
     outputChatBox(' ', plr, 125, 255, 125, true)
-    outputChatBox('✉ #ffffffKod możesz wykorzystać w naszym sklepie: #7dff7dhttps://sklep.since-mta.pl/', plr, 125, 185, 255, true)
+    outputChatBox('✉ #ffffffKod możesz wykorzystać w naszym sklepie: #2E756Fhttps://sklep.since-mta.pl/', plr, 125, 185, 255, true)
     outputChatBox(' ', plr, 125, 255, 125, true)
 end
 addCommandHandler('promocje', checkPromotion)
@@ -274,7 +274,7 @@ addEventHandler('onClientTryToBuyPremium', resourceRoot, function(data, code)
 
         outputChatBox(' ', player)
         outputChatBox(' ', player)
-        outputChatBox("✓ #ffffffZakupiono #7dff7d"..count.." wPLN#ffffff. Dziękujemy za zakupy!", player, 0, 255, 0, true)
+        outputChatBox("✓ #ffffffZakupiono #2E756F"..count.." wPLN#ffffff. Dziękujemy za zakupy!", player, 0, 255, 0, true)
         outputChatBox(' ', player)
         outputChatBox(' ', player)
     end, "", false, client)

@@ -282,7 +282,7 @@ function render()
 
         if deluxoState then
             dxDrawText('DeluxoMode: ON', sx - 356/zoom, sy - 170/zoom + 2, (sx - 346/zoom) + (108/zoom), nil, tocolor(0, 0, 0, 200*alpha), 1, main['fonts'][6], 'center', 'bottom')
-            dxDrawText('DeluxoMode: #7dff7dON', sx - 356/zoom, sy - 170/zoom, (sx - 346/zoom) + (108/zoom), nil, tocolor(255, 255, 255, 205*alpha), 1, main['fonts'][6], 'center', 'bottom', false, false, false, true)
+            dxDrawText('DeluxoMode: #2E756FON', sx - 356/zoom, sy - 170/zoom, (sx - 346/zoom) + (108/zoom), nil, tocolor(255, 255, 255, 205*alpha), 1, main['fonts'][6], 'center', 'bottom', false, false, false, true)
         else
             dxDrawText('DeluxoMode: OFF', sx - 356/zoom, sy - 170/zoom + 2, (sx - 346/zoom) + (108/zoom), nil, tocolor(0, 0, 0, 200*alpha), 1, main['fonts'][6], 'center', 'bottom')
             dxDrawText('DeluxoMode: #ff7d7dOFF', sx - 356/zoom, sy - 170/zoom, (sx - 346/zoom) + (108/zoom), nil, tocolor(255, 255, 255, 205*alpha), 1, main['fonts'][6], 'center', 'bottom', false, false, false, true)

@@ -67,7 +67,7 @@ function makeLastLetterGreen(string)
     local lastLetter = string:sub(-1)
     local newString = string:sub(1, -2)
 
-    return newString..'#7dff7d'..lastLetter..'#ffffff'
+    return newString..'#2E756F'..lastLetter..'#ffffff'
 end
 
 function generateRandomLetter()
@@ -100,13 +100,13 @@ function renderUI()
 	dxDrawImage(sx/2 - 256/zoom, sy/2 - 202/zoom, 512/zoom, 512/zoom, 'data/background.png')
 
     if data.actualPage == 1 then
-        dxDrawText(math.floor(data.progress)..'%', sx/2, sy/2 + 270/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText(math.floor(data.progress)..'%', sx/2, sy/2 + 270/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 
         dxDrawImage(sx/2 - 173/zoom, sy/2 + 291/zoom, 346/zoom, 6/zoom, 'data/progress.png', 0, 0, 0, tocolor(255, 255, 255, 100))
-        dxDrawImageSection(sx/2 - 173/zoom, sy/2 + 291/zoom, 346/zoom * data.progress / 100, 6/zoom, 0, 0, 346 * data.progress / 100, 6, 'data/progress.png', 0, 0, 0, tocolor(103, 213, 94, 255))
+        dxDrawImageSection(sx/2 - 173/zoom, sy/2 + 291/zoom, 346/zoom * data.progress / 100, 6/zoom, 0, 0, 346 * data.progress / 100, 6, 'data/progress.png', 0, 0, 0, tocolor(46, 117, 111, 255))
         
         dxDrawText('Okradanie bankomatu', sx/2, sy/2 - 169/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
-        dxDrawText('Wprowadź poprawną kombinacje znaków', sx/2 - 1/zoom, sy/2 - 171/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText('Wprowadź poprawną kombinacje znaków', sx/2 - 1/zoom, sy/2 - 171/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
         
         dxDrawText('Ciąg znaków: '..data.letterString, sx/2, sy/2 - 125/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 12/zoom), 'center', 'bottom', false, false, false, true)
 
@@ -124,8 +124,8 @@ function renderUI()
         end
         
         local timeProgress = data.time - (getTickCount() - data.timeTick)
-        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 221/zoom, 346/zoom, 3/zoom, tocolor(125, 255, 125, 100))
-        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 221/zoom, 346/zoom * timeProgress / data.time, 3/zoom, tocolor(125, 255, 125, 255))
+        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 221/zoom, 346/zoom, 3/zoom, tocolor(46, 117, 111, 100))
+        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 221/zoom, 346/zoom * timeProgress / data.time, 3/zoom, tocolor(46, 117, 111, 255))
 
         dxDrawText('Błędne próby: #ff5c5c'..data.wrongTry..'/3', sx/2, sy/2 + 230/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top', false, false, false, true)
 
@@ -190,16 +190,16 @@ function renderUI()
         local time = convertTime(leftTime)
 
         dxDrawText('Okradanie bankomatu', sx/2, sy/2 - 169/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
-        dxDrawText('Łamanie zabezpieczeń', sx/2 - 1/zoom, sy/2 - 171/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText('Łamanie zabezpieczeń', sx/2 - 1/zoom, sy/2 - 171/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 
         dxDrawText('Trwa łamanie zabezpieczeń', sx/2, sy/2 + 25/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
-        dxDrawText('Pozostały czas: '..time, sx/2, sy/2 + 25/zoom, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText('Pozostały czas: '..time, sx/2, sy/2 + 25/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 
         dxDrawText('Uwaga!', sx/2, sy/2 + 115/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
         dxDrawText('Zaraz zjawią się tutaj gliny, musisz się szybko uwinąć!\nPamiętaj aby nie wychodzić z gry podczas okradania.', sx/2, sy/2 + 115/zoom, nil, nil, tocolor(200, 200, 200, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 
-        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 60/zoom, 346/zoom, 3/zoom, tocolor(125, 255, 125, 100))
-        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 60/zoom, 346/zoom * leftTime / data.page2TimeLeft, 3/zoom, tocolor(125, 255, 125, 255))
+        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 60/zoom, 346/zoom, 3/zoom, tocolor(46, 117, 111, 100))
+        dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 60/zoom, 346/zoom * leftTime / data.page2TimeLeft, 3/zoom, tocolor(46, 117, 111, 255))
 
         if leftTime <= 0 then
             data.actualPage = 3
@@ -213,7 +213,7 @@ function renderUI()
         end
 
         dxDrawText('Okradanie bankomatu', sx/2, sy/2 - 169/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
-        dxDrawText('Przenieś gotówkę do torby', sx/2 - 1/zoom, sy/2 - 171/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText('Przenieś gotówkę do torby', sx/2 - 1/zoom, sy/2 - 171/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
         
         dxDrawImage(sx/2 - 123/zoom, sy/2 - 50/zoom, 246/zoom, 246/zoom, 'data/money_bag.png', 0, 0, 0, tocolor(255, 255, 255, 255))
         dxDrawImage(sx/2 - 80/zoom, sy/2 + 35/zoom, 160/zoom, 160/zoom, 'data/circle.png', 0, 0, 0, tocolor(255, 255, 255, 255))

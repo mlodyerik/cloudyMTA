@@ -525,7 +525,7 @@ function renderUI()
                     
                     if v.suwak then
                         local w = dxGetTextWidth(v.name, 1, font2)
-                        local ifElse = tuning['selectedCategory'] == i and tocolor(125, 255, 125, 100) or tocolor(125, 255, 125, 55)
+                        local ifElse = tuning['selectedCategory'] == i and tocolor(46, 117, 111, 100) or tocolor(46, 117, 111, 55)
                         local x = 20/zoom + w
                         local tx = 260/zoom
                         local _w = tx - x
@@ -538,7 +538,7 @@ function renderUI()
                         local min = v.min(veh)
                         local max = v.max(veh)
                         local prg = (current - min)/(max - min)
-                        local ifElse = tuning['selectedCategory'] == i and tocolor(125, 255, 125, 155) or tocolor(125, 255, 125, 75)
+                        local ifElse = tuning['selectedCategory'] == i and tocolor(46, 117, 111, 155) or tocolor(46, 117, 111, 75)
                         dxDrawRectangle(x, 207/zoom + offsetY - 2/zoom, _w*prg, 8/zoom, ifElse)
 
                         if getKeyState("arrow_l") and (lastTick or 0) < getTickCount() and tuning['selectedCategory'] == i then
@@ -580,11 +580,11 @@ function renderUI()
     offsetY = 0
     for i, v in ipairs(tuning['statistic']) do
         dxDrawText(v[1], 0, sy - 265/zoom + offsetY, 350/zoom, nil, tocolor(200, 200, 200, 255), 1, font5, "center", "center", false, false, false, false, false)
-        dxDrawRectangle(25/zoom, sy - 250/zoom + offsetY, 300/zoom, 5/zoom, tocolor(125, 255, 125, 75))
+        dxDrawRectangle(25/zoom, sy - 250/zoom + offsetY, 300/zoom, 5/zoom, tocolor(46, 117, 111, 75))
 
         local progress = (300/zoom*getVehicleHandlingProperty(veh, v[3])/v[2])
         local progress = math.min(progress, 300/zoom)
-        dxDrawRectangle(25/zoom, sy - 250/zoom + offsetY, progress, 5/zoom, tocolor(125, 255, 125, 200))
+        dxDrawRectangle(25/zoom, sy - 250/zoom + offsetY, progress, 5/zoom, tocolor(46, 117, 111, 200))
 
         offsetY = offsetY + 35/zoom
     end

@@ -35,13 +35,13 @@ addCommandHandler('tpev.set', function(plr, cmd, users, ...)
     if #text > 0 then
         outputChatBox(' ', root)
         outputChatBox('*#ffffff '..rankColor..''..rankName..'#ffffff #cccccc'..getPlayerName(plr)..'#ffffff utworzył teleport: '..text..''..usersText, root, 255, 255, 0, true)
-        outputChatBox('*#ffffff Wpisz #7dff7d/tpev '..getPlayerName(plr)..'#ffffff aby się przenieść', root, 255, 255, 0, true)
+        outputChatBox('*#ffffff Wpisz #2E756F/tpev '..getPlayerName(plr)..'#ffffff aby się przenieść', root, 255, 255, 0, true)
         outputChatBox(' ', root)
         exports['since-notifications']:sendNotification(plr, 'success', 'Teleport ('..text..') został utworzony')
     else
         outputChatBox(' ', root)
         outputChatBox('*#ffffff '..rankColor..''..rankName..'#ffffff #cccccc'..getPlayerName(plr)..'#ffffff utworzył teleport'..usersText, root, 255, 255, 0, true)
-        outputChatBox('*#ffffff Wpisz #7dff7d/tpev '..getPlayerName(plr)..'#ffffff aby się przenieść', root, 255, 255, 0, true)
+        outputChatBox('*#ffffff Wpisz #2E756F/tpev '..getPlayerName(plr)..'#ffffff aby się przenieść', root, 255, 255, 0, true)
         outputChatBox(' ', root)
         exports['since-notifications']:sendNotification(plr, 'success', 'Teleport został utworzony')
     end

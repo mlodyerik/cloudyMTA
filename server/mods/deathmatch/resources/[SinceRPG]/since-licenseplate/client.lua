@@ -49,7 +49,7 @@ function renderUI()
 	dxDrawImage(sx/2 - 207/zoom, sy/2 - 180/zoom, 420/zoom, 2/zoom, 'data/line.png')
 	dxDrawImage(sx/2 - 207/zoom, sy/2 + 131/zoom, 420/zoom, 2/zoom, 'data/line.png')
 	dxDrawText('Zmiana tablicy rejestracyjnej', sx/2, sy/2 - 208/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'center', 'bottom')
-	dxDrawText('Koszt zmiany: $ 45 000', sx/2 + 2/zoom, sy/2 - 208/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
+	dxDrawText('Koszt zmiany: $ 45 000', sx/2 + 2/zoom, sy/2 - 208/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
 
     local isIn = isMouseInPosition(sx/2 - 60/zoom, sy/2 + 195/zoom, 120/zoom, 28/zoom)
 	dxDrawImage(sx/2 - 60/zoom, sy/2 + 195/zoom, 120/zoom, 28/zoom, 'data/button.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 200))

@@ -73,7 +73,7 @@ addCommandHandler('odp', function(plr, cmd, word)
 
         outputChatBox(' ', root)
         outputChatBox('★ #ffffffSzybkie palce', root, 255, 209, 43, true)
-        outputChatBox('★ #ffffffGracz #c2c2c2'..getPlayerName(plr)..' #61bacf('..getElementData(plr, 'id')..')#ffffff udzielił poprawnej odpowiedzi i zgarnia #7dff7d'..data.actualPrice..' '..(data.actualType == 1 and '$' or 'SRP')..'.', root, 255, 209, 43, true)
+        outputChatBox('★ #ffffffGracz #c2c2c2'..getPlayerName(plr)..' #61bacf('..getElementData(plr, 'id')..')#ffffff udzielił poprawnej odpowiedzi i zgarnia #2E756F'..data.actualPrice..' '..(data.actualType == 1 and '$' or 'SRP')..'.', root, 255, 209, 43, true)
         outputChatBox(' ', root)
 
         data = {

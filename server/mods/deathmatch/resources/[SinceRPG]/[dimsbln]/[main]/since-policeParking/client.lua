@@ -130,7 +130,7 @@ function render()
             dxDrawImage(sx - 468/zoom, sy/2 - 122/zoom + x, 18/zoom, 18/zoom, main.textures['returning/money'])
             dxDrawText('Koszt wykupu: #7DFF7D$ '..formatNumber(v.cost), sx - 442/zoom, sy/2 - 113/zoom + x, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'center', false, false, false, true)
 
-            dxDrawText('Zobacz więcej informacji', sx - 468/zoom, sy/2 - 86/zoom + x, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
+            dxDrawText('Zobacz więcej informacji', sx - 468/zoom, sy/2 - 86/zoom + x, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
             local textWidth = dxGetTextWidth( 'Zobacz więcej informacji', 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom) )
 
             local isIn = isMouseInPosition(sx - 468/zoom, sy/2 - 98/zoom + x, textWidth, 22/zoom)

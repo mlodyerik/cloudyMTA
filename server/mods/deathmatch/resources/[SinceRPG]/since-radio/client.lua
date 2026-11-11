@@ -120,7 +120,7 @@ function renderRadio ()
 
   if #textRadio>0 then
   	dxDrawText(textRadio, (screenW - 308) / 2, 0+41, ((screenW - 308) / 2) + 309, ( 0+100) + 23, tocolor(0,0,0,255), 1, fonte, "center", "center", false, false, true, false, false)
-  dxDrawText(textRadio, (screenW - 308) / 2, 0+40, ((screenW - 308) / 2) + 308, ( 0+100) + 22, tocolor(125, 255, 125,255), 1, fonte, "center", "center", false, false, true, false, false)
+  dxDrawText(textRadio, (screenW - 308) / 2, 0+40, ((screenW - 308) / 2) + 308, ( 0+100) + 22, tocolor(46, 117, 111,255), 1, fonte, "center", "center", false, false, true, false, false)
   end
 end
 addEventHandler ("onClientRender",getRootElement(),renderRadio)

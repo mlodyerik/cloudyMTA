@@ -100,7 +100,7 @@ function render()
 
         dxDrawText(text2, x + padding, y + padding + 160/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) - 3/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom)) + 40/zoom + linesHeight + 15/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true)
         
-        dxDrawImage(x + padding, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3), 'data/images/button.png', 0, 0, 0, tocolor(125, 255, 125, (isMouseInPosition(x + padding, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3)) and 255 or 150)))
+        dxDrawImage(x + padding, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3), 'data/images/button.png', 0, 0, 0, tocolor(46, 117, 111, (isMouseInPosition(x + padding, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3)) and 255 or 150)))
         dxDrawText('Wystaw', x + padding + (128/(zoom * 1.3))/2, y + 275/zoom + linesHeight + linesHeight2 + (32/(zoom * 1.3))/2, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 9/zoom), 'center', 'center')
 
         dxDrawImage(x + padding + 128/(zoom * 1.3) + 5/zoom, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3), 'data/images/button.png', 0, 0, 0, tocolor(255, 125, 125, (isMouseInPosition(x + padding + 128/(zoom * 1.3) + 5/zoom, y + 275/zoom + linesHeight + linesHeight2, 128/(zoom * 1.3), 32/(zoom * 1.3)) and 255 or 150)))

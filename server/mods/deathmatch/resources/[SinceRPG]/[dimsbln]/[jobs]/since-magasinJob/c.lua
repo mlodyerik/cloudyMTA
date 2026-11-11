@@ -104,7 +104,7 @@ function renderLine()
             local alpha = interpolateBetween(0, 0, 0, 1, 0, 0, (getTickCount()%3000)/3000, "CosineCurve")
             local prg1 = i/dist
             local prg2 = math.min((i+1)/dist, 1)
-            dxDrawLine3D(px+(x-px)*prg1, py+(y-py)*prg1, pz+(z-pz)*prg1, px+(x-px)*prg2, py+(y-py)*prg2, pz+(z-pz)*prg2, tocolor(125, 255, 125, 55+100*alpha), 5)
+            dxDrawLine3D(px+(x-px)*prg1, py+(y-py)*prg1, pz+(z-pz)*prg1, px+(x-px)*prg2, py+(y-py)*prg2, pz+(z-pz)*prg2, tocolor(46, 117, 111, 55+100*alpha), 5)
         end
     end
     if not isElementWithinColShape(localPlayer, data.shape) then

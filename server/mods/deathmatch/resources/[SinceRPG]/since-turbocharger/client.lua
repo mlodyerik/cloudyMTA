@@ -90,13 +90,13 @@ function renderUI()
     
     -- Wyświetlanie szacowanego czasu tankowania
     if tankTime == 'Bateria naładowana' then
-        dxDrawText('Bateria jest naładowana', sx/2, sy - 260/zoom, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'center', 'top', false, false, false, true)
+        dxDrawText('Bateria jest naładowana', sx/2, sy - 260/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'center', 'top', false, false, false, true)
     else
-        dxDrawText('Szacowany czas oczekiwania: #7dff7d'..tankTime, sx/2, sy - 260/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'center', 'top', false, false, false, true)
+        dxDrawText('Szacowany czas oczekiwania: #2E756F'..tankTime, sx/2, sy - 260/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'center', 'top', false, false, false, true)
     end
 
     local percent = math.floor((getElementData(vehicle, 'vehicle:fuel').count / getElementData(vehicle, 'vehicle:fuel').tank) * 100)
-    dxDrawText('Aktualny stan naładowania baterii\n#7dff7d'..percent..'%', sx/2, sy - 115/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 10/zoom), 'center', 'bottom', false, false, false, true)
+    dxDrawText('Aktualny stan naładowania baterii\n#2E756F'..percent..'%', sx/2, sy - 115/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Regular', 10/zoom), 'center', 'bottom', false, false, false, true)
     
     -- Pobieranie danych o paliwie
     local fuelData = getElementData(vehicle, 'vehicle:fuel') or {}
@@ -144,7 +144,7 @@ function renderUI()
         0,                                    -- rotacja
         0,                                    -- punkty obrotu
         0,                                    -- punkty obrotu
-        tocolor(125, 255, 125, 255)           -- kolor wypełnienia
+        tocolor(46, 117, 111, 255)           -- kolor wypełnienia
     )
 end
 

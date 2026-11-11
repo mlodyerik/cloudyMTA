@@ -77,15 +77,15 @@ function drawIcon(k, v, y)
         local regulationName = v.name
 
         if regulationName == "Napęd:" then
-            theText = regulationName.." #7dff7d"..napedy[regulationLevel]
+            theText = regulationName.." #2E756F"..napedy[regulationLevel]
         else
-            theText = regulationName.." #7dff7d"..regulationLevel
+            theText = regulationName.." #2E756F"..regulationLevel
         end
 
-        dxDrawText(v.text(veh), 415-v.size/3, 250 + y - interaction.pos, nil, nil, tocolor(125, 255, 125, 255), fontSize, font1, "right", "bottom", false, false, false, true)
+        dxDrawText(v.text(veh), 415-v.size/3, 250 + y - interaction.pos, nil, nil, tocolor(46, 117, 111, 255), fontSize, font1, "right", "bottom", false, false, false, true)
         dxDrawText(theText, 415-v.size/3, 250 + y - interaction.pos, nil, nil, tocolor(255, 255, 255, 255), fontSize, font2, "right", "top", false, false, false, true)
     else
-        dxDrawText(v.txt, 415-v.size/3, 250 + y - interaction.pos, nil, nil, tocolor(125, 255, 125, 255), fontSize, font1, "right", "bottom", false, false, false, true)
+        dxDrawText(v.txt, 415-v.size/3, 250 + y - interaction.pos, nil, nil, tocolor(46, 117, 111, 255), fontSize, font1, "right", "bottom", false, false, false, true)
         dxDrawText(v.text(veh), 415-v.size/3, 250 + y - interaction.pos, nil, nil, tocolor(255, 255, 255, 255), fontSize, font2, "right", "top", false, false, false, true)
     end
 

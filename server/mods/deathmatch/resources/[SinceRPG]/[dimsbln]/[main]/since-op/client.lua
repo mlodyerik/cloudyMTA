@@ -23,7 +23,7 @@
 -- 			scale = 1
 -- 		end
 -- 		dxDrawImage(sx/2-((58*scale)/2)/zoom, sy-194/zoom, (58*scale)/zoom, (58*scale)/zoom, textures[actualkey] or textures['n'], 0, 0, 0, tocolor(255, 255, 255, 255))
--- 		dxDrawText('Klikaj klawisz', sx/2, sy-125/zoom, sx/2, sy-115/zoom, tocolor(125, 255, 125, 242), 1/zoom, exports['since-fonts']:getFont('Inter-Medium', 20/zoom), 'center')
+-- 		dxDrawText('Klikaj klawisz', sx/2, sy-125/zoom, sx/2, sy-115/zoom, tocolor(46, 117, 111, 242), 1/zoom, exports['since-fonts']:getFont('Inter-Medium', 20/zoom), 'center')
 -- 		dxDrawText('Aby obrócić pojazd ('..progress..'%)', sx/2, sy-95/zoom, sx/2, sy-90/zoom, tocolor(185, 185, 185, 219), 1/zoom, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center')
 
 

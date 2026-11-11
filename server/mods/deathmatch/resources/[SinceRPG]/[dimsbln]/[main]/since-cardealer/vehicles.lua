@@ -1493,7 +1493,7 @@ function createVehicles()
         end
 
         local modelName = v.data.sport and exports['since-vehiclenames']:getVehicleName(v.data.model)..' Sport' or exports['since-vehiclenames']:getVehicleName(v.data.model)
-        setVehicleDesc(veh, '#4f9bff'..modelName..'#ffffff\nCena: #7dff7d'..addCommas(v.data.cost)..' $#ffffff\n#d6d6d6(Podejdź do pojazdu aby uzyskać więcej informacji)')
+        setVehicleDesc(veh, '#4f9bff'..modelName..'#ffffff\nCena: #2E756F'..addCommas(v.data.cost)..' $#ffffff\n#d6d6d6(Podejdź do pojazdu aby uzyskać więcej informacji)')
 
         setElementFrozen(veh, true)
         setVehicleLocked(veh, true)

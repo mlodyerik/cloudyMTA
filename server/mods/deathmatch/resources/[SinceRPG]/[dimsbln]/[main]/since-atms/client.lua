@@ -28,7 +28,7 @@ function renderUI()
 	dxDrawText('$ #ffffff'..addCommas(bankMoney), sx/2, sy/2 - 174/zoom, nil, nil, tocolor(125, 215, 125, 225), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), 'center', 'bottom', false, false, false, true)
 	dxDrawText('Stan konta '..(selected == 0 and 'Prywatnego' or 'Organizacyjnego'), sx/2, sy/2 - 180/zoom, nil, nil, tocolor(255, 255, 255, 190), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
 	dxDrawText('Bankomat', sx/2 - 190/zoom, sy/2 - 264/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'bottom')
-	dxDrawText(city..', '..county, sx/2 - 190/zoom, sy/2 - 264/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
+	dxDrawText(city..', '..county, sx/2 - 190/zoom, sy/2 - 264/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
 
 	local isIn = isMouseInPosition(sx/2 + 205/zoom, sy/2 - 273/zoom, 20/zoom, 20/zoom) and 255 or 200
 	dxDrawImage(sx/2 + 205/zoom, sy/2 - 273/zoom, 20/zoom, 20/zoom, 'data/close.png', 0, 0, 0, tocolor(255, 255, 255, isIn))
@@ -50,7 +50,7 @@ function renderUI()
 
 	dxDrawImage(sx/2 - 233/zoom, sy/2 - 3/zoom, 466/zoom, 277/zoom, 'data/history_bg.png')
 	dxDrawText('↻ Historia konta bankowego', sx/2 - 220/zoom, sy/2 + 28/zoom, nil, nil, tocolor(225, 225, 225, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom')
-	dxDrawText('Lista ostatnich działań na koncie bankowym', sx/2 - 220/zoom, sy/2 + 28/zoom, nil, nil, tocolor(103, 213, 94, 225), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top')
+	dxDrawText('Lista ostatnich działań na koncie bankowym', sx/2 - 220/zoom, sy/2 + 28/zoom, nil, nil, tocolor(46, 117, 111, 225), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top')
     
 	if selected == 1 then
 		if #history > 0 then
@@ -58,8 +58,8 @@ function renderUI()
 			for i, v in ipairs(history) do
 				if i >= 1 and i <= 4 then 
 					dxDrawImage(sx/2 - 221/zoom, sy/2 + 56/zoom + offset, 442/zoom, 49/zoom, 'data/history_item.png', 0, 0, 0, tocolor(255, 255, 255))
-					dxDrawImage(sx/2 - 221/zoom, sy/2 + 56/zoom + offset, 442/zoom, 49/zoom, 'data/history_color.png', 0, 0, 0, tocolor(125, 255, 125, 255))
-					dxDrawImage(sx/2 - 208/zoom, sy/2 + 70/zoom + offset, 20/zoom, 20/zoom, icons['transaction'], 0, 0, 0, tocolor(125, 255, 125, 255))
+					dxDrawImage(sx/2 - 221/zoom, sy/2 + 56/zoom + offset, 442/zoom, 49/zoom, 'data/history_color.png', 0, 0, 0, tocolor(46, 117, 111, 255))
+					dxDrawImage(sx/2 - 208/zoom, sy/2 + 70/zoom + offset, 20/zoom, 20/zoom, icons['transaction'], 0, 0, 0, tocolor(46, 117, 111, 255))
 					dxDrawText(v.date, sx/2 - 176/zoom, sy/2 + 79/zoom + offset, nil, nil, tocolor(255, 255, 255, 195), 1, exports['since-fonts']:getFont('Inter-Regular', 8/zoom), 'left', 'bottom')
 					dxDrawText('↳#ffffff', sx/2 - 176/zoom, sy/2 + 79/zoom + offset, nil, nil, tocolor(255, 255, 255, 195), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
 					

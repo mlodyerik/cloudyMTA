@@ -32,7 +32,7 @@ function renderDeathInfo()
             local width = 25/zoom + dxGetTextWidth(v.attacker, 1, clientFonts[2]) + dxGetTextWidth(v.killed, 1, clientFonts[2])
 
             dxDrawText(v.attacker, sx - 15/zoom - width + 1, sy / 2 - 282/zoom + offset + 1, nil, nil, tocolor(0, 0, 0, v.alpha), 1, clientFonts[2], 'left', 'center')
-            dxDrawText(v.attacker, sx - 15/zoom - width, sy / 2 - 282/zoom + offset, nil, nil, tocolor(125, 255, 125, v.alpha), 1, clientFonts[2], 'left', 'center')
+            dxDrawText(v.attacker, sx - 15/zoom - width, sy / 2 - 282/zoom + offset, nil, nil, tocolor(46, 117, 111, v.alpha), 1, clientFonts[2], 'left', 'center')
             dxDrawText(v.killed, sx - 10/zoom + 1, sy / 2 - 282/zoom + offset + 1, nil, nil, tocolor(0, 0, 0, v.alpha), 1, clientFonts[2], 'right', 'center')
             dxDrawText(v.killed, sx - 10/zoom, sy / 2 - 282/zoom + offset, nil, nil, tocolor(255, 75, 75, v.alpha), 1, clientFonts[2], 'right', 'center')
             if fileExists('weapons/'..v.weapon..'.png') then

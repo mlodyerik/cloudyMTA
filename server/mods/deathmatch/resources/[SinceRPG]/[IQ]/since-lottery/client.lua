@@ -16,14 +16,14 @@ local count = 0
 
 function render()
     dxDrawImage(sx/2-573/zoom/2, sy/2-399/zoom/2, 573/zoom, 399/zoom, 'data/images/bg.png')
-    dxDrawText('Loteria na samochód GALAXY', sx/2, sy/2-399/zoom/2 + 30/zoom, nil, nil, tocolor(104, 214, 94), 1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom), 'center', 'center')
+    dxDrawText('Loteria na samochód GALAXY', sx/2, sy/2-399/zoom/2 + 30/zoom, nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom), 'center', 'center')
     dxDrawText('Ilość zakupionych losów: #68D65E'..count, sx/2, sy/2-399/zoom/2 + 30/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom)) - 7/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 15/zoom), 'center', 'center', false, false, false, true)
     dxDrawText('Większa ilość losów = większe szanse', sx/2, sy/2-399/zoom/2 + 30/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom)) - 5/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 15/zoom)) - 7/zoom, nil, nil, tocolor(200, 200, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'center', 'center', false, false, false, true)
     dxDrawImage(sx/2-573/zoom/2, sy/2-399/zoom/2 + 100/zoom, 573/zoom, 2/zoom, 'data/images/line.png')
 
     dxDrawImage(sx/2-252/zoom/2, sy/2-236/zoom/2 + 35/zoom, 252/zoom, 236/zoom, 'data/images/item.png')
     dxDrawText('LOS NA LOTERIE', sx/2, sy/2-236/zoom/2 + 170/zoom + 5/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
-    dxDrawText('$ 1.000.000.000', sx/2, sy/2-236/zoom/2 + 170/zoom + 5/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom)), nil, nil, tocolor(104, 214, 94), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
+    dxDrawText('$ 1.000.000.000', sx/2, sy/2-236/zoom/2 + 170/zoom + 5/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom)), nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
 
     dxDrawImage(sx/2-148/zoom/2, sy/2-236/zoom/2 + 210/zoom + 5/zoom, 148/zoom, 29/zoom, 'data/images/button.png', 0, 0, 0, tocolor(255, 255, 255, (isMouseInPosition(sx/2-148/zoom/2, sy/2-236/zoom/2 + 210/zoom + 5/zoom, 148/zoom, 29/zoom) and 255 or 150)))
     dxDrawText('Zakup', sx/2, sy/2-236/zoom/2 + 210/zoom + 5/zoom + 29/zoom/2, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')

@@ -76,7 +76,7 @@ function renderSlotMachine(alpha)
 
     for i, v in ipairs(stakes) do
         local isIn = isMouseIn(sx/2 + offset, sy/2 + 325/zoom, 100/zoom, 30/zoom) or selectedStake == i
-        dxDrawRoundedRectangle(sx/2 + offset, sy/2 + 325/zoom, 100/zoom, 30/zoom, 11/zoom, tocolor(125, 255, 125, alpha*((isIn and 155 or 100)/255)), false, false)
+        dxDrawRoundedRectangle(sx/2 + offset, sy/2 + 325/zoom, 100/zoom, 30/zoom, 11/zoom, tocolor(46, 117, 111, alpha*((isIn and 155 or 100)/255)), false, false)
         dxDrawText(convertNumberToString(v), sx/2 + offset + 50/zoom, sy/2 + 340/zoom, nil, nil, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "center", "center", false, false, false, false, false)
         
         offset = (offset + 105/zoom)
@@ -84,7 +84,7 @@ function renderSlotMachine(alpha)
     end
 
     local isIn = isMouseIn(sx/2 - buttonW/2, sy/2 + 370/zoom, buttonW, 30/zoom)
-    dxDrawRoundedRectangle(sx/2 - buttonW/2, sy/2 + 370/zoom, buttonW, 30/zoom, 11/zoom, tocolor(125, 255, 125, alpha*((isIn and 155 or 100)/255)), false, false)
+    dxDrawRoundedRectangle(sx/2 - buttonW/2, sy/2 + 370/zoom, buttonW, 30/zoom, 11/zoom, tocolor(46, 117, 111, alpha*((isIn and 155 or 100)/255)), false, false)
     dxDrawText("Kliknij aby zakręcić za wybraną kwotę", sx/2, sy/2 + 385/zoom, nil, nil, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), "center", "center", false, false, false, false, false)
 
     dxSetRenderTarget(renderTarget, true)
@@ -117,8 +117,8 @@ function renderSlotMachine(alpha)
         end
     dxSetRenderTarget()
 
-    dxDrawRoundedRectangle(sx/2 - 322/zoom, sy/2 - 342/zoom, 644/zoom, 644/zoom, 16/zoom, tocolor(104, 214, 94, (alpha/255)*25), false, false)
-    dxDrawRoundedRectangle(sx/2 - 320/zoom, sy/2 - 340/zoom, 640/zoom, 640/zoom, 15/zoom, tocolor(32, 32, 32, (alpha/255)*255), false, false)
+    dxDrawRoundedRectangle(sx/2 - 322/zoom, sy/2 - 342/zoom, 644/zoom, 644/zoom, 16/zoom, tocolor(46, 117, 111, (alpha/255)*25), false, false)
+    dxDrawRoundedRectangle(sx/2 - 320/zoom, sy/2 - 340/zoom, 640/zoom, 640/zoom, 15/zoom, tocolor(25, 36, 38, (alpha/255)*255), false, false)
     dxDrawImage(sx/2 - 300/zoom, sy/2 - 320/zoom, 600/zoom, 600/zoom, renderTarget, 0, 0, 0, tocolor(255, 255, 255, alpha))
 
     local zetony = getElementData(localPlayer, "client:coin")

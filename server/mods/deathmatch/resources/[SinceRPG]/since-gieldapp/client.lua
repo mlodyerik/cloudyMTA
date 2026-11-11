@@ -24,7 +24,7 @@ function renderUI()
 	dxDrawImage(sx/2 - 207/zoom, sy/2 - 180/zoom, 420/zoom, 2/zoom, 'data/line.png')
 	dxDrawImage(sx/2 - 207/zoom, sy/2 + 131/zoom, 420/zoom, 2/zoom, 'data/line.png')
 	dxDrawText('Giełda wPLN', sx/2, sy/2 - 208/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'center', 'bottom')
-	dxDrawText('Sprzedawaj i kupuj wPLN!', sx/2 + 2/zoom, sy/2 - 208/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
+	dxDrawText('Sprzedawaj i kupuj wPLN!', sx/2 + 2/zoom, sy/2 - 208/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
 
     local isIn = isMouseInPosition(sx/2 - 60/zoom, sy/2 + 195/zoom, 120/zoom, 28/zoom)
 	dxDrawImage(sx/2 - 60/zoom, sy/2 + 195/zoom, 120/zoom, 28/zoom, 'data/button.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 200))
@@ -54,10 +54,10 @@ function renderUI()
                         dxDrawText(v.player, 15/zoom, 31/zoom + offset, nil, nil, tocolor(125, 200, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')
 
                         dxDrawText('Cena', 110/zoom, 31/zoom + offset, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'left', 'bottom')
-                        dxDrawText('$ '..v.price, 110/zoom, 31/zoom + offset, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')
+                        dxDrawText('$ '..v.price, 110/zoom, 31/zoom + offset, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')
 
                         dxDrawText('Ilość', 200/zoom, 31/zoom + offset, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 10/zoom), 'left', 'bottom')
-                        dxDrawText(v.value..' wPLN', 200/zoom, 31/zoom + offset, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')
+                        dxDrawText(v.value..' wPLN', 200/zoom, 31/zoom + offset, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9/zoom), 'left', 'top')
 
                         local isIn = isMouseInRender(280/zoom, 17/zoom + offset, 90/zoom, 28/zoom, renderData, renderID)
                         dxDrawImage(280/zoom, 17/zoom + offset, 90/zoom, 28/zoom, 'data/button.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 175))

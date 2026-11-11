@@ -28,7 +28,7 @@ function renderMines(alpha)
     local offset = -((#mines-1)*100/zoom+(#mines-1)*5/zoom)/2-(100/zoom)/2
     for i, v in ipairs(mines) do
         local isIn = isMouseIn(sx/2 + offset, sy/2 + 105/zoom, 100/zoom, 30/zoom) or selectedMines == i
-        dxDrawRoundedRectangle(sx/2 + offset, sy/2 + 105/zoom, 100/zoom, 30/zoom, 11/zoom, tocolor(125, 255, 125, alpha*((isIn and 155 or 100)/255)), false, false)
+        dxDrawRoundedRectangle(sx/2 + offset, sy/2 + 105/zoom, 100/zoom, 30/zoom, 11/zoom, tocolor(46, 117, 111, alpha*((isIn and 155 or 100)/255)), false, false)
         dxDrawText('x'..v, sx/2 + offset + 50/zoom, sy/2 + 120/zoom, nil, nil, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "center", "center", false, false, false, false, false)
         
         offset = (offset + 105/zoom)
@@ -39,7 +39,7 @@ function renderMines(alpha)
 
     for i, v in ipairs(stakes) do
         local isIn = isMouseIn(sx/2 + offset, sy/2 + 165/zoom, 100/zoom, 30/zoom) or selectedStake == i
-        dxDrawRoundedRectangle(sx/2 + offset, sy/2 + 165/zoom, 100/zoom, 30/zoom, 11/zoom, tocolor(125, 255, 125, alpha*((isIn and 155 or 100)/255)), false, false)
+        dxDrawRoundedRectangle(sx/2 + offset, sy/2 + 165/zoom, 100/zoom, 30/zoom, 11/zoom, tocolor(46, 117, 111, alpha*((isIn and 155 or 100)/255)), false, false)
         dxDrawText(convertNumberToString(v), sx/2 + offset + 50/zoom, sy/2 + 180/zoom, nil, nil, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "center", "center", false, false, false, false, false)
         
         offset = (offset + 105/zoom)
@@ -47,7 +47,7 @@ function renderMines(alpha)
     end
 
     local isIn = isMouseIn(sx/2 - buttonW/2, sy/2 + 210/zoom, buttonW, 30/zoom)
-    dxDrawRoundedRectangle(sx/2 - buttonW/2, sy/2 + 210/zoom, buttonW, 30/zoom, 11/zoom, tocolor(125, 255, 125, alpha*((isIn and 155 or 100)/255)), false, false)
+    dxDrawRoundedRectangle(sx/2 - buttonW/2, sy/2 + 210/zoom, buttonW, 30/zoom, 11/zoom, tocolor(46, 117, 111, alpha*((isIn and 155 or 100)/255)), false, false)
     dxDrawText(minesWorking and "Kliknij aby wypłacić" or "Kliknij aby rozpocząć", sx/2, sy/2 + 225/zoom, nil, nil, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), "center", "center", false, false, false, false, false)
 
     local zetony = getElementData(localPlayer, "client:coin")
@@ -55,8 +55,8 @@ function renderMines(alpha)
     dxDrawImage(sx/2-18/zoom-textWidth/2, sy/2 + 260/zoom, 28/zoom, 28/zoom, textures[23], 0, 0, 0, tocolor(255, 255, 255, alpha))
     dxDrawText(kropki(zetony), sx/2+14/zoom-textWidth/2, sy/2 + 274/zoom, left, center, tocolor(255, 255, 255, alpha), 1, fonts[1], "left", "center", false, false, false, false)
 
-    dxDrawRoundedRectangle(sx/2 - 532/zoom, sy/2 - 342/zoom, 1064/zoom, 414/zoom, 16/zoom, tocolor(104, 214, 94, a*25), false, false)
-    dxDrawRoundedRectangle(sx/2 - 530/zoom, sy/2 - 340/zoom, 1060/zoom, 410/zoom, 15/zoom, tocolor(32, 32, 32, a*255), false, false)
+    dxDrawRoundedRectangle(sx/2 - 532/zoom, sy/2 - 342/zoom, 1064/zoom, 414/zoom, 16/zoom, tocolor(46, 117, 111, a*25), false, false)
+    dxDrawRoundedRectangle(sx/2 - 530/zoom, sy/2 - 340/zoom, 1060/zoom, 410/zoom, 15/zoom, tocolor(25, 36, 38, a*255), false, false)
 
     if minesWorking then
         for i = 1, 24 do
@@ -81,7 +81,7 @@ function renderMines(alpha)
 
             if alpha > 254 then
                 if cache.mines[i].state == 'bomb' then
-                    dxDrawImage(posX, posY, 128/zoom, 128/zoom, mineTextures.rectangle, 0, 0, 0, tocolor(125, 255, 125, 155*a))
+                    dxDrawImage(posX, posY, 128/zoom, 128/zoom, mineTextures.rectangle, 0, 0, 0, tocolor(46, 117, 111, 155*a))
                     dxDrawImage(posX + 32/zoom, posY + 32/zoom, 64/zoom, 64/zoom, mineTextures.bomb)
                 else
                     dxDrawImage(posX, posY, 128/zoom, 128/zoom, mineTextures.rectangle, 0, 0, 0, tocolor(125, 215, 255, 155*a))

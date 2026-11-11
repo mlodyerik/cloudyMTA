@@ -85,7 +85,7 @@ function render()
     dxDrawImage(sx - 440/zoom - 20/zoom + 15/zoom, sy/2-460/zoom/2 + 17/zoom, 34/zoom, 34/zoom, 'data/images/icon.png')
 
     dxDrawText('Przebieralnia', sx - 440/zoom - 20/zoom + 15/zoom + 34/zoom + 10/zoom, sy/2-460/zoom/2 + 24/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'center')
-    dxDrawText('Frakcja '..getElementData(localPlayer, 'player:faction')..'', sx - 440/zoom - 20/zoom + 15/zoom + 34/zoom + 10/zoom, sy/2-460/zoom/2 + 24/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom)), nil, nil, tocolor(104, 214, 94), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
+    dxDrawText('Frakcja '..getElementData(localPlayer, 'player:faction')..'', sx - 440/zoom - 20/zoom + 15/zoom + 34/zoom + 10/zoom, sy/2-460/zoom/2 + 24/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom)), nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
 
     dxDrawImage(sx - 440/zoom - 20/zoom + 15/zoom, sy/2-460/zoom/2 + 70/zoom, 440/zoom, 2/zoom, 'data/images/line.png')
     

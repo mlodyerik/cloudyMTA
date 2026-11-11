@@ -12,7 +12,7 @@ local maskShader = nil
 function renderUI()
     exports['since-blur']:dxDrawBlur(sx/2 - 522/zoom, sy/2 - 111/zoom, 1044/zoom, 222/zoom, textures.mask)
 	dxDrawImage(sx/2 - 522/zoom, sy/2 - 111/zoom, 1044/zoom, 222/zoom, 'data/bg.png')
-	dxDrawText('Otwierania boxa', sx/2, sy/2 - 81/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'bottom')
+	dxDrawText('Otwierania boxa', sx/2, sy/2 - 81/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'bottom')
 
     local color = boxList[data.actualBox].color
     local colorToHex = RGBTOHEX(color[1], color[2], color[3])
@@ -22,7 +22,7 @@ function renderUI()
     local w, h = 80/zoom, 80/zoom
     
     dxDrawText('Możliwe nagrody', sx/2 , sy/2 + 145/zoom + 1, nil, nil, tocolor(0, 0, 0, 125), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom', false, false, false, true)
-    dxDrawText('Możliwe nagrody', sx/2, sy/2 + 145/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom', false, false, false, true)
+    dxDrawText('Możliwe nagrody', sx/2, sy/2 + 145/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom', false, false, false, true)
 
     local offset = 0
     for i, item in ipairs(items) do

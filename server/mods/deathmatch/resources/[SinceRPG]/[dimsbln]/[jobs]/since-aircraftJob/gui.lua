@@ -18,19 +18,19 @@ function renderInterface()
     dxDrawImage(sxh+389/zoom, syh-220/zoom, 36/zoom, 36/zoom, textures.levelBg, 0, 0, 0, tocolor(255, 255, 255, 255))
     dxDrawText(saveData.stats.level, sxh+389/zoom+36/2/zoom, syh-220/zoom+36/2/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, fonts[3], 'center', 'center')
 
-    dxDrawText('Statystyki pracy', sxh-155/zoom, syh-200/zoom, nil, nil, tocolor(104, 214, 94, 255), 1, fonts[1], 'left', 'bottom')
+    dxDrawText('Statystyki pracy', sxh-155/zoom, syh-200/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[1], 'left', 'bottom')
     dxDrawText('Informacje o twoich postępach w pracy', sxh-155/zoom, syh-200/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, fonts[2], 'left', 'top')
 
-    dxDrawText('Wykonane zlecenia', sxh-155/zoom, syh-155/zoom, nil, nil, tocolor(104, 214, 94, 255), 1, fonts[5], 'left', 'bottom')
+    dxDrawText('Wykonane zlecenia', sxh-155/zoom, syh-155/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[5], 'left', 'bottom')
     dxDrawText('Wykonałeś #68D65E'..formatNumber(saveData.stats.points)..' zleceń', sxh-155/zoom, syh-155/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, fonts[2], 'left', 'top', false, false, false, true)
 
-    dxDrawText('Przepracowany czas', sxh-155/zoom, syh-110/zoom, nil, nil, tocolor(104, 214, 94, 255), 1, fonts[5], 'left', 'bottom')
+    dxDrawText('Przepracowany czas', sxh-155/zoom, syh-110/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[5], 'left', 'bottom')
     dxDrawText(formatTime(saveData.stats.time), sxh-155/zoom, syh-110/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, fonts[2], 'left', 'top', false, false, false, true)
 
-    dxDrawText('Poziom', sxh+50/zoom, syh-155/zoom, nil, nil, tocolor(104, 214, 94, 255), 1, fonts[5], 'left', 'bottom')
+    dxDrawText('Poziom', sxh+50/zoom, syh-155/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[5], 'left', 'bottom')
     dxDrawText('Posiadasz możliwość pracowania na #68D65E'..saveData.stats.level..' poziomie', sxh+50/zoom, syh-155/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, fonts[2], 'left', 'top', false, false, false, true)
 
-    dxDrawText('Zarobek', sxh+50/zoom, syh-110/zoom, nil, nil, tocolor(104, 214, 94, 255), 1, fonts[5], 'left', 'bottom')
+    dxDrawText('Zarobek', sxh+50/zoom, syh-110/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[5], 'left', 'bottom')
     dxDrawText('Łączny zarobek wynosi #68D65E$ '..formatNumber(saveData.stats.earned), sxh+50/zoom, syh-110/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, fonts[2], 'left', 'top', false, false, false, true)
 
     dxDrawImage(sxh-155/zoom, syh-80/zoom, 580/zoom, 40/zoom, textures.barBg, 0, 0, 0, tocolor(255, 255, 255, 255))
@@ -46,7 +46,7 @@ function renderInterface()
     dxDrawImage(sxh-170/zoom, syh-15/zoom, 300/zoom, 250/zoom, textures.option, 0, 0, 0, tocolor(255, 255, 255, 255*animations[2]))
     if saveData.selected == 1 then
         dxDrawImage(sxh-170/zoom, syh-15/zoom, 300/zoom, 250/zoom, textures.optionSelected, 0, 0, 0, tocolor(255, 255, 255, 255*animations[2]))
-        dxDrawImage(sxh-95/zoom, syh+10/zoom, 150/zoom, 150/zoom, textures.planeIcon, 0, 0, 0, tocolor(104, 214, 94, 255*animations[2]))
+        dxDrawImage(sxh-95/zoom, syh+10/zoom, 150/zoom, 150/zoom, textures.planeIcon, 0, 0, 0, tocolor(46, 117, 111, 255*animations[2]))
     else
         dxDrawImage(sxh-95/zoom, syh+10/zoom, 150/zoom, 150/zoom, textures.planeIcon, 0, 0, 0, tocolor(255, 255, 255, 255*animations[2]))
     end
@@ -56,7 +56,7 @@ function renderInterface()
     dxDrawImage(sxh+140/zoom, syh-15/zoom, 300/zoom, 250/zoom, textures.option, 0, 0, 0, tocolor(255, 255, 255, 255*animations[3]))
     if saveData.selected == 2 then
         dxDrawImage(sxh+140/zoom, syh-15/zoom, 300/zoom, 250/zoom, textures.optionSelected, 0, 0, 0, tocolor(255, 255, 255, 255*animations[3]))
-        dxDrawImage(sxh+215/zoom, syh+10/zoom, 150/zoom, 150/zoom, textures.heliIcon, 0, 0, 0, tocolor(104, 214, 94, 255*animations[3]))
+        dxDrawImage(sxh+215/zoom, syh+10/zoom, 150/zoom, 150/zoom, textures.heliIcon, 0, 0, 0, tocolor(46, 117, 111, 255*animations[3]))
     else
         dxDrawImage(sxh+215/zoom, syh+10/zoom, 150/zoom, 150/zoom, textures.heliIcon, 0, 0, 0, tocolor(255, 255, 255, 255*animations[3]))
     end

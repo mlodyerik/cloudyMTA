@@ -81,7 +81,7 @@ function addOrganizationMoney(organization, money)
     end
 
     exports['since-db']:query('UPDATE `since-orgs` SET `money` = `money` + ? WHERE `uid` = ?', money, organization)
-    exports['since-db']:query("INSERT INTO `since-orgs-logs` (org,member,title,subTitle,description) VALUES (?,?,?,?,?)", organization, getPlayerName(client), 'Obrabowanie bankomatu', '#7dff7d$#ffffff '..addCommas(money)..'', 'Brak')
+    exports['since-db']:query("INSERT INTO `since-orgs-logs` (org,member,title,subTitle,description) VALUES (?,?,?,?,?)", organization, getPlayerName(client), 'Obrabowanie bankomatu', '#2E756F$#ffffff '..addCommas(money)..'', 'Brak')
 end
 
 addEvent('bankRobbery:end', true)

@@ -7,7 +7,7 @@ addEventHandler('payForTank', resourceRoot, function(type, cost, fuelCount)
     end
 
     takePlayerMoney(client, cost)
-    exports['since-notifications']:sendNotification(client, 'success', 'Zapłaciłeś#7dff7d $ '..comma_value(cost)..'#ffffff za tankowanie pojazdu')
+    exports['since-notifications']:sendNotification(client, 'success', 'Zapłaciłeś#2E756F $ '..comma_value(cost)..'#ffffff za tankowanie pojazdu')
 
     local fuelData = getElementData(getPedOccupiedVehicle(client), 'vehicle:fuel')
     if type == 'PB' then

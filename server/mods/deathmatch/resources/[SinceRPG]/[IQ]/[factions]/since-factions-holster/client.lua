@@ -8,7 +8,7 @@ local m = 6
 function render()
     dxDrawImage(sx/2-440/zoom/2, sy/2-460/zoom/2, 440/zoom, 460/zoom, 'data/images/bg.png')
     dxDrawText('Kabura', sx/2-440/zoom/2 + 15/zoom, sy/2-460/zoom/2 + 25/zoom, nil, nil, white, 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'center')
-    dxDrawText('Frakcja '..getElementData(localPlayer, 'player:faction')..'', sx/2-440/zoom/2 + 15/zoom, sy/2-460/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom)), nil, nil, tocolor(104, 214, 94), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
+    dxDrawText('Frakcja '..getElementData(localPlayer, 'player:faction')..'', sx/2-440/zoom/2 + 15/zoom, sy/2-460/zoom/2 + 25/zoom + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom)), nil, nil, tocolor(46, 117, 111), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center')
     dxDrawImage(sx/2-440/zoom/2, sy/2-460/zoom/2 + 64/zoom, 440/zoom, 2/zoom, 'data/images/line.png')
 
     local x = 0

@@ -65,7 +65,7 @@ addCommandHandler('wyplata.all', function(plr, cmd)
 
 				local player = getPlayerFromSerial(v.serial)
 				if player then
-					outputChatBox('ⓘ #ffffffOtrzymałeś(aś) wypłatę w wysokości #7dff7d$ '..addCommas(value)..' #ffffffza wykonane reporty. #bababa(pieniądze trafiły na konto bankowe)', player, 255, 255, 0, true)
+					outputChatBox('ⓘ #ffffffOtrzymałeś(aś) wypłatę w wysokości #2E756F$ '..addCommas(value)..' #ffffffza wykonane reporty. #bababa(pieniądze trafiły na konto bankowe)', player, 255, 255, 0, true)
 				end
 			end
 		end

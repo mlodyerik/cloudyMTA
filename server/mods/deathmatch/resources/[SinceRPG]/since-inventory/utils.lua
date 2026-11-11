@@ -26,14 +26,14 @@ function isMouseInPosition ( x, y, width, height )
 end
 
 function drawScrollbar(x, y, height, max, visibleCount, pos)
-    dxDrawRectangle(x, y, 4, height, tocolor(125, 255, 125, 55))
+    dxDrawRectangle(x, y, 4, height, tocolor(46, 117, 111, 55))
 
 	local scrollHeight = visibleCount / max
 	local progress = pos / (max - visibleCount)
 	if scrollHeight > 1 then return end
 	if scrollHeight ~= scrollHeight then return end
 	if progress ~= progress then return end
-	dxDrawRectangle(x, y + (height * (1-scrollHeight)) * progress, 4, height * scrollHeight, tocolor(125, 255, 125, 200))
+	dxDrawRectangle(x, y + (height * (1-scrollHeight)) * progress, 4, height * scrollHeight, tocolor(46, 117, 111, 200))
 end
 
 function drawButton(text, x, y, w, h, font, color, colorInactive, textColor)

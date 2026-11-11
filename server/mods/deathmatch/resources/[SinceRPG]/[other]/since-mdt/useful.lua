@@ -1,6 +1,6 @@
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 local anims, builtins = {}, {"Linear", "InQuad", "OutQuad", "InOutQuad", "OutInQuad", "InElastic", "OutElastic", "InOutElastic", "OutInElastic", "InBack", "OutBack", "InOutBack", "OutInBack", "InBounce", "OutBounce", "InOutBounce", "OutInBounce", "SineCurve", "CosineCurve"}

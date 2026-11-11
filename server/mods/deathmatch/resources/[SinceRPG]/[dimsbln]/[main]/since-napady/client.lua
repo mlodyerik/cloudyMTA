@@ -139,7 +139,7 @@ function renderStarting()
     end
     dxDrawImage(sx/2 - 200/zoom, sy/2 + 443/zoom, 400/zoom, 74/zoom, 'files/bg2.png')
     dxDrawText('Do końca napadu pozostało', sx/2, sy/2 + 448/zoom, nil, nil, tocolor(185, 185, 185, 219), 1, fonts[3], 'center', 'top')
-    dxDrawText(string.format('%02d', m)..':'..string.format('%02d', s), sx/2, sy/2 + 480/zoom, nil, nil, tocolor(125, 255, 125, 242), 1, fonts[4], 'center', 'top')
+    dxDrawText(string.format('%02d', m)..':'..string.format('%02d', s), sx/2, sy/2 + 480/zoom, nil, nil, tocolor(46, 117, 111, 242), 1, fonts[4], 'center', 'top')
 end
 
 function wasted()

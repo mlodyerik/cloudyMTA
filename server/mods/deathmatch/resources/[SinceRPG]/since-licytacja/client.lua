@@ -1,6 +1,6 @@
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 local font = dxCreateFont("files/Poppins-Regular.ttf", 47)

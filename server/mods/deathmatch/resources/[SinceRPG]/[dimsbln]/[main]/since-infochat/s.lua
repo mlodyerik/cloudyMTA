@@ -1,6 +1,6 @@
 ﻿local wiadomki = {
-    {"#48f542★ #FFFFFFDiscord serwera znajdziesz pod adresem: https://discord.gg/qyrq2DzJ6Q"},
-    {"#48f542★ #FFFFFFForum serwera znajdziesz pod adresem: https://sincerpg.pl/"},
+    {"#48f542★ #FFFFFFDiscord serwera znajdziesz pod adresem: https://discord.gg/cloudymta"},
+    {"#48f542★ #FFFFFFForum serwera znajdziesz pod adresem: https://cloudymta.pl/"},
     {"#48f542★ #FFFFFFZapraszaj swoich znajomych do gry na serwerze!"},
     {"#48f542★ #FFFFFFSzukasz podwózki? Wpisz /taxi i wyślij zgłoszenie do frakcji TSA"},
     {"#48f542★ #FFFFFFJesteś tutaj po raz pierwszy? Kliknij F1!"},

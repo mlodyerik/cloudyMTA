@@ -491,11 +491,11 @@ addEventHandler ( "onPlayerWasted", root, function(ammo, killer, killerweapon, b
                 addExp(killer, randomEXP)
 
                 outputChatBox(" ", killer, 255, 175, 0, true)
-                outputChatBox("⚔#ffffff Zabito gracza #FFA800"..getPlayerName(source).."#ffffff, otrzymujesz #7dff7d$ "..random.."#ffffff #6eb9ff(+ "..randomEXP.." EXP)#ffffff.", killer, 125, 255, 125, true)
+                outputChatBox("⚔#ffffff Zabito gracza #FFA800"..getPlayerName(source).."#ffffff, otrzymujesz #2E756F$ "..random.."#ffffff #6eb9ff(+ "..randomEXP.." EXP)#ffffff.", killer, 125, 255, 125, true)
                 outputChatBox(" ", killer, 255, 175, 0, true)
             else
                 outputChatBox(" ", killer, 255, 175, 0, true)
-                outputChatBox("⚔#ffffff Zabito gracza #FFA800"..getPlayerName(source).."#ffffff, otrzymujesz #7dff7d$ "..random.."#ffffff.", killer, 125, 255, 125, true)
+                outputChatBox("⚔#ffffff Zabito gracza #FFA800"..getPlayerName(source).."#ffffff, otrzymujesz #2E756F$ "..random.."#ffffff.", killer, 125, 255, 125, true)
                 outputChatBox(" ", killer, 255, 175, 0, true)
             end
         else

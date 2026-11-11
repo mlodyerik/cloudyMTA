@@ -43,7 +43,7 @@ function renderUI()
 
     if vehicleData.driver == localPlayer then
         dxDrawText('Kliknij B aby otworzyć panel zgłoszeń TAXI', sx/2 + 1, sy - 15/zoom + 1, nil, nil, tocolor(0, 0, 0, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'bottom')
-        dxDrawText('Kliknij #7dff7dB#ffffff aby otworzyć panel zgłoszeń #ffff00TAXI', sx/2, sy - 15/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'bottom', false, false, false, true)
+        dxDrawText('Kliknij #2E756FB#ffffff aby otworzyć panel zgłoszeń #ffff00TAXI', sx/2, sy - 15/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'bottom', false, false, false, true)
 
         if not vehicleData.passager then
             return
@@ -54,26 +54,26 @@ function renderUI()
         
         dxDrawText('Przebyty dystans', sx/2 + 278/zoom, sy - 114/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'top')
         local kilometers = string.format('%.2f', vehicleData.kilometers or 0)
-        dxDrawText(kilometers..' km', sx/2 + 278/zoom, sy - 114/zoom, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'right', 'bottom')
+        dxDrawText(kilometers..' km', sx/2 + 278/zoom, sy - 114/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'right', 'bottom')
         
         if vehicleData.passager then
-            dxDrawText('Kliknij #7dff7dK#ffffff aby '..(vehicleData.doinCurse and '#ff7d7dzakończyć' or '#5EABD6rozpocząć')..' kurs', sx/2 + 278/zoom, sy - 98/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'top', false, false, false, true)
+            dxDrawText('Kliknij #2E756FK#ffffff aby '..(vehicleData.doinCurse and '#ff7d7dzakończyć' or '#5EABD6rozpocząć')..' kurs', sx/2 + 278/zoom, sy - 98/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'top', false, false, false, true)
         end
         
         dxDrawText('Klient: '..(vehicleData.passager and '#fff836'..getPlayerName(vehicleData.passager) or '#ff7d7dBrak klienta,'), sx/2 - 278/zoom, sy - 114/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
         dxDrawText('Stawka za kilometr: #5EABD6'..addComma(cache.kmCost or 0)..'$ / km', sx/2 - 278/zoom, sy - 96/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
-        dxDrawText('Naliczone opłaty: #7dff7d'..addComma(vehicleData.money or 0)..'$', sx/2 - 278/zoom, sy - 78/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
+        dxDrawText('Naliczone opłaty: #2E756F'..addComma(vehicleData.money or 0)..'$', sx/2 - 278/zoom, sy - 78/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
     elseif vehicleData.passager == localPlayer and vehicleData.doinCurse then
         dxDrawImage(sx/2 - 288/zoom, sy - 186/zoom, 578/zoom, 144/zoom, 'data/background.png')
         dxDrawText('Taksometr', sx/2, sy - 150/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), 'center', 'bottom')
     
         dxDrawText('Przebyty dystans', sx/2 + 278/zoom, sy - 114/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'top')
         local kilometers = string.format('%.2f', vehicleData.kilometers or 0)
-        dxDrawText(kilometers..' km', sx/2 + 278/zoom, sy - 114/zoom, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'right', 'bottom')
+        dxDrawText(kilometers..' km', sx/2 + 278/zoom, sy - 114/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'right', 'bottom')
     
         dxDrawText('Kierowca: '..(vehicleData.driver and '#fff836'..getPlayerName(vehicleData.driver) or '#ff7d7dBrak kierowcy,'), sx/2 - 278/zoom, sy - 114/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
         dxDrawText('Stawka za kilometr: #5EABD6'..addComma(cache.kmCost or 0)..'$ / km', sx/2 - 278/zoom, sy - 96/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
-        dxDrawText('Naliczone opłaty: #7dff7d'..addComma(vehicleData.money or 0)..'$', sx/2 - 278/zoom, sy - 78/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
+        dxDrawText('Naliczone opłaty: #2E756F'..addComma(vehicleData.money or 0)..'$', sx/2 - 278/zoom, sy - 78/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
     end
 end
 

@@ -71,7 +71,7 @@ addEventHandler('onClientPreRender', root, function()
                 dxDrawText(exports['since-vehiclenames']:getVehicleName(getElementData(target, 'vehicle:model') or getElementModel(target)), sx - 15/zoom, sy - 225/zoom, nil, nil, tocolor(255, 255, 255), 1, fonts:getFont('Inter-Bold', 15/zoom), 'right', 'bottom')
                 local option = cache.options[getElementType(target)][cache.selectedItem]
                 dxDrawText(option, sx - 15/zoom + 1, sy - 225/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top')
-                dxDrawText(option, sx - 15/zoom, sy - 225/zoom, nil, nil, tocolor(125, 255, 125), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top')
+                dxDrawText(option, sx - 15/zoom, sy - 225/zoom, nil, nil, tocolor(46, 117, 111), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top')
 
                 local info = {
 
@@ -90,7 +90,7 @@ addEventHandler('onClientPreRender', root, function()
 
                 local tankCount = string.format("%.2f", info.fuel.count or 100)
                 if getElementData(target, 'vehicle:id') then
-                    local text = 'ID: #7dff7d'..(getElementData(target, 'vehicle:id') or '0')..'#ffffff\nModel: #7dff7d'..info.model..'#ffffff\nTablica: #7dff7d'..info.plate..'#ffffff\nUID właściciela: #7dff7d'..info.owner..'#ffffff\nOstatni kierowca: #7dff7d'..(info.data.driver or 'Brak')..'#ffffff\nStan: #7dff7d'..math.floor(info.health/10)..'%#ffffff\nPaliwo: #7dff7d'..tankCount..'L / '..(info.fuel.tank or 25)..'L'
+                    local text = 'ID: #2E756F'..(getElementData(target, 'vehicle:id') or '0')..'#ffffff\nModel: #2E756F'..info.model..'#ffffff\nTablica: #2E756F'..info.plate..'#ffffff\nUID właściciela: #2E756F'..info.owner..'#ffffff\nOstatni kierowca: #2E756F'..(info.data.driver or 'Brak')..'#ffffff\nStan: #2E756F'..math.floor(info.health/10)..'%#ffffff\nPaliwo: #2E756F'..tankCount..'L / '..(info.fuel.tank or 25)..'L'
                     dxDrawText(text:gsub('#%x%x%x%x%x%x', ''), sx - 15/zoom + 1, sy - 165/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
                     dxDrawText(text, sx - 15/zoom, sy - 165/zoom, nil, nil, tocolor(255, 255, 255), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
                 else
@@ -105,7 +105,7 @@ addEventHandler('onClientPreRender', root, function()
                 dxDrawText(getPlayerName(target), sx - 15/zoom, sy - 225/zoom, nil, nil, tocolor(255, 255, 255), 1, fonts:getFont('Inter-Bold', 15/zoom), 'right', 'bottom')
                 local option = cache.options[getElementType(target)][cache.selectedItem] or 'Brak'
                 dxDrawText(option, sx - 15/zoom + 1, sy - 225/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top')
-                dxDrawText(option, sx - 15/zoom, sy - 225/zoom, nil, nil, tocolor(125, 255, 125), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top')
+                dxDrawText(option, sx - 15/zoom, sy - 225/zoom, nil, nil, tocolor(46, 117, 111), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top')
 
                 local info = {
 
@@ -119,7 +119,7 @@ addEventHandler('onClientPreRender', root, function()
                 dxDrawText('Informacje o graczu', sx - 15/zoom + 1, sy - 165/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, fonts:getFont('Inter-Bold', 15/zoom), 'right', 'bottom')
                 dxDrawText('Informacje o graczu', sx - 15/zoom, sy - 165/zoom, nil, nil, tocolor(255, 255, 255), 1, fonts:getFont('Inter-Bold', 15/zoom), 'right', 'bottom')
 
-                local text = 'ID: #7dff7d'..(getElementData(target, 'id') or '0')..'#ffffff\nZdrowie: #7dff7d'..math.floor(info.health)..'%#ffffff\nPunkty premium: #7dff7d'..info.pp..' PP#ffffff\nRanga: #7dff7d'..info.rank
+                local text = 'ID: #2E756F'..(getElementData(target, 'id') or '0')..'#ffffff\nZdrowie: #2E756F'..math.floor(info.health)..'%#ffffff\nPunkty premium: #2E756F'..info.pp..' PP#ffffff\nRanga: #2E756F'..info.rank
                 dxDrawText(text:gsub('#%x%x%x%x%x%x', ''), sx - 15/zoom + 1, sy - 165/zoom + 1, nil, nil, tocolor(0, 0, 0, 155), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
                 dxDrawText(text, sx - 15/zoom, sy - 165/zoom, nil, nil, tocolor(255, 255, 255), 1, fonts:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
             end

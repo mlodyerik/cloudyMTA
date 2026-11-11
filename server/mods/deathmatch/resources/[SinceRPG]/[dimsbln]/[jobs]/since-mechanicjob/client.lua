@@ -25,7 +25,7 @@ function renderUI()
     dxDrawText('Mechanik '..data.jobInfo.location, sx/2 + 1, 40/zoom + 1, nil, nil, tocolor(0, 0, 0, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom', false, false, false, true)
     dxDrawText('Mechanik #5c9dff'..data.jobInfo.location, sx/2, 40/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom', false, false, false, true)
     dxDrawText('Przepracowany czas: '..convertTime(data.jobInfo.time), sx/2 + 1, 40/zoom + 1, nil, nil, tocolor(0, 0, 0, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top', false, false, false, true)
-    dxDrawText('Przepracowany czas: #7dff7d'..convertTime(data.jobInfo.time), sx/2, 40/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top', false, false, false, true)
+    dxDrawText('Przepracowany czas: #2E756F'..convertTime(data.jobInfo.time), sx/2, 40/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top', false, false, false, true)
 
     local multiplier = exports["since-jobs"]:getJobMultiplier('mechanik')
     if multiplier > 1 then
@@ -121,8 +121,8 @@ function renderMechanic()
 	dxDrawText('Anuluj', sx/2 + 82/zoom, sy/2 + 212.5/zoom, nil, nil, tocolor(255, 255, 255, isIn and 255 or 200), 1, exports['since-fonts']:getFont('Inter-SemiBold', 11/zoom), 'center', 'center')
 
     local model = getElementData(data.targetVehicle, 'vehicle:model')
-	dxDrawText('Mechanik', sx/2, sy/2 - 203/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
-	dxDrawText('Naprawiasz pojazd #7dff7d'..exports['since-vehiclenames']:getVehicleName(model), sx/2, sy/2 - 203/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top', false, false, false, true)
+	dxDrawText('Mechanik', sx/2, sy/2 - 203/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
+	dxDrawText('Naprawiasz pojazd #2E756F'..exports['since-vehiclenames']:getVehicleName(model), sx/2, sy/2 - 203/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top', false, false, false, true)
     
     
     if #data.toFix == 0 then
@@ -142,7 +142,7 @@ function renderMechanic()
             local alpha = data.selectedParts[i] and 1 or (isMouseIn(sx/2 - 258/zoom, sy/2 - 115/zoom + offset, 516/zoom, 24/zoom) and 0.35 or 0.65)
             dxDrawImage(sx/2 - 244/zoom, sy/2 - 131/zoom + offset, 470/zoom, 34/zoom, 'data/item_bg.png', 0, 0, 0, tocolor(255, 255, 255, 255 * alpha))
             dxDrawText(v[1], sx/2 - 235/zoom, sy/2 - 106/zoom + offset, nil, nil, tocolor(255, 255, 255, 255 * alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom')
-            dxDrawText('$ #ffffff'..convertNumber(partCost[i] or 0), sx/2 - 54/zoom, sy/2 - 106/zoom + offset, nil, nil, tocolor(125, 255, 125, 255 * alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
+            dxDrawText('$ #ffffff'..convertNumber(partCost[i] or 0), sx/2 - 54/zoom, sy/2 - 106/zoom + offset, nil, nil, tocolor(46, 117, 111, 255 * alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
         
             offset = offset + 34/zoom + 4/zoom
         end
@@ -151,7 +151,7 @@ function renderMechanic()
     drawScrollbar(data.toFix, sx/2 + 236/zoom, sy/2 - 131/zoom, 6/zoom, offset - 5/zoom, m, k, 255)
 
 	dxDrawText('Koszta naprawy', sx/2, sy/2 + 159/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'bottom')
-	dxDrawText('$ #ffffff'..convertNumber(data.cost), sx/2, sy/2 + 159/zoom, nil, nil, tocolor(125, 255, 125, 255), 1, exports['since-fonts']:getFont('Inter-Black', 13/zoom), 'center', 'top', false, false, false, true)
+	dxDrawText('$ #ffffff'..convertNumber(data.cost), sx/2, sy/2 + 159/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Black', 13/zoom), 'center', 'top', false, false, false, true)
 
     local isIn = isMouseIn(sx/2 - 251/zoom, sy/2 + 103/zoom, 136/zoom, 30/zoom)
 	dxDrawImage(sx/2 - 251/zoom, sy/2 + 103/zoom, 136/zoom, 30/zoom, 'data/button_select.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 200))

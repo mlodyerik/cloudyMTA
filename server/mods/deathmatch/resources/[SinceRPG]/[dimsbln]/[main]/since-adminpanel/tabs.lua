@@ -154,10 +154,10 @@ tabs = {
                     dxDrawText(rankName, sx/2 - 200/zoom, sy/2 - 160/zoom + offset, nil, nil, tocolor(r, g, b, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true) 
 
                     dxDrawText('Wykonane reporty', sx/2 - 25/zoom, sy/2 - 160/zoom + offset, nil, nil, tocolor(255, 255, 255, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom', false, false, false, true) 
-                    dxDrawText(v.reporty, sx/2 - 25/zoom, sy/2 - 160/zoom + offset, nil, nil, tocolor(125, 255, 125, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true) 
+                    dxDrawText(v.reporty, sx/2 - 25/zoom, sy/2 - 160/zoom + offset, nil, nil, tocolor(46, 117, 111, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true) 
 
                     dxDrawText('Ostatnio aktywny', sx/2 + 185/zoom, sy/2 - 160/zoom + offset, nil, nil, tocolor(255, 255, 255, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom', false, false, false, true) 
-                    dxDrawText(convertDate(v.actived), sx/2 + 185/zoom, sy/2 - 160/zoom + offset, nil, nil, tocolor(125, 255, 125, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true) 
+                    dxDrawText(convertDate(v.actived), sx/2 + 185/zoom, sy/2 - 160/zoom + offset, nil, nil, tocolor(46, 117, 111, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top', false, false, false, true) 
 
                     local isIn2 = isMouseInPosition(sx/2 + 400/zoom, sy/2 - 178/zoom + offset, 28/zoom, 28/zoom) and 1 or 0.9
                     dxDrawImage(sx/2 + 400/zoom, sy/2 - 178/zoom + offset, 28/zoom, 28/zoom, 'data/cmd.png', 0, 0, 0, tocolor(225, 225, 225, ((isIn and 200 or 155)*alpha)*isIn2))
@@ -176,37 +176,37 @@ tabs = {
 
                 dxDrawRectangle(cx + 10/zoom, cy + 10/zoom, 250/zoom, 200/zoom, tocolor(45, 45, 45, 255*alpha))
                 dxDrawText('Ogólne statystyki członka', cx + 15/zoom, cy + 36/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(checkStats.nick, cx + 15/zoom, cy + 36/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 10/zoom), 'left', 'top', false, false, false, true)
+                dxDrawText(checkStats.nick, cx + 15/zoom, cy + 36/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 10/zoom), 'left', 'top', false, false, false, true)
                 local textWidth = dxGetTextWidth(checkStats.nick, 1, exports['since-fonts']:getFont('Inter-Regular', 10/zoom))
                 dxDrawRectangle(cx + 15/zoom, cy + 60/zoom, 240/zoom, 1, tocolor(255, 255, 255, 100*alpha))
 
                 local stats = fromJSON(checkStats.stats) or {}
 
                 dxDrawText('Schowane pojazdy', cx + 15/zoom, cy + 80/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(stats.vehicles or 0, cx + 255/zoom, cy + 80/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
+                dxDrawText(stats.vehicles or 0, cx + 255/zoom, cy + 80/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
             
                 dxDrawText('Zabrane licencje', cx + 15/zoom, cy + 100/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(stats.license or 0, cx + 255/zoom, cy + 100/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
+                dxDrawText(stats.license or 0, cx + 255/zoom, cy + 100/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
                 
                 dxDrawText('Nałożone bany', cx + 15/zoom, cy + 120/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(stats.bans or 0, cx + 255/zoom, cy + 120/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
+                dxDrawText(stats.bans or 0, cx + 255/zoom, cy + 120/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
                 
                 dxDrawText('Wyciszenia', cx + 15/zoom, cy + 140/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(stats.mutes or 0, cx + 255/zoom, cy + 140/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
+                dxDrawText(stats.mutes or 0, cx + 255/zoom, cy + 140/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
                 
                 dxDrawText('Nadane ostrzeżenia', cx + 15/zoom, cy + 160/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(stats.warns or 0, cx + 255/zoom, cy + 160/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
+                dxDrawText(stats.warns or 0, cx + 255/zoom, cy + 160/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
                 
                 dxDrawText('Wyrzuconych graczy', cx + 15/zoom, cy + 180/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(stats.kicks or 0, cx + 255/zoom, cy + 180/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
+                dxDrawText(stats.kicks or 0, cx + 255/zoom, cy + 180/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
                 
                 dxDrawText('Wykonane zgłoszenia', cx + 15/zoom, cy + 200/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'left', 'bottom', false, false, false, true)
-                dxDrawText(stats.reports or 0, cx + 255/zoom, cy + 200/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
+                dxDrawText(stats.reports or 0, cx + 255/zoom, cy + 200/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'bottom', false, false, false, true)
             end 
 
             if not selectedUser then
                 dxDrawText('Dostępne akcje', sx/2 - 210/zoom, sy/2 + 210/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom', false, false, false, true) 
-                dxDrawText('Kliknij na członka ekipy aby wyświetlić dostępne opcje', sx/2 - 210/zoom, sy/2 + 210/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true) 
+                dxDrawText('Kliknij na członka ekipy aby wyświetlić dostępne opcje', sx/2 - 210/zoom, sy/2 + 210/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true) 
             else
                drawButton('Awansuj', sx/2 - 210/zoom, sy/2 + 196/zoom, 128/zoom, 32/zoom, {125, 255, 125}, 225*alpha)
                drawButton('Degraduj', sx/2 - 80/zoom, sy/2 + 196/zoom, 128/zoom, 32/zoom, {255, 175, 125}, 225*alpha)
@@ -293,9 +293,9 @@ tabs = {
 
                     local isIn = isMouseInPosition(sx/2 - 210/zoom, y - 25/zoom, 660/zoom, 50/zoom)
 
-                    dxDrawRectangle(sx/2 - 210/zoom, y - 25/zoom, 660/zoom, 50/zoom, isIn and tocolor(125, 255, 125, 15*alpha) or tocolor(255, 255, 255, 15*alpha))
+                    dxDrawRectangle(sx/2 - 210/zoom, y - 25/zoom, 660/zoom, 50/zoom, isIn and tocolor(46, 117, 111, 15*alpha) or tocolor(255, 255, 255, 15*alpha))
                     dxDrawText(cmd, sx/2 - 200/zoom, y + 4/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
-                    dxDrawText(v.desc, sx/2 - 200/zoom, y + 4, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
+                    dxDrawText(v.desc, sx/2 - 200/zoom, y + 4, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
 
                     if isIn then
                         -- get cursor position
@@ -390,7 +390,7 @@ tabs = {
                 timeType = exports['since-gui']:isCheckboxChecked(uiElements['checkbox_perm']) and 'Na zawsze' or cached.time..' dni'
             end
             
-            dxDrawText(timeType, sx/2 - 215/zoom + (220/2)/zoom, sy/2 - 90/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'bottom', false, false, false, true)
+            dxDrawText(timeType, sx/2 - 215/zoom + (220/2)/zoom, sy/2 - 90/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'bottom', false, false, false, true)
             
             local punish = cached.punishPlayer and '#7dd2ff'..cached.punishPlayer or '#ff7d7dBrak'
             dxDrawText('Podsumowanie', sx/2 - 215/zoom, sy/2 + 15/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)

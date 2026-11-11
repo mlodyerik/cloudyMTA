@@ -1,6 +1,6 @@
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 --[[if getElementData(localPlayer, "player:sid") == 25 or getElementData(localPlayer, "player:sid") == 1 then

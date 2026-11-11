@@ -47,10 +47,10 @@ function renderBW()
 
     blackwhite:drawBWRectangle(0, 0, sx, sy, tocolor(0, 0, 0, 100 * cache.alpha), false)
     dxDrawImage(sx - 626/zoom, sy/2 - 540/zoom, 626/zoom, sy, 'data/background.png', 0, 0, 0, tocolor(255, 255, 255, 255 * cache.alpha))
-	dxDrawText('Zaliczyłeś zgona', sx - 30/zoom, sy/2 - 40/zoom, nil, nil, tocolor(125, 255, 125, 255 * cache.alpha), 1, cache.fonts[1], 'right', 'bottom')
+	dxDrawText('Zaliczyłeś zgona', sx - 30/zoom, sy/2 - 40/zoom, nil, nil, tocolor(46, 117, 111, 255 * cache.alpha), 1, cache.fonts[1], 'right', 'bottom')
 	dxDrawText('Odrodzisz się za: #7DFF7D'..(getElementData(localPlayer, 'player:bw') or 0)..' sek.', sx - 30/zoom, sy/2 - 40/zoom, nil, nil, tocolor(255, 255, 255, 255 * cache.alpha), 1, cache.fonts[2], 'right', 'top', false, false, false, true)
 	dxDrawImage(sx - 322/zoom, sy/2 - 2/zoom, 292/zoom, 6/zoom, 'data/progress.png', 0, 0, 0, tocolor(255, 255, 255, 100 * cache.alpha))
-    dxDrawImageSection(sx - 322/zoom, sy/2 - 2/zoom, 292/zoom * (cache.progressChange or 0) / 15, 6/zoom, 0, 0, 292 * (cache.progressChange or 0) / 15, 6, 'data/progress.png', 0, 0, 0, tocolor(125, 255, 125, 255 * cache.alpha))
+    dxDrawImageSection(sx - 322/zoom, sy/2 - 2/zoom, 292/zoom * (cache.progressChange or 0) / 15, 6/zoom, 0, 0, 292 * (cache.progressChange or 0) / 15, 6, 'data/progress.png', 0, 0, 0, tocolor(46, 117, 111, 255 * cache.alpha))
 	
     if cache.killer then
         dxDrawText('Zostałeś zabity przez', sx - 30/zoom, sy/2 + 45/zoom, nil, nil, tocolor(255, 255, 255, 255 * cache.alpha), 1, cache.fonts[1], 'right', 'bottom')

@@ -29,12 +29,12 @@ addEventHandler('artifactAddMoney', resourceRoot, function()
         local playerMoney = math.random(1200000, 2400000)
         local uid = getElementData(client, 'player:sid')
 
-        sendMessageToOrganizationMembers(organization.id, '#ffc800★#ffffff Członek organizacji #bfbfbf'..getPlayerName(client)..'#ffffff odnalazł artefakt wart #7dff7d$ '..addCommas(money)..'#ffffff')
+        sendMessageToOrganizationMembers(organization.id, '#ffc800★#ffffff Członek organizacji #bfbfbf'..getPlayerName(client)..'#ffffff odnalazł artefakt wart #2E756F$ '..addCommas(money)..'#ffffff')
         exports['since-db']:query('UPDATE `since-orgs` SET `money` = `money` + ? WHERE `uid` = ?', money, orgData.id)
         exports['since-db']:query('UPDATE `since-users` SET `money` = `money` + ? WHERE `uid` = ?', playerMoney, uid)
         exports['since-notifications']:sendNotification(client, 'success', 'Za odnaleziony artefakt otrzymujesz $ '..addCommas(playerMoney))
         exports['since-notifications']:sendNotification(client, 'info', 'Na konto organizacji wpłyneło $ '..addCommas(money))
-        exports['since-db']:query("INSERT INTO `since-orgs-logs` (org,member,title,subTitle,description) VALUES (?,?,?,?,?)", orgData.id, getPlayerName(client), 'Odnalezienie artefaktu', '#7dff7d$#ffffff '..addCommas(money)..'', 'Brak')
+        exports['since-db']:query("INSERT INTO `since-orgs-logs` (org,member,title,subTitle,description) VALUES (?,?,?,?,?)", orgData.id, getPlayerName(client), 'Odnalezienie artefaktu', '#2E756F$#ffffff '..addCommas(money)..'', 'Brak')
     end
 end)
 

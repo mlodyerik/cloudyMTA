@@ -50,18 +50,21 @@ function renderUI()
         dxDrawImage(0, 0, 1085/zoom, 854/zoom, 'data/glow.png')
         dxDrawImage(66/zoom + 514/zoom/2 - 374/zoom/2, sy/2-410/zoom, 374/zoom, 98/zoom, 'data/logo.png')
         
+        -- cloudyMTA branding colors
+        local cloudyColor = {46, 117, 111} -- #2E756F
+        
         local avatar = exports['since-avatars']:getPlayerCircleAvatar(findPlayerInTable(savedNick), textures.mask)
         dxDrawImage(66/zoom + 514/zoom/2 - 147/zoom/2, sy/2-310/zoom, 147/zoom, 147/zoom, avatar and avatar or noAv, 0, 0, 0, avatar and tocolor(255, 255, 255) or tocolor(255, 255, 255, 255))
         dxDrawImage(66/zoom + 514/zoom/2 - 147/zoom/2, sy/2-310/zoom, 150/zoom, 150/zoom, textures.border)
 
         if findPlayerInTable(savedNick) then
             dxDrawText('Zaloguj się jako '..savedNick, 66/zoom + 514/zoom/2 + 1, sy/2-135/zoom + 1, nil, nil, tocolor(0, 0, 0, 175), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
-            dxDrawText('Zaloguj się jako #7dff7d'..savedNick, 66/zoom + 514/zoom/2, sy/2-135/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center', false, false, false, true)    
+            dxDrawText('Zaloguj się jako #2E756F'..savedNick, 66/zoom + 514/zoom/2, sy/2-135/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center', false, false, false, true)    
         end
     
         -- dxDrawImage(66/zoom + 514/zoom/2 - 356/zoom, sy - 103/zoom, 712/zoom, 103/zoom, 'data/green_shadow.png')
         -- dxDrawText('Na serwerze znajduje się '..#getElementsByType('player')..' graczy', 66/zoom + 514/zoom/2 + 1, sy - 25/zoom + 1, nil, nil, tocolor(0, 0, 0, 175), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center')
-        -- dxDrawText('Na serwerze znajduje się #99ff8a'..#getElementsByType('player')..'#ffffff graczy', 66/zoom + 514/zoom/2, sy - 25/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center', false, false, false, true)
+        -- dxDrawText('Na serwerze znajduje się #438F87'..#getElementsByType('player')..'#ffffff graczy', 66/zoom + 514/zoom/2, sy - 25/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'center', false, false, false, true)
     
         local loginIn = isMouseInPosition(66/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom)
         dxDrawImage(66/zoom, sy/2 - 99/zoom + 235/zoom, 245/zoom, 52/zoom, 'data/login_button.png', 0, 0, 0, tocolor(255, 255, 255, loginIn and 175 or 255))
@@ -89,17 +92,17 @@ function renderUI()
 	    dxDrawText('Wybór spawnu', 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'left', 'bottom')
 	    dxDrawText('Wybierz miejsce gdzie chcesz się zrespić', 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'left', 'top')
 
-	    dxDrawText('Wybrana lokalizacja', sx/2, sy - 65/zoom, nil, nil, tocolor(125, 255, 125, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'center')
+	    dxDrawText('Wybrana lokalizacja', sx/2, sy - 65/zoom, nil, nil, tocolor(46, 117, 111, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'center')
 	    dxDrawText(spawns[data.selectedSpawn].name, sx/2, sy - 27/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom), 'center', 'center')
 
         local textWidth = dxGetTextWidth(spawns[data.selectedSpawn].name, 1, exports['since-fonts']:getFont('Inter-Medium', 14/zoom))/2 + 15/zoom
         local inRight = isMouseInPosition(sx/2 + textWidth, sy - 35/zoom, 21/zoom, 19/zoom) or (getKeyState('arrow_r') == true)
         local inLeft = isMouseInPosition(sx/2 - textWidth - 22/zoom, sy - 35/zoom, 21/zoom, 19/zoom)or (getKeyState('arrow_l') == true)
-	    dxDrawImage(sx/2 + textWidth, sy - 35/zoom, 21/zoom, 19/zoom, 'data/arrowr.png', 0, 0, 0, inRight and tocolor(155, 225, 155, 255) or tocolor(255, 255, 255))
-	    dxDrawImage(sx/2 - textWidth - 22/zoom, sy - 35/zoom, 21/zoom, 19/zoom, 'data/arrowl.png', 0, 0, 0, inLeft and tocolor(155, 225, 155, 255) or tocolor(255, 255, 255))
+	    dxDrawImage(sx/2 + textWidth, sy - 35/zoom, 21/zoom, 19/zoom, 'data/arrowr.png', 0, 0, 0, inRight and tocolor(67, 143, 135, 255) or tocolor(255, 255, 255))
+	    dxDrawImage(sx/2 - textWidth - 22/zoom, sy - 35/zoom, 21/zoom, 19/zoom, 'data/arrowl.png', 0, 0, 0, inLeft and tocolor(67, 143, 135, 255) or tocolor(255, 255, 255))
 
 	    dxDrawText('Klawiszologia', sx - 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 225), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'right', 'bottom')
-	    dxDrawText('Użyj #99ff8astrzałek lub kursora#ffffff aby zmieniać spawn następnie zatwiedź #99ff8aenterem', sx - 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
+	    dxDrawText('Użyj #438F87strzałek lub kursora#ffffff aby zmieniać spawn następnie zatwiedź #438F87enterem', sx - 10/zoom, sy - 40/zoom, nil, nil, tocolor(255, 255, 255, 200), 1, exports['since-fonts']:getFont('Inter-Regular', 12/zoom), 'right', 'top', false, false, false, true)
     end
 end
 

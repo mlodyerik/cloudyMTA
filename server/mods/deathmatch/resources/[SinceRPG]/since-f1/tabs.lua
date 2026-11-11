@@ -49,13 +49,13 @@ tabs = {
 
         toRender = function(alpha)
             dxDrawText('Zarząd serwera', sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
-            dxDrawText('tworix, xelvor,', sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
+            dxDrawText('tworix, xelvor,', sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
 
             dxDrawText('Forum serwerowe', sx/2 - 210/zoom, sy/2 - 115/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
-            dxDrawText('OFFLINE', sx/2 - 210/zoom, sy/2 - 115/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
+            dxDrawText('OFFLINE', sx/2 - 210/zoom, sy/2 - 115/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
 
             dxDrawText('Autorzy', sx/2 - 210/zoom, sy/2 - 65/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
-            dxDrawText('Skrypt: #7dff7dzexty, Hixagon#ffffff\nModele: #7dff7ddamix10#ffffff\nMapy: #7dff7dzexty, damix10#ffffff\nGrafiki: #7dff7dzexty, Hixagon#ffffff', sx/2 - 210/zoom, sy/2 - 65/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
+            dxDrawText('Skrypt: #2E756Fzexty, Hixagon#ffffff\nModele: #2E756Fdamix10#ffffff\nMapy: #2E756Fzexty, damix10#ffffff\nGrafiki: #2E756Fzexty, Hixagon#ffffff', sx/2 - 210/zoom, sy/2 - 65/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
             
             dxDrawText('Statystyki graczy', sx/2 - 210/zoom, sy/2 + 25/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
             dxDrawText('Liczba graczy w przeciągu ostatnich 7 dni', sx/2 - 210/zoom, sy/2 + 25/zoom, nil, nil, tocolor(155, 255, 155, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true) 
@@ -129,9 +129,9 @@ tabs = {
 
                     local isIn = isMouseInPosition(sx/2 - 210/zoom, y - 25/zoom, 660/zoom, 50/zoom)
 
-                    dxDrawRectangle(sx/2 - 210/zoom, y - 25/zoom, 660/zoom, 50/zoom, isIn and tocolor(125, 255, 125, 15*alpha) or tocolor(255, 255, 255, 15*alpha))
+                    dxDrawRectangle(sx/2 - 210/zoom, y - 25/zoom, 660/zoom, 50/zoom, isIn and tocolor(46, 117, 111, 15*alpha) or tocolor(255, 255, 255, 15*alpha))
                     dxDrawText(cmd, sx/2 - 200/zoom, y + 4/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
-                    dxDrawText(v.desc, sx/2 - 200/zoom, y + 4, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
+                    dxDrawText(v.desc, sx/2 - 200/zoom, y + 4, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 9/zoom), 'left', 'top', false, false, false, true)
 
                     if isIn then
                         -- get cursor position
@@ -191,9 +191,9 @@ tabs = {
             dxDrawText(diamond_info, sx/2 - 102.5/zoom, sy/2 + 110/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 7/zoom), 'center', 'top')
             dxDrawText('Diamond', sx/2 - 102.5/zoom, sy/2 + 75/zoom, nil, nil, tocolor(88, 183, 252, 229*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'center', 'top')
 
-            dxDrawText('Kupno statusu diamond', sx/2 - 200.5/zoom, sy/2 - 164/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
-            dxDrawText('Kupno punktów premium', sx/2 - 200.5/zoom, sy/2 - 108/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
-            dxDrawText('Płatności', sx/2 - 199.5/zoom, sy/2 - 66/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Kupno statusu diamond', sx/2 - 200.5/zoom, sy/2 - 164/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Kupno punktów premium', sx/2 - 200.5/zoom, sy/2 - 108/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Płatności', sx/2 - 199.5/zoom, sy/2 - 66/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
             dxDrawText('Aby zakupić konto diamond należy otworzyć panel gracza (F5) i przejść do zakładki “Sklep”. Następnie\nwybierz interesującą cię opcje z kilku dostępnych.', sx/2 - 200.5/zoom, sy/2 - 166/zoom, nil, nil, tocolor(255, 255, 255, 191*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
             dxDrawText('Punkty premium możesz zakupić pisząc do jednego z właścicieli na naszym serwerze discord.', sx/2 - 200.5/zoom, sy/2 - 108/zoom, nil, nil, tocolor(255, 255, 255, 191*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
             dxDrawText('Bilk, PaySafeCard, PayPal, Skrill, Przelew bankowy', sx/2 - 199.5/zoom, sy/2 - 66/zoom, nil, nil, tocolor(255, 255, 255, 191*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
@@ -216,7 +216,7 @@ tabs = {
         desc = 'Przestrzegaj zasad na serwerze',
         icon = 'data/rules.png',
         toRender = function(alpha) 
-            dxDrawText('Regulamin serwera SinceRPG', sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
+            dxDrawText('Regulamin serwera SinceRPG', sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
             dxDrawText(rules, sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(225, 225, 225, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 10/zoom), 'left', 'top', false, false, false, true)
 
             dxDrawText('Uwaga', sx/2 - 210/zoom, sy/2 + 45/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 

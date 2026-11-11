@@ -854,7 +854,7 @@ function getBoxDrops(boxName)
         local color = RGBTOHEX(getColorFromPercent(item.rareLevel))
         local rareName = getRareName(item.chance)
         local chance = string.format("%.2f", item.chance)
-        table.insert(drops, i..'. #7dff7d'..item.name..'#ffffff ('..value..') - '..color..'('..rareName..'): ' .. chance..' %#ffffff')
+        table.insert(drops, i..'. #2E756F'..item.name..'#ffffff ('..value..') - '..color..'('..rareName..'): ' .. chance..' %#ffffff')
     end
 
     return drops

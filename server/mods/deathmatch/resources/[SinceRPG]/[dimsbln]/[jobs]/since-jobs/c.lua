@@ -75,7 +75,7 @@ function render()
 				dxDrawImage(sx/2-70/zoom, sy/2-80/zoom+offset, 350/zoom, 38/zoom, main['textures']['bg_upgrade'], 0,0,0, tocolor(255,255,255,anim2))
 				dxDrawImage(sx/2-65/zoom, sy/2-75/zoom+offset, 28/zoom, 28/zoom, main['textures']['upgrades/'..v[1]], 0,0,0, tocolor(255,255,255,anim2))
 
-				dxDrawText(v[1]..(v[4]>1 and ' ('..getPlayerUpgradeLevel(currentJob, v[1])..'/'..v[4]..')' or ''), sx/2-30/zoom, sy/2-77/zoom+offset, nil, nil, tocolor(104, 214, 94, anim2), 1, main['fonts'][2], 'left', 'top', false,false,false,true)
+				dxDrawText(v[1]..(v[4]>1 and ' ('..getPlayerUpgradeLevel(currentJob, v[1])..'/'..v[4]..')' or ''), sx/2-30/zoom, sy/2-77/zoom+offset, nil, nil, tocolor(46, 117, 111, anim2), 1, main['fonts'][2], 'left', 'top', false,false,false,true)
 				dxDrawText(v[2], sx/2-30/zoom, sy/2-45/zoom+offset, nil, nil, tocolor(255, 255, 255, anim2), 1, main['fonts'][4], 'left', 'bottom')
 				
 				if getPlayerUpgradeLevel(currentJob, v[1]) >= v[4] then

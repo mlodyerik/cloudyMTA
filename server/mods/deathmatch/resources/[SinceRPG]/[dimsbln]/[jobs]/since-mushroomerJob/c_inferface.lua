@@ -15,7 +15,7 @@ function sellRender()
     dxDrawImage(sx/2-210/zoom, sy/2-474/2/zoom, 420/zoom, 474/zoom, gui['textures']['bg'], 0, 0, 0, tocolor(255, 255, 255, 235))
 
     dxDrawText('Sprzedaż grzybów', sx/2, sy/2 - 205/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
-	dxDrawText('Otrzymaj wynagrodzenie za zebrane grzyby', sx/2, sy/2 - 205/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
+	dxDrawText('Otrzymaj wynagrodzenie za zebrane grzyby', sx/2, sy/2 - 205/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
 
     dxDrawText('Nazwa', sx/2-190/zoom, sy/2 - 160/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'left', 'center')
     dxDrawText('Rozmiar', sx/2, sy/2 - 160/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'center', 'center')

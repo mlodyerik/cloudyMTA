@@ -584,7 +584,7 @@ addEventHandler('onClientRender', root, function()
 
             if sx and sy and scale > 0 then
                 dxDrawText(datsa, sx + 1, sy + 1, nil, nil, tocolor(0, 0, 0, 155), scale, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'center', 'bottom', false, false, false, false, true)
-                dxDrawText(datsa, sx, sy, nil, nil, tocolor(125, 255, 125, 200), scale, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'center', 'bottom', false, false, false, false, true)
+                dxDrawText(datsa, sx, sy, nil, nil, tocolor(46, 117, 111, 200), scale, exports['since-fonts']:getFont('Inter-SemiBold', 13/zoom), 'center', 'bottom', false, false, false, false, true)
                 dxDrawText('Pasażer', sx + 1, sy + 1, nil, nil, tocolor(0, 0, 0, 155), scale, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'top', false, false, false, false, true)
                 dxDrawText('Pasażer', sx, sy, nil, nil, tocolor(225, 225, 225, 200), scale, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'top', false, false, false, false, true)
             end

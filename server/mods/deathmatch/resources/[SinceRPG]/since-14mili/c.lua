@@ -20,7 +20,7 @@ function create3DText()
     local x, y, z = unpack(data.information)
     local text = createElement("text")
     setElementPosition(text, x, y, z)
-    setElementData(text, "name", "Tor 1/4 mili\n#7dff7dWykręć jak najlepszy czas!")
+    setElementData(text, "name", "Tor 1/4 mili\n#2E756FWykręć jak najlepszy czas!")
 
     local blip = createBlip(x, y, z, 53, 2, 255, 255, 255, 255, 0, 500)
 end
@@ -42,7 +42,7 @@ function drawTimer()
     local time = convertTimer(time)
 
     dxDrawText("Czas: " .. time, sx / 2 + 1, sy - 100/zoom + 1, nil, nil, tocolor(0, 0, 0, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "center", false, false, false, false, false)
-    dxDrawText("Czas: #7dff7d" .. time, sx / 2, sy - 100/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "center", false, false, false, true, false)
+    dxDrawText("Czas: #2E756F" .. time, sx / 2, sy - 100/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "center", "center", false, false, false, true, false)
 end
 
 function startCounting(element,md)

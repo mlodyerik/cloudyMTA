@@ -33,7 +33,7 @@ function renderUI()
 		   
 				local r, g, b = unpack(getColorNumer(v[69]))
 				dxDrawText('⛊ #ffffff'..v[69]..' %', sx/2 - 84/zoom, sy/2 - 104/zoom + offset, nil, nil, data.selectedParts[i] and tocolor(r, g, b, 225) or tocolor(r, g, b, 155*isIn), 1, exports['since-fonts']:getFont('Inter-Medium', 9.333/zoom), 'left', 'center', false, false, false, true)
-				dxDrawText('$#ffffff '..addCommas(costTable[i]), sx/2 + 120/zoom, sy/2 - 104/zoom + offset, nil, nil, data.selectedParts[i] and tocolor(125, 255, 125, 225) or tocolor(125, 255, 125, 155*isIn), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9.333/zoom), 'left', 'center', false, false, false, true)
+				dxDrawText('$#ffffff '..addCommas(costTable[i]), sx/2 + 120/zoom, sy/2 - 104/zoom + offset, nil, nil, data.selectedParts[i] and tocolor(46, 117, 111, 225) or tocolor(46, 117, 111, 155*isIn), 1, exports['since-fonts']:getFont('Inter-SemiBold', 9.333/zoom), 'left', 'center', false, false, false, true)
 	
 				offset = offset + 24/zoom + 1
 			end

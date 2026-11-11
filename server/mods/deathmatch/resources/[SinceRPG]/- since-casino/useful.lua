@@ -2,7 +2,7 @@
 
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 function isMouseIn( x, y, width, height ) -- https://wiki.multitheftauto.com/wiki/IsMouseInPosition

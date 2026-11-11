@@ -24,7 +24,7 @@ function render()
             dxDrawImage(sx/2-200/zoom, sy/2-127/zoom + offset, 15/zoom, 15/zoom, main['textures']['icon2'], 0,0,0, tocolor(125,255,125,255))
 
             local rank = 'Officer'
-            dxDrawText('Dostępny od rangi: #7dff7d'..exports['since-factions']:getRankData(playerFaction, v[3]), sx/2-180/zoom, sy/2-118/zoom + offset, nil, nil, tocolor(255,255,255,200), 1, main['fonts'][2], 'left', 'center', false, false, false, true)
+            dxDrawText('Dostępny od rangi: #2E756F'..exports['since-factions']:getRankData(playerFaction, v[3]), sx/2-180/zoom, sy/2-118/zoom + offset, nil, nil, tocolor(255,255,255,200), 1, main['fonts'][2], 'left', 'center', false, false, false, true)
 
             local isIn = isMouseIn(sx/2+100/zoom, sy/2-145/zoom + offset, 92/zoom, 30/zoom)
             dxDrawImage(sx/2+100/zoom, sy/2-145/zoom + offset, 92/zoom, 30/zoom, main['textures']['button'], 0,0,0, tocolor(255,255,255,isIn and 255 or 200))

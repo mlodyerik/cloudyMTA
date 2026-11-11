@@ -71,7 +71,7 @@ function renderDiagnostic(v)
 		dxSetRenderTarget(main.myRenderTarget)
 
 			dxDrawRectangle(0, 0, 1024, 600, tocolor(25, 25, 25, 255))
-			dxDrawText("Stacja diagnostyczna", 1024 / 2, 50, nil, nil, tocolor(125, 255, 125, 200), 1, fonts[1], "center", "bottom", false, false, false, false, false)
+			dxDrawText("Stacja diagnostyczna", 1024 / 2, 50, nil, nil, tocolor(46, 117, 111, 200), 1, fonts[1], "center", "bottom", false, false, false, false, false)
 			--dxDrawRectangle(512 - 200, 55, 400, 2, tocolor(75, 75, 75, 255))
 
 			local veh = getElementsWithinColShape(main.shape, "vehicle")
@@ -90,7 +90,7 @@ function renderDiagnostic(v)
 
 						dxDrawRoundedRectangle(12, 215+offset, 488, 30, 8, tocolor(35, 35, 35, 200))
 						dxDrawText(v[1], 22, 230 + offset, nil, nil, tocolor(200, 200, 200, 255), 1, fonts[3], "left", "center", false, false, false, false, false)
-						local ifElse = upgrades[v[2]] and tocolor(125, 255, 125, 255) or tocolor(200, 55, 55, 255)
+						local ifElse = upgrades[v[2]] and tocolor(46, 117, 111, 255) or tocolor(200, 55, 55, 255)
 						if upgrades[v[2]]==true or not upgrades[v[2]] then
 							dxDrawText(upgrades[v[2]] and "Tak" or "Nie", 490, 230 + offset, nil, nil, ifElse, 1, fonts[3], "right", "center", false, false, false, false, false)
 						else
@@ -102,7 +102,7 @@ function renderDiagnostic(v)
 
 						dxDrawRoundedRectangle(12, 215+offset, 488, 30, 8, tocolor(35, 35, 35, 200))
 						dxDrawText(v[1], 22, 230 + offset, nil, nil, tocolor(200, 200, 200, 255), 1, fonts[3], "left", "center", false, false, false, false, false)
-						local ifElse = upgrades[v[2]] and tocolor(125, 255, 125, 255) or tocolor(200, 55, 55, 255)
+						local ifElse = upgrades[v[2]] and tocolor(46, 117, 111, 255) or tocolor(200, 55, 55, 255)
 						dxDrawText(upgrades[v[2]] and "Tak" or "Nie", 490, 230 + offset, nil, nil, ifElse, 1, fonts[3], "right", "center", false, false, false, false, false)
 
 					elseif v[3] and not v[2] then
@@ -110,9 +110,9 @@ function renderDiagnostic(v)
 						dxDrawRoundedRectangle(12, 215+offset, 488, 30, 8, tocolor(35, 35, 35, 200))
 						dxDrawText(v[1], 22, 230 + offset, nil, nil, tocolor(200, 200, 200, 255), 1, fonts[3], "left", "center", false, false, false, false, false)
 						if v[4] then
-							dxDrawText(result..v[4], 490, 230 + offset, nil, nil, tocolor(125, 255, 125, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
+							dxDrawText(result..v[4], 490, 230 + offset, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
 						else
-							dxDrawText(result, 490, 230 + offset, nil, nil, tocolor(125, 255, 125, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
+							dxDrawText(result, 490, 230 + offset, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
 						end
 					end
 
@@ -126,7 +126,7 @@ function renderDiagnostic(v)
 						local upgrades = getElementData(veh, v[3]) or {}
 						dxDrawRoundedRectangle(524, 215 + offset, 488, 30, 8, tocolor(35, 35, 35, 200))
 						dxDrawText(v[1], 534, 230 + offset, nil, nil, tocolor(200, 200, 200, 255), 1, fonts[3], "left", "center", false, false, false, false, false)
-						local ifElse = upgrades[v[2]] and tocolor(125, 255, 125, 255) or tocolor(200, 55, 55, 255)
+						local ifElse = upgrades[v[2]] and tocolor(46, 117, 111, 255) or tocolor(200, 55, 55, 255)
 
 						if upgrades[v[2]]==true or not upgrades[v[2]] then
 							dxDrawText(upgrades[v[2]] and "Tak" or "Nie", 1002, 230 + offset, nil, nil, ifElse, 1, fonts[3], "right", "center", false, false, false, false, false)
@@ -138,7 +138,7 @@ function renderDiagnostic(v)
 						local upgrades = getElementData(veh, "vehicle:upgrades") or {}
 						dxDrawRoundedRectangle(524, 215 + offset, 488, 30, 8, tocolor(35, 35, 35, 200))
 						dxDrawText(v[1], 534, 230 + offset, nil, nil, tocolor(200, 200, 200, 255), 1, fonts[3], "left", "center", false, false, false, false, false)
-						local ifElse = upgrades[v[2]] and tocolor(125, 255, 125, 255) or tocolor(200, 55, 55, 255)
+						local ifElse = upgrades[v[2]] and tocolor(46, 117, 111, 255) or tocolor(200, 55, 55, 255)
 						dxDrawText(upgrades[v[2]] and "Tak" or "Nie", 1002, 230 + offset, nil, nil, ifElse, 1, fonts[3], "right", "center", false, false, false, false, false)
 
 					elseif v[3] and not v[2] then
@@ -146,9 +146,9 @@ function renderDiagnostic(v)
 						dxDrawRoundedRectangle(524, 215 + offset, 488, 30, 8, tocolor(35, 35, 35, 200))
 						dxDrawText(v[1], 534, 230 + offset, nil, nil, tocolor(200, 200, 200, 255), 1, fonts[3], "left", "center", false, false, false, false, false)
 						if v[4] then
-							dxDrawText(result..v[4], 1002, 230 + offset, nil, nil, tocolor(125, 255, 125, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
+							dxDrawText(result..v[4], 1002, 230 + offset, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
 						else
-							dxDrawText(result, 1002, 230 + offset, nil, nil, tocolor(125, 255, 125, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
+							dxDrawText(result, 1002, 230 + offset, nil, nil, tocolor(46, 117, 111, 255), 1, fonts[3], "right", "center", false, false, false, false, false)
 						end
 					end
 

@@ -62,7 +62,7 @@ addEventHandler("onPlayerFactionParking", resourceRoot, function(takeType, data,
             setElementData(shapes[factionVehicles[faction][client]], 'vehicle:shape', factionVehicles[faction][client])
         elseif faction == 'TSA' then
             setElementData(factionVehicles[faction][client], 'vehicle:taxi', {})
-            setVehicleDesc(factionVehicles[faction][client], '#ffae00Transport of San Andreas#ffffff\nKierowca: #7dff7d'..getPlayerName(client):gsub("#%x%x%x%x%x%x", ""))
+            setVehicleDesc(factionVehicles[faction][client], '#ffae00Transport of San Andreas#ffffff\nKierowca: #2E756F'..getPlayerName(client):gsub("#%x%x%x%x%x%x", ""))
         end
 
         exports['since-handlings']:loadVehicleCustomHandling(factionVehicles[faction][client])

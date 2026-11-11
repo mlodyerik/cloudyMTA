@@ -17,7 +17,7 @@ function render()
 	dxDrawImage(sx/2 - 195/zoom, sy/2 - 237/zoom, 390/zoom, 474/zoom, 'files/images/bg.png')
 
     dxDrawText('Areny 1vs1', sx/2, sy/2 - 195/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
-	dxDrawText('Stwórz arenę lub do niej dołącz', sx/2, sy/2 - 195/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
+	dxDrawText('Stwórz arenę lub do niej dołącz', sx/2, sy/2 - 195/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
     
     local offset = 0
     for i,v in ipairs(main['lobby']) do

@@ -2,7 +2,7 @@
 
 --[[
     Author: EnoNeK
-    For: SinceRPG
+    For: cloudyMTA
 ]]
 
 function getPositionFromElementOffset(element,offX,offY,offZ)

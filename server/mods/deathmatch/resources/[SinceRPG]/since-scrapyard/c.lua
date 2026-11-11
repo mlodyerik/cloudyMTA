@@ -27,14 +27,14 @@ function render()
 
     exports['since-blur']:dxDrawBlur(sx/2 - 260/zoom, sy/2 - 168/zoom, 520/zoom, 336/zoom, data.textures.mask)
     dxDrawImage(sx/2 - 260/zoom, sy/2 - 168/zoom, 520/zoom, 336/zoom, 'files/images/bg.png')
-	dxDrawText('Zezłomuj swój pojazd', sx/2 - 1/zoom, sy/2 - 131/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
+	dxDrawText('Zezłomuj swój pojazd', sx/2 - 1/zoom, sy/2 - 131/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
 	dxDrawText('Złomowisko', sx/2, sy/2 - 129/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
 
-	dxDrawText('Informacje dot. złomowania', sx/2 - 1/zoom, sy/2 - 43/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
+	dxDrawText('Informacje dot. złomowania', sx/2 - 1/zoom, sy/2 - 43/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
 	dxDrawText('Za zezłomowanie pojazdu otrzymasz #60FF63$#ffffff '..addCommas(2500), sx/2 - 1/zoom, sy/2 - 43/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top', false, false, false, true)
     
     local mass = getVehicleHandlingProperty(getPedOccupiedVehicle(localPlayer), 'mass')
-    dxDrawText('Informacje o pojeździe', sx/2 - 1/zoom, sy/2 + 18/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
+    dxDrawText('Informacje o pojeździe', sx/2 - 1/zoom, sy/2 + 18/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
     dxDrawText('Waga pojazdu wynosi #ffb947'..string.format("%.2f", mass)..' kg', sx/2 - 1/zoom, sy/2 + 18/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top', false, false, false, true)
     
     local isIn = isMouseInPosition(sx/2 - 127/zoom, sy/2 + 79/zoom, 254/zoom, 50/zoom)

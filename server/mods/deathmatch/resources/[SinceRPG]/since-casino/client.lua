@@ -1,6 +1,6 @@
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 --[[if getElementData(localPlayer, "player:sid") == 25 or getElementData(localPlayer, "player:sid") == 1 or getElementData(localPlayer, "player:sid") == 8029 or getElementData(localPlayer, "player:sid") == 8219 or getElementData(localPlayer, "player:sid") == 9264 or getElementData(localPlayer, "player:sid") == 8096 or getElementData(localPlayer, "player:sid") == 7877 then
@@ -81,7 +81,7 @@ function render()
 
 
     if state == "roulette" then
-        dxDrawImage(150/zoom, 35/zoom, 26/zoom, 26/zoom, textures[3], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)    
+        dxDrawImage(150/zoom, 35/zoom, 26/zoom, 26/zoom, textures[3], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)    
         dxDrawText("Roulette", 190/zoom, 50/zoom, left, center, tocolor(205, 205, 205, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(150/zoom, 35/zoom, 26/zoom, 26/zoom, textures[3], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)    
@@ -89,7 +89,7 @@ function render()
     end
 
     if state == "coinflip" then
-        dxDrawImage(320/zoom, 35/zoom, 26/zoom, 26/zoom, textures[4], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)
+        dxDrawImage(320/zoom, 35/zoom, 26/zoom, 26/zoom, textures[4], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)
         dxDrawText("Coinflip", 360/zoom, 50/zoom, left, center, tocolor(212, 212, 212, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(320/zoom, 35/zoom, 26/zoom, 26/zoom, textures[4], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)
@@ -97,7 +97,7 @@ function render()
     end
 
     if state == "slots" then
-        dxDrawImage(490/zoom, 35/zoom, 26/zoom, 26/zoom, textures[40], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)
+        dxDrawImage(490/zoom, 35/zoom, 26/zoom, 26/zoom, textures[40], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)
         dxDrawText("Slots", 530/zoom, 50/zoom, left, center, tocolor(212, 212, 212, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(490/zoom, 35/zoom, 26/zoom, 26/zoom, textures[40], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)
@@ -105,7 +105,7 @@ function render()
     end
 
     if state == "mines" then
-        dxDrawImage(620/zoom, 35/zoom, 26/zoom, 26/zoom, textures[39], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)
+        dxDrawImage(620/zoom, 35/zoom, 26/zoom, 26/zoom, textures[39], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)
         dxDrawText("Mines", 660/zoom, 50/zoom, left, center, tocolor(212, 212, 212, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(620/zoom, 35/zoom, 26/zoom, 26/zoom, textures[39], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)
@@ -113,14 +113,14 @@ function render()
     end
 
     if state == "crash" then
-        dxDrawImage(750/zoom, 35/zoom, 26/zoom, 26/zoom, textures[41], 0, 0, 0, tocolor(125, 255, 125, alpha_main), false)
+        dxDrawImage(750/zoom, 35/zoom, 26/zoom, 26/zoom, textures[41], 0, 0, 0, tocolor(46, 117, 111, alpha_main), false)
         dxDrawText("Crash", 790/zoom, 50/zoom, left, center, tocolor(212, 212, 212, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     else
         dxDrawImage(750/zoom, 35/zoom, 26/zoom, 26/zoom, textures[41], 0, 0, 0, tocolor(152, 151, 152, alpha_main), false)
         dxDrawText("Crash", 790/zoom, 50/zoom, left, center, tocolor(182, 182, 182, alpha_main), 1, fonts[1], "left", "center", false, false, false, false)
     end
 
-    dxDrawRectangle(x_line/zoom, 94/zoom, width_line/zoom, 3/zoom, tocolor(125, 255, 125, alpha_main), false)
+    dxDrawRectangle(x_line/zoom, 94/zoom, width_line/zoom, 3/zoom, tocolor(46, 117, 111, alpha_main), false)
 
     if state == "roulette" then
         dxDrawImage(sx/2 - 1704/zoom/2, sy/2 - 400/zoom, 1705/zoom, 179/zoom, textures[5], 0, 0, 0, tocolor(255, 255, 255, alpha_roulette), false)

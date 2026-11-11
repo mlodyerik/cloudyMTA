@@ -37,21 +37,21 @@ function reloadRenderTarget(vehicle)
         local state = cache.actions[actualAction][2] or 'Gotowy'
         local action = cache.actions[actualAction][3] or 'Exportuj w panelu'
         dxDrawImage(13, 4, 474, 106, cache.texture)
-        dxDrawText('Pojazd', 23, 10, nil, nil, tocolor(104, 214, 94, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'left', 'top')
+        dxDrawText('Pojazd', 23, 10, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'left', 'top')
         dxDrawText(name, 23, 52, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11), 'left', 'bottom')
         
-        dxDrawText('Status pojazdu', 23, 58, nil, nil, tocolor(104, 214, 94, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'left', 'top')
+        dxDrawText('Status pojazdu', 23, 58, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'left', 'top')
         dxDrawText(state, 23, 100, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11), 'left', 'bottom')
 
-        dxDrawText('Wartość', 474, 10, nil, nil, tocolor(104, 214, 94, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'right', 'top')
+        dxDrawText('Wartość', 474, 10, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'right', 'top')
         dxDrawText(cost, 474, 52, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11), 'right', 'bottom', false, false, false, true)
 
-        dxDrawText('Akcja', 474, 58, nil, nil, tocolor(104, 214, 94, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'right', 'top')
+        dxDrawText('Akcja', 474, 58, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'right', 'top')
         dxDrawText(action, 474, 100, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11), 'right', 'bottom', false, false, false, true)
 
         local textWidth = dxGetTextWidth('Lista akcji', 1, exports['since-fonts']:getFont('Inter-Black', 14))
-        dxDrawText('Lista akcji', 23, 112, nil, nil, tocolor(104, 214, 94, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'left', 'top')
-        dxDrawRectangle(23, 136, textWidth, 2, tocolor(104, 214, 94, 255))
+        dxDrawText('Lista akcji', 23, 112, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Black', 14), 'left', 'top')
+        dxDrawRectangle(23, 136, textWidth, 2, tocolor(46, 117, 111, 255))
 
         local actions = {}
         for i,v in ipairs(cache.actions) do

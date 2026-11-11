@@ -2,7 +2,7 @@
 
 --[[
 	Author: EnoNeK
-	For: SinceRPG
+	For: cloudyMTA
 --]]
 
 addEventHandler("onClientObjectDamage", resourceRoot, function(loss, attacker)

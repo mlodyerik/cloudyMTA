@@ -22,7 +22,7 @@ function renderTopMenu()
     exports['since-blur']:dxDrawBlur(sx/2-250/zoom/2,15/zoom,250/zoom,82/zoom)
     dxDrawImage(sx/2-250/zoom/2,15/zoom,250/zoom,80/zoom,"data/images/bg_examin.png")
     dxDrawText('Egzamin praktyczny', sx/2, 20/zoom, nil, nil, tocolor(212,212,212,255), 1, main['fonts'][5], 'center', 'top')
-    dxDrawText('Aby zdac prawo jazdy musisz\nprzejechac #7dff7d2.50 km#d4d4d4\nZostalo ci do przejechania #7dff7d'..string.format('%.2f', getElementData(veh,'vehicle:prawkoKM'))..'km', sx/2, 21/zoom + dxGetFontHeight(1, main['fonts'][5]), nil, nil, tocolor(212,212,212,200), 1, main['fonts'][3], 'center', 'top', false, false, false, true)
+    dxDrawText('Aby zdac prawo jazdy musisz\nprzejechac #2E756F2.50 km#d4d4d4\nZostalo ci do przejechania #2E756F'..string.format('%.2f', getElementData(veh,'vehicle:prawkoKM'))..'km', sx/2, 21/zoom + dxGetFontHeight(1, main['fonts'][5]), nil, nil, tocolor(212,212,212,200), 1, main['fonts'][3], 'center', 'top', false, false, false, true)
     if (getElementData(veh,'vehicle:prawkoKM') == 0) then
         removeEventHandler('onClientRender', root, renderTopMenu)
         triggerServerEvent('sendLicense', resourceRoot, localPlayer)
@@ -42,7 +42,7 @@ function render()
     dxDrawImage(sx/2+305/zoom,sy/2-175/zoom,20/zoom,20/zoom, main['textures']['close'], 0,0,0, tocolor(255,255,255,anim*main['anim'][5]))
 
     dxDrawText('Ośrodek Szkolenia Kierowców', sx/2-320/zoom, sy/2-175/zoom, nil, nil, tocolor(238, 242, 239, anim), 1, main['fonts'][1], 'left', 'top')
-    dxDrawText('#80F177Tutaj zdasz egzamin na prawo jazdy', sx/2-320/zoom, sy/2-130/zoom, nil, nil, tocolor(238, 242, 239, anim), 1, main['fonts'][2], 'left', 'bottom', false,false,false,true)
+    dxDrawText('#438F87Tutaj zdasz egzamin na prawo jazdy', sx/2-320/zoom, sy/2-130/zoom, nil, nil, tocolor(238, 242, 239, anim), 1, main['fonts'][2], 'left', 'bottom', false,false,false,true)
 
     dxDrawText('Aby podejść do egzaminu wybierz interesującą Cię opcję poniżej oraz opłać egzamin.', sx/2, sy/2-110/zoom, nil, nil, tocolor(238, 242, 239, anim), 1, main['fonts'][3], 'center', 'center')
 
@@ -52,7 +52,7 @@ function render()
     dxDrawImage(sx/2-280/zoom, sy/2-65/zoom, 130/zoom, 130/zoom, main['textures']['c'], 0, 0, 0, tocolor(255, 255, 255, anim*main['anim'][2]))
     dxDrawText('Prawo jazdy', sx/2-215/zoom, sy/2+75/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][2]), 1, main['fonts'][1], 'center', 'center')
     dxDrawText('Kategoria C', sx/2-215/zoom, sy/2+95/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][2]), 1, main['fonts'][3], 'center', 'center')
-    dxDrawText('#80F177$ #FFFFFF'..formatNumber(10000), sx/2-215/zoom, sy/2+130/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][2]), 1, main['fonts'][1], 'center', 'center', false,false,false,true)
+    dxDrawText('#438F87$ #FFFFFF'..formatNumber(10000), sx/2-215/zoom, sy/2+130/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][2]), 1, main['fonts'][1], 'center', 'center', false,false,false,true)
     
     local isIn = isMouseIn(sx/2-80/zoom, sy/2-70/zoom, 160/zoom, 220/zoom)
     main['anim'][3] = interpolateBetween(main['anim'][3], 0, 0, isIn and 1 or 0.7, 0, 0, 0.1, 'Linear')
@@ -60,7 +60,7 @@ function render()
     dxDrawImage(sx/2-65/zoom, sy/2-65/zoom, 130/zoom, 130/zoom, main['textures']['b'], 0, 0, 0, tocolor(255, 255, 255, anim*main['anim'][3]))
     dxDrawText('Prawo jazdy', sx/2, sy/2+75/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][3]), 1, main['fonts'][1], 'center', 'center')
     dxDrawText('Kategoria B', sx/2, sy/2+95/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][2]), 1, main['fonts'][3], 'center', 'center')
-    dxDrawText('#80F177Egzamin jest darmowy', sx/2, sy/2+130/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][3]), 1, main['fonts'][4], 'center', 'center', false,false,false,true)
+    dxDrawText('#438F87Egzamin jest darmowy', sx/2, sy/2+130/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][3]), 1, main['fonts'][4], 'center', 'center', false,false,false,true)
 
     local isIn = isMouseIn(sx/2+135/zoom, sy/2-70/zoom, 160/zoom, 220/zoom)
     main['anim'][4] = interpolateBetween(main['anim'][4], 0, 0, isIn and 1 or 0.7, 0, 0, 0.1, 'Linear')
@@ -68,7 +68,7 @@ function render()
     dxDrawImage(sx/2+150/zoom, sy/2-65/zoom, 130/zoom, 130/zoom, main['textures']['a'], 0, 0, 0, tocolor(255, 255, 255, anim*main['anim'][4]))
     dxDrawText('Prawo jazdy', sx/2+215/zoom, sy/2+75/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][4]), 1, main['fonts'][1], 'center', 'center')
     dxDrawText('Kategoria A', sx/2+215/zoom, sy/2+95/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][4]), 1, main['fonts'][3], 'center', 'center')
-    dxDrawText('#80F177$ #FFFFFF'..formatNumber(5000), sx/2+215/zoom, sy/2+130/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][4]), 1, main['fonts'][1], 'center', 'center', false,false,false,true)
+    dxDrawText('#438F87$ #FFFFFF'..formatNumber(5000), sx/2+215/zoom, sy/2+130/zoom, nil, nil, tocolor(238, 242, 239, anim*main['anim'][4]), 1, main['fonts'][1], 'center', 'center', false,false,false,true)
 
     if main['marker'] then
         if isElement(main['marker']) then

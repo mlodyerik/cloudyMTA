@@ -153,8 +153,8 @@ function tryBuyVehicle(player, cuboid)
         removeBuyedVehicle(vehicle)
         destroyElement(vehicle)
 
-        outputChatBox('Gracz #7dff7d'..getPlayerName(player)..'#ffffff zakupił unikatowy pojazd!', root, 255, 255, 255, true)
-        outputChatBox('Pozostało: #7dff7d'..#vehicles..'#ffffff pojazdów', root, 255, 255, 255, true)
+        outputChatBox('Gracz #2E756F'..getPlayerName(player)..'#ffffff zakupił unikatowy pojazd!', root, 255, 255, 255, true)
+        outputChatBox('Pozostało: #2E756F'..#vehicles..'#ffffff pojazdów', root, 255, 255, 255, true)
     else
         exports['since-notifications']:sendNotification(player, 'error', 'Wystąpił błąd podczas zakupu pojazdu')
     end
@@ -219,10 +219,10 @@ addEventHandler('onResourceStart', resourceRoot, function ()
 
         setElementFrozen(vehicle, true)
         setVehicleDesc(vehicle, [[
-            #7dff7dLimitowana edycja#ffffff
+            #2E756FLimitowana edycja#ffffff
 
-            Pojazd: #7dff7d]]..i..[[ #ffffffz #7dff7d]]..#positions..[[#ffffff
-            Cena: #7dff7d$]]..addCommas(price)..[[#ffffff
+            Pojazd: #2E756F]]..i..[[ #ffffffz #2E756F]]..#positions..[[#ffffff
+            Cena: #2E756F$]]..addCommas(price)..[[#ffffff
         ]])
 
         table.insert(vehicles, vehicle)

@@ -28,7 +28,7 @@ addEventHandler('onClientRender', root, function()
             if sx and sy and scale > 0 then
                 --if isLineOfSightClear( px, py, pz, x, y, z, true, false, false, false, false, true, true ) then
                     dxDrawText(shop.name, sx + 1, sy + 1, nil, nil, tocolor(0, 0, 0, 155), scale, exports['since-fonts']:getFont('Inter-ExtraBold', 16/zoom), 'center', 'bottom')
-                    dxDrawText(shop.name, sx, sy, nil, nil, tocolor(125, 255, 125, 200), scale, exports['since-fonts']:getFont('Inter-ExtraBold', 16/zoom), 'center', 'bottom')
+                    dxDrawText(shop.name, sx, sy, nil, nil, tocolor(46, 117, 111, 200), scale, exports['since-fonts']:getFont('Inter-ExtraBold', 16/zoom), 'center', 'bottom')
                     dxDrawText('Kliknij na sprzedawce aby rozpocząć interakcję (KLAWISZ F3)', sx + 1, sy + 1, nil, nil, tocolor(0, 0, 0, 155), scale, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), 'center', 'top')
                     dxDrawText('Kliknij na sprzedawce aby rozpocząć interakcję (KLAWISZ F3)', sx, sy, nil, nil, tocolor(225, 225, 225, 200), scale, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), 'center', 'top')
                --- end

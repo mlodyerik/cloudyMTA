@@ -8,11 +8,11 @@ function renderEventUI()
 
 	-- dxDrawImage(sx - 600/zoom, eventUiY, 590/zoom, 135/zoom + #eventText * fontHeight, background)
 	-- dxDrawText('Event fabularny', sx - 30/zoom, eventUiY + 50/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Bold', 23/zoom), 'right', 'bottom')
-	-- dxDrawText('Wielkanoc', sx - 30/zoom, eventUiY + 50/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, getFigmaFont('Inter-Medium', 16/zoom), 'right', 'top')
+	-- dxDrawText('Wielkanoc', sx - 30/zoom, eventUiY + 50/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, getFigmaFont('Inter-Medium', 16/zoom), 'right', 'top')
 	-- dxDrawText('Aktualny cel', sx - 30/zoom, eventUiY + 120/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Bold', 23/zoom), 'right', 'bottom')
 	
     -- for k, v in ipairs(eventText) do
-    --     dxDrawText(v, sx - 30/zoom, eventUiY + 120/zoom + (k-1) * fontHeight, nil, nil, tocolor(103, 213, 94, 255), 1, getFigmaFont('Inter-Medium', 16/zoom), 'right', 'top')
+    --     dxDrawText(v, sx - 30/zoom, eventUiY + 120/zoom + (k-1) * fontHeight, nil, nil, tocolor(46, 117, 111, 255), 1, getFigmaFont('Inter-Medium', 16/zoom), 'right', 'top')
     -- end
 end
 

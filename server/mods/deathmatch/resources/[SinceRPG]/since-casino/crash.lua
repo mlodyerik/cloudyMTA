@@ -18,7 +18,7 @@ function renderCrash(alpha)
             dxDrawImage(sx/2-900/zoom+offset, 182/zoom, 46/zoom, 46/zoom, textures[54], 0, 0, 0, tocolor(255, 255, 255, alpha))
             dxDrawText(v..'x', sx/2-860/zoom+offset, 205/zoom, nil, nil, tocolor(135, 255, 124, alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 14/zoom), "left", "center", false, false, false, false, false)
             if i < 9 then
-                dxDrawRectangle(sx/2-900/zoom+offset + 98/zoom, 188/zoom, 1, 34/zoom, tocolor(104, 214, 94, 155*a))
+                dxDrawRectangle(sx/2-900/zoom+offset + 98/zoom, 188/zoom, 1, 34/zoom, tocolor(46, 117, 111, 155*a))
             end
         end
         offset = offset + 100/zoom
@@ -30,18 +30,18 @@ function renderCrash(alpha)
         if crash.state then
             dxDrawImage(sx/2-872/zoom, 391/zoom, 827/zoom, 313/zoom, textures[42], 0, 0, 0, tocolor(255, 255, 255, alpha))
             if crash.stopped then
-                dxDrawText('Crashed', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(104, 214, 94, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
+                dxDrawText('Crashed', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(46, 117, 111, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
                 dxDrawText('@'..string.format('%.2f',crash.value)..'x', sx/2-872/zoom, 315/zoom, sx/2-872/zoom + 827/zoom, 315/zoom+313/zoom, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 24/zoom), "center", "center", false, false, false, false, false)        
             else
-                dxDrawText('Aktualny mnożnik', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(104, 214, 94, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
+                dxDrawText('Aktualny mnożnik', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(46, 117, 111, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
                 dxDrawText(string.format('%.2f',crash.value)..'x', sx/2-872/zoom, 315/zoom, sx/2-872/zoom + 827/zoom, 315/zoom+313/zoom, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 24/zoom), "center", "center", false, false, false, false, false)
             end
         else
-            dxDrawText('Następne losowanie za', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(104, 214, 94, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
+            dxDrawText('Następne losowanie za', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(46, 117, 111, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
             dxDrawText(string.format("%.2f", math.max((crash.tick-getTickCount())/1000, 0))..'s', sx/2-872/zoom, 315/zoom, sx/2-872/zoom + 827/zoom, 315/zoom+313/zoom, tocolor(255, 255, 255, alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 24/zoom), "center", "center", false, false, false, false, false)
         end
     else
-        dxDrawText('Ładowanie...', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(104, 214, 94, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
+        dxDrawText('Ładowanie...', sx/2-872/zoom, 270/zoom, sx/2-872/zoom + 827/zoom, 270/zoom+313/zoom, tocolor(46, 117, 111, alpha), 1, exports['since-fonts']:getFont('Inter-Black', 28/zoom), "center", "center", false, false, false, false, false)
     end
 
     dxDrawImage(sx/2-928/zoom, 795/zoom, 958/zoom, 243/zoom, textures[47], 0, 0, 0, tocolor(255, 255, 255, alpha))

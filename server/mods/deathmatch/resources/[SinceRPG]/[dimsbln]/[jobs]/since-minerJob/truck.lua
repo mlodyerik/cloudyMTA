@@ -20,10 +20,10 @@ function renderWywozUI()
 	dxDrawImage(sx/2 - 186/zoom, sy/2 + 176/zoom, 372/zoom, 35/zoom, 'data/button_close.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 200 or 255))
 	dxDrawText('Zamknij panel', sx/2, sy/2 + 193/zoom, nil, nil, tocolor(255, 255, 255, isIn and 200 or 255), 1, exports['since-fonts']:getFont('Inter-SemiBold', 10/zoom), 'center', 'center')
 
-	dxDrawText('Wywóz surowca', sx/2, sy/2 - 130/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
+	dxDrawText('Wywóz surowca', sx/2, sy/2 - 130/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
 	dxDrawText(text, sx/2, sy/2 - 130/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top')
 
-	dxDrawText('Wynajem ciężarówki', sx/2, sy/2 - 7/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
+	dxDrawText('Wynajem ciężarówki', sx/2, sy/2 - 7/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
 	dxDrawText('Koszt wynajęcia ciężarówki: #68EB5D$ 5 000', sx/2, sy/2 - 7/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'center', 'top', false, false, false, true)
 	dxDrawText('Magazyn górniczy', sx/2, sy/2 - 191/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
 	dxDrawText('Wywóz surowców do skupu', sx/2, sy/2 - 191/zoom, nil, nil, tocolor(128, 241, 118, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')

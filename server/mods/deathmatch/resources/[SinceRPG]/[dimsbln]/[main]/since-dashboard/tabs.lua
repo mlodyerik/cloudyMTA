@@ -252,12 +252,12 @@ tabs = {
             end
             
 
-            dxDrawText('Majątek', sx/2 - 200/zoom, sy/2 - 8/zoom, nil, nil, tocolor(125, 255, 125, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
+            dxDrawText('Majątek', sx/2 - 200/zoom, sy/2 - 8/zoom, nil, nil, tocolor(46, 117, 111, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
             local offset = 0
             for k, v in pairs(playerMoney) do
                 dxDrawText(v.name..': ', sx/2 - 200/zoom, sy/2 - 8/zoom + offset, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
                 local textWidth = dxGetTextWidth(v.name..': ', 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom)) + 1/zoom
-                dxDrawText(v.data, sx/2 - 200/zoom + textWidth, sy/2 - 8/zoom + offset, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
+                dxDrawText(v.data, sx/2 - 200/zoom + textWidth, sy/2 - 8/zoom + offset, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
 
                 offset = offset + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom))
             end
@@ -265,7 +265,7 @@ tabs = {
             dxDrawText('Twoja organizacja', sx/2 + 138/zoom, sy/2 - 8/zoom, nil, nil, tocolor(195, 125, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
             if isOrganization then
                 dxDrawText('Nazwa organizacji: #eb7aff'..isOrganization.name..' - #'..upper(isOrganization.tag), sx/2 + 138/zoom, sy/2 - 8/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
-                dxDrawText('Ranga w organizacji: #7dff7d'..orgRanks[isOrganization.rank].name, sx/2 + 138/zoom, sy/2 - 8/zoom + 16/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
+                dxDrawText('Ranga w organizacji: #2E756F'..orgRanks[isOrganization.rank].name, sx/2 + 138/zoom, sy/2 - 8/zoom + 16/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
                 dxDrawText('Poziom organizacji: #7af8ff'..isOrganization.level..' #77b2b5('..isOrganization.exp..' / '..getNextLevelExp(isOrganization.level)..' EXP)', sx/2 + 138/zoom, sy/2 - 8/zoom + 32/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
             else
                 dxDrawText('Nie należysz do żadnej organizacji!', sx/2 + 138/zoom, sy/2 - 8/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
@@ -332,10 +332,10 @@ tabs = {
         toRender = function(alpha)
             dxDrawImage(sx/2 - 213/zoom, sy/2 - 190/zoom, 674/zoom, 424/zoom, 'data/vehsbg.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
 	        dxDrawRectangle(sx/2 - 213/zoom, sy/2 - 158/zoom, 674/zoom, 1, tocolor(255, 255, 255, 100*alpha))
-	        dxDrawText('Lokalizacja', sx/2 + 439/zoom, sy/2 - 174/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
-	        dxDrawText('Model', sx/2 + 240/zoom, sy/2 - 174/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
-	        dxDrawText('Ost. kierowca', sx/2 + 40/zoom, sy/2 - 174/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
-	        dxDrawText('VID', sx/2 - 130/zoom, sy/2 - 174/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
+	        dxDrawText('Lokalizacja', sx/2 + 439/zoom, sy/2 - 174/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
+	        dxDrawText('Model', sx/2 + 240/zoom, sy/2 - 174/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
+	        dxDrawText('Ost. kierowca', sx/2 + 40/zoom, sy/2 - 174/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
+	        dxDrawText('VID', sx/2 - 130/zoom, sy/2 - 174/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'right', 'center')
 
 	        dxDrawText('Posiadane pojazdy: #8eff7a'..#cache.vehicles, sx/2 - 213/zoom + 337/zoom, sy/2 + 230/zoom, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'bottom', false, false, false, true)
 	        
@@ -466,9 +466,9 @@ tabs = {
 
             if playerPrize.selected ~= 0 then
                 dxDrawText('Odebrano nagrodę dzienną!', sx/2 + 124.5/zoom, sy/2 + 123/zoom, nil, nil, tocolor(255, 125, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'bottom')
-                dxDrawText('Dzisiejsza nagroda dzienna: #fcff4f'..playerPrize.info..'#ffffff\nNastępną nagrodę możesz odebrać: #7dff7d'..playerPrize.date, sx/2 + 124.5/zoom, sy/2 + 123/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, false, false, true)
+                dxDrawText('Dzisiejsza nagroda dzienna: #fcff4f'..playerPrize.info..'#ffffff\nNastępną nagrodę możesz odebrać: #2E756F'..playerPrize.date, sx/2 + 124.5/zoom, sy/2 + 123/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, false, false, true)
             else
-                dxDrawText('Odbierz nagrodę dzienną!', sx/2 + 124.5/zoom, sy/2 + 123/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'bottom')
+                dxDrawText('Odbierz nagrodę dzienną!', sx/2 + 124.5/zoom, sy/2 + 123/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'bottom')
                 dxDrawText('Nagrodę dzienną odebrać możesz tylko i wyłącznie raz na 24 godziny, aby odebrać nagrodę\nkliknij na jedną z trzech powyższych kart. Nagrody są mnożone względem ilości odebranych\npod rząd nagród. Dostępne nagrody to: Gotówka, punkty SRP czy też punkty premium.', sx/2 + 124.5/zoom, sy/2 + 123/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
             end
             
@@ -582,7 +582,7 @@ tabs = {
 
             setElementData(localPlayer, 'player:data', playerData)
             
-            dxDrawText('Podgląd celownika', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Podgląd celownika', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
             dxDrawText('W zakładce ustawień możesz wymusić używanie domyślnego celownika z GTA:SA', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
 
             dxDrawRectangle(sx/2 + 105/zoom - 1.5 + crosshairData.position, sy/2 - 105/zoom - crosshairData.size/2, 2/zoom + crosshairData.line, crosshairData.size, tocolor(crosshairData.color[1], crosshairData.color[2], crosshairData.color[3], 255*alpha))
@@ -678,7 +678,7 @@ tabs = {
             local h, m = getDailyQuestTimeToEnd()
 
             dxDrawImage(sx/2 - 211/zoom, sy/2 - 187/zoom, 670/zoom, 418/zoom, 'data/dailyQuests-bg.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
-            dxDrawText('Zadania dzienne', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Zadania dzienne', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
             dxDrawText('Wykonuj zadania, aby otrzymać nagrody', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
 
             dxDrawText('Ciągłość wykonywania zadań', sx/2 - 211/zoom + 46/zoom, sy/2 - 90/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
@@ -692,14 +692,14 @@ tabs = {
 
             dxDrawImage(sx/2 - 201/zoom, sy/2 - 10/zoom, 650/zoom, 230/zoom, 'data/dailyQuests-bg2.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
             dxDrawText('Aktualne zadanie', sx/2 - 190/zoom, sy/2 + 22/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
-            dxDrawText(questInfo.text, sx/2 - 190/zoom, sy/2 + 22/zoom, sx/2 - 190/zoom + 434/zoom, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, true)
+            dxDrawText(questInfo.text, sx/2 - 190/zoom, sy/2 + 22/zoom, sx/2 - 190/zoom + 434/zoom, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, true)
 
             dxDrawText('Nagroda za ukończenie zadania', sx/2 - 190/zoom, sy/2 + 79/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
-            dxDrawText(questInfo.rewardsText, sx/2 - 190/zoom, sy/2 + 79/zoom, sx/2 - 190/zoom + 434/zoom, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, true)
+            dxDrawText(questInfo.rewardsText, sx/2 - 190/zoom, sy/2 + 79/zoom, sx/2 - 190/zoom + 434/zoom, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, true)
 
             dxDrawText('Status', sx/2 - 190/zoom, sy/2 + 136/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
             if questData.finished then
-                dxDrawText('Zadanie wykonane', sx/2 - 190/zoom, sy/2 + 136/zoom, sx/2 - 190/zoom + 434/zoom, nil, tocolor(104, 214, 94, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, true)
+                dxDrawText('Zadanie wykonane', sx/2 - 190/zoom, sy/2 + 136/zoom, sx/2 - 190/zoom + 434/zoom, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, true)
             else
                 dxDrawText('Zadanie niewykonane', sx/2 - 190/zoom, sy/2 + 136/zoom, sx/2 - 190/zoom + 434/zoom, nil, tocolor(215, 94, 94, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, true)
             end
@@ -759,7 +759,7 @@ tabs = {
     
             dxDrawImage(sx/2 - 211/zoom, sy/2 - 187/zoom, 670/zoom, 418/zoom, 'data/summerevent-bg.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
             dxDrawText('Halloween event', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
-            dxDrawText('Zdobywaj punkty, aby je wymienić', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(104, 214, 94, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
+            dxDrawText('Zdobywaj punkty, aby je wymienić', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
 
             dxDrawText('Twoje Punkty', sx/2 + 448/zoom, sy/2 - 158/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'right', 'bottom')
             dxDrawText(addCommas(playerData.halloweenPoints)..' pkt', sx/2 + 448/zoom, sy/2 - 158/zoom, nil, nil, tocolor(113, 204, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'top')
@@ -774,7 +774,7 @@ tabs = {
                         if summereventSelectedOption then isIn = false end
                         dxDrawImage(sx/2 - 198/zoom, sy/2 - 120/zoom + offset, 644/zoom, 48/zoom, 'data/summerevent-bar.png', 0, 0, 0, tocolor(255, 255, 255, (isIn and 200 or 255)*alpha))
                         dxDrawText(v[2], sx/2 - 150/zoom, sy/2 - 93/zoom + offset, nil, nil, tocolor(255, 255, 255, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom')
-                        dxDrawText(v[3], sx/2 - 150/zoom, sy/2 - 93/zoom + offset, nil, nil, tocolor(104, 214, 94, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
+                        dxDrawText(v[3], sx/2 - 150/zoom, sy/2 - 93/zoom + offset, nil, nil, tocolor(46, 117, 111, (isIn and 200 or 255)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
                         dxDrawImage(sx/2 - 189/zoom, sy/2 - 111/zoom + offset, 30/zoom, 30/zoom, 'data/'..v[6]..'.png', 0, 0, 0, tocolor(255, 255, 255, (isIn and 200 or 255)*alpha))
                         offset = offset + 58/zoom
                     end
@@ -928,7 +928,7 @@ tabs = {
 
         toRender = function(alpha)
             dxDrawImage(sx/2 - 213/zoom, sy/2 - 190/zoom, 674/zoom, 424/zoom, 'data/vehsbg.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
-            dxDrawText('Kod polecający', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Kod polecający', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
             dxDrawText('Twój kod polecający', sx/2 - 200/zoom, sy/2 - 158/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
 
             local code = playerCodeData['playerCode']
@@ -953,7 +953,7 @@ tabs = {
 
                     if getKeyState('mouse1') then
                         dxDrawText('Skopiowano kod', cx + 15/zoom + 1, cy + 15/zoom + 1, nil, nil, tocolor(0, 0, 0, 55*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
-                        dxDrawText('Skopiowano kod', cx + 15/zoom, cy + 15/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
+                        dxDrawText('Skopiowano kod', cx + 15/zoom, cy + 15/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
     
                         setClipboard(code)
                     else
@@ -966,7 +966,7 @@ tabs = {
                 dxDrawText(code, sx/2 - 200/zoom, sy/2 - 135/zoom, sx/2 - 200/zoom + textWidth, sy/2 - 135/zoom + 55/zoom, tocolor(255, 125, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Black', 23/zoom), 'center', 'center')
             end
 
-            dxDrawText('Użycia kodu polecającego', sx/2 + 450/zoom, sy/2 - 158/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'right', 'bottom')
+            dxDrawText('Użycia kodu polecającego', sx/2 + 450/zoom, sy/2 - 158/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'right', 'bottom')
             dxDrawText('Liczba użyć twojego kodu polecającego', sx/2 + 450/zoom, sy/2 - 158/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'right', 'top')
 
             local uses = playerCodeData['playerUses'] or 0
@@ -974,7 +974,7 @@ tabs = {
             dxDrawRoundedRectangle(sx/2 + 250/zoom, sy/2 - 135/zoom, 200/zoom, 55/zoom, 4/zoom, tocolor(94, 171, 214, 45*alpha))
             dxDrawText(uses, sx/2 + 250/zoom, sy/2 - 135/zoom, sx/2 + 250/zoom + 200/zoom, sy/2 - 135/zoom + 55/zoom, tocolor(94, 171, 214, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Black', 23/zoom), 'center', 'center')
 
-            dxDrawText('Ustawianie kodu', sx/2 - 200/zoom, sy/2 - 35/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Ustawianie kodu', sx/2 - 200/zoom, sy/2 - 35/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
             dxDrawText('Ustaw kod i zbieraj nagrody!', sx/2 - 200/zoom, sy/2 - 35/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
 
             local isIn = isMouseInPosition(sx/2 + 165/zoom, sy/2 - 10/zoom, 118/zoom, 40/zoom)
@@ -995,8 +995,8 @@ tabs = {
                 dxDrawText(codeRewards[i].name, sx/2 - 190/zoom, sy/2 + 95/zoom + 19/zoom + offset, nil, nil, tocolor(255, 255, 255, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'center')
                 local textWidth = dxGetTextWidth(codeRewards[i].name, 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom)) + 10/zoom
                 local useWidth = dxGetTextWidth('Wymagane '..codeRewards[i].uses..' użyć kodu', 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom)) + 10/zoom
-                dxDrawRoundedRectangle(sx/2 - 200/zoom + textWidth + 5/zoom, sy/2 + 102/zoom + offset, useWidth + 10/zoom, 22/zoom, 11/zoom, tocolor(125, 255, 125, 55*alpha))
-                dxDrawText('Wymagane '..codeRewards[i].uses..' użyć kodu', sx/2 - 195/zoom + textWidth + 10/zoom, sy/2 + 95/zoom + 19/zoom + offset, nil, nil, tocolor(125, 255, 125, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
+                dxDrawRoundedRectangle(sx/2 - 200/zoom + textWidth + 5/zoom, sy/2 + 102/zoom + offset, useWidth + 10/zoom, 22/zoom, 11/zoom, tocolor(46, 117, 111, 55*alpha))
+                dxDrawText('Wymagane '..codeRewards[i].uses..' użyć kodu', sx/2 - 195/zoom + textWidth + 10/zoom, sy/2 + 95/zoom + 19/zoom + offset, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
                 
                 if playerCodeData['playerRewards'] and playerCodeData['playerRewards'][i] ~= 1 then
                     if playerCodeData['playerUses'] < codeRewards[i].uses then
@@ -1145,13 +1145,13 @@ tabs = {
 
             for i, v in ipairs(jobs) do
                 if i >= scroll.jobs.k and i <= scroll.jobs.n then 
-                    dxDrawImage(sx/2 - 204/zoom + offsetX, sy/2 - 188/zoom + offsetY, 24/zoom, 24/zoom, 'data/jobicon.png', 0, 0, 0, tocolor(125, 255, 125, 200*alpha))
-                    dxDrawImage(sx/2 - 210/zoom + offsetX, sy/2 - 189/zoom + offsetY, 260/zoom, 28/zoom, 'data/gridjob.png', 0, 0, 0, tocolor(125, 255, 125, 200*alpha))
+                    dxDrawImage(sx/2 - 204/zoom + offsetX, sy/2 - 188/zoom + offsetY, 24/zoom, 24/zoom, 'data/jobicon.png', 0, 0, 0, tocolor(46, 117, 111, 200*alpha))
+                    dxDrawImage(sx/2 - 210/zoom + offsetX, sy/2 - 189/zoom + offsetY, 260/zoom, 28/zoom, 'data/gridjob.png', 0, 0, 0, tocolor(46, 117, 111, 200*alpha))
                     dxDrawText(v.name, sx/2 - 175/zoom + offsetX, sy/2 - 175/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-SemiBold', 12/zoom), 'left', 'center')
 
                     if v.tp then
                         local isIn = isMouseInPosition(sx/2 - 8/zoom + offsetX, sy/2 - 185/zoom + offsetY, 110/zoom, 20/zoom)
-                        dxDrawText('Teleportuj do pracy', sx/2 + 100/zoom + offsetX, sy/2 - 175/zoom + offsetY, nil, nil, isIn and tocolor(125, 255, 125, (isIn and 255 or 200)*alpha) or tocolor(255, 255, 255, (isIn and 255 or 200)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'right', 'center')
+                        dxDrawText('Teleportuj do pracy', sx/2 + 100/zoom + offsetX, sy/2 - 175/zoom + offsetY, nil, nil, isIn and tocolor(46, 117, 111, (isIn and 255 or 200)*alpha) or tocolor(255, 255, 255, (isIn and 255 or 200)*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'right', 'center')
                     end
 
                     if v.name == 'Górnik' then
@@ -1160,19 +1160,19 @@ tabs = {
 
                     elseif v.name == 'Spedycja lotnicza' then
                         local stat = stats[v.elementData and v.elementData or string.lower(v.name)] or {}
-                        dxDrawText('➥ Zarobiona gotówka: #7dff7d$ '..addCommas((stat.earned or 0))..'#ffffff\n➥ Przepracowany czas: #75b6ff'..formatTime((stat.time or 0))..'#ffffff\n➥ Aktualny poziom: #7dff7d'..addCommas((stat.level or 0))..' ('..addCommas(stat.levelExp or 0)..' exp)', sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)   
+                        dxDrawText('➥ Zarobiona gotówka: #2E756F$ '..addCommas((stat.earned or 0))..'#ffffff\n➥ Przepracowany czas: #75b6ff'..formatTime((stat.time or 0))..'#ffffff\n➥ Aktualny poziom: #2E756F'..addCommas((stat.level or 0))..' ('..addCommas(stat.levelExp or 0)..' exp)', sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)   
 
                     elseif v.name == 'Rybak' then
                         local stat = stats[v.elementData and v.elementData or string.lower(v.name)] or {}
-                        dxDrawText('➥ Wyłowione ryby: #7dff7d'..addCommas((stat.points or 0)), sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)   
+                        dxDrawText('➥ Wyłowione ryby: #2E756F'..addCommas((stat.points or 0)), sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)   
 
                     elseif v.name == 'eTransporter' then
                         local stat = stats[v.elementData and v.elementData or string.lower(v.name)] or {}
-                        dxDrawText('➥ Zarobiona gotówka: #7dff7d$ '..addCommas((stat.earned or 0))..'#ffffff\n➥ Punkty ulepszeń: #7dff7d'..addCommas((stat.points or 0))..' pkt.', sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
+                        dxDrawText('➥ Zarobiona gotówka: #2E756F$ '..addCommas((stat.earned or 0))..'#ffffff\n➥ Punkty ulepszeń: #2E756F'..addCommas((stat.points or 0))..' pkt.', sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
 
                     else
                         local stat = stats[v.elementData and v.elementData or string.lower(v.name)] or {}
-                        dxDrawText('➥ Zarobiona gotówka: #7dff7d$ '..addCommas((stat.earned or 0))..'#ffffff\n➥ Przepracowany czas: #75b6ff'..formatTime((stat.time or 0))..'#ffffff\n➥ Punkty ulepszeń: #7dff7d'..addCommas((stat.points or 0))..' pkt.', sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
+                        dxDrawText('➥ Zarobiona gotówka: #2E756F$ '..addCommas((stat.earned or 0))..'#ffffff\n➥ Przepracowany czas: #75b6ff'..formatTime((stat.time or 0))..'#ffffff\n➥ Punkty ulepszeń: #2E756F'..addCommas((stat.points or 0))..' pkt.', sx/2 - 200/zoom + offsetX, sy/2 - 155/zoom + offsetY, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top', false, false, false, true)
 
                     end
 
@@ -1243,7 +1243,7 @@ tabs = {
                     dxDrawText(v.uid, sx/2 - 178/zoom, sy/2 - 128/zoom + offset, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'left', 'center')
                     dxDrawText(v.login, sx/2 - 79/zoom, sy/2 - 128/zoom + offset, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'left', 'center')
                     --dxDrawImage(sx/2 - 15/zoom, sy/2 - 136/zoom, 15/zoom, 19/zoom, 'data/bin_icon.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
-                    dxDrawText(friend and '#7dff7dOnline#ffffff ('..getElementData(friend, 'id')..')' or '#ff7d7dOffline', sx/2 + 192/zoom, sy/2 - 128/zoom + offset, nil, nil, tocolor(125, 255, 125, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'left', 'center', false, false, false, true)
+                    dxDrawText(friend and '#2E756FOnline#ffffff ('..getElementData(friend, 'id')..')' or '#ff7d7dOffline', sx/2 + 192/zoom, sy/2 - 128/zoom + offset, nil, nil, tocolor(46, 117, 111, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'left', 'center', false, false, false, true)
 
                     offset = offset + 32/zoom
                 end
@@ -1328,11 +1328,11 @@ tabs = {
                 elseif selectedShopCategory == 'boxs' then
                     dxDrawImage(sx/2 - 210/zoom, sy/2 - 140/zoom + offset, 650/zoom, 51/zoom, 'data/shopitem_bg.png', 0, 0, 0, tocolor(255, 255, 255, 255*alphaitem))
                     dxDrawImage(sx/2 - 195/zoom, sy/2 - 132/zoom + offset, 36/zoom, 36/zoom, ':since-inventory/data/'..boxIcons[v.itemToken]..'.png', 0, 0, 0, tocolor(255, 255, 255, 255*alphaitem))
-                    dxDrawText(v.name, sx/2 - 145/zoom, sy/2 - 112/zoom + offset, nil, nil, tocolor(125, 255, 125, 255*alphaitem), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
+                    dxDrawText(v.name, sx/2 - 145/zoom, sy/2 - 112/zoom + offset, nil, nil, tocolor(46, 117, 111, 255*alphaitem), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
                 else
                     dxDrawImage(sx/2 - 210/zoom, sy/2 - 140/zoom + offset, 650/zoom, 51/zoom, 'data/shopitem_bg.png', 0, 0, 0, tocolor(255, 255, 255, 255*alphaitem))
                     dxDrawImage(sx/2 - 195/zoom, sy/2 - 132/zoom + offset, 36/zoom, 36/zoom, 'data/'..v.icon..'.png', 0, 0, 0, tocolor(255, 255, 255, 255*alphaitem))
-                    dxDrawText(v.name, sx/2 - 145/zoom, sy/2 - 112/zoom + offset, nil, nil, tocolor(125, 255, 125, 255*alphaitem), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
+                    dxDrawText(v.name, sx/2 - 145/zoom, sy/2 - 112/zoom + offset, nil, nil, tocolor(46, 117, 111, 255*alphaitem), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'left', 'bottom', false, false, false, true)
                 end
 
                 dxDrawText(v.desc, sx/2 - 145/zoom, sy/2 - 112/zoom + offset, nil, nil, tocolor(255, 255, 255, 255*alphaitem), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'top')
@@ -1345,9 +1345,9 @@ tabs = {
                 if selectedShopItem then
                     if v.itemToken == selectedShopItem then
                         if selectedShopCategory == 'diamond' then
-                            dxDrawText('Wybrano: #ffffff'..v.name..' #FFB800(Na '..v.days..' dni)', sx/2 - 210/zoom, sy/2 + 212/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
+                            dxDrawText('Wybrano: #ffffff'..v.name..' #FFB800(Na '..v.days..' dni)', sx/2 - 210/zoom, sy/2 + 212/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
                         else
-                            dxDrawText('Wybrano: #ffffff'..v.name..'', sx/2 - 210/zoom, sy/2 + 212/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
+                            dxDrawText('Wybrano: #ffffff'..v.name..'', sx/2 - 210/zoom, sy/2 + 212/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'bottom', false, false, false, true)
                         end
                     end
                 end
@@ -1430,8 +1430,8 @@ tabs = {
 
         toRender = function(alpha)
             dxDrawImage(sx/2 - 213/zoom, sy/2 - 190/zoom, 674/zoom, 424/zoom, 'data/vehsbg.png', 0, 0, 0, tocolor(255, 255, 255, 255*alpha))
-            dxDrawText('Ustawienia', sx/2 - 197/zoom, sy/2 - 149/zoom, nil, nil, tocolor(103, 213, 94, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
-            dxDrawText('Synchronizacja z discordem', sx/2 - 197/zoom, sy/2 + 97/zoom, nil, nil, tocolor(103, 213, 94, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Ustawienia', sx/2 - 197/zoom, sy/2 - 149/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
+            dxDrawText('Synchronizacja z discordem', sx/2 - 197/zoom, sy/2 + 97/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom')
             dxDrawText('Aby zsynchronizować swoje konto skopiuj kod synchronizacji poniżej, następnie napisz do\nnaszego bota /polacz w wiadomości prywatnej bądź na kanale do tego przeznaczonym. Po tym\ngdy zobaczysz panel z możliwością wpisania tekstu wklej tam swój kod synchronizacji.', sx/2 - 197/zoom, sy/2 + 97/zoom, nil, nil, tocolor(255, 255, 255, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
             
             local offset = 0
@@ -1467,11 +1467,11 @@ tabs = {
             local isIn = isMouseInPosition(sx/2 - 196/zoom, sy/2 + 176/zoom, 272/zoom, 42/zoom)
             dxDrawImage(sx/2 - 196/zoom, sy/2 + 176/zoom, 272/zoom, 42/zoom, 'data/copy_button.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 200*alpha or 255*alpha))
             local discordCode = getElementData(localPlayer, 'player:disordCode') or 'Błąd'
-            dxDrawText('Twój kod: #7dff7d'.. (isIn and discordCode or string.sub(discordCode, 1, 5)..'..'), sx/2 - 60/zoom, sy/2 + 197/zoom, nil, nil, tocolor(255, 255, 255, isIn and 175*alpha or 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center', false, false, false, true)
+            dxDrawText('Twój kod: #2E756F'.. (isIn and discordCode or string.sub(discordCode, 1, 5)..'..'), sx/2 - 60/zoom, sy/2 + 197/zoom, nil, nil, tocolor(255, 255, 255, isIn and 175*alpha or 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center', false, false, false, true)
 
             local isDiscord = getElementData(localPlayer, 'player:discord')
             dxDrawImage(sx/2 + 85/zoom, sy/2 + 176/zoom, 360/zoom, 42/zoom, 'data/info_button.png', 0, 0, 0, isDiscord and tocolor(155, 255, 155, 255*alpha) or tocolor(255, 155, 155, 255*alpha))
-            dxDrawText(isDiscord and 'Konto pomyślnie zsynchronizowane' or 'Konto nie zostało zsynchronizowane', sx/2 + 265/zoom, sy/2 + 197/zoom, nil, nil, isDiscord and tocolor(125, 255, 125, 255*alpha) or tocolor(255, 125, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center')
+            dxDrawText(isDiscord and 'Konto pomyślnie zsynchronizowane' or 'Konto nie zostało zsynchronizowane', sx/2 + 265/zoom, sy/2 + 197/zoom, nil, nil, isDiscord and tocolor(46, 117, 111, 255*alpha) or tocolor(255, 125, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center')
         
             if isIn then
 	            local cx, cy = getCursorPosition ( )
@@ -1479,7 +1479,7 @@ tabs = {
 
                 if isIn and getKeyState('mouse1') then
                     dxDrawText('Skopiowano kod', cx + 15/zoom + 1, cy + 15/zoom + 1, nil, nil, tocolor(0, 0, 0, 55*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
-                    dxDrawText('Skopiowano kod', cx + 15/zoom, cy + 15/zoom, nil, nil, tocolor(125, 255, 125, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
+                    dxDrawText('Skopiowano kod', cx + 15/zoom, cy + 15/zoom, nil, nil, tocolor(46, 117, 111, 255*alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'top')
 
                     setClipboard(discordCode)
                 else

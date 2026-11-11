@@ -18,7 +18,7 @@ end
 local function render()
     dxDrawImage(sx/2-165/zoom, sy/2-325/2/zoom, 330/zoom, 325/zoom, main['textures']['bg'], 0, 0, 0, tocolor(255, 255, 255, main['alpha']))
 	dxDrawText('Wybierz tryb pracy', sx/2, sy/2-128/zoom, nil, nil, tocolor(255, 255, 255, main['alpha']), 1, main['fonts'][1], 'center', 'bottom')
-	dxDrawText('Rozpocznij sesje samemu lub wybierz gracza z listy', sx/2, sy/2-125/zoom, nil, nil, tocolor(103, 213, 94, main['alpha']), 1, main['fonts'][2], 'center', 'top')
+	dxDrawText('Rozpocznij sesje samemu lub wybierz gracza z listy', sx/2, sy/2-125/zoom, nil, nil, tocolor(46, 117, 111, main['alpha']), 1, main['fonts'][2], 'center', 'top')
 
     local players = getPlayersAround()
     if #players > 0 then
@@ -192,7 +192,7 @@ local function render()
 
     dxDrawImage(sx/2-165/zoom, sy/2-100/zoom, 330/zoom, 200/zoom, main['textures']['bg'], 0, 0, 0, tocolor(255, 255, 255, main['alpha']))
     dxDrawText('Zaproszenie do grupy', sx/2, sy/2-60/zoom, nil, nil, tocolor(255, 255, 255, main['alpha']), 1, main['fonts'][1], 'center', 'bottom')
-    dxDrawText('Zaproszenie gracza '..main['invite']['nick'], sx/2, sy/2-55/zoom, nil, nil, tocolor(103, 213, 94, main['alpha']), 1, main['fonts'][2], 'center', 'top')
+    dxDrawText('Zaproszenie gracza '..main['invite']['nick'], sx/2, sy/2-55/zoom, nil, nil, tocolor(46, 117, 111, main['alpha']), 1, main['fonts'][2], 'center', 'top')
 
     dxDrawText('Pozostały czas', sx/2, sy/2-5/zoom, nil, nil, tocolor(255, 255, 255, main['alpha']), 1, main['fonts'][3], 'center', 'bottom')
     dxDrawImage(sx/2-150/zoom, sy/2, 300/zoom, 35/zoom, main['textures']['bar'], 0, 0, 0, tocolor(255, 255, 255, 55*main['alpha']/255))

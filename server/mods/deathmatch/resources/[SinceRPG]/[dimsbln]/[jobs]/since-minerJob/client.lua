@@ -93,7 +93,7 @@ function startScript()
 
             local thePed = getElementData(source, 'sphere:ped')
             local message = '#dededeW twoim magazynie znajduje się #fff347'..magazineCoal..' kg#dedede węgla'
-            outputChatBox('Górnik rysiek (#7dff7dBOT#ffffff): '..message, 255, 255, 255, true)
+            outputChatBox('Górnik rysiek (#2E756FBOT#ffffff): '..message, 255, 255, 255, true)
             triggerEvent('onChatbubblesMessageIncome', localPlayer, message, thePed)
         end)
     end
@@ -114,7 +114,7 @@ addEventHandler('onClientRender', root, function()
             if sxx and syy and scale > 0 then
                 if isLineOfSightClear( px, py, pz, x, y, z, true, false, false, false, false, true, true ) then
                     dxDrawText(minerPed.name, sxx + 1, syy + 1, nil, nil, tocolor(0, 0, 0, 155), scale, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'center', 'bottom')
-                    dxDrawText(minerPed.name, sxx, syy, nil, nil, tocolor(125, 255, 125, 200), scale, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'center', 'bottom')
+                    dxDrawText(minerPed.name, sxx, syy, nil, nil, tocolor(46, 117, 111, 200), scale, exports['since-fonts']:getFont('Inter-ExtraBold', 13/zoom), 'center', 'bottom')
                     dxDrawText('Podejdź aby sprawdzić stan magazynu', sxx + 1, syy + 1, nil, nil, tocolor(0, 0, 0, 155), scale, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
                     dxDrawText('Podejdź aby sprawdzić stan magazynu', sxx, syy, nil, nil, tocolor(225, 225, 225, 200), scale, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'top')
                 end
@@ -259,7 +259,7 @@ function renderUI()
     if renderJobHelp then
         dxDrawImage(sx / 2 - 700/zoom, 0, 1400/zoom, 380/zoom, vignette, 0, 0, 0, tocolor(255, 255, 255, 255*renderAlpha))
         dxDrawText('Górnik', sx / 2 + 1, 45/zoom + 1, nil, nil, tocolor(0, 0, 0, 155*renderAlpha), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
-        dxDrawText('Górnik', sx / 2, 45/zoom, nil, nil, tocolor(125, 255, 125, 200*renderAlpha), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
+        dxDrawText('Górnik', sx / 2, 45/zoom, nil, nil, tocolor(46, 117, 111, 200*renderAlpha), 1, exports['since-fonts']:getFont('Inter-Bold', 15/zoom), 'center', 'bottom')
 
         if getElementData(localPlayer, 'player:mining') then
             jobInfo = 'Trwa wydobywanie surowca, klikaj odpowiednie klawisze a następnie zaczekaj chwilę..'
@@ -294,7 +294,7 @@ function renderUI()
         local offset = -((4 - 2) * 40/zoom + 2) / 2 - (40/zoom)/2 - 2
         for i = 1, 4 do
             if clickedKeys[i] == 1 then
-                color[i] = tocolor(125, 255, 125, 75*renderAlpha) 
+                color[i] = tocolor(46, 117, 111, 75*renderAlpha) 
             elseif clickedKeys[i] == 0 then
                 color[i] = tocolor(255, 125, 125, 75*renderAlpha)
             else
@@ -304,13 +304,13 @@ function renderUI()
             dxDrawRectangle(sx / 2 - 20/zoom + offset, y, 40/zoom, 40/zoom, color[i])
             dxDrawText(string.upper(randomKeys[i]), sx / 2 + offset + 1, y + 20/zoom, nil, nil, tocolor(255, 255, 255, 225*renderAlpha), 1, exports['since-fonts']:getFont('Inter-ExtraBold', 14/zoom), 'center', 'center')
 
-            dxDrawRectangle(sx / 2 - 20/zoom + offset, y + 45/zoom, 40/zoom, 3, tocolor(125, 255, 125, 100*renderAlpha))
+            dxDrawRectangle(sx / 2 - 20/zoom + offset, y + 45/zoom, 40/zoom, 3, tocolor(46, 117, 111, 100*renderAlpha))
 
             if clickedKeys[i] == 1 then
-                dxDrawRectangle(sx / 2 - 20/zoom + offset, y + 45/zoom, 40/zoom, 3, tocolor(125, 255, 125, 255*renderAlpha))
+                dxDrawRectangle(sx / 2 - 20/zoom + offset, y + 45/zoom, 40/zoom, 3, tocolor(46, 117, 111, 255*renderAlpha))
             else
                 if i == keyStage then
-                    dxDrawRectangle(sx / 2 - 20/zoom + offset, y + 45/zoom, 40/zoom * progress / 100, 3, tocolor(125, 255, 125, 255*renderAlpha))
+                    dxDrawRectangle(sx / 2 - 20/zoom + offset, y + 45/zoom, 40/zoom * progress / 100, 3, tocolor(46, 117, 111, 255*renderAlpha))
                 end
             end
             

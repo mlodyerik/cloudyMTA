@@ -3,7 +3,7 @@ local tabColour = {}
 function renderUI()
 	dxDrawImage(sx/2 - 491/zoom, sy/2 - 336/zoom, 982/zoom, 672/zoom, 'data/bg.png')
 	dxDrawImage(sx/2 - 479/zoom, sy/2 - 219/zoom, 958/zoom, 2/zoom, 'data/line.png')
-	dxDrawText('Wymiana wPLN', sx/2 - 462/zoom, sy/2 - 269/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom), 'left', 'bottom')
+	dxDrawText('Wymiana wPLN', sx/2 - 462/zoom, sy/2 - 269/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 20/zoom), 'left', 'bottom')
 	dxDrawText('Posiadasz '..playerWPLN..' wPLN', sx/2 - 462/zoom, sy/2 - 269/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'top')
 	
     local offset = 0 
@@ -24,7 +24,7 @@ function renderUI()
             tabColour[i] = {tabColour[i][1] + (200 - tabColour[i][1]) * 0.1, tabColour[i][2] + (200 - tabColour[i][2]) * 0.1, tabColour[i][3] + (200 - tabColour[i][3]) * 0.1}
         end
 
-        dxDrawRectangle(selectedTab ~= 1 and tabX + 4/zoom or tabX, sy/2 - 255/zoom, tabW, 2, tocolor(103, 213, 94, 255))
+        dxDrawRectangle(selectedTab ~= 1 and tabX + 4/zoom or tabX, sy/2 - 255/zoom, tabW, 2, tocolor(46, 117, 111, 255))
         
         if i == selectedTab then 
             dxDrawText(v.name, sx/2 + 445/zoom + offset, sy/2 - 274/zoom, nil, nil, tocolor(tabColour[i][1], tabColour[i][2], tabColour[i][3], 255), 1, exports['since-fonts']:getFont('Inter-Medium', 13/zoom), 'right', 'center')
@@ -183,7 +183,7 @@ bindKey('F7', 'down', function()
 
     if not showedMessage then 
         outputChatBox(' ', 255, 175, 0, true)
-        outputChatBox('✉ #ffffffWalutę wPLN zakupisz na naszym sklepie, który znajduje się pod linkiem: #7dff7dhttps://sklep.sincerpg.pl/', 255, 175, 0, true)
+        outputChatBox('✉ #ffffffWalutę wPLN zakupisz na naszym sklepie, który znajduje się pod linkiem: #2E756Fhttps://sklep.cloudymta.pl/', 255, 175, 0, true)
         outputChatBox(' ', 255, 175, 0, true)
         showedMessage = true
     end

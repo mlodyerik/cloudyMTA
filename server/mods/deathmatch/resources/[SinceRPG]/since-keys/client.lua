@@ -26,7 +26,7 @@ function renderKeys()
         local numberofkeys = getVehicleKeys(veh)
         dxDrawImage(sx/2 - 165/zoom, sy/2 - 162/zoom, 329/zoom, 324/zoom, 'data/bg.png')
         dxDrawText('Udostępnianie kluczy', sx/2, sy/2 - 114/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'center', 'bottom')
-        dxDrawText('Wykorzystane klucze: '..#data.keys..' / '..numberofkeys, sx/2, sy/2 - 114/zoom, nil, nil, tocolor(103, 213, 94, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'center', 'top')
+        dxDrawText('Wykorzystane klucze: '..#data.keys..' / '..numberofkeys, sx/2, sy/2 - 114/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 8/zoom), 'center', 'top')
 
         local isIn = isMouseInPosition(sx/2 - 150/zoom, sy/2 + 111/zoom, 300/zoom, 35/zoom)
         dxDrawImage(sx/2 - 150/zoom, sy/2 + 111/zoom, 300/zoom, 35/zoom, 'data/button_cancel.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 215 or 255))

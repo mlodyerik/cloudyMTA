@@ -1,10 +1,10 @@
-# SinceRPG - Fixed & Configured
+# cloudyMTA - Nowoczesny Serwer Roleplay
 
 ## 🎮 O Projekcie
 
-**SinceRPG** to kompletna paczka serwera roleplay dla Multi Theft Auto: San Andreas.
+**cloudyMTA** to profesjonalny serwer roleplay dla Multi Theft Auto: San Andreas z nowoczesną identyfikacją wizualną.
 
-Ta wersja została w pełni naprawiona, skonfigurowana i przygotowana do uruchomienia na lokalnym środowisku XAMPP.
+Ta wersja została w pełni zrebrandowana z SinceRPG, zachowując wszystkie mechaniki i funkcjonalności.
 
 ---
 
@@ -17,7 +17,7 @@ Ta wersja została w pełni naprawiona, skonfigurowana i przygotowana do uruchom
 
 ### 2. Instalacja:
 1. Uruchom MySQL w XAMPP
-2. Importuj `since.sql` do phpMyAdmin (baza: `since`)
+2. Importuj `db_109111.sql` do phpMyAdmin (baza: `since`)
 3. Skopiuj folder `server/` do instalacji MTA Server
 4. Uruchom MTA Server
 
@@ -30,7 +30,22 @@ Ta wersja została w pełni naprawiona, skonfigurowana i przygotowana do uruchom
 
 ---
 
-## 📦 Co zostało naprawione?
+## 🎨 cloudyMTA - Nowa Identyfikacja Wizualna
+
+### Paleta Kolorystyczna
+- **Główny akcent:** #2E756F (Turkusowa zieleń)
+- **Ciemne tło:** #101719 (Grafit)
+- **Panele:** #192426 (Grafitowo-zielony)
+- **Akcent:** #438F87 (Jasny turkus)
+- **Tekst główny:** #F1F5F4 (Biel)
+- **Tekst dodatkowy:** #91A3A0 (Szarość)
+
+### Styl
+Minimalistyczny, nowoczesny, elegancki, ciemny motyw z symbolem chmurki.
+
+---
+
+## 📦 Co zawiera cloudyMTA?
 
 ### ✅ Baza Danych
 - Poprawiona konfiguracja dla XAMPP (localhost:3306)

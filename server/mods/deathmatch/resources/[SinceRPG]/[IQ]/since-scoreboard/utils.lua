@@ -1,11 +1,11 @@
 function formatPlayers(count)
     local count = tostring(count)
     if #count == 1 then
-        return '#4a944a00#7dff7d'..count
+        return '#4a944a00#2E756F'..count
     elseif #count == 2 then
-        return '#4a944a0#7dff7d'..count
+        return '#4a944a0#2E756F'..count
     else
-        return '#7dff7d'..count
+        return '#2E756F'..count
     end
 end
 
@@ -137,7 +137,7 @@ function getPlayerStatus(plr)
         return 'AFK od: #ee99ff'..timeFormat(afkTime)
     elseif getElementData(plr, 'player:job') then
         local jobName = exports['since-jobs']:getJobName(getElementData(plr, 'player:job'))
-        return 'Pracuje jako: #7dff7d'..jobName
+        return 'Pracuje jako: #2E756F'..jobName
     else
         local sessionTime = tonumber(getElementData(plr, 'player:actualSesion') or 0)
         return 'W grze od: #ffce7a'..timeFormat(sessionTime)

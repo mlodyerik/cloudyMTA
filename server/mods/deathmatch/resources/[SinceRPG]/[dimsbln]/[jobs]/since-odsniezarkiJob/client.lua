@@ -167,7 +167,7 @@ function render()
 		end
 
 		dxDrawText(text:gsub('#%x%x%x%x%x%x', ''), sx/2 + 1, sy - 98/zoom + 1, nil, nil, tocolor(0, 0, 0, 125), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "center", "bottom", false, false, false, true)
-		dxDrawText(text, sx/2, sy - 98/zoom, nil, nil, tocolor(125, 255, 125, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "center", "bottom", false, false, false, true)
+		dxDrawText(text, sx/2, sy - 98/zoom, nil, nil, tocolor(46, 117, 111, 225), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), "center", "bottom", false, false, false, true)
 	end
 end
 

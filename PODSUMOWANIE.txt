@@ -1,0 +1,149 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                   🎮 SINCE RPG - KONTO MLODYERIK                        ║
+║                        WYMAKSOWANE I GOTOWE! ✅                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 👤 UŻYTKOWNIK: mlodyerik (UID: 8)                                       │
+└──────────────────────────────────────────────────────────────────────────┘
+
+💰 FINANSE:
+   Gotówka:          999,999,999 $  💵
+   Bank:             999,999,999 $  🏦
+   wPLN:                 999,999    💎
+   Punkty Premium:       999,999    🎫
+
+🏆 STATYSTYKI:
+   SRP:                   99,999 punktów
+   Czas gry:              99,999 godzin
+   Premium:               DO 2099-12-31 🎉
+   Status:                VIP OWNER 👑
+   Admin Level:           4 (MAX)
+
+🚗 PRAWA JAZDY (WSZYSTKIE):
+   ✅ Kategoria A  - Motocykle
+   ✅ Kategoria B  - Samochody osobowe  
+   ✅ Kategoria C  - Ciężarówki
+   ✅ Licencja L   - Samoloty i helikoptery
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 🏎️  GARAŻ - 10 PREMIUM POJAZDÓW                                         │
+└──────────────────────────────────────────────────────────────────────────┘
+
+ 1. Infernus  (411)  🔥  MLY-001  │  2,500,000 $
+ 2. Cheetah   (415)  🐆  MLY-002  │  2,200,000 $
+ 3. Banshee   (429)  👻  MLY-003  │  1,800,000 $
+ 4. Turismo   (451)  💨  MLY-004  │  3,000,000 $
+ 5. ZR-350    (477)  ⚡  MLY-005  │  1,400,000 $
+ 6. Sultan    (560)  🏁  MLY-006  │  1,200,000 $
+ 7. ⭐ ELEGY  (562)  🌟  ELEGY-1  │  1,100,000 $ [FULL TUNED!]
+ 8. Bullet    (541)  🚀  MLY-008  │  2,800,000 $
+ 9. Super GT  (506)  💪  MLY-009  │  1,600,000 $
+10. Comet     (480)  ☄️   MLY-010  │    900,000 $
+
+     ŁĄCZNA WARTOŚĆ GARAŻU: ~18,500,000 $ 💎
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ⭐ ELEGY - FULL TUNING SPECIAL                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+
+🔧 MECHANIKA:
+   • Silnik:        3.0L (MAX upgrade)
+   • Nitro:         3x boost 💨
+   • Hydraulika:    FULL install 🔧
+   • Bak:           100/100 (pełny) ⛽
+
+🎨 WYGLĄD:
+   • Paintjob:      #3 (stylowy design)
+   • Kolory:        Różowo-zielony custom 🌈
+   • Światła:       Zielone 💚
+   • Szyby:         Przyciemnione (lvl 5) 🕶️
+
+🏁 BODY KIT:
+   ✅ Wydech (exhaust)
+   ✅ Spoiler
+   ✅ Dach (roof)
+   ✅ Progi boczne (side skirts)
+   ✅ Zderzak przedni (front bumper)
+   ✅ Zderzak tylny (rear bumper)
+   ✅ Custom felgi (wheels)
+
+🛞 CUSTOM KOŁA:
+   • Rozmiar:       1.2x (powiększone)
+   • Kąt:           15° (stanced)
+   • Rim vinyl:     10
+   • Inner size:    MAX (1.0)
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 📥 JAK ZAIMPORTOWAĆ?                                                     │
+└──────────────────────────────────────────────────────────────────────────┘
+
+METODA 1 - phpMyAdmin (NAJŁATWIEJSZA):
+   1. Otwórz phpMyAdmin
+   2. Wybierz bazę "since"
+   3. Import → Wybierz: sincemoj_updated.sql
+   4. Kliknij "Wykonaj"
+   5. ✅ GOTOWE!
+
+METODA 2 - Terminal MySQL:
+   mysql -u root -p since < sincemoj_updated.sql
+
+METODA 3 - Backup i zastąpienie:
+   mysqldump -u root -p since > backup.sql
+   mysql -u root -p -e "DROP DATABASE since; CREATE DATABASE since;"
+   mysql -u root -p since < sincemoj_updated.sql
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 📂 PLIKI W REPOZYTORIUM                                                  │
+└──────────────────────────────────────────────────────────────────────────┘
+
+✅ sincemoj_updated.sql      ← UŻYJ TEGO PLIKU!
+   sincemoj.sql              ← Oryginał (backup)
+   update_mlodyerik.py       ← Skrypt modyfikacji
+   README_MLODYERIK.md       ← Pełna dokumentacja
+   PODSUMOWANIE.txt          ← Ten plik
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ⚠️  WAŻNE UWAGI                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+
+⚠️  PRZED IMPORTEM:
+   1. Zrób backup obecnej bazy!
+   2. Wyłącz serwer MTA
+   3. Sprawdź nazwę bazy (domyślnie: "since")
+
+✅ PO IMPORCIE:
+   1. Uruchom serwer MTA
+   2. Zaloguj się jako mlodyerik
+   3. Sprawdź wszystkie zmiany
+   4. Ciesz się grą! 🎮
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 🎯 WERYFIKACJA W MYSQL                                                   │
+└──────────────────────────────────────────────────────────────────────────┘
+
+-- Sprawdź użytkownika
+SELECT nick, money, bankMoney, srp, licenses 
+FROM `since-users` WHERE nick='mlodyerik';
+
+-- Sprawdź pojazdy
+SELECT id, model, tuning, licenseplate 
+FROM `since-vehicles` WHERE owner=8;
+
+-- Sprawdź admina
+SELECT nick, level FROM `since-admins` WHERE nick='mlodyerik';
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                        🎉 WSZYSTKO GOTOWE!                              ║
+║                                                                          ║
+║              Konto mlodyerik jest teraz WŁAŚCICIELEM                    ║
+║         z pełnymi uprawnieniami i nieograniczonymi środkami!            ║
+║                                                                          ║
+║                         MIŁEJ GRY! 🎮👑                                 ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Data generacji: 11 listopada 2026
+Wersja: 1.0
+Autor: Kiro AI
+
+GitHub: https://github.com/mlodyerik/since

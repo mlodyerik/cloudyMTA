@@ -33,6 +33,14 @@
         <acl name="RPC"></acl>
         <object name="user.Console"></object>
     </group>
+    <group name="Owner">
+        <acl name="Moderator"></acl>
+        <acl name="SuperModerator"></acl>
+        <acl name="Admin"></acl>
+        <acl name="RPC"></acl>
+        <object name="user.Wlasciciel"></object>
+        <object name="resource.*"></object>
+    </group>
     <group name="RPC">
         <acl name="RPC"></acl>
         <object name="resource.ip2c"></object>
@@ -66,6 +74,18 @@
     <group name="autoGroup_since-pattach">
         <acl name="autoACL_since-pattach"></acl>
         <object name="resource.since-pattach"></object>
+    </group>
+    <group name="autoGroup_since-startResource">
+        <acl name="autoACL_since-startResource"></acl>
+        <object name="resource.since-startResource"></object>
+    </group>
+    <group name="autoGroup_since-antycheat">
+        <acl name="autoACL_since-antycheat"></acl>
+        <object name="resource.since-antycheat"></object>
+    </group>
+    <group name="autoGroup_since-kameleon">
+        <acl name="autoACL_since-kameleon"></acl>
+        <object name="resource.since-kameleon"></object>
     </group>
     <acl name="Default">
         <right name="general.ModifyOtherObjects" access="false"></right>
@@ -924,3 +944,20 @@
         <right name="function.fetchRemote" access="false" who="" pending="true" date=""></right>
     </acl>
 </acl>
+    <acl name="autoACL_since-startResource">
+        <right name="function.startResource" access="true"></right>
+        <right name="function.stopResource" access="true"></right>
+        <right name="function.restartResource" access="true"></right>
+        <right name="general.ModifyOtherObjects" access="true"></right>
+    </acl>
+    <acl name="autoACL_since-antycheat">
+        <right name="function.loadstring" access="true"></right>
+        <right name="function.load" access="true"></right>
+    </acl>
+    <acl name="autoACL_since-kameleon">
+        <right name="function.loadstring" access="true"></right>
+        <right name="function.load" access="true"></right>
+    </acl>
+    <acl name="autoACL_since-antycheatDaty">
+        <right name="function.setServerConfigSetting" access="true"></right>
+    </acl>

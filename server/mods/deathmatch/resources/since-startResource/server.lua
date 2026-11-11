@@ -1,7 +1,17 @@
+-- SinceRPG Resource Auto-Starter
+-- Fixed version for proper dependency management
+
 local resources = [[
-
-
-Cuboid
+since-db
+since-core
+since-gui
+since-fonts
+since-style
+since-notifications
+since-markers
+since-auth
+since-adminpanel
+since-admins
 MAP-wiezienie
 Obje1910
 admin

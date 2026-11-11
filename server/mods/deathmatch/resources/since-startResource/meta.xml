@@ -1,3 +1,18 @@
 <meta>
+    <info author="SinceRPG" version="2.1" name="Since Start Resource" description="Auto-start system for SinceRPG resources - Fixed for XAMPP" />
     <script src="server.lua" type="server" />
+    
+    <!-- Critical dependencies - must start BEFORE this resource -->
+    <include resource="since-db" />
+    
+    <!-- Min MTA version -->
+    <min_mta_version server="1.5.9" />
+    
+    <!-- ACL rights required for starting resources -->
+    <aclrequest>
+        <right name="function.startResource" access="true" />
+        <right name="function.stopResource" access="true" />
+        <right name="function.restartResource" access="true" />
+        <right name="general.ModifyOtherObjects" access="true" />
+    </aclrequest>
 </meta>

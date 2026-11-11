@@ -24,11 +24,19 @@ end
 local connection;
 
 function connectWithDatabase()
+    -- Konfiguracja dla lokalnego XAMPP
+    -- Host: 127.0.0.1, Port: 3306, Database: since, User: root, Password: '' (domyślnie puste w XAMPP)
+    -- Jeśli zmieniłeś hasło root w XAMPP, zaktualizuj czwarty parametr poniżej
     connection = dbConnect('mysql', 'dbname=since;host=127.0.0.1;port=3306;charset=utf8', 'root', '', 'share=1')
-    print(connection and 
-        'Successfully connected with database' or
-        'Failed to connect with database'
-    )
+    
+    if connection then
+        outputServerLog('[since-db] Successfully connected with database')
+        print('[since-db] Successfully connected with MySQL database: since')
+    else
+        outputServerLog('[since-db] [ERROR] Failed to connect with database! Check XAMPP and credentials.')
+        print('[since-db] [ERROR] Failed to connect with database!')
+        print('[since-db] [INFO] Make sure XAMPP MySQL is running and database "since" exists')
+    end
 end
 
 function status()

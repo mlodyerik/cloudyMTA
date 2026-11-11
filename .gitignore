@@ -1,0 +1,114 @@
+# SinceRPG .gitignore - Bezpieczeństwo danych
+
+# ===================================
+# DANE WRAŻLIWE - NIE COMMITOWAĆ!
+# ===================================
+OWNER_CREDENTIALS.txt
+owner_*.txt
+credentials.txt
+passwords.txt
+*.key
+*.pem
+
+# ===================================
+# Pliki bazy danych
+# ===================================
+*.db
+*.db-shm
+*.db-wal
+server/mods/deathmatch/internal.db
+server/mods/deathmatch/registry.db
+server/mods/deathmatch/databases/
+
+# ===================================
+# Logi serwera
+# ===================================
+server/mods/deathmatch/logs/*.log
+server/mods/deathmatch/resources/[SinceRPG]/since-db/files/*.txt
+
+# ===================================
+# Pliki tymczasowe i cache
+# ===================================
+*.tmp
+*.temp
+*.cache
+server/mods/deathmatch/resource-cache/
+backups/
+*.backup
+*.bak
+
+# ===================================
+# Pliki konfiguracyjne z hasłami
+# ===================================
+server/mods/deathmatch/server-id.keys
+*.conf.local
+config.local.*
+
+# ===================================
+# Pliki systemowe Windows
+# ===================================
+Thumbs.db
+desktop.ini
+*.lnk
+*.exe
+*.dll
+
+# ===================================
+# Pliki systemowe Linux/Mac
+# ===================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ===================================
+# IDE i edytory
+# ===================================
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# ===================================
+# Node.js (jeśli używane)
+# ===================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ===================================
+# Python (jeśli używane)
+# ===================================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# ===================================
+# Pliki kompilacji
+# ===================================
+*.o
+*.a
+*.so
+*.dylib
+
+# ===================================
+# Archiwa
+# ===================================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ===================================
+# DOZWOLONE DO COMMITOWANIA
+# ===================================
+!db_109111.sql
+!since.sql
+!INSTALACJA_I_URUCHOMIENIE.md
+!README.md

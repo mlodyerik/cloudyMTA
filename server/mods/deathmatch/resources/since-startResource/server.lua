@@ -3,6 +3,7 @@
 
 local resources = [[
 since-db
+since-classes
 since-core
 since-gui
 since-fonts

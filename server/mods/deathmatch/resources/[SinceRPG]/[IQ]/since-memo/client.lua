@@ -68,7 +68,7 @@ function memoUI()
 			dxDrawText(v.text ~= "" and v.text or v.shadowText, v.x+15/zoom, v.y+15/zoom, v.w+v.x-15/zoom, v.h+v.y-15/zoom, tocolor(240, 240, 240, 255), v.scale, v.font, "left", "top", true, true)
 		else
 			dxDrawImage(v.x, v.y, v.w, v.h, v.bgImage, 0, 0, 0, tocolor(225, 225, 225, 200))
-			dxDrawText(v.text ~= "" and v.text or v.shadowText, v.x+15/zoom, v.y+15/zoom, v.w+v.x-15/zoom, v.h+v.y-15/zoom, tocolor(145, 163, 160, 220), v.scale, v.font, "left", "top", true, true)
+			dxDrawText(v.text ~= "" and v.text or v.shadowText, v.x+15/zoom, v.y+15/zoom, v.w+v.x-15/zoom, v.h+v.y-15/zoom, tocolor(67, 143, 135, 220), v.scale, v.font, "left", "top", true, true)
 		end
 		if getKeyState("backspace") and v.isActive then
             if (getTickCount() - backspace_tick) / 100 > 1 then

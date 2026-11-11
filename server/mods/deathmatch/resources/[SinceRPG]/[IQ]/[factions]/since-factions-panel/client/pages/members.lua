@@ -92,7 +92,7 @@ Panel.pages.renderMembersPage = function()
     for i, v in pairs(members) do
         if i >= Panel.scrolls.members.k and i <= Panel.scrolls.members.n then
             local alpha = isMouseInPosition(x + padding, y + padding + offset, 674/zoom, 47/zoom) and 15 or 0
-            local color = (isSelected(v.uid) and tocolor(46, 117, 111, 25 + alpha) or tocolor(145, 163, 160, 25 + alpha))
+            local color = (isSelected(v.uid) and tocolor(46, 117, 111, 25 + alpha) or tocolor(67, 143, 135, 25 + alpha))
 
             dxDrawRectangle(x + padding, y + padding + offset, 674/zoom, 47/zoom, color)
             dxDrawRectangle(x + padding, y + padding + 45/zoom + offset, 674/zoom, 1, tocolor(255, 255, 255, 65))

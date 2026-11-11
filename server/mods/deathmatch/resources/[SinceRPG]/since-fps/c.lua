@@ -21,7 +21,7 @@ local function renderFPS()
     dxDrawText(math.floor(fps), 15/zoom + 1, 35/zoom + 1, nil, nil, tocolor(0, 0, 0, 200), 1.35, "default-bold", "left", "bottom", false, false, false, false)
     dxDrawText('FPS', 15/zoom + 1, 35/zoom + 1, nil, nil, tocolor(0, 0, 0, 200), 1, "default-bold", "left", "top", false, false, false, false)
     dxDrawText(math.floor(fps), 15/zoom, 35/zoom, nil, nil, tocolor(255, 255, 255, 255), 1.35, "default-bold", "left", "bottom", false, false, false, false)
-    dxDrawText('FPS', 15/zoom, 35/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, "default-bold", "left", "top", false, false, false, false)
+    dxDrawText('FPS', 15/zoom, 35/zoom, nil, nil, tocolor(67, 143, 135, 255), 1, "default-bold", "left", "top", false, false, false, false)
 end
 addEventHandler("onClientRender", root, renderFPS)
 getResourceName(getThisResource(), true, 876782934); if true then return end

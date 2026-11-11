@@ -50,7 +50,7 @@ function renderUI()
 	dxDrawText('Tablica rejestracyjna:', sx/2 - 212/zoom, sy/2 + 424/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'left', 'top')
 	dxDrawText('Akcja: Spuść ręczny', sx/2 .5/zoom, sy/2 + 481/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'center', 'top')
 	dxDrawText('Ostatni kierowca:', sx/2 - 212/zoom, sy/2 + 448/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, getFigmaFont('Inter-Medium', 13.333/zoom), 'left', 'top')
-	dxDrawText('123', sx/2 + 154/zoom, sy/2 + 371/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, getFigmaFont('Inter-Medium', 32/zoom), 'center', 'top')
+	dxDrawText('123', sx/2 + 154/zoom, sy/2 + 371/zoom, nil, nil, tocolor(67, 143, 135, 255), 1, getFigmaFont('Inter-Medium', 32/zoom), 'center', 'top')
 	dxDrawText('km/h', sx/2 + 156.5/zoom, sy/2 + 419/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, getFigmaFont('Inter-Medium', 17.333/zoom), 'center', 'top')
 end
 

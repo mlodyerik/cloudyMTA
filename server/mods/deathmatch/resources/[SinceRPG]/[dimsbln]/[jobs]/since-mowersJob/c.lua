@@ -187,8 +187,8 @@ function renderJob()
         local px, py, pz = getElementPosition(localPlayer)
         local distance = getDistanceBetweenPoints3D(px, py, pz, x, y, z)
         if sxx and syy then
-            dxDrawImage(sxx-25/zoom, syy-55/zoom, 50/zoom, 50/zoom, "files/images/other/icon.png", 0, 0, 0, tocolor(145, 163, 160, 200))
-            dxDrawTextAround((math.floor(distance) >= 1000) and (string.format("%.2f",math.floor(distance)/1000).."km") or (math.floor(distance).."m"), sxx, syy, sxx, syy, tocolor(145, 163, 160, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), "center", "center", false, false, false, true)
+            dxDrawImage(sxx-25/zoom, syy-55/zoom, 50/zoom, 50/zoom, "files/images/other/icon.png", 0, 0, 0, tocolor(67, 143, 135, 200))
+            dxDrawTextAround((math.floor(distance) >= 1000) and (string.format("%.2f",math.floor(distance)/1000).."km") or (math.floor(distance).."m"), sxx, syy, sxx, syy, tocolor(67, 143, 135, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), "center", "center", false, false, false, true)
             if(distance < 8)then
                 local syy = syy + 30
                 local anim = getEasingValue(1-distance/8, "InOutQuad")
@@ -197,8 +197,8 @@ function renderJob()
                     dxDrawRectangle(sxx-(long/2), syy, (long), 2, tocolor(155,155,155,155*anim))
                     dxDrawRectangle(sxx-1, syy+2, 2, 5/zoom, tocolor(155,155,155,155*anim))
                     dxDrawRoundedRectangle(sxx-15/zoom, syy+10/zoom, 30/zoom, 30/zoom, 9/zoom, getKeyState("b") and tocolor(40, 40, 40, 255*anim) or tocolor(60, 60, 60, 255*anim))
-                    dxDrawTextAround("E", sxx-15/zoom, syy+10/zoom, sxx-15/zoom+30/zoom, syy+10/zoom+30/zoom, getKeyState("b") and tocolor(155, 155, 155, 255*anim) or tocolor(145, 163, 160, 255*anim), 1, exports['since-fonts']:getFont('Inter-Bold', 17/zoom), "center", "center", false, false, false, true, anim)
-                    dxDrawTextAround(texts[text], sxx-100/zoom, syy-25/zoom, sxx-100/zoom+200/zoom, syy-25/zoom+70/zoom, tocolor(145, 163, 160, 255*anim), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), "center", "top", false, false, false, true, anim)
+                    dxDrawTextAround("E", sxx-15/zoom, syy+10/zoom, sxx-15/zoom+30/zoom, syy+10/zoom+30/zoom, getKeyState("b") and tocolor(155, 155, 155, 255*anim) or tocolor(67, 143, 135, 255*anim), 1, exports['since-fonts']:getFont('Inter-Bold', 17/zoom), "center", "center", false, false, false, true, anim)
+                    dxDrawTextAround(texts[text], sxx-100/zoom, syy-25/zoom, sxx-100/zoom+200/zoom, syy-25/zoom+70/zoom, tocolor(67, 143, 135, 255*anim), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), "center", "top", false, false, false, true, anim)
                 else
                     dxDrawTextAround("Odczekaj "..string.format("%.1f", ((tick-getTickCount())/1000)).." sek. \nprzed kolejnym kliknięciem", sxx-100/zoom, syy-25/zoom, sxx-100/zoom+200/zoom, syy-25/zoom+70/zoom, tocolor(225, 0, 0, 255*anim), 0.7/zoom, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), "center", "top", false, false, false, true, anim)
                 end

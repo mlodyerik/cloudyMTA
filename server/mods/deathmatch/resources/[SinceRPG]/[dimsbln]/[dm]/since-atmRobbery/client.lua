@@ -196,7 +196,7 @@ function renderUI()
         dxDrawText('Pozostały czas: '..time, sx/2, sy/2 + 25/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 
         dxDrawText('Uwaga!', sx/2, sy/2 + 115/zoom, nil, nil, tocolor(255, 255, 255, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'center', 'bottom')
-        dxDrawText('Zaraz zjawią się tutaj gliny, musisz się szybko uwinąć!\nPamiętaj aby nie wychodzić z gry podczas okradania.', sx/2, sy/2 + 115/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
+        dxDrawText('Zaraz zjawią się tutaj gliny, musisz się szybko uwinąć!\nPamiętaj aby nie wychodzić z gry podczas okradania.', sx/2, sy/2 + 115/zoom, nil, nil, tocolor(67, 143, 135, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top')
 
         dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 60/zoom, 346/zoom, 3/zoom, tocolor(46, 117, 111, 100))
         dxDrawRectangle(sx/2 - 173/zoom, sy/2 + 60/zoom, 346/zoom * leftTime / data.page2TimeLeft, 3/zoom, tocolor(46, 117, 111, 255))

@@ -562,12 +562,12 @@ function renderUI()
         end
     end
 
-    dxDrawText("Portfel", 0, sy - 30/zoom, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font3, "center", "bottom", false, false, false, false, false)
+    dxDrawText("Portfel", 0, sy - 30/zoom, 350/zoom, nil, tocolor(67, 143, 135, 255), 1, font3, "center", "bottom", false, false, false, false, false)
     dxDrawText(convertNumber(getPlayerMoney(localPlayer)).." $", 0, sy - 30/zoom, 350/zoom, nil, tocolor(46, 117, 111, 255), 1, font2, "center", "top", false, false, false, false, false)
-    dxDrawText("Koszt tuningu", 0, sy - 85/zoom, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font3, "center", "bottom", false, false, false, false, false)
+    dxDrawText("Koszt tuningu", 0, sy - 85/zoom, 350/zoom, nil, tocolor(67, 143, 135, 255), 1, font3, "center", "bottom", false, false, false, false, false)
     dxDrawText(convertNumber(calculateCost()).." $", 0, sy - 85/zoom, 350/zoom, nil, tocolor(46, 117, 111, 255), 1, font2, "center", "top", false, false, false, false, false)
     dxDrawText("Klawiszologia", sx - 20/zoom, sy - 115/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, font3, "right", "bottom", false, false, false, false, false)
-    dxDrawText("LPM - Poruszanie kamerą\nScroll - Przybliżanie/Oddalanie kamery\nEnter - Zatwierdź\nBackspace - Cofnij", sx - 20/zoom, sy - 115/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, font4, "right", "top", false, false, false, false, false)
+    dxDrawText("LPM - Poruszanie kamerą\nScroll - Przybliżanie/Oddalanie kamery\nEnter - Zatwierdź\nBackspace - Cofnij", sx - 20/zoom, sy - 115/zoom, nil, nil, tocolor(67, 143, 135, 255), 1, font4, "right", "top", false, false, false, false, false)
 
     dxDrawRoundedRectangle(20/zoom, sy - 320/zoom, 310/zoom, 200/zoom, 8/zoom, tocolor(55, 55, 55, 155))
     local vehData = getElementData(veh, 'vehicle:data') or {}
@@ -575,11 +575,11 @@ function renderUI()
     local vehicleName = exports['since-vehiclenames']:getVehicleName(model)
     local engine = string.format("%.1f", vehData.engine or 1.2)
 
-    dxDrawText(vehicleName.." "..(engine or "1.2").." dm³", 0, sy - 300/zoom, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font3, "center", "center", false, false, false, false, false)
+    dxDrawText(vehicleName.." "..(engine or "1.2").." dm³", 0, sy - 300/zoom, 350/zoom, nil, tocolor(67, 143, 135, 255), 1, font3, "center", "center", false, false, false, false, false)
 
     offsetY = 0
     for i, v in ipairs(tuning['statistic']) do
-        dxDrawText(v[1], 0, sy - 265/zoom + offsetY, 350/zoom, nil, tocolor(145, 163, 160, 255), 1, font5, "center", "center", false, false, false, false, false)
+        dxDrawText(v[1], 0, sy - 265/zoom + offsetY, 350/zoom, nil, tocolor(67, 143, 135, 255), 1, font5, "center", "center", false, false, false, false, false)
         dxDrawRectangle(25/zoom, sy - 250/zoom + offsetY, 300/zoom, 5/zoom, tocolor(46, 117, 111, 75))
 
         local progress = (300/zoom*getVehicleHandlingProperty(veh, v[3])/v[2])

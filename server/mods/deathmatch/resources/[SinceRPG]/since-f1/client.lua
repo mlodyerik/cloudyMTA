@@ -23,7 +23,7 @@ function renderUI()
     local offset = 0
     for k, v in ipairs(tabs) do
         local isMouse = isMouseInPosition(sx/2 - 471/zoom, sy/2 - 135/zoom + offset, 247/zoom, 45/zoom) and 15*alpha or 0
-        local tabColor = (activeTab == k and tocolor(46, 117, 111, 25*alpha + isMouse) or tocolor(145, 163, 160, 25*alpha + isMouse))
+        local tabColor = (activeTab == k and tocolor(46, 117, 111, 25*alpha + isMouse) or tocolor(67, 143, 135, 25*alpha + isMouse))
         local iconColor = (activeTab == k and tocolor(255, 255, 255, 225*alpha + isMouse) or tocolor(255, 255, 255, 175*alpha + isMouse))
 
         dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom + offset, 247/zoom, 45/zoom, tabColor)

@@ -49,7 +49,7 @@ function Scoreboard.render()
     dxDrawImage(sx/2-700/zoom/2, Scoreboard.pos, 700/zoom, 100/zoom, Scoreboard.textures['header'], 0, 0, 0, tocolor(255, 255, 255, 255 * Scoreboard.alpha))
     dxDrawImage(sx/2-700/zoom/2 - 15/zoom, Scoreboard.pos - 5/zoom, 143/zoom, 114/zoom, Scoreboard.textures['logo'], 0, 0, 0, tocolor(255, 255, 255, 255 * Scoreboard.alpha))
 
-    dxDrawText('Since#5ECD5ARPG', sx/2-700/zoom/2 + 100/zoom, Scoreboard.pos + 100/zoom/2 - dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom))/2 + 3/zoom, nil, nil, tocolor(255, 255, 255, 255 * Scoreboard.alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'left', 'center', false, false, false, true)
+    dxDrawText('cloudy#438F87MTA', sx/2-700/zoom/2 + 100/zoom, Scoreboard.pos + 100/zoom/2 - dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom))/2 + 3/zoom, nil, nil, tocolor(255, 255, 255, 255 * Scoreboard.alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 16/zoom), 'left', 'center', false, false, false, true)
     dxDrawText('Graczy online '..formatPlayers(#getElementsByType('player')), sx/2-700/zoom/2 + 100/zoom, Scoreboard.pos + 100/zoom/2 + dxGetFontHeight(1, exports['since-fonts']:getFont('Inter-Medium', 16/zoom))/2 - 3/zoom, nil, nil, tocolor(180, 180, 180, 255 * Scoreboard.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'center', false, false, false, true)
 
     dxDrawImage(sx/2-700/zoom/2 + 250/zoom, Scoreboard.pos + 100/zoom/2 - 48/zoom/2, 181/zoom, 48/zoom, Scoreboard.textures['sorts'], 0, 0, 0, tocolor(255, 255, 255, 255 * Scoreboard.alpha))
@@ -66,7 +66,7 @@ function Scoreboard.render()
             local cx, cy = getCursorPosition()
             local cx, cy = (cx * sx), (cy * sy)
 
-            dxDrawText(v.name, cx + 15/zoom, cy + 15/zoom, nil, nil, tocolor(145, 163, 160, 255 * Scoreboard.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'top', false, false, true)
+            dxDrawText(v.name, cx + 15/zoom, cy + 15/zoom, nil, nil, tocolor(67, 143, 135, 255 * Scoreboard.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'left', 'top', false, false, true)
         end
 
         offset = offset + 40/zoom + 4/zoom
@@ -124,7 +124,7 @@ function Scoreboard.render()
 
             dxDrawText(name, sx/2-700/zoom/2 + 15/zoom + 80/zoom + 50/zoom, Scoreboard.pos + 100/zoom + 55/zoom + offset - 5/zoom - 1/zoom, nil, nil, tocolor(255, 255, 255, 255 * Scoreboard.alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 11/zoom), 'left', 'center', false, false, false, true)
             if (Scoreboard.status.show) then
-                dxDrawText(getPlayerStatus(v), sx/2-700/zoom/2 + 15/zoom + 80/zoom + 50/zoom, Scoreboard.pos + 100/zoom + 55/zoom + offset + 10/zoom - 1/zoom, nil, nil, tocolor(145, 163, 160, (255 * Scoreboard.alpha) * Scoreboard.status.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'center', false, false, false, true)
+                dxDrawText(getPlayerStatus(v), sx/2-700/zoom/2 + 15/zoom + 80/zoom + 50/zoom, Scoreboard.pos + 100/zoom + 55/zoom + offset + 10/zoom - 1/zoom, nil, nil, tocolor(67, 143, 135, (255 * Scoreboard.alpha) * Scoreboard.status.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 9/zoom), 'left', 'center', false, false, false, true)
             else
                 if (getElementData(v, 'player:admin')) then
                     local rankName = exports['since-admins']:getRankName(getElementData(v, 'player:admin'))
@@ -134,7 +134,7 @@ function Scoreboard.render()
                     if (getElementData(v, 'player:diamond')) then
                         dxDrawText('Diamond', sx/2-700/zoom/2 + 15/zoom + 80/zoom + 50/zoom, Scoreboard.pos + 100/zoom + 55/zoom + offset + 10/zoom - 1/zoom, nil, nil, tocolor(46, 140, 255, (255 * Scoreboard.alpha) * Scoreboard.status.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
                     else
-                        dxDrawText('Premium', sx/2-700/zoom/2 + 15/zoom + 80/zoom + 50/zoom, Scoreboard.pos + 100/zoom + 55/zoom + offset + 10/zoom - 1/zoom, nil, nil, tocolor(145, 163, 160, (255 * Scoreboard.alpha) * Scoreboard.status.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
+                        dxDrawText('Premium', sx/2-700/zoom/2 + 15/zoom + 80/zoom + 50/zoom, Scoreboard.pos + 100/zoom + 55/zoom + offset + 10/zoom - 1/zoom, nil, nil, tocolor(67, 143, 135, (255 * Scoreboard.alpha) * Scoreboard.status.alpha), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'left', 'center')
                     end
                 end
             end

@@ -127,7 +127,7 @@ tabs = {
 
                     dxDrawImage(sx/2 - 427/zoom + offsetX, sy/2 - 199/zoom + offsetY, 252/zoom, 180/zoom, 'data/item_bg2.png', 0, 0, 0, tocolor(255, 255, 255, onItem[i] * 255))
                     dxDrawText(v.name, sx/2 - 300/zoom + offsetX, sy/2 - 161/zoom + offsetY, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'center', 'bottom')
-                    dxDrawText(v.desc, sx/2 - 420/zoom + offsetX, sy/2 - 161/zoom + offsetY, sx/2 - 180/zoom + offsetX, nil, tocolor(145, 163, 160, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, true)
+                    dxDrawText(v.desc, sx/2 - 420/zoom + offsetX, sy/2 - 161/zoom + offsetY, sx/2 - 180/zoom + offsetX, nil, tocolor(67, 143, 135, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 10/zoom), 'center', 'top', false, true)
                     dxDrawText(v.price .. ' wPLN', sx/2 - 301/zoom + offsetX, sy/2 - 85/zoom + offsetY, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'center', 'bottom')
 
                     local isIn = isMouseInPosition(sx/2 - 375/zoom + offsetX, sy/2 - 75/zoom + offsetY, 148/zoom, 29/zoom)
@@ -148,7 +148,7 @@ tabs = {
             dxDrawImage(sx/2 - 479/zoom, sy/2 + 255/zoom, 958/zoom, 2/zoom, 'data/line.png')
 
             dxDrawText('Przedmioty w koszyku', sx/2 - 161/zoom, sy/2 + 297/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom')
-            dxDrawText(#buyData, sx/2 - 161/zoom, sy/2 + 298/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'top')
+            dxDrawText(#buyData, sx/2 - 161/zoom, sy/2 + 298/zoom, nil, nil, tocolor(67, 143, 135, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'top')
             local textWidth = dxGetTextWidth(#buyData, 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom))
 
             dxDrawImage(sx/2 - 156/zoom + textWidth, sy/2 + 299/zoom, 14/zoom, 14/zoom, 'data/icon.png')
@@ -176,7 +176,7 @@ tabs = {
 
             local textWidth = dxGetTextWidth('Przedmioty w koszyku', 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom))
             dxDrawText('Do zapłaty', sx/2 - 141/zoom + textWidth, sy/2 + 297/zoom , nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 13/zoom), 'left', 'bottom')
-            dxDrawText(money..' wPLN', sx/2 - 141/zoom + textWidth, sy/2 + 298/zoom, nil, nil, tocolor(145, 163, 160, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'top')
+            dxDrawText(money..' wPLN', sx/2 - 141/zoom + textWidth, sy/2 + 298/zoom, nil, nil, tocolor(67, 143, 135, 255), 1, exports['since-fonts']:getFont('Inter-Medium', 11/zoom), 'left', 'top')
 
             local isIn = isMouseInPosition(sx/2 + 295/zoom, sy/2 + 275/zoom, 155/zoom, 40/zoom)
             dxDrawImage(sx/2 + 300/zoom, sy/2 + 305/zoom, 145/zoom, 2/zoom, 'data/line2.png', 0, 0, 0, tocolor(255, 255, 255, isIn and 255 or 175))

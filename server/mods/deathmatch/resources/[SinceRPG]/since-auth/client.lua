@@ -74,7 +74,7 @@ function renderUI()
             dxDrawCircle(sx/2, sy/2 - 140/zoom, avSize/2 + 2/zoom, 0, 360, tocolor(46, 117, 111, 200), tocolor(46, 117, 111, 200), 2)
             
             -- Powitanie
-            dxDrawText('Witaj ponownie!', sx/2, sy/2 - 60/zoom, nil, nil, tocolor(145, 163, 160, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
+            dxDrawText('Witaj ponownie!', sx/2, sy/2 - 60/zoom, nil, nil, tocolor(67, 143, 135, 200), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
             dxDrawText(savedNick, sx/2, sy/2 - 40/zoom, nil, nil, tocolor(46, 117, 111, 255), 1, exports['since-fonts']:getFont('Inter-Bold', 18/zoom), 'center', 'center')
         end
     
@@ -103,12 +103,12 @@ function renderUI()
         -- Ikony pól (subtelne, turkusowe)
         
         -- Informacja o Discord (subtelna, na dole)
-        dxDrawText('Zapomniałeś hasła?', sx/2, sy - 80/zoom, nil, nil, tocolor(145, 163, 160, 180), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
+        dxDrawText('Zapomniałeś hasła?', sx/2, sy - 80/zoom, nil, nil, tocolor(67, 143, 135, 180), 1, exports['since-fonts']:getFont('Inter-Medium', 12/zoom), 'center', 'center')
         dxDrawText('discord.gg/cloudymta', sx/2, sy - 60/zoom, nil, nil, tocolor(46, 117, 111, 200), 1, exports['since-fonts']:getFont('Inter-Bold', 12/zoom), 'center', 'center')
         
         -- Licznik graczy (subtelny)
         local playerCount = #getElementsByType('player')
-        dxDrawText('Graczy online: '..playerCount, sx/2, sy - 30/zoom, nil, nil, tocolor(145, 163, 160, 150), 1, exports['since-fonts']:getFont('Inter-Regular', 11/zoom), 'center', 'center')
+        dxDrawText('Graczy online: '..playerCount, sx/2, sy - 30/zoom, nil, nil, tocolor(67, 143, 135, 150), 1, exports['since-fonts']:getFont('Inter-Regular', 11/zoom), 'center', 'center')
     elseif data.loginWindow == 'spawn' then
 	    dxDrawImage(0, 0, sx, sy, 'data/shadow.png')
         --dxDrawImage(sx / 2 - 356/zoom, sy - 103/zoom, 712/zoom, 103/zoom, 'data/green_shadow.png', 0, 0, 0, tocolor(241, 245, 244, 200))

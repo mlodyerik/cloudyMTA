@@ -19,19 +19,23 @@ Panel.textures = {
 }
 
 function render()
-    dxDrawImage(sx/2-942/zoom/2, sy/2-500/zoom/2, 942/zoom, 500/zoom, 'data/images/background.png')
+    -- cloudyMTA factions panel redesign
+    dxDrawRectangle(sx/2-942/zoom/2, sy/2-500/zoom/2, 942/zoom, 500/zoom, tocolor(25, 36, 38, 255))
 
-    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(145, 163, 160, 65))
-    dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom - 1, 247/zoom, 1, tocolor(255, 255, 255, 65))
+    -- Teal separators
+    dxDrawRectangle(sx / 2 - 224/zoom, sy / 2 - 250/zoom, 1, 500/zoom, tocolor(67, 143, 135, 65))
+    dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom - 1, 247/zoom, 1, tocolor(67, 143, 135, 65))
 
-    dxDrawImage(sx/2 - 455/zoom, sy/2 - 232/zoom, 218/zoom, 75/zoom, 'data/images/logo.png')
-    dxDrawImage(sx/2 - 223/zoom, sy/2 - 250/zoom, 694/zoom, 47/zoom, 'data/images/toprectangle.png')
+    -- cloudyMTA logo
+    dxDrawImage(sx/2 - 455/zoom, sy/2 - 235/zoom, 218/zoom, 82/zoom, 'data/images/logo.png')
+    -- Teal accent bar
+    dxDrawRectangle(sx/2 - 223/zoom, sy/2 - 250/zoom, 694/zoom, 3/zoom, tocolor(46, 117, 111, 255))
 
     local offset = 0
 
     for i,v in pairs(Panel.pages) do
         local isMouse = isMouseInPosition(sx/2 - 471/zoom, sy/2 - 135/zoom + offset, 247/zoom, 45/zoom) and 15 or 0
-        local tabColor = (Panel.page == i and tocolor(46, 117, 111, 25 + isMouse) or tocolor(145, 163, 160, 25 + isMouse))
+        local tabColor = (Panel.page == i and tocolor(46, 117, 111, 25 + isMouse) or tocolor(67, 143, 135, 25 + isMouse))
 
         dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 135/zoom + offset, 247/zoom, 45/zoom, tabColor)
         dxDrawRectangle(sx/2 - 471/zoom, sy/2 - 89/zoom - 1 + offset, 247/zoom, 1, tocolor(255, 255, 255, 65))

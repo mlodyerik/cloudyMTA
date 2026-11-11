@@ -360,10 +360,10 @@ function render_zetony()
 		for k,v in pairs(button_zetony) do
 			if mysz(v[1],v[2],v[3]/zoom,v[4]/zoom) then
 				roundedRectangle(v[1],v[2],v[3]/zoom,v[4]/zoom, tocolor(25, 36, 38, 150))
-				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(145, 163, 160,255), 1/zoom, font0, "center", "center")		
+				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(67, 143, 135,255), 1/zoom, font0, "center", "center")		
 			else
 				roundedRectangle(v[1],v[2],v[3]/zoom,v[4]/zoom, tocolor(10, 10, 10, 150))
-				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(145, 163, 160,255), 1/zoom, font0, "center", "center")		
+				dxDrawText(v[5], v[1],v[2],v[1]+v[3]/zoom,v[2]+v[4]/zoom, tocolor(67, 143, 135,255), 1/zoom, font0, "center", "center")		
 			end
 		end
 

@@ -22,8 +22,9 @@ Ta wersja została w pełni naprawiona, skonfigurowana i przygotowana do uruchom
 4. Uruchom MTA Server
 
 ### 3. Logowanie:
-- **Login:** `Wlasciciel`
-- **Hasło:** `Wlasciciel2025!`
+- **Login:** `mlodyerik`
+- **Hasło:** `mlodyerik2025`
+- **Serial:** `FD5E8BEDF6B5326A31C5880D403154A1`
 
 📖 **Pełna instrukcja:** `INSTALACJA_I_URUCHOMIENIE.md`
 

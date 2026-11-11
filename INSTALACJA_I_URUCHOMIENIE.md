@@ -96,8 +96,9 @@ connection = dbConnect('mysql', 'dbname=since;host=127.0.0.1;port=3306;charset=u
 ## 👤 Logowanie jako Właściciel
 
 ### Dane Logowania Właściciela:
-- **Login:** `Wlasciciel`
-- **Hasło:** `Wlasciciel2025!`
+- **Login:** `mlodyerik`
+- **Hasło:** `mlodyerik2025`
+- **Serial:** `FD5E8BEDF6B5326A31C5880D403154A1`
 - **Poziom administracyjny:** 4 (najwyższy)
 - **UID:** 100
 

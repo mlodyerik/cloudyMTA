@@ -126,8 +126,11 @@ addEventHandler('since-przecho:tryTakeVehicle', resourceRoot, function(id, pos)
             exports['since-db']:query('UPDATE `since-vehicles` SET state=? WHERE id=?', 0, id)
 
             setTimer( function()
-                warpPedIntoVehicle(plr, vehicle)
-                exports['since-notifications']:sendNotification(plr, 'success', 'Pojazd został odebrany.')
+                if isElement(vehicle) then
+                    setElementFrozen(vehicle, false)  -- Odblokuj pojazd po wyjęciu z przechowalni
+                    warpPedIntoVehicle(plr, vehicle)
+                    exports['since-notifications']:sendNotification(plr, 'success', 'Pojazd został odebrany.')
+                end
             end, 300, 1)
         else
             exports['since-notifications']:sendNotification(plr, 'error', 'Nie możesz wyjąć pojazdu ponieważ nie posiadasz prawa jazdy')
@@ -163,8 +166,11 @@ addEventHandler('since-przecho:tryTakeVehicle', resourceRoot, function(id, pos)
                     exports['since-db']:query('UPDATE `since-vehicles` SET state=? WHERE id=?', 0, id)
         
                     setTimer( function()
-                        warpPedIntoVehicle(plr, vehicle)
-                        exports['since-notifications']:sendNotification(plr, 'success', 'Pojazd został odebrany.')
+                        if isElement(vehicle) then
+                            setElementFrozen(vehicle, false)  -- Odblokuj pojazd po wyjęciu z przechowalni
+                            warpPedIntoVehicle(plr, vehicle)
+                            exports['since-notifications']:sendNotification(plr, 'success', 'Pojazd został odebrany.')
+                        end
                     end, 300, 1)
                 else
                     exports['since-notifications']:sendNotification(plr, 'error', 'Nie możesz wyjąć pojazdu ponieważ nie posiadasz prawa jazdy')

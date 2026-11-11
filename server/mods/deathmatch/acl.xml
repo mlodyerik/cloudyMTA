@@ -943,7 +943,6 @@
     <acl name="autoACL_since-pattach">
         <right name="function.fetchRemote" access="false" who="" pending="true" date=""></right>
     </acl>
-</acl>
     <acl name="autoACL_since-startResource">
         <right name="function.startResource" access="true"></right>
         <right name="function.stopResource" access="true"></right>
@@ -970,3 +969,4 @@
         <acl name="autoACL_since-core"></acl>
         <object name="resource.since-core"></object>
     </group>
+</acl>

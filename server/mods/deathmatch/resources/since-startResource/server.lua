@@ -393,7 +393,7 @@ since-whitedock
 since-znajdzki
 since-zones
 since-zostaje
-sincerpg-mapa-licytacja
+cloudymta-mapa-licytacja
 ]]
 
 local resourcesTBL = {}

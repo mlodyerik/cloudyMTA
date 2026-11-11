@@ -306,7 +306,7 @@ tabs = {
     
     -- {
     --     name = 'Karnet',
-    --     desc = 'Karnet SinceRPG',
+    --     desc = 'Karnet cloudyMTA',
     --     icon = 'data/promoicon.png',
 
     --     toRender = function(alpha)

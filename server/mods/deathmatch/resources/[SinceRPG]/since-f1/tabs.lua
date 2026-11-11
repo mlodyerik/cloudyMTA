@@ -216,7 +216,7 @@ tabs = {
         desc = 'Przestrzegaj zasad na serwerze',
         icon = 'data/rules.png',
         toRender = function(alpha) 
-            dxDrawText('Regulamin serwera SinceRPG', sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
+            dxDrawText('Regulamin serwera cloudyMTA', sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(46, 117, 111, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 
             dxDrawText(rules, sx/2 - 210/zoom, sy/2 - 165/zoom, nil, nil, tocolor(225, 225, 225, 200*alpha), 1, exports['since-fonts']:getFont('Inter-Regular', 10/zoom), 'left', 'top', false, false, false, true)
 
             dxDrawText('Uwaga', sx/2 - 210/zoom, sy/2 + 45/zoom, nil, nil, tocolor(255, 255, 255, 225*alpha), 1, exports['since-fonts']:getFont('Inter-Bold', 14/zoom), 'left', 'bottom', false, false, false, true) 

@@ -67,7 +67,7 @@ function globalMessage(plr, cmd, ...)
 	end
 
 	--local log = "**SŁUŻBY> ["..frakcja.."] **"..getPlayerName(plr):gsub("#%x%x%x%x%x%x","").."["..getElementData(plr, "player:sid").."]: "..msg:gsub("#%x%x%x%x%x%x","")
-	--exports["enonek-discord"]:sendDiscordMessage("https://discord.com/api/webhooks/924354821543305217/hClZjJIL9exMCF-GAONgDy6Qzx72UmOge2fVXZl86J5d_hX-80QX_iSIIl5SVmaohhci", "SinceRPG - logi", log)
+	--exports["enonek-discord"]:sendDiscordMessage("https://discord.com/api/webhooks/924354821543305217/hClZjJIL9exMCF-GAONgDy6Qzx72UmOge2fVXZl86J5d_hX-80QX_iSIIl5SVmaohhci", "cloudyMTA - logi", log)
 		--local desc = string.format"(Służby) ("..getElementData(plr,"id")..") "..getPlayerName(plr):gsub("#%x%x%x%x%x%x","")..": "..msg:gsub("#%x%x%x%x%x%x","")..""
 		--triggerEvent("admin:addText", resourceRoot, desc:gsub("#%x%x%x%x%x%x",""))
 	        --triggerEvent("admin:addText", resourceRoot, RGBToHex(0,0,255)..desc..RGBToHex(255,255,255),math.random(0,99))

@@ -1,0 +1,246 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║           🏫 SINCE RPG - SZKOŁA JAZDY (DRIVING SCHOOL)                  ║
+║                  Lokalizacje i Podstawowe Info                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 📍 LOKALIZACJA #1 - LOS SANTOS (GŁÓWNA)                                 │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  Współrzędne:     1482.95, -1785.45, 18.73
+  Rotacja:         -0.00, 0.00, 167.59
+  Miasto:          Los Santos
+  Dzielnica:       El Corona
+  Opis:            Przy głównej drodze, w pobliżu Unity Station
+  Marker:          🔴 Czerwony cylinder (interaktywny)
+  
+  🗺️  JAK DOJECHAĆ:
+      - Jedź do południowej części Los Santos
+      - Szukaj dzielnicy El Corona (przy torach kolejowych)
+      - Szkoła jest przy głównej drodze
+      - Na mapie (F11) szukaj ikony "radar_school"
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 📍 LOKALIZACJA #2 - LAS VENTURAS                                        │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  Współrzędne:     2463.85, 2375.37, 12.16
+  Miasto:          Las Venturas
+  Dzielnica:       Północny wschód miasta
+  Marker:          🔴 Czerwony cylinder (interaktywny)
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 🚗 DOSTĘPNE PRAWA JAZDY                                                  │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ KATEGORIA     ┃ POJAZD       ┃ KOSZT    ┃ ZASTOSOWANIE            ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ 🏍️  A         │ Wayfarer     │  5,000 $ │ Motocykle               │
+│               │ (ID: 586)    │          │                         │
+├───────────────┼──────────────┼──────────┼─────────────────────────┤
+│ 🚙 B         │ Club         │ DARMOWY! │ Samochody osobowe       │
+│               │ (ID: 589)    │    0 $   │ NAJWAŻNIEJSZE!          │
+│               │              │    ✅     │ Wymagane do prac        │
+├───────────────┼──────────────┼──────────┼─────────────────────────┤
+│ 🚛 C         │ Mule         │ 10,000 $ │ Ciężarówki              │
+│               │ (ID: 414)    │          │ Praca: kierowca, DHL    │
+├───────────────┼──────────────┼──────────┼─────────────────────────┤
+│ ✈️  L         │ N/A          │    ???   │ Samoloty, helikoptery   │
+│               │              │          │ (osobny system?)        │
+└───────────────┴──────────────┴──────────┴─────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 📋 JAK ZDOBYĆ PRAWO JAZDY? (KROK PO KROKU)                              │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  [1] Znajdź szkołę jazdy:
+      → Los Santos: El Corona (1482.95, -1785.45, 18.73)
+      → Las Venturas: Północny wschód (2463.85, 2375.37, 12.16)
+
+  [2] Podejdź do czerwonego markera (pieszo)
+
+  [3] Otworzy się panel z trzema opcjami:
+      ┌──────────┬──────────┬──────────┐
+      │ Kat. C   │ Kat. B   │ Kat. A   │
+      │ 10,000 $ │ DARMOWY  │ 5,000 $  │
+      └──────────┴──────────┴──────────┘
+
+  [4] Kliknij wybraną kategorię (POLECAMY B - jest za darmo!)
+
+  [5] Zostaniesz automatycznie wsadzony do pojazdu egzaminacyjnego
+
+  [6] Na górze ekranu zobaczysz licznik:
+      ╔══════════════════════════════════════════╗
+      ║     Egzamin praktyczny                  ║
+      ║  Aby zdać prawo jazdy musisz            ║
+      ║  przejechać 2.50 km                     ║
+      ║  Zostało ci do przejechania: 2.50 km    ║
+      ╚══════════════════════════════════════════╝
+
+  [7] Jedź normalnie po mieście:
+      • Masz GHOST MODE (nie uderzysz nikogo) ✅
+      • Maksymalna prędkość: 59 km/h ⚠️
+      • Nie możesz wysiadać z pojazdu 🚫
+      • Czas: około 2-3 minuty jazdy 🕒
+
+  [8] Gdy przejedziesz 2.50 km:
+      ✅ Pojazd znika
+      ✅ Prawo jazdy dodane do konta
+      ✅ Notyfikacja: "Pomyślnie zdano egzamin praktyczny"
+      ✅ Teleportacja w pobliże szkoły
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ⚠️  WAŻNE INFORMACJE                                                     │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  ✅ BEZPIECZEŃSTWA:
+     • Ghost mode - nie możesz nikogo uderzyć
+     • Zablokowane wyjście z pojazdu
+     • Auto-kasowanie przy disconnect
+     • Limit prędkości: 59 km/h
+
+  💰 PRZED EGZAMINEM SPRAWDZANE:
+     1. Czy masz już to prawo jazdy?
+     2. Czy masz wystarczająco pieniędzy?
+
+  🎯 DYSTANS:
+     • Wszystkie kategorie: 2.50 km
+     • Licznik zmniejsza się: 2.50 → 2.49 → ... → 0.00
+     • Możesz jechać gdziekolwiek po mapie
+
+  📍 PO EGZAMINIE:
+     • Teleportacja: 1489.15, -1722.96, 13.43
+     • W pobliżu szkoły jazdy w Los Santos
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 💡 PORADY                                                                │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  🌟 DLA POCZĄTKUJĄCYCH:
+     1. Zacznij od kategorii B - jest DARMOWA!
+     2. Jedź główną drogą (łatwiej nawigować)
+     3. Nie martw się kolizjami - masz ghost mode
+     4. Trzymaj się asfaltu (nie jeźdź po bezdrożach)
+
+  🎮 OPTYMALNA TRASA:
+     • Jedź główną drogą w Los Santos
+     • Unikaj wąskich uliczek
+     • Nie musisz wracać do szkoły
+     • Możesz jechać gdziekolwiek po SA
+
+  ⏱️ CZAS:
+     • Kategoria A (motor): ~2-3 minuty
+     • Kategoria B (auto): ~2-3 minuty
+     • Kategoria C (ciężarówka): ~2-3 minuty
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 🎯 ZASTOSOWANIE PRAW JAZDY                                               │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  🏍️  KATEGORIA A (Motocykle):
+      • Możliwość prowadzenia motocykli
+      • Wymagane do niektórych zadań
+      • Koszt: 5,000 $
+
+  🚙 KATEGORIA B (Samochody) - NAJWAŻNIEJSZA!:
+      ⭐ PODSTAWOWE prawo jazdy
+      ⭐ Wymagane do większości prac:
+         - Kierowca
+         - Mechanik
+         - Dostawca
+         - Kurier
+      ⭐ Niezbędne do wynajmu/zakupu samochodów
+      ⭐ ZRÓB TO JAKO PIERWSZE!
+      ⭐ Jest DARMOWE! (0 $)
+
+  🚛 KATEGORIA C (Ciężarówki):
+      • Wymagane do pracy: kierowca ciężarówki, logistyk
+      • Potrzebne do misji transportowych
+      • Niektóre serwery wymagają do DHL/kuriera
+      • Koszt: 10,000 $ (tylko dla zaawansowanych)
+
+  ✈️  LICENCJA L (Samoloty):
+      • Prowadzenie samolotów i helikopterów
+      • Praca: pilot, air taxi
+      • Wysoki poziom trudności
+      • Status: Prawdopodobnie osobny system
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 🔧 DODAWANIE PRAWA JAZDY RĘCZNIE (ADMIN/BAZA)                           │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  METODA 1 - Baza danych MySQL:
+  ─────────────────────────────────
+  UPDATE `since-users` 
+  SET licenses = '[ { "A": 1, "B": 1, "C": 1, "L": 1 } ]'
+  WHERE nick = 'mlodyerik';
+
+  METODA 2 - Konsola Lua (F8 w grze jako admin):
+  ───────────────────────────────────────────────
+  local p = getPlayerFromName("mlodyerik")
+  exports['since-core']:addPlayerLicense(p, 'a')
+  exports['since-core']:addPlayerLicense(p, 'b')
+  exports['since-core']:addPlayerLicense(p, 'c')
+  exports['since-core']:addPlayerLicense(p, 'l')
+
+  METODA 3 - Admin Panel:
+  ───────────────────────
+  W admin panelu może być opcja "Zarządzaj licencjami"
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 📊 FORMAT W BAZIE DANYCH                                                 │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  Tabela:  since-users
+  Pole:    licenses (TEXT)
+  Format:  JSON
+
+  Przykład (wszystkie prawa):
+  [ { "A": 1, "B": 1, "C": 1, "L": 1 } ]
+
+  Przykład (tylko B):
+  [ { "B": 1 } ]
+
+  Sprawdzenie w MySQL:
+  SELECT nick, licenses FROM `since-users` WHERE nick='mlodyerik';
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 🎮 STATUS: MLODYERIK                                                     │
+└──────────────────────────────────────────────────────────────────────────┘
+
+  ✅ JUŻ MASZ WSZYSTKIE PRAWA JAZDY!
+
+  Twoje prawa jazdy (w bazie danych):
+  ┌─────────────────────────────────────┐
+  │ ✅ Kategoria A  - Motocykle         │
+  │ ✅ Kategoria B  - Samochody         │
+  │ ✅ Kategoria C  - Ciężarówki        │
+  │ ✅ Licencja L   - Samoloty          │
+  └─────────────────────────────────────┘
+
+  🎉 Nie musisz robić żadnych egzaminów!
+  Wszystko jest już w sincemoj_updated.sql
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                      📌 SZYBKIE INFORMACJE                              ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+  📍 Lokalizacja:       Los Santos, El Corona (1482.95, -1785.45, 18.73)
+  🚗 Zasób (resource):  since-prawko
+  💰 Najtańsza:         Kategoria B (DARMOWA!)
+  📏 Dystans egzaminu:  2.50 km (wszystkie kategorie)
+  ⏱️  Czas egzaminu:     2-3 minuty
+  🔧 Ghost mode:        TAK (bezpieczny egzamin)
+  🚫 Max prędkość:      59 km/h
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║              🏆 POLECENIE: ZACZNIJ OD KATEGORII B!                      ║
+║                      Jest DARMOWA i NAJWAŻNIEJSZA!                      ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Wygenerowano: 11 listopada 2026
+Wersja: 1.0
+Autor: Kiro AI
+
+Powodzenia na drodze! 🚗💨

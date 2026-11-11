@@ -1,0 +1,18 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+
+    <file src="data/images/background.png" />
+    <file src="data/images/header.png" />
+    <file src="data/images/logo.png" />
+    <file src="data/images/sorts.png" />
+    <file src="data/images/sort-bg.png" />
+    <file src="data/images/sort-active.png" />
+    <file src="data/images/all.png" />
+    <file src="data/images/administrations.png" />
+    <file src="data/images/factions.png" />
+    <file src="data/images/diamond.png" />
+    <file src="data/images/editbox.png" />
+    <file src="data/images/sort-bar.png" />
+    <file src="data/images/border.png" />
+</meta>

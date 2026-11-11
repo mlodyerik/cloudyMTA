@@ -1,0 +1,3 @@
+<map edf:definitions="editor_main">
+    <object id="object (ringwalls) (1)" breakable="false" interior="0" alpha="255" dimension="182" model="13607" scale="1" doublesided="true" collisions="true" posX="201.5" posY="386.79999" posZ="13.9" rotX="0" rotY="0" rotZ="0"></object>
+</map>

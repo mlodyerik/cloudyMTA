@@ -1,0 +1,14 @@
+<meta>
+    <file src='files/images/bg.png' type='client'/>
+    <file src='files/images/button.png' type='client'/>
+    <file src='files/images/button_selected.png' type='client'/>
+    <file src='files/images/list_bg.png' type='client'/>
+    <file src='files/images/list_bg_selected.png' type='client'/>
+    <file src='files/images/mask.png' type='client'/>
+    <file src='files/images/button_cancel.png' type='client'/>
+    <file src='files/images/button_offer.png' type='client'/>
+
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

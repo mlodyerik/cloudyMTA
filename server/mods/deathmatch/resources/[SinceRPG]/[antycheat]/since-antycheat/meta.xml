@@ -1,0 +1,11 @@
+<meta>
+    <script src='functions.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <export function='getTick' type='client'/>
+    <export function='detect' type='server'/>
+
+    <min_mta_version server='1.5.6-9.18728'/>
+    <download_priority_group>99999</download_priority_group>
+</meta>

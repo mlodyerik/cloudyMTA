@@ -1,0 +1,7 @@
+<map edf:definitions="editor_main">
+    <object id="object (bollardlight) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="1215" scale="1" doublesided="true" collisions="true" frozen="true" posX="923.40039" posY="-1209.4004" posZ="16.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (fenceshit3) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="1" doublesided="false" collisions="true" frozen="false" posX="923.40002" posY="-1229.4" posZ="16.7" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (fenceshit3) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="1" doublesided="false" collisions="true" frozen="false" posX="923.40002" posY="-1229.4" posZ="18" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (fenceshit3) (3)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="1" doublesided="false" collisions="true" frozen="false" posX="923.5" posY="-1214" posZ="16.7" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (fenceshit3) (4)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="1" doublesided="false" collisions="true" frozen="false" posX="923.5" posY="-1214" posZ="18" rotX="0" rotY="0" rotZ="0"></object>
+</map>

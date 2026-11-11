@@ -1,0 +1,17 @@
+<meta>
+    <script src="c.lua" type="client" />
+    <file src="mech.txd"/>
+    <file src="mech.dff"/>
+    <file src="wjazdglowny.dff"/>
+    <file src="poprawka1.dff"/>
+    <file src="poprawka2.dff"/>
+    <file src="droga.dff"/>
+    <file src="droga.col"/>
+    <file src="parking.dff"/>
+    <file src="niewiem.dff"/>
+    <file src="parking.col"/>
+    <file src="wjazdglowny.col"/>
+    <file src="poprawka1.col"/>
+    <file src="poprawka2.col"/>
+    <file src="mech.col"/>
+</meta>

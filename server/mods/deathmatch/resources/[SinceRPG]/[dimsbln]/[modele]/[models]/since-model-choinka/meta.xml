@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/choinka.txd" /> 
+    <file src="files/choinka.dff" /> 
+    <file src="files/choinka.col" /> 
+</meta> 

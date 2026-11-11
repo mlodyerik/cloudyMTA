@@ -1,0 +1,7 @@
+<meta>
+    <script src="client.lua" type="client" cache="false" />
+
+    <export function="dxCreateMemo" type="client" />
+    <export function="dxDestroyMemo" type="client" />
+    <export function="dxGetMemoText" type="client" />
+</meta>

@@ -1,0 +1,9 @@
+<meta>
+    <script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <file src="data/images/bg.png" />
+    <file src="data/images/editbox.png" />
+    <file src="data/images/button_buy.png" />
+    <file src="data/images/button_cancel.png" />
+</meta>

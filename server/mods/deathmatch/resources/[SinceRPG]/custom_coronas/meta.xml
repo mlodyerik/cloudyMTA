@@ -1,0 +1,9 @@
+<meta>
+
+    <script src='main.lua' type='client'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <download_priority_group>999</download_priority_group>
+
+</meta>

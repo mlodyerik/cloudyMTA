@@ -1,0 +1,7 @@
+<meta>
+        <script src="island.lua" type="client" />
+
+        <file src="island.dff" />
+        <file src="island.col" />
+        <file src="island.txd" />
+</meta>

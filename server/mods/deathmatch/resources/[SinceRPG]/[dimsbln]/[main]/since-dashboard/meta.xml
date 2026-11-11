@@ -1,0 +1,81 @@
+<meta>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='shop.lua' type='shared'/>
+    <script src='main.lua' type='client'/>
+    <script src='codes.lua' type='shared'/>
+    <script src='friendInfo.lua' type='client' cache='false'/>
+    <script src='settings.lua' type='client' cache='false'/>
+    <script src='client_events.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+    <script src='tabs.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+	<export function="giveDiamondFromDiscordConnect" http="true" />
+	<export function="isPlayerPassive" type="shared" />
+	<export function="sendFriendRequest" type="server" />
+
+	<file src="data/background.png"/>
+	<file src="data/mask.png"/>
+	<file src="data/button.png"/>
+	<file src="data/logo.png"/>
+	<file src="data/toprectangle.png"/>
+	<file src="data/home.png"/>
+	<file src="data/vehicle.png"/>
+	<file src="data/vehsbg.png"/>
+	<file src="data/settings.png"/>
+	<file src="data/daily.png"/>
+	<file src="data/friends.png"/>
+	<file src="data/jobsstat.png"/>
+	<file src="data/shaderlist_bg.png"/>
+	<file src="data/copy_button.png"/>
+	<file src="data/card.png"/>
+	<file src="data/card_sel.png"/>
+	<file src="data/rectanglemn.png"/>
+	<file src="data/info_button.png"/>
+	<file src="data/add_button.png"/>
+	<file src="data/editbox.png"/>
+	<file src="data/infobg.png"/>
+	<file src="data/noti_color.png"/>
+	<file src="data/bin_icon.png"/>
+	<file src="data/crosshair_icon.png"/>
+	<file src="data/promoicon.png"/>
+	<file src="data/diamond.png"/>
+	<file src="data/rainbow.png"/>
+	<file src="data/jobicon.png"/>
+	<file src="data/gridjob.png"/>
+	<file src="data/star.png"/>
+	<file src="data/money.png"/>
+
+	<file src="data/line.png"/>
+	<file src="data/summerevent.png"/>
+	<file src="data/halloweenevent.png"/>
+	<file src="data/summerevent-bg.png"/>
+	<file src="data/summerevent-bar.png"/>
+	<file src="data/summerevent-bgselected.png"/>
+	<file src="data/summerevent-button.png"/>
+	<file src="data/close.png"/>
+
+	<file src="data/shop_button_sel.png"/>
+	<file src="data/shop_button.png"/>
+	<file src="data/code_button.png"/>
+	<file src="data/shopitem_bg.png"/>
+	<file src="data/shop_line.png"/>
+	<file src="data/shop_icon.png"/>
+	<file src="data/shop_button_buy.png"/>
+	<file src="data/shop_button_cart.png"/>
+
+	<file src="data/user_bg.png"/>
+	<file src="data/bank_bg.png"/>
+	<file src="data/license_bg.png"/>
+	<file src="data/discord_bg.png"/>
+	<file src="data/organization_bg.png"/>
+
+	<file src="data/dailyQuests-bg.png"/>
+	<file src="data/dailyQuests-bg2.png"/>
+	<file src="data/dailyQuests-bg3.png"/>
+	<file src="data/dailyQuests-button.png"/>
+	<file src="data/dailyQuests-filled.png"/>
+	<file src="data/dailyQuests-nofilled.png"/>
+
+	<min_mta_version client="1.5.9" server="1.5.9"/>
+</meta>

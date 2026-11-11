@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/przebieralnia.txd" /> 
+    <file src="files/przebieralnia.dff" /> 
+    <file src="files/przebieralnia.col" /> 
+</meta> 

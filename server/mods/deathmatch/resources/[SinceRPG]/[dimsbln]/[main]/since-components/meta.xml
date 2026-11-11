@@ -1,0 +1,28 @@
+<meta>
+    <file src='files/images/bg.png'/>
+    <file src='files/images/bg2.png'/>
+    <file src='files/images/bg3.png'/>
+    <file src='files/images/bg_mask.png'/>
+    <file src='files/images/button.png'/>
+    <file src='files/images/smoke_icon.png'/>
+    <file src='files/images/paint_icon.png'/>
+    <file src='files/images/close.png'/>
+    <file src='files/images/palette.png'/>
+    <file src='files/images/light.png'/>
+    <file src='files/images/color_info.png'/>
+    <file src='files/images/color_icon.png'/>
+    <file src='files/images/color_rect.png'/>
+    <file src='files/images/editbox.png'/>
+    <file src='files/images/button_1.png'/>
+    <file src='files/images/button_2.png'/>
+    <file src='files/images/color_list.png'/>
+    <file src='files/images/color_fill.png'/>
+    <file src='files/images/speedo_icon.png'/>
+    <file src='files/images/keys.png'/>
+
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c_colorpicker.lua' type='client' cache='false'/>
+    <script src='c_pages.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

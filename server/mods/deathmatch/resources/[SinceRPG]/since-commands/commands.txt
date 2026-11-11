@@ -1,0 +1,502 @@
+since-core
+  dajkase
+  zaplac
+  pmon
+  pmoff
+  pw
+  pm
+  w
+  re
+  v
+  d
+  1
+  2
+  3
+  cwaniak3
+  taniec5
+  naprawiasz
+  taniec18
+  piszesz
+  rapujesz4
+  klekasz2
+  taniec17
+  taniec12
+  pijany3
+  taichi
+  taniec10
+  taniec8
+  delirium3
+  taxi2
+  akrobata
+  starzec2
+  rapujesz
+  pijesz
+  wolasz
+  sikasz
+  rapujesz8
+  cwaniak9
+  podsluchujesz
+  bijesz2
+  umierasz2
+  predator
+  bijesz
+  rapujesz7
+  delirium2
+  taniec6
+  witasz
+  delirium4
+  wywazasz
+  delirium
+  taniec11
+  taxi
+  bijesz3
+  klekasz
+  rapujesz6
+  placzesz
+  siedzisz
+  taniec
+  taniec13
+  msza2
+  cwaniak7
+  lezysz3
+  nerwowy
+  taniec4
+  celujesz
+  starzec
+  taniec3
+  taniec19
+  rapujesz3
+  taniec14
+  rozmawiasz
+  rzygasz
+  rapujesz2
+  kichasz
+  kopiesz2
+  czekasz
+  wskazujesz
+  pijany
+  cud
+  wolasz3
+  wolasz2
+  siedzisz3
+  znakkrzyza
+  zalamany
+  pijany2
+  podkrecasz
+  meteorolog
+  kibicujesz
+  zadowolony
+  rozmawiasz2
+  siedzisz2
+  gay2
+  rozmawiasz3
+  pijak
+  cwaniak10
+  cwaniak8
+  cwaniak6
+  cwaniak5
+  walisz2
+  gay
+  tchorz
+  cwaniak2
+  taniec9
+  cierpisz
+  taniec2
+  taniec7
+  zmeczony
+  kieszen
+  jesz
+  zadowolony2
+  myjesz
+  reanimujesz
+  starzec3
+  cwaniak1
+  klepiesz
+  bioenergoterapeuta
+  kibicujesz2
+  naprawiasz2
+  delirium5
+  lezysz5
+  cpun1
+  lezysz4
+  cud2
+  taniec15
+  lezysz2
+  pozegnanie
+  noga
+  pocalunek
+  walisz
+  msza
+  kopiesz3
+  rapujesz5
+  kopiesz
+  cwaniak4
+  fuckyou
+  krzyczysz
+  lezysz
+  wreczasz
+  rolki2
+  cpun2
+  zatrzymujesz
+  bijesz5
+  bijesz4
+  umierasz
+  palisz
+  rozgladasz
+  rece
+  wywazasz2
+  gay3
+  machasz
+  cpun4
+  cpun3
+  rolki
+  taniec16
+  taniec20
+  ochnie
+since-schowki
+  wiadro
+  r1
+since-jobs
+  mnoznik
+  listjobs
+since-inventory
+  trade
+  trytytka
+  u.trytytka
+since-dailyQuests
+  quest.reset
+  quest.max
+since-kajdanki
+  zlap
+  pusc
+since-stats
+  stats
+  bc
+since-koguty
+  kogut
+since-kolczatka
+  kolczatka
+  ukolczatka
+since-krotkofalowka
+  Krótkofalówka
+  Służby
+since-discordpresence
+  presence
+asince-helper
+  debug
+  daty
+since-ads
+  ogloszenie
+  ogloszenia
+since-licytacja
+  licytacja.start
+  licytacja.end
+  podbij
+since-trades
+  wymiana
+  akceptuj
+since-freecam
+  freecam
+since-ankieta
+  ankieta.stworz
+  ankieta.anuluj
+mta-add-models
+  since-custommodels
+since-event-panele
+  panele.reload
+  panele.start
+  panele.stop
+  panele.chat
+since-mute
+  checkMute
+since-arenas
+  akceptuj
+  anuluj
+  print
+since-taser
+  set_zone
+since-factionMandate
+  mandat
+since-dashboard
+  zaproszenie.akceptuj
+since-nosze
+  nosze-pomoc
+  nosze
+  nosze-ustaw
+  nosze-zdejmij
+since-vouchers
+  vouchery
+since-bankprzelew
+  przelej
+  przelew
+  dajwpln
+  przelejwpln
+since-farmy
+  posadz
+since-weedSystem
+  zniszcz.krzak
+since-factions
+  s2
+  s3
+  baza
+  sprawdz.minuty
+  minuty
+since-utrudnienia
+  utrudnienie
+since-fastwrite
+  odp
+since-whellock
+  blokada
+since-bw
+  unbw
+since-wiezienie
+  check.jail
+  areszt
+  areszt.sid
+  wypusc.sid
+  wypusc
+since-jumpscare
+  jumpscare
+since-przeszukiwanie
+  przeszukaj
+since-mechanicjob
+  mechanicy
+since-megaphone
+  megafon
+since-case
+  walizka
+since-casino
+  ustaw.bet
+  inspectbet
+since-admins
+  duty
+  clp
+  clo
+  zglos
+  report
+  raport
+  tppos
+  tppos
+  reporty
+  reporty.all
+  wyplata.all
+  ls
+  urzadls
+  sapd
+  sf
+  bb
+  lv
+  derbyffs
+  ztp
+  cygan
+  przechols
+  kopalnia
+  magazyn
+  przebieralnia
+  kurier
+  smieciarki
+  melina
+  rybak
+  lawety
+  maszynista
+  grzybiarz
+  sara
+  szambiarz
+  safd
+  panele
+  gieldals
+  ppls
+  kasyno
+  g1
+  importexport
+  pplv
+  kosiarki
+  krypto
+  tsa
+  derby
+  licka
+  teleporty
+  a
+  e
+  boost
+  money
+  losuj
+  vopis
+  variant
+  waves
+  fix
+  fix.all
+  flip
+  kolor
+  tt
+  allow.tp
+  th
+  vtt
+  vth
+  vth.cars
+  sp
+  lp
+  wycisz
+  odcisz
+  warn
+  k
+  zpj
+  opj
+  b
+  pb
+  ub
+  heal
+  spec
+  specoff
+  inv
+  invveh
+  cv
+  dv
+  ginfo
+  ranga
+  aktualizuj.range
+  daj.pp
+  daj.srp
+  daj.wpln
+  clear.bans
+  check.vehicles
+  daj.minuty
+  daj.fminuty
+  daj.prawko
+  daj.kase
+  daj.bank
+  daj.kg
+  tradeban
+  check.1
+  check.2
+  check.3
+  check.4
+  rozdaj.boxy
+  rozdaj.fboxy
+  rozdaj.item
+  daj.boxy
+  rozdaj.kase
+  visualrank
+  daj.diamond
+  rozdaj.diamond
+  przepisz.pojazd
+  zmien.motyw
+  zmien.paintjob
+  zmien.haslo.serial
+  odblokuj
+  ghostmode
+  wyzeruj.konto
+  zmien.sid
+  tune
+  zmien.neon
+  dodatek
+  reload.org
+  daj.item
+  tpev.set
+  tpev.del
+  tpev
+  napraw.kod
+  vanish
+  zatankuj
+  cc
+  thru
+  up
+  klatka
+  usun.klatke
+  schowaj
+  schowaj.all
+  zmien.model
+  do
+  model
+  vehfroze
+  dajpp
+  transferpp
+  przelejpp
+  derby.chat
+  mapaev
+since-keys
+  klucze
+  vdodaj
+  share
+since-houses
+  create.house
+since-changer
+  zmien.nick
+  cofnij.nick
+  zmien.haslo
+admin
+  register
+  unregister
+  admin
+  a
+  kick
+  ban
+  shout
+  freeze
+  unfreeze
+  mute
+  unmute
+  sethealth
+  sethp
+  setarmour
+  setarmor
+  setskin
+  setstat
+  setteam
+  setinterior
+  setdimension
+  jetpack
+  givevehicle
+  giveweapon
+  slap
+  warpto
+  createteam
+  destroyteam
+  repair
+  addupgrade
+  addupgrades
+  setpaintjob
+  setcolor
+  blowvehicle
+  destroyvehicle
+  banip
+  banserial
+  unbanip
+  unbanserial
+  setgame
+  setgametype
+  setmap
+  setmapname
+  settime
+  setwelcome
+  setpassword
+  setweather
+  blendweather
+  setgamespeed
+  setgravity
+  clearchat
+since-zawiadomienia
+  wezwij.sara
+  wezwij.sapd
+  wezwij.safd
+since-itemshop
+  promocje
+  znizki
+  kody
+since-faction-spray
+  spray
+since-codemodel
+  koduj
+  odkoduj
+since-revive
+  podnies
+  revive
+since-commands
+  commands
+since-org
+  organizacja.akceptuj
+  opusc
+  opusc.org
+  opusc.organizacje
+  organizacja
+lizka

@@ -1,0 +1,8 @@
+<meta>
+<file src="tasma.png"/>
+<script src="tasma_c4329921.lua" type="client" cache="false"/>
+<script src="tasma42312.lua" type="server"/>
+<export function="usunTasme" type="server"/>
+<export function="bindTasma" type="server"/>
+</meta>
+

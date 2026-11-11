@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/magazyn.txd" /> 
+    <file src="files/magazyn.dff" /> 
+    <file src="files/magazyn.col" /> 
+</meta> 

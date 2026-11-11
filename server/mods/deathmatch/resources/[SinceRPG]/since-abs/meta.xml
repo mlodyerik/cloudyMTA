@@ -1,0 +1,7 @@
+<meta>
+
+    <script src="c.lua" type="client" cache="false"/>
+    <export function='getABSState' type='client'/>
+    <download_priority_group>99999</download_priority_group>
+
+</meta>

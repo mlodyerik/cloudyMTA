@@ -1,0 +1,26 @@
+<meta>
+    <script src='main.lua' type='server'/>
+    <script src='server.lua' type='server'/>
+    <script src='drops.lua' type='shared' cache='false'/>
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+    <file src='data/bg.png'/>
+    <file src='data/bg_mask.png'/>
+    <file src='data/car.png'/>
+    <file src='data/diamond.png'/>
+    <file src='data/lines.png'/>
+    <file src='data/mask.png'/>
+    <file src='data/money.png'/>
+    <file src='data/points.png'/>
+    <file src='data/reputation.png'/>
+    <file src='data/treasure.png'/>
+    <file src='data/item_bg.png'/>
+    <file src='data/shader.fx'/>
+
+    <export function='createOpening' type='server'/>
+    <export function='getBoxDrops' type='shared'/>
+
+    <min_mta_version client="1.5.9" server="1.5.9" />
+    
+</meta>

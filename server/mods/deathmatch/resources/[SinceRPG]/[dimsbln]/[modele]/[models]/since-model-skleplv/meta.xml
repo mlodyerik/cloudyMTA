@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/skleplv.txd" /> 
+    <file src="files/skleplv.dff" /> 
+    <file src="files/skleplv.col" /> 
+</meta> 

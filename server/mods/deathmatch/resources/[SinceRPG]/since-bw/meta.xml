@@ -1,0 +1,12 @@
+<meta>
+
+        <script src="c.lua" type="client" cache="false"/>
+        <script src="s.lua" type="server"/>
+
+        <file src='fonts/Inter-BlackItalic.ttf'/>
+        <file src='fonts/Inter-MediumItalic.ttf'/>
+
+        <file src='data/progress.png'/>
+        <file src='data/background.png'/>
+
+</meta>

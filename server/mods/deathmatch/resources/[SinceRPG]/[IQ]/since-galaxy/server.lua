@@ -1,0 +1,13 @@
+-- addEvent("syncGalaxyShader", true)
+-- addEventHandler("syncGalaxyShader", resourceRoot, function(vehicle)
+--     if isElement(vehicle) then
+--         triggerClientEvent(root, "applyGalaxyShaderToClient", resourceRoot, vehicle)
+--     end
+-- end)
+
+-- addEvent("removeGalaxyShader", true)
+-- addEventHandler("removeGalaxyShader", resourceRoot, function(vehicle)
+--     if isElement(vehicle) then
+--         triggerClientEvent(root, "removeGalaxyShaderFromClient", resourceRoot, vehicle)
+--     end
+-- end)

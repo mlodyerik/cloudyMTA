@@ -1,0 +1,96 @@
+<meta>
+
+    <script src='node.lua' type='client' cache="false"/>
+    <script src='gps.lua' type='client' cache="false"/>
+    <script src='useful.lua' type='client' cache="false"/>
+    <script src='radar.lua' type='client' cache="false"/>
+
+    <file src='img/mask.png'/>
+    <file src='img/map.png'/>
+    <file src='img/overlay.png'/>
+    <file src='img/bg.png'/>
+    <file src='img/ghostmode.png'/>
+
+    <export function="findBestWay" type="client" />
+	<export function="getGPS" type="client" />
+	<export function="removeGPS" type="client" />
+
+	<export function="switchCustomRadar" type="client" />
+
+    <file src='radar/player.png'/>
+
+    <file src='hud_mask.fx'/>
+    <file src='tex_matrix.fx'/>
+
+    <file src='radar/blips/0.png'/>
+    <file src='radar/blips/1.png'/>
+    <file src='radar/blips/2.png'/>
+    <file src='radar/blips/3.png'/>
+    <file src='radar/blips/4.png'/>
+    <file src='radar/blips/5.png'/>
+    <file src='radar/blips/6.png'/>
+    <file src='radar/blips/7.png'/>
+    <file src='radar/blips/8.png'/>
+    <file src='radar/blips/9.png'/>
+    <file src='radar/blips/10.png'/>
+    <file src='radar/blips/11.png'/>
+    <file src='radar/blips/12.png'/>
+    <file src='radar/blips/13.png'/>
+    <file src='radar/blips/14.png'/>
+    <file src='radar/blips/15.png'/>
+    <file src='radar/blips/16.png'/>
+    <file src='radar/blips/17.png'/>
+    <file src='radar/blips/18.png'/>
+    <file src='radar/blips/19.png'/>
+    <file src='radar/blips/20.png'/>
+    <file src='radar/blips/21.png'/>
+    <file src='radar/blips/22.png'/>
+    <file src='radar/blips/23.png'/>
+    <file src='radar/blips/24.png'/>
+    <file src='radar/blips/25.png'/>
+    <file src='radar/blips/26.png'/>
+    <file src='radar/blips/27.png'/>
+    <file src='radar/blips/28.png'/>
+    <file src='radar/blips/29.png'/>
+    <file src='radar/blips/30.png'/>
+    <file src='radar/blips/31.png'/>
+    <file src='radar/blips/32.png'/>
+    <file src='radar/blips/33.png'/>
+    <file src='radar/blips/34.png'/>
+    <file src='radar/blips/35.png'/>
+    <file src='radar/blips/36.png'/>
+    <file src='radar/blips/37.png'/>
+    <file src='radar/blips/38.png'/>
+    <file src='radar/blips/39.png'/>
+    <file src='radar/blips/40.png'/>
+    <file src='radar/blips/41.png'/>
+    <file src='radar/blips/42.png'/>
+    <file src='radar/blips/43.png'/>
+    <file src='radar/blips/44.png'/>
+    <file src='radar/blips/45.png'/>
+    <file src='radar/blips/46.png'/>
+    <file src='radar/blips/47.png'/>
+    <file src='radar/blips/48.png'/>
+    <file src='radar/blips/49.png'/>
+    <file src='radar/blips/50.png'/>
+    <file src='radar/blips/51.png'/>
+    <file src='radar/blips/52.png'/>
+    <file src='radar/blips/53.png'/>
+    <file src='radar/blips/54.png'/>
+    <file src='radar/blips/55.png'/>
+    <file src='radar/blips/56.png'/>
+    <file src='radar/blips/57.png'/>
+    <file src='radar/blips/58.png'/>
+    <file src='radar/blips/59.png'/>
+    <file src='radar/blips/60.png'/>
+    <file src='radar/blips/61.png'/>
+    <file src='radar/blips/62.png'/>
+    <file src='radar/blips/63.png'/>
+    <file src='radar/blips/64.png'/>
+    <file src='radar/blips/65.png'/>
+
+    <export function='changeCustomLocation' type='client'/>
+
+    <min_mta_version client="1.3.4" server="1.3.4" />
+
+</meta>

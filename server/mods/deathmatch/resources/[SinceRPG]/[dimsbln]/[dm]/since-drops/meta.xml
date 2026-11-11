@@ -1,0 +1,16 @@
+<meta>
+	<min_mta_version client='1.3.0-9.04431'/>
+
+    <file src="files/images/bg.png" type="client"/>
+    <file src="files/images/buttonFrame.png" type="client"/>
+    <file src="files/images/itemFrame.png" type="client"/>
+    <file src="files/images/weaponIcon.png" type="client"/>
+    <file src="files/images/moneyIcon.png" type="client"/>
+    <file src="files/images/drugsIcon.png" type="client"/>
+    <file src="files/images/avatarBg.png" type="client"/>
+    <file src="files/images/avatarMask.png" type="client"/>
+
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+    <object id="object (fenceshit3) (3)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="1" doublesided="true" collisions="true" posX="2915.5" posY="2408.2" posZ="10.5" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (fenceshit3) (4)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="1" doublesided="true" collisions="true" posX="2920.3" posY="2408.2" posZ="10.5" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (fenceshit3) (5)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="1" doublesided="false" collisions="true" posX="2900.3" posY="2408" posZ="10.5" rotX="0" rotY="0" rotZ="89.995"></object>
+</map>

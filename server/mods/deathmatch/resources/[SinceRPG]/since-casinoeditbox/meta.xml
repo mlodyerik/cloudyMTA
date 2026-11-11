@@ -1,0 +1,23 @@
+<meta>
+    <download_priority_group>100</download_priority_group>
+    <script src="client.lua" type="client" cache="false"/>
+
+    <file src="files/icon1.png"/>
+    <file src="files/icon2.png"/>
+    <file src="files/icon3.png"/>
+    <file src='files/icon4.png'/>
+    <file src='files/icon5.png'/>
+    <file src='files/kg.png'/>
+    <file src="files/fish.png"/>
+    <file src='files/music.png'/>
+    <file src="files/money.png"/>
+
+    <file src="files/line_down.png"/>
+    <file src="files/line.png"/>
+
+    <export function="createEditbox" type="client"/>
+    <export function="destroyEditbox" type="client"/>
+    <export function="editboxSetAlpha" type="client"/>
+    <export function="editboxGetText" type="client"/>
+    <export function="editboxSetText" type="client"/>
+</meta>

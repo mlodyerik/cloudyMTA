@@ -1,0 +1,6 @@
+<meta>
+	<script src="server.lua" type='server'/>
+	<script src="main.lua" type='shared'/>
+	<export function='addPlayerVehicle' type='server'/>
+	<oop>true</oop>
+</meta>

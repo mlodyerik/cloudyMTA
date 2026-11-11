@@ -1,0 +1,7 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+    
+    <file src="sounds/turbo.wav"/>
+    <file src="sounds/turbo_shift1.wav"/>
+    <file src="sounds/turbo_shift2.wav"/>
+</meta>

@@ -1,0 +1,11 @@
+<meta>
+
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src='data/keyboard_m.png'/>
+    <file src='data/keyboard_b.png'/>
+    <file src='data/keyboard_h.png'/>
+    <file src='data/keyboard_j.png'/>
+
+</meta>

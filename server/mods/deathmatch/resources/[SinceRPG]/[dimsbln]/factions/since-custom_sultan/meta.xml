@@ -1,0 +1,7 @@
+<meta>
+    <script src="server.lua" type="server"/>
+    <script src="client.lua" type="client" cache="false"/>
+
+    <file src="assets/police_sultan.txde"/>
+    <file src="assets/police_sultan.dffe"/>
+</meta>

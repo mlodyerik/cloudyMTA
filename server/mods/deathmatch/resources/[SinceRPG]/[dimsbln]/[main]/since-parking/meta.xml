@@ -1,0 +1,26 @@
+<meta>
+    <script src="main.lua" type="shared" cache="false" />
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua"  type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <file src="data/avatar.png" />
+    <file src="data/background.png" />
+    <file src="data/mask.png" />
+    <file src="data/button.png" />
+    <file src="data/button_selected.png" />
+    <file src="data/close.png" />
+    <file src="data/editbox.png" />
+    <file src="data/left.png" />
+    <file src="data/right.png" />
+    <file src="data/list_bg.png" />
+    <file src="data/list_bg_selected.png" />
+    <file src="data/search.png" />
+    <file src="data/tank.png" />
+    <file src="data/time.png" />
+    <file src="data/mileage.png" />
+
+    <file src="data/images/borderline.png" />
+    <file src="data/images/returnpoint.png" />
+    <file src="data/images/spawnpoint.png" />
+</meta>

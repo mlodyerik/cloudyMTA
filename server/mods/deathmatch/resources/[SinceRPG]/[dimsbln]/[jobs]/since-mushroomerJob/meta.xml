@@ -1,0 +1,27 @@
+<meta>
+	<min_mta_version client='1.3.0-9.04431' />
+
+	<script src='positions.lua' type='client' cache='false'/>
+	<script src='c_inferface.lua' type='client' cache='false'/>
+	<script src='c.lua' type='client' cache='false'/>
+	<script src="s.lua" type="server"/>
+
+	<file src='files/images/bind.png'/>
+	<file src='files/images/point.png'/>
+	<file src='files/images/window.png'/>
+	<file src='files/images/icon.png'/>
+
+	<file src='files/images/bar.png'/>
+	<file src='files/images/bg_mask.png'/>
+	<file src='files/images/bg.png'/>
+	<file src='files/images/button.png'/>
+
+	<file src='files/models/grzyb1.dff'/>
+	<file src='files/models/grzyb2.dff'/>
+	<file src='files/models/grzyb3.dff'/>
+	<file src='files/models/grzyb.col'/>
+	<file src='files/models/grzyb.txd'/>
+	<file src='files/models/koszyk.dff'/>
+	<file src='files/models/koszyk.col'/>
+	<file src='files/models/koszyk.txd'/>	
+</meta>

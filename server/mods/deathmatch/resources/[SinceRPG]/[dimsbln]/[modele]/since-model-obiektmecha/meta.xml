@@ -1,0 +1,6 @@
+<meta>
+    <script src="c.lua" type="client" />
+    <file src="mech.txd"/>
+    <file src="mech.dff"/>
+    <file src="mech.col"/>
+</meta>

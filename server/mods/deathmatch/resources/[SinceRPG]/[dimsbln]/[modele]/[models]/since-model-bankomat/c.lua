@@ -1,0 +1,6 @@
+local txd = engineLoadTXD("atm.txd")
+engineImportTXD(txd, 2942)
+local dff = engineLoadDFF("atm.dff")
+engineReplaceModel(dff, 2942)
+local col = engineLoadCOL("atm.col")
+engineReplaceCOL(col, 2942)

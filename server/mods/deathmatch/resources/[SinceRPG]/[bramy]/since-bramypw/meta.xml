@@ -1,0 +1,6 @@
+<meta>
+
+    <script src='config.lua' type='shared'/>
+    <script src='server.lua' type='server'/>
+
+</meta>

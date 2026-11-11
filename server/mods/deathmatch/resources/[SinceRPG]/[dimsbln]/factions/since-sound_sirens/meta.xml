@@ -1,0 +1,25 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server"/>
+
+    <!--SAFD-->
+    <file src="assets/SAFD/GBA1.mp3"/>
+    <file src="assets/SAFD/GBA2.mp3"/>
+    <file src="assets/SAFD/GBA3.mp3"/>
+    <file src="assets/SAFD/SLOP1.mp3"/>
+    <file src="assets/SAFD/SLOP2.mp3"/>
+    <file src="assets/SAFD/pog1.mp3"/>
+    <file src="assets/SAFD/pog2.mp3"/>
+
+    <!--SAPD-->
+    <file src="assets/SAPD/Poganiacz.mp3"/>
+    <file src="assets/SAPD/SAPD1.mp3"/>
+    <file src="assets/SAPD/SAPD2.mp3"/>
+    <file src="assets/SAPD/SAPD3.mp3"/>
+
+    <!--SAMD-->
+    <file src="assets/SAMD/Poganiacz.mp3"/>
+    <file src="assets/SAMD/SAMD1.mp3"/>
+    <file src="assets/SAMD/SAMD2.mp3"/>
+    <file src="assets/SAMD/SAMD3.mp3"/>
+</meta>

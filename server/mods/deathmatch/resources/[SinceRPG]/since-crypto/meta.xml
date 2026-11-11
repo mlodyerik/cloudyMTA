@@ -1,0 +1,48 @@
+<meta>
+    <min_mta_version client='1.3.0-9.04431' />
+
+    <file src='files/images/bg.png' type='client'/>
+    <file src='files/images/bg2.png' type='client'/>
+    <file src='files/images/bg3.png' type='client'/>
+    <file src='files/images/bitcoin_icon.png' type='client'/>
+    <file src='files/images/ethereum_icon.png' type='client'/>
+    <file src='files/images/fan.png' type='client'/>
+    <file src='files/images/fan_bg.png' type='client'/>
+    <file src='files/images/graphics1.png' type='client'/>
+    <file src='files/images/health_bar.png' type='client'/>
+    <file src='files/images/health_bar2.png' type='client'/>
+    <file src='files/images/health_icon.png' type='client'/>
+    <file src='files/images/line.png' type='client'/>
+    <file src='files/images/lines.png' type='client'/>
+    <file src='files/images/litecoin_icon.png' type='client'/>
+    <file src='files/images/page_button.png' type='client'/>
+    <file src='files/images/page1_icon.png' type='client'/>
+    <file src='files/images/page2_icon.png' type='client'/>
+    <file src='files/images/page3_icon.png' type='client'/>
+    <file src='files/images/power_bar.png' type='client'/>
+    <file src='files/images/power_bar2.png' type='client'/>
+    <file src='files/images/power1.png' type='client'/>
+    <file src='files/images/thor_icon.png' type='client'/>
+    <file src='files/images/turnOn_button.png' type='client'/>
+    <file src='files/images/turnOff_button.png' type='client'/>
+    <file src='files/images/stateOn.png' type='client'/>
+    <file src='files/images/stateOff.png' type='client'/>
+    <file src='files/images/basket_icon.png' type='client'/>
+    <file src='files/images/bg4.png' type='client'/>
+    <file src='files/images/bg5.png' type='client'/>
+    <file src='files/images/category_bar1.png' type='client'/>
+    <file src='files/images/category_bar2.png' type='client'/>
+    <file src='files/images/category_button1.png' type='client'/>
+    <file src='files/images/category_button2.png' type='client'/>
+    <file src='files/images/boost_icon.png' type='client'/>
+    <file src='files/images/sell_button.png' type='client'/>
+    
+    <file src='files/images/entering/bg.png' type='client'/>
+    <file src='files/images/entering/button.png' type='client'/>
+    <file src='files/images/entering/close.png' type='client'/>
+    
+    <script src='config.lua' type='shared' cache='false'/>
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

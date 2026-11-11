@@ -1,0 +1,6 @@
+<meta>
+    <script src="c.lua" type="client" />
+    <file src="Salon.txd"/>
+    <file src="Salon.dff"/>
+    <file src="Salon.col"/>
+</meta>

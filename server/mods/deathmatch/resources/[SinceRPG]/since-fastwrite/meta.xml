@@ -1,0 +1,11 @@
+<meta>
+
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src='data/background.png'/>
+    <file src='data/text_bg.png'/>
+    <file src='data/keyboard_icon.png'/>
+
+</meta>

@@ -1,0 +1,40 @@
+<meta>
+    <file src='files/shaders/shader.fx' type='client'/>
+
+    <file src='files/fonts/medium.ttf' type='client'/>
+    <file src='files/fonts/bold.ttf' type='client'/>
+
+    <file src='files/images/bg_blue.png' type='client'/>
+    <file src='files/images/bg_green.png' type='client'/>
+    <file src='files/images/bg_red.png' type='client'/>
+    <file src='files/images/bg_mask.png' type='client'/>
+    <file src='files/images/avatar.png' type='client'/>
+    <file src='files/images/button_1.png' type='client'/>
+    <file src='files/images/button_2.png' type='client'/>
+    <file src='files/images/close_icon.png' type='client'/>
+    <file src='files/images/home_icon.png' type='client'/>
+    <file src='files/images/circle_icon.png' type='client'/>
+    <file src='files/images/settings_icon.png' type='client'/>
+    <file src='files/images/enter_icon.png' type='client'/>
+    <file src='files/images/hh_icon.png' type='client'/>
+    <file src='files/images/avatar_frame.png' type='client'/>
+    <file src='files/images/mask.png' type='client'/>
+    <file src='files/images/button_3.png' type='client'/>
+    <file src='files/images/days_bg.png' type='client'/>
+    <file src='files/images/arrow_icon.png' type='client'/>
+    <file src='files/images/locators_bg.png' type='client'/>
+    <file src='files/images/locators_bar.png' type='client'/>
+    <file src='files/images/editbox.png' type='client'/>
+    <file src='files/images/person_icon.png' type='client'/>
+
+    <script src='config.lua' type='shared' cache='false'/>
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c_pages.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='async.lua' type='server'/>
+    <script src='s.lua' type='server'/>
+
+    <aclrequest>
+        <right name='function.fetchRemote' access='true'/>
+    </aclrequest>
+</meta>

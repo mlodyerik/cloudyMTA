@@ -1,0 +1,10 @@
+<meta>
+
+    <script src='server.lua' type='server'/>
+
+    <export function="botWrite" type="server"/>
+    <export function="sendDiscordNotification" type="server"/>
+    <export function="getPlayerDiscordID" type="server"/>
+    <export function="restartDiscordAPI" http="true"/>
+
+</meta>

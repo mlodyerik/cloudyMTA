@@ -1,0 +1,7 @@
+<meta>
+<info author="Wesley (Finn)" description="Discord: wesleyjrfx" version="1.3" type="script" />
+<script src="client.lua" type="client"/>
+<file src="sawmill-start.dff" type="client" />
+<file src="sawmill-start.col" type="client" />
+<file src="sawmill-start.txd" type="client" />
+</meta>

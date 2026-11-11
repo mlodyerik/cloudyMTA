@@ -1,0 +1,52 @@
+<meta>
+    <export function='loadPlayerOrganizationData' type='server'/>
+    <export function="writeOnMembersChat" type="server"/>
+    <export function="getOrganizationData" type="server"/>
+    <export function="getOrganizationLogs" type="server"/>
+    <export function="sendInviteToOrganization" type="server"/>
+
+    <script src='ranks.lua' type='shared' cache='false'/>
+    <script src='modal.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='ui.lua' type='client' cache='false'/>
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <min_mta_version server='1.3.0-9.05499' client='1.3.0-9.05499'/>
+
+    <file src='data/background.png'/>
+    <file src='data/top.png'/>
+    <file src='data/item.png'/>
+    <file src='data/item-active.png'/>
+    <file src='data/item-last.png'/>
+    <file src='data/item-last-active.png'/>
+    <file src='data/dashboard.png'/>
+    <file src='data/settings.png'/>
+    <file src='data/vehicle.png'/>
+    <file src='data/logs.png'/>
+    <file src='data/level-bg.png'/>
+    <file src='data/level-shield.png'/>
+    <file src='data/money-bg.png'/>
+    <file src='data/logs-bg.png'/>
+    <file src='data/small-button.png'/>
+    <file src='data/user-item.png'/>
+    <file src='data/user-big-item.png'/>
+    <file src='data/hr.png'/>
+    <file src='data/avatar.png'/>
+    <file src='data/log.png'/>
+    <file src='data/actions.png'/>
+    <file src='data/garage.png'/>
+
+    <file src='data/modal.png'/>
+    <file src='data/cancel.png'/>
+    <file src='data/confirm.png'/>
+    <file src="data/editbox.png"/>
+
+    <file src="data/rank-up.png"/>
+    <file src="data/user-action.png"/>
+    <file src="data/rank-down.png"/>
+    <file src="data/remove.png"/>
+    <file src="data/trash-big.png"/>
+    <file src="data/add.png"/>
+    <file src="data/map.png"/>
+</meta>

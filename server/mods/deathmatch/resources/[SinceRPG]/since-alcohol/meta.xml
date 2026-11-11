@@ -1,0 +1,7 @@
+<meta>
+
+    <script src='client.lua' cache='false' type='client'/>
+    <script src='server.lua' type='server'/>
+    <export function='drinkAlcohol' type='client'/>
+
+</meta>

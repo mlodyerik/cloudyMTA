@@ -1,0 +1,34 @@
+<meta>
+    <file src='models/skeleton.txd'/>
+    <file src='models/skeleton.dff'/>
+    <file src='models/zombie.txd'/>
+    <file src='models/zombie.dff'/>
+    <file src='models/bottle.txd'/>
+    <file src='models/bottle.dff'/>
+    <script src='models/replace.lua' type='client' cache='false'/>
+
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='camera.lua' type='client' cache='false'/>
+    <script src='ui.lua' type='client' cache='false'/>
+    <script src='peds/seek.lua' type='client' cache='false'/>
+
+    <script src='dialogs/dialogs.lua' type='client' cache='false'/>
+    <script src='dialogs/main.lua' type='client' cache='false'/>
+    <script src='dialogs/ui.lua' type='client' cache='false'/>
+
+    <script src='missions/missions.lua' type='client' cache='false'/>
+    <script src='missions/main.lua' type='client' cache='false'/>
+
+    <script src='server.lua' type='server'/>
+
+    <export function='loadEventState' type='server'/>
+
+    <file src='data/background.png'/>
+    <file src='data/sounds/1.mp3'/>
+    <file src='data/sounds/2.mp3'/>
+    <file src='data/sounds/3.mp3'/>
+    <file src='data/sounds/4.mp3'/>
+    <file src='data/sounds/5.mp3'/>
+    <file src='data/sounds/6.mp3'/>
+    <file src='data/sounds/7.mp3'/>
+</meta>

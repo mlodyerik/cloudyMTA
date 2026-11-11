@@ -1,0 +1,6 @@
+<meta>
+    <script src="replace.lua" type="client" cache="false" />
+    <file src="model.txd" />
+    <file src="model.colc"></file>
+    <file src="model.dffc"></file>
+</meta>

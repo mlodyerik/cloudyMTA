@@ -1,0 +1,16 @@
+<meta>
+    <file src='files/images/acceptButton.png'/>
+    <file src='files/images/addButton.png'/>
+    <file src='files/images/addEditbox.png'/>
+    <file src='files/images/background.png'/>
+    <file src='files/images/background2.png'/>
+    <file src='files/images/background3.png'/>
+    <file src='files/images/close.png'/>
+    <file src='files/images/searchEditbox.png'/>
+    <file src='files/images/bar.png'/>
+    <file src='files/images/bar2.png'/>
+
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+</meta>

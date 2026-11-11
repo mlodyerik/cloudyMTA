@@ -1,0 +1,8 @@
+<meta>
+    <min_mta_version client="1.3.0-9.04431" />
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server"/>
+
+    <file src="assets/bg.png"/>
+    <file src="assets/bg2.png"/>
+</meta>

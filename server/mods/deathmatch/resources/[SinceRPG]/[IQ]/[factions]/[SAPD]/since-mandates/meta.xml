@@ -1,0 +1,11 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <file src="data/images/background.png" />
+    <file src="data/images/line.png" />
+    <file src="data/images/close.png" />
+    <file src="data/images/editbox.png" />
+    <file src="data/images/button.png" />
+</meta>

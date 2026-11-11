@@ -1,0 +1,21 @@
+<meta>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+	<file src="data/bg.png"/>
+	<file src="data/mask.png"/>
+	<file src="data/close.png"/>
+	<file src="data/editbox.png"/>
+	<file src="data/button.png"/>
+	<file src="data/trash.png"/>
+	<file src="data/login.png"/>
+	<file src="data/atm.png"/>
+	<file src="data/money.png"/>
+	<file src="data/history_bg.png"/>
+	<file src="data/history_color.png"/>
+	<file src="data/history_item.png"/>
+	<file src="data/transaction_icon.png"/>
+	<file src="data/group.png"/>
+	<file src="data/private.png"/>
+</meta>

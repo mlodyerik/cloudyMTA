@@ -1,0 +1,15 @@
+<meta>
+
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src='data/scary.mp3'/>
+    <file src='data/scary.png'/>
+
+    <file src='data/bluescreen.mp3'/>
+    <file src='data/bluescreen.png'/>
+
+    <file src='data/banned.mp3'/>
+    <file src='data/banned.png'/>
+
+</meta>

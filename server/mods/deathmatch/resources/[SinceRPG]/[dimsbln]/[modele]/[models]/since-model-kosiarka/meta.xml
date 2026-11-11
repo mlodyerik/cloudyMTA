@@ -1,0 +1,6 @@
+<meta>
+    <file src="mower.txd"/>
+    <file src="mower.dff"/>
+    <file src="kosz.dff"/>
+    <script src="c.lua" type="client" cache="false"/>
+</meta>

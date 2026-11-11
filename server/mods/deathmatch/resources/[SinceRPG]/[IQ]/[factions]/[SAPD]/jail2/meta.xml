@@ -1,0 +1,8 @@
+<meta>
+    <script src="c.lua" type="client" />
+    <file src="int.txd"/>
+    <file src="wiezienie.dff"/>
+    <file src="wiezienie.col"/>
+    <file src="int.dff"/>
+    <file src="int.col"/>
+</meta>

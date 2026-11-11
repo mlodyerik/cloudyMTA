@@ -1,0 +1,77 @@
+<meta>
+    <script src='client.lua' type='client' cache='false'/>
+
+    <file src='zr350.txd' />
+    <file src='zr350.dff' />
+
+    <file src='moonbeam.txd' />
+    <file src='moonbeam.dff' />
+
+    <file src='perennial.txd' />
+    <file src='perennial.dff' />
+
+    <file src='patriot.txd' />
+    <file src='patriot.dff' />
+
+    <file src='admiral.txd' />
+    <file src='admiral.dff' />
+
+    <file src='windsor.txd' />
+    <file src='windsor.dff' />
+
+    <file src='vincent.txd' />
+    <file src='vincent.dff' />
+
+    <file src='supergt.txd' />
+    <file src='supergt.dff' />
+
+    <file src='sunrise.txd' />
+    <file src='sunrise.dff' />
+
+    <file src='sunrise.txd' />
+    <file src='sunrise.dff' />
+
+    <file src='stallion.txd' />
+    <file src='stallion.dff' />
+
+    <file src='mesa.txd' />
+    <file src='mesa.dff' />
+
+    <file src='walton.txd' />
+    <file src='walton.dff' />
+
+    <file src='stanier.txd' />
+    <file src='stanier.dff' />
+
+    <file src='journey.txd' />
+    <file src='journey.dff' />
+
+    <file src='bandito.txd' />
+    <file src='bandito.dff' />
+
+    <file src='banshee.txd' />
+    <file src='banshee.dff' />
+
+    <file src='yosemite.txd' />
+    <file src='yosemite.dff' />
+
+    <file src='bravura.txd' />
+    <file src='bravura.dff' />
+
+    <file src='premier.txd' />
+    <file src='premier.dff' />
+
+    <file src='infernus.txd' />
+    <file src='infernus.dff' />
+
+    <file src='bullet.txd' />
+    <file src='bullet.dff' />
+
+    <file src='sadler.txd' />
+    <file src='sadler.dff' />
+
+    <file src='feltzer.txd' />
+    <file src='feltzer.dff' />
+
+
+</meta>

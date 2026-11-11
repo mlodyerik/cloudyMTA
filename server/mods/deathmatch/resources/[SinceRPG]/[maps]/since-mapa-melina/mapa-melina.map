@@ -1,0 +1,8 @@
+<map edf:definitions="editor_main">
+    <object id="object (pkr_chp_vlo05) (1)" breakable="false" interior="0" alpha="255" dimension="-1" model="1875" scale="1" doublesided="false" collisions="true" posX="5573.5" posY="-1982.5" posZ="175.39999" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (MED_OFFICE3_DESK_1) (1)" breakable="true" interior="0" alpha="255" dimension="-1" model="2169" scale="1" doublesided="false" collisions="true" posX="5567.5" posY="-1973.9" posZ="175.39999" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (pkr_chp_vlo06) (1)" breakable="false" interior="0" alpha="255" dimension="-1" model="1876" scale="1" doublesided="false" collisions="false" posX="5568.1001" posY="-1973.6" posZ="176.2" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (CJ_B_SINK2) (1)" breakable="true" interior="0" alpha="255" dimension="-1" model="2518" scale="1" doublesided="false" collisions="true" posX="5579.2002" posY="-1981.3" posZ="175.60001" rotX="0" rotY="0" rotZ="180"></object>
+    <object id="object (CJ_TOILET1) (1)" breakable="true" interior="0" alpha="255" dimension="-1" model="2514" scale="1" doublesided="false" collisions="true" posX="5576.3999" posY="-1981.3" posZ="175.39999" rotX="0" rotY="0" rotZ="180"></object>
+    <object id="object (CJ_BATH2) (1)" breakable="true" interior="0" alpha="255" dimension="-1" model="2519" scale="1" doublesided="false" collisions="true" posX="5581.1001" posY="-1981.3" posZ="175.39999" rotX="0" rotY="0" rotZ="90"></object>
+</map>

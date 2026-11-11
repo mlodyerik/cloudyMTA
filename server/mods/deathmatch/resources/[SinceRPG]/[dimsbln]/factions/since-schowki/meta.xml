@@ -1,0 +1,18 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server"/>
+
+    <export function="toggle" type="server"/>
+
+    <file src="files/button.png"/>
+
+    <file src="files/bucket.png"/>
+    <file src="files/r1.png"/>
+    <file src="files/rozpieracz.png"/>
+    <file src="files/hose.png"/>
+    <file src="files/pradownica.png"/>
+    <file src="files/aodo.png"/>
+    <file src="files/chainsaw.png"/>
+
+    <file src="files/Poppins-Regular.ttf"/>
+</meta>

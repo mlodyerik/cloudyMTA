@@ -1,0 +1,12 @@
+<meta>
+	<script src="c.lua" type="client" cache="false" />
+	<script src="s.lua" />
+	<file src="Cabin-Regular.ttf" />
+	
+	<file src="img/cj_wheel_69256.png" />
+	<file src="img/cj_wheel_B1256.png" />
+	<file src="img/cj_wheel_B2256.png" />
+	<file src="img/cj_wheel_Bell256.png" />
+	<file src="img/cj_wheel_Cherry256.png" />
+	<file src="img/cj_wheel_Grape256.png" />
+</meta>

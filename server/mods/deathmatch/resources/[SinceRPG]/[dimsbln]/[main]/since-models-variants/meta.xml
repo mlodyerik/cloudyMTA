@@ -1,0 +1,59 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+
+    <file src="models/sultan.dffe"/>
+    <file src="models/sultan.txde"/>
+
+    <file src="models/sadler.txde"/>
+    <file src="models/sadler.dffe"/>
+
+    <file src="models/buffalo.dffe"/>
+
+    <file src="models/turismo.dffe"/>
+
+    <file src="models/cheetah.dffe"/>
+
+    <file src="models/rancher.txde"/>
+    <file src="models/rancher.dffe"/>
+
+    <file src="models/firetruck.txde"/>
+    <file src="models/firetruck.dffe"/>
+
+    <file src="models/comet.txde"/>
+    <file src="models/comet.dffe"/>
+
+    <file src="models/sentinel.txde"/>
+    <file src="models/sentinel.dffe"/>
+
+    <file src="models/fbiranch.txde"/>
+    <file src="models/fbiranch.dffe"/>
+
+    <file src="models/primo.txde"/>
+    <file src="models/primo.dffe"/>
+
+    <file src="models/sabre.txde"/>
+    <file src="models/sabre.dffe"/>
+
+    <file src="models/police_dodge.txde"/>
+    <file src="models/police_dodge.dffe"/>
+
+    <file src="models/manana.dffe"/>
+
+    <file src="models/huntley.txde"/>
+    <file src="models/huntley.dffe"/>
+
+    <file src="models/sandking.txde"/>
+    <file src="models/sandking.dffe"/>
+
+    <file src="models/fortune.txde"/>
+    <file src="models/fortune.dffe"/>
+
+    <file src="models/elegant.txde"/>
+    <file src="models/elegant.dffe"/>
+
+    <file src="models/uranus.txde"/>
+    <file src="models/uranus.dffe"/>
+
+    <file src="models/greenwood.txde"/>
+    <file src="models/greenwood.dffe"/>
+</meta>

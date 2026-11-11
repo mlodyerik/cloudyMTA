@@ -1,0 +1,14 @@
+<meta>
+
+	<script src="client.lua" type="client" cache='false'/>
+	<script src="server.lua" type="server"/>
+
+	<file src='img/1.png'/>
+	<file src='img/2.png'/>
+	<file src='img/3.png'/>
+	<file src='img/4.png'/>
+	<file src='img/premium.png'/>
+	<file src='img/voice.png'/>
+	<file src='img/mask.png'/>
+	
+</meta>

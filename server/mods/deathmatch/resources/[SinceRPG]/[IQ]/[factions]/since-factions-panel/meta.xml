@@ -1,0 +1,28 @@
+<meta>
+    <script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <script src="client/pages/information.lua" type="client" cache="false" />
+    <script src="client/pages/members.lua" type="client" cache="false" />
+
+    <script src="client/utils.lua" type="client" cache="false" />
+    <script src="client/pages.lua" type="client" cache="false" />
+
+    <script src="server/utils.lua" type="server" />
+    <script src="server/members.lua" type="server" />
+    <script src="server/demote.lua" type="server" />
+    <script src="server/promote.lua" type="server" />
+    <script src="server/adding.lua" type="server" />
+
+    <file src="data/images/logo.png" />
+    <file src="data/images/toprectangle.png" />
+    <file src="data/images/background.png" />
+    <file src="data/images/home.png" />
+    <file src="data/images/cmd.png" />
+    <file src="data/images/element-bg.png" />
+    <file src="data/images/button.png" />
+    <file src="data/images/editbox.png" />
+
+    <export function="show" type="server" />
+    <export function="hide" type="server" />
+</meta>

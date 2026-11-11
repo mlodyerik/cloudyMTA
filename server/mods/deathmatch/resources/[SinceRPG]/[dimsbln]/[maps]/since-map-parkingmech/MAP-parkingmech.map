@@ -1,0 +1,13 @@
+<map edf:definitions="editor_main">
+    <removeWorldObject id="removeWorldObject (BillBd3) (1)" radius="18.336557" interior="-1" model="1260" lodModel="1266" posX="932.58594" posY="-1363.5156" posZ="21.79688" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (BillBd2) (1)" radius="16.84787" interior="-1" model="1267" lodModel="1261" posX="958.33594" posY="-1377.3203" posZ="24.13281" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (lawncluckbel) (1)" radius="25.393167" interior="-1" model="5814" lodModel="6002" posX="931.22656" posY="-1357.3281" posZ="25.82031" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (Gen_doorSHOP3) (1)" radius="3.4566965" interior="-1" model="1522" lodModel="0" posX="929.32813" posY="-1352.1719" posZ="12.32813" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (posters02_LAwN) (1)" radius="121.27025" interior="-1" model="5818" lodModel="6003" posX="954.6875" posY="-1305.7734" posZ="30.14063" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (lawnwires01) (1)" radius="130.96371" interior="-1" model="5764" lodModel="0" posX="1065.1406" posY="-1270.5781" posZ="25.71094" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (Gen_doorSHOP3) (2)" radius="3.4566965" interior="-1" model="1522" lodModel="0" posX="1038.9453" posY="-1341.1484" posZ="12.71875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_BOX_PILE_2) (1)" radius="3.8295994" interior="-1" model="1438" lodModel="0" posX="998.03906" posY="-1383.9687" posZ="12.24219" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <object id="object (sjmpalmbigpv) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="716" scale="1" doublesided="false" collisions="true" frozen="true" posX="946.16998" posY="-1335.1379" posZ="12.352" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sjmpalmbigpv) (2)" breakable="true" interior="0" alpha="255" dimension="0" model="716" scale="1" doublesided="false" collisions="true" frozen="true" posX="970.61298" posY="-1335.004" posZ="12.353" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (sjmpalmbigpv) (3)" breakable="true" interior="0" alpha="255" dimension="0" model="716" scale="1" doublesided="false" collisions="true" frozen="true" posX="971.12402" posY="-1387.694" posZ="12.353" rotX="0" rotY="0" rotZ="-90.098"></object>
+</map>

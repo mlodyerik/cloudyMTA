@@ -1,0 +1,105 @@
+<meta>
+	<script src='client.lua' type='client' cache='false'/>
+    <file src="vehicles/firetruck.txd" />
+    <file src="vehicles/firetruck.dff" />
+    <file src="vehicles/ambulance.txd" />
+    <file src="vehicles/ambulance.dff" />
+    <file src="vehicles/dft30.dff" />
+    <file src="vehicles/dft30.txd" />
+    <file src="vehicles/police_sf.txd" />
+    <file src="vehicles/police_sf.dff" />
+    <file src="vehicles/police_lv.txd" />
+    <file src="vehicles/police_lv.dff" />
+
+    <file src="skins/16.txd" />
+    <file src="skins/16.dff" />
+    <file src="skins/27.txd" />
+    <file src="skins/27.dff" />
+    <file src="skins/65.txd" />
+    <file src="skins/65.dff" />
+    <file src="skins/71.dff" />
+    <file src="skins/71.txd" />
+    <file src="skins/153.dff" />
+    <file src="skins/153.txd" />
+    <file src="skins/164.dff" />
+    <file src="skins/164.txd" />
+    <file src="skins/171.dff" />
+    <file src="skins/171.txd" />
+    <file src="skins/172.dff" />
+    <file src="skins/172.txd" />
+    <file src="skins/253.dff" />
+    <file src="skins/253.txd" />
+    <file src="skins/255.dff" />
+    <file src="skins/255.txd" />
+    <file src="skins/260.dff" />
+    <file src="skins/260.txd" />
+    <file src="skins/274.dff" />
+    <file src="skins/274.txd" />
+    <file src="skins/276.dff" />
+    <file src="skins/276.txd" />
+    <file src="skins/277.dff" />
+    <file src="skins/277.txd" />
+    <file src="skins/278.dff" />
+    <file src="skins/278.txd" />
+    <file src="skins/279.dff" />
+    <file src="skins/279.txd" />
+    <file src="skins/280.dff" />
+    <file src="skins/280.txd" />
+    <file src="skins/281.dff" />
+    <file src="skins/281.txd" />
+    <file src="skins/282.dff" />
+    <file src="skins/282.txd" />
+    <file src="skins/283.dff" />
+    <file src="skins/283.txd" />
+    <file src="skins/284.dff" />
+    <file src="skins/284.txd" />
+    <file src="skins/285.dff" />
+    <file src="skins/285.txd" />
+    <file src="skins/286.dff" />
+    <file src="skins/286.txd" />
+
+    <file src='objects/Sara.txd'/>
+    <file src='objects/SaraBuilding.col'/>
+    <file src='objects/SaraBuilding.dff'/>
+
+    <file src='objects/police_station_ls.txd'/>
+    <file src='objects/police_station_ls.col'/>
+    <file src='objects/police_station_ls.dff'/>
+
+    <file src='objects/police_station_ls_alpha.txd'/>
+    <file src='objects/police_station_ls_alpha.col'/>
+    <file src='objects/police_station_ls_alpha.dff'/>
+
+    <file src='objects/police_station_ls_lod.txd'/>
+    <file src='objects/police_station_ls_lod.dff'/>
+
+    <file src='objects/police_station_ls2lod.dff'/>
+    <file src='objects/police_station_ls2.dff'/>
+    <file src='objects/police_station_ls2.col'/>
+
+    <file src='objects/police_station_ls_celldoor.txd'/>
+    <file src='objects/police_station_ls_celldoor.col'/>
+    <file src='objects/police_station_ls_celldoor.dff'/>
+
+    <file src='objects/police_station_ls_road.txd'/>
+    <file src='objects/police_station_ls_road.col'/>
+    <file src='objects/police_station_ls_road.dff'/>
+
+    <file src='objects/police_station_ls_plines.dff'/>
+
+    <file src='objects/police_station_ls_door.txd'/>
+    <file src='objects/police_station_ls_door.col'/>
+    <file src='objects/police_station_ls_door.dff'/>
+
+    <file src='objects/police_station_ls_channels.col'/>
+    <file src='objects/police_station_ls_channels.dff'/>
+
+    <file src='objects/police_station_ls_channels2.col'/>
+    <file src='objects/police_station_ls_channels2.dff'/>
+
+    <file src='objects/SaraBuildingLOD.dff'/>
+    <file src='objects/SaraGround.col'/>
+    <file src='objects/SaraGround.dff'/>
+    <file src='objects/SaraGroundLOD.dff'/>
+
+</meta>

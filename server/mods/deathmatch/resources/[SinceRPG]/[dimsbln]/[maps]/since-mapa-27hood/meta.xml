@@ -1,0 +1,31 @@
+<meta>
+
+    <script src="client.lua" type="client" cache="false" />
+    
+    
+    <file src="models/lodsl-east14.dff" />
+    <file src="models/lodsl-east14.txd" />
+    <file src="models/lodsl-east16.dff" />
+    <file src="models/lodsl-east16.txd" />
+    <file src="models/sl-east13.col" />
+    <file src="models/sl-east13.dff" />
+	<file src="models/sl-east13.txd" />
+    <file src="models/sl-east14.col" />
+    <file src="models/sl-east14.dff" />
+    <file src="models/sl-east14.txd" />
+    <file src="models/sl-east15.col" />
+    <file src="models/sl-east15.dff" />
+	<file src="models/sl-east15.txd" />
+    <file src="models/sl-east16.col" />
+    <file src="models/sl-east16.dff" />
+    <file src="models/sl-east16.txd" />
+    <file src="models/sl-east17.col" />
+    <file src="models/sl-east17.dff" />
+	<file src="models/sl-east17.txd" />
+    <file src="models/sl-east21.col" />
+    <file src="models/sl-east21.dff" />
+    <file src="models/sl-east21.txd" />
+
+
+
+</meta>

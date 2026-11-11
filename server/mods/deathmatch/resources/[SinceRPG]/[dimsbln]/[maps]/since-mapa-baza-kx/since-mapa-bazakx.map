@@ -1,0 +1,6 @@
+<map edf:definitions="editor_main">
+    <object id="object (bollardlight) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="1215" scale="1" doublesided="true" collisions="true" frozen="true" posX="2312.1001" posY="1926.6" posZ="4.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollardlight) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="1215" scale="1" doublesided="true" collisions="true" frozen="true" posX="2313.3999" posY="1926.6" posZ="4.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollardlight) (3)" breakable="false" interior="0" alpha="255" dimension="0" model="1215" scale="1" doublesided="true" collisions="true" frozen="true" posX="2325.2" posY="1926.6" posZ="4.9" rotX="0" rotY="0" rotZ="-0.5"></object>
+    <object id="AMT 1215 (11)" breakable="false" interior="0" alpha="255" dimension="0" model="1215" scale="1" doublesided="true" collisions="true" frozen="true" posX="2323.7983" posY="1926.6" posZ="4.9" rotX="0" rotY="0" rotZ="0"></object>
+</map>

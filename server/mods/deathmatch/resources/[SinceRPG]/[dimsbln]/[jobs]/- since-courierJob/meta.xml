@@ -1,0 +1,11 @@
+<meta>
+    <file src="files/images/bg.png"/>
+    <file src="files/images/bg_mask.png"/>
+    <file src="files/images/bg2.png"/>
+    <file src="files/images/close.png"/>
+    <file src="files/images/box.png"/>
+
+    <script src="imiona.lua" type="client" cache="false"/>
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server"/>
+</meta>

@@ -1,0 +1,28 @@
+<meta>
+
+    <script src='client.lua' type='client' cache='false'/>
+
+    <file src='files/choinka.txd'/>
+    <file src='files/choinka.dff'/>
+    <file src='files/choinka.col'/>
+
+    <file src='files/balwan.txd'/>
+    <file src='files/balwan.dff'/>
+    <file src='files/balwan.col'/>
+
+    <file src='files/sanie.txd'/>
+    <file src='files/sanie.dff'/>
+
+    <file src='files/balwanskin.txd'/>
+    <file src='files/balwanskin.dff'/>
+
+    <file src='files/mikolaj.txd'/>
+    <file src='files/mikolaj.dff'/>
+
+    <file src='files/mikolaj2.txd'/>
+    <file src='files/mikolaj2.dff'/>
+
+    <file src='files/mikolajka.txd'/>
+    <file src='files/mikolajka.dff'/>
+
+</meta>

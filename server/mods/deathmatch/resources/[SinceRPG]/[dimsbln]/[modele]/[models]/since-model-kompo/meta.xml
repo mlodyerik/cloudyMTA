@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/kompo.txd" /> 
+    <file src="files/kompo.dff" /> 
+    <file src="files/kompo.col" /> 
+</meta> 

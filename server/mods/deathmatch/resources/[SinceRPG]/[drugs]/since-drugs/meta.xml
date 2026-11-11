@@ -1,0 +1,10 @@
+<meta>
+    <script src="shared.lua" type="shared" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <script src="client/buy.lua" type="client" cache="false" />
+    <script src="client/utils.lua" type="client" cache="false" />
+
+    <file src="data/images/buy/bg.png" />
+</meta>

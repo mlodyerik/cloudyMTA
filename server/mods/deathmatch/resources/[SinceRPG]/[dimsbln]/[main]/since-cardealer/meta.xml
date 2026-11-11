@@ -1,0 +1,14 @@
+<meta>
+    
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='vehicles.lua' type='server'/>
+    <script src='main.lua' type='server'/>
+    <script src='server.lua' type='server'/>
+
+	<file src="data/mask.png"/>
+	<file src="data/background.png"/>
+	<file src="data/button_buy.png"/>
+	<file src="data/button_test.png"/>
+	<file src="data/button_close.png"/>
+</meta>

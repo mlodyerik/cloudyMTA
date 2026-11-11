@@ -1,0 +1,11 @@
+<meta>
+
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src="data/notes.png"/>
+    <file src="data/yourcar.png"/>
+    <file src="data/ink-font.ttf"/>
+    
+</meta>

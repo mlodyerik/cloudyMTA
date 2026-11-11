@@ -1,0 +1,25 @@
+<meta>
+    <oop>true</oop>
+
+    <file src="files/clear.png"/>
+	
+	<!--<script type="shared" src="particles/yaci.lua" cache='false'/>-->
+
+	<!--<script type="client" src="particles/exports.lua" cache='false'/>-->
+	<!--<script type="client" src="particles/ParticlesManager.lua" cache='false'/>-->
+	<!--<script type="client" src="particles/Particle.lua" cache='false'/>-->
+	<!--<script type="client" src="particles/ParticlesEmitter.lua" cache='false'/>-->
+
+	<!--<export type="client" function="createEmitter"/>-->
+	<!--<export type="client" function="destroyEmitter"/>-->
+	<!--<export type="client" function="setEmitterPosition"/>-->
+	<!--<export type="client" function="setEmitterOption"/>-->
+
+	<!--<file src="particles/assets/smoke1.png"/>-->
+	<!--<file src="particles/assets/smoke2.png"/>-->
+	<!--<file src="particles/assets/smoke3.png"/>-->
+
+	<export function="toggleSmoke" type="client"/>
+
+    <script src='client.lua' type='client' cache='false'/>
+</meta>

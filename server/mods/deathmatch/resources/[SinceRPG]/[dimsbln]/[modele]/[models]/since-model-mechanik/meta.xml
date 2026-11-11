@@ -1,0 +1,8 @@
+<meta>
+	<script src='replace.lua' type='client' cache='false'/>
+
+	<file src="model_mechanik.dff" />
+	<file src="model_mechanik.col" />
+	<file src="model_mechanik.txd" />
+
+</meta>

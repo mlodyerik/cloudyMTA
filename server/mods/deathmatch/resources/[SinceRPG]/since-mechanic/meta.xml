@@ -1,0 +1,16 @@
+<meta>
+
+    <script src='positions.lua' type='shared'/>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+
+    <file src='data/bg.png'/>
+    <file src='data/mask.png'/>
+    <file src='data/button_fix.png'/>
+    <file src='data/button_selectall.png'/>
+    <file src='data/close.png'/>
+    <file src='data/selected.png'/>
+
+</meta>

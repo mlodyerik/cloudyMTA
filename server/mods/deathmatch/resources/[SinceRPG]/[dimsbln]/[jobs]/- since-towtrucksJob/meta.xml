@@ -1,0 +1,11 @@
+<meta>
+    <file src='files/images/bg.png' type='client'/>
+    <file src='files/images/bg_mask.png' type='client'/>
+    <file src='files/images/bar.png' type='client'/>
+    <file src='files/images/button.png' type='client'/>
+    <file src='files/images/close.png' type='client'/>
+
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

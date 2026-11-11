@@ -1,0 +1,26 @@
+<meta>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+	<file src="data/music.mp3"/>
+
+	<file src="data/background.png"/>
+	<file src="data/logo.png"/>
+	<file src="data/green_shadow.png"/>
+	<file src="data/login_button.png"/>
+	<file src="data/checkbox.png"/>
+	<file src="data/checkbox_active.png"/>
+	<file src="data/register_button.png"/>
+	<file src="data/username.png"/>
+	<file src="data/editbox_bg.png"/>
+	<file src="data/editbox_icon.png"/>
+	<file src="data/password.png"/>
+	<file src="data/button_copy.png"/>
+	<file src="data/arrowr.png"/>
+	<file src="data/arrowl.png"/>
+	<file src="data/shadow.png"/>
+	<file src="data/mask.png"/>
+	<file src="data/border.png"/>
+	<file src="data/glow.png"/>
+</meta>

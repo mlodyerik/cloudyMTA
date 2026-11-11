@@ -1,0 +1,4 @@
+<meta>
+  <script src='c_core.lua' type='client' cashe='false'/>
+  <script src='s_core.lua' type='server' cashe='false'/>
+</meta>

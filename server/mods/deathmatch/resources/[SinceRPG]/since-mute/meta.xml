@@ -1,0 +1,8 @@
+<meta>
+
+    <script src='s.lua' type='server'/>
+
+    <export function='toggleMute' type='server'/>
+    <export function='checkIsPlayerMuted' type='server'/>
+
+</meta>

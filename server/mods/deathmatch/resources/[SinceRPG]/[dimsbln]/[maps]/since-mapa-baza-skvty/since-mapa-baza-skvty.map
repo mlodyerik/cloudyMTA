@@ -1,0 +1,6 @@
+<map edf:definitions="editor_main">
+    <object id="object (lhouse_barrier3) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="997" scale="1" doublesided="false" collisions="true" posX="2520.8999" posY="1816.8" posZ="9.8" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (lhouse_barrier3) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="997" scale="1" doublesided="false" collisions="true" posX="2520.9004" posY="1832.5" posZ="9.8" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (lhouse_barrier3) (3)" breakable="false" interior="0" alpha="255" dimension="0" model="997" scale="1" doublesided="false" collisions="true" posX="2520.8999" posY="1812.2" posZ="9.8" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (lhouse_barrier3) (4)" breakable="false" interior="0" alpha="255" dimension="0" model="997" scale="1" doublesided="false" collisions="true" posX="2520.8999" posY="1837.4" posZ="9.8" rotX="0" rotY="0" rotZ="-90"></object>
+</map>

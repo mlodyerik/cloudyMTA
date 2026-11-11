@@ -1,0 +1,7 @@
+<meta>
+    <oop>true</oop>
+    <!-- SERVERSIDE -->
+    
+    <script src="server.lua" type="server" />
+    <info author="Its Your World, mta-itsyourworld.pl, Butlipan/Rusek (Skype: kubamc3), CrosRoad95 (Skype: CrosRoad5), Kurianusz (GG: 48415884) | mtasa://80.72.47.181:20288" description="Skrypt wykonany dla Its Your World, mta-itsyourworld.pl przez wyżej wymienionych autorów. Zakazuje się używania skryptu na serwerach innych niż Its Your World | mtasa://80.72.47.181:20288"></info>
+</meta>

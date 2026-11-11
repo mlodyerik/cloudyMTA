@@ -1,0 +1,9 @@
+<meta>
+    <file src="files/images/bg.png" type="client"/>
+    <file src="files/images/button.png" type="client"/>
+    <file src="files/images/line.png" type="client"/>
+
+    <script src="config.lua" type="shared"/>
+    <script src="c.lua" type="client" cache="false"/>
+    <script src="s.lua" type="server"/>  
+</meta>

@@ -1,0 +1,12 @@
+<meta>
+    <script src="shared.lua" type="shared" cache="false" />
+    <script src="server.lua" type="server" />
+    
+    <script src="server/duty.lua" type="server" />
+    <script src="server/main.lua" type="server" />
+    <script src="server/time.lua" type="server" />
+
+    <script src="client/main.lua" type="client" cache="false" />
+
+    <export function="getFactionData" type="shared" />
+</meta>

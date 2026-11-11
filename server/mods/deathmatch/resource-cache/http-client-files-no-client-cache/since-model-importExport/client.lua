@@ -1,0 +1,8 @@
+addEventHandler('onClientResourceStart', resourceRoot, function()
+    local txd = engineLoadTXD('Object.txd',true)
+    engineImportTXD(txd, 3907)
+    local dff = engineLoadDFF('Object.dff', 0)
+    engineReplaceModel(dff, 3907)
+    local col = engineLoadCOL('Object.col')
+    engineReplaceCOL(col, 3907)
+end)

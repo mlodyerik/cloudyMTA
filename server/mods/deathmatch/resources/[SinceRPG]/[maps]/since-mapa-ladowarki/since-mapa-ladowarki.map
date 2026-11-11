@@ -1,0 +1,7 @@
+<map edf:definitions="editor_main">
+    <object id="object (a51_halbox_) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="3384" scale="1" doublesided="false" collisions="true" posX="1305" posY="-1864.4" posZ="13.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_halbox_) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="3384" scale="1" doublesided="false" collisions="true" posX="1305" posY="-1871" posZ="13.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_halbox_) (3)" breakable="false" interior="0" alpha="255" dimension="0" model="3384" scale="1" doublesided="false" collisions="true" posX="1305" posY="-1877.2" posZ="13.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (lhouse_barrier3) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="997" scale="1" doublesided="false" collisions="true" frozen="true" posX="1300.8" posY="-1867.4" posZ="12.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (lhouse_barrier3) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="997" scale="1" doublesided="false" collisions="true" frozen="true" posX="1300.8" posY="-1873.9" posZ="12.5" rotX="0" rotY="0" rotZ="0"></object>
+</map>

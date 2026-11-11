@@ -1,0 +1,7 @@
+<meta>
+    <file src="files/balwan.col" />
+    <file src="files/balwan.dff" />
+    <file src='files/balwan.txd' />
+    <oop>true</oop>
+    <script src="c.lua" type="client" cache='false'/>
+</meta>

@@ -1,0 +1,16 @@
+<meta>
+    <script src="clothes.lua" type="client" cache="false"/>
+    <script src="c.lua" type="client" cache="false"/>
+    <script src="s.lua" type="server"/>
+
+    <file src="data/arrow.png"/>
+    <file src="data/bg.png"/>
+    <file src="data/bg_mask.png"/>
+    <file src="data/bg2.png"/>
+    <file src="data/button_1.png"/>
+    <file src="data/button_2.png"/>
+    <file src="data/button_3.png"/>
+    <file src="data/tshirt.png"/>
+    <file src="data/close.png"/>
+
+</meta>

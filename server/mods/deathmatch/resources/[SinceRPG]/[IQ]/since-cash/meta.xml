@@ -1,0 +1,7 @@
+<meta>
+    <script src="server.lua" type="server" />
+
+    <export function="givePlayerSinceCash" type="server" />
+    <export function="takePlayerSinceCash" type="server" />
+    <export function="getPlayerSinceCash" type="server" />
+</meta>

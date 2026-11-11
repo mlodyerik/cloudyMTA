@@ -1,0 +1,51 @@
+<meta>
+
+    <script src='utils.lua' type='client'/>
+    <script src='server.lua' type='server'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+    <file src='fonts/Inter-Bold.ttf'/>
+    <file src='fonts/Inter-Medium.ttf'/>
+
+    <file src="kill.png"/>
+
+    <file src="weapons/2.png"/>
+    <file src="weapons/3.png"/>
+    <file src="weapons/4.png"/>
+    <file src="weapons/5.png"/>
+    <file src="weapons/6.png"/>
+    <file src="weapons/7.png"/>
+    <file src="weapons/8.png"/>
+    <file src="weapons/9.png"/>
+    <file src="weapons/10.png"/>
+    <file src="weapons/11.png"/>
+    <file src="weapons/12.png"/>
+    <file src="weapons/14.png"/>
+    <file src="weapons/16.png"/>
+    <file src="weapons/17.png"/>
+    <file src="weapons/23.png"/>
+    <file src="weapons/25.png"/>
+    <file src="weapons/26.png"/>
+    <file src="weapons/27.png"/>
+    <file src="weapons/28.png"/>
+    <file src="weapons/29.png"/>
+    <file src="weapons/30.png"/>
+    <file src="weapons/31.png"/>
+    <file src="weapons/32.png"/>
+    <file src="weapons/33.png"/>
+    <file src="weapons/34.png"/>
+    <file src="weapons/35.png"/>
+    <file src="weapons/36.png"/>
+    <file src="weapons/37.png"/>
+    <file src="weapons/38.png"/>
+    <file src="weapons/39.png"/>
+    <file src="weapons/40.png"/>
+    <file src="weapons/41.png"/>
+    <file src="weapons/42.png"/>
+    <file src="weapons/43.png"/>
+    <file src="weapons/44.png"/>
+    <file src="weapons/45.png"/>
+    <file src="weapons/46.png"/>
+    <file src="weapons/24.png"/>
+
+</meta>

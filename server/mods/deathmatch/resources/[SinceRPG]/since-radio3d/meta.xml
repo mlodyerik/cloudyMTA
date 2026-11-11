@@ -1,0 +1,7 @@
+<meta> 
+
+    <script src='client.lua' type='client' cache='false'/>
+
+    <export function='setRadioVolume' type='client'/>
+
+</meta>

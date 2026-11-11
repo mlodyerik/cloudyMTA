@@ -1,0 +1,20 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+
+    <script src="client/report.lua" type="client" cache="false" />
+    <script src="client/list.lua" type="client" cache="false" />
+
+    <script src="server/report.lua" type="server" />
+    <script src="server/list.lua" type="server" />
+
+    <file src="data/images/report-background.png" />
+    <file src="data/images/close.png" />
+    <file src="data/images/dxMemo.png" />
+    <file src="data/images/confirm_button.png" />
+
+    <file src="data/images/list-background.png" />
+    <file src="data/images/element-bg.png" />
+    <file src="data/images/accept.png" />
+    <file src="data/images/no.png" />
+</meta>

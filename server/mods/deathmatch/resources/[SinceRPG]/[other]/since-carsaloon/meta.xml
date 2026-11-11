@@ -1,0 +1,8 @@
+<meta>
+<info author="*" description="www.sparrow-mta.blogspot.com" version="1.3" type="script" />
+
+<script src="client.lua" type="client" cache="false"/>
+<file src="salon-pseudol.dff" type="client"/>
+<file src="salon-pseudol.col" type="client"/>
+<file src="salon-pseudol.txd" type="client"/>
+</meta>

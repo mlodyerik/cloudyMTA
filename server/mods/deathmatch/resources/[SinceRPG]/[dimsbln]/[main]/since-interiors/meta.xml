@@ -1,0 +1,18 @@
+<meta>
+    <script src='blips.lua' type='server'/>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='positions.lua' type='client' cache='false'/>
+
+	<file src="data/bg.png"/>
+	<file src="data/line.png"/>
+	<file src="data/building.png"/>
+	<file src="data/doors.png"/>
+	<file src="data/people.png"/>
+	<file src="data/mask.png"/>
+	<file src="data/image.png"/>
+	<file src="data/circles1.png"/>
+	<file src="data/circles2.png"/>
+	<file src="data/logo.png"/>
+</meta>

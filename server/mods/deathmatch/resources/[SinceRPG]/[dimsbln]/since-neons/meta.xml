@@ -1,0 +1,11 @@
+<meta>
+    <oop>true</oop>
+    <script src = 'client.lua' type = 'client' cache = 'false'/>
+    <file src = 'neons/default.png'/>
+    <file src = 'neons/hyperbeast.png'/>
+    <file src = 'neons/quein.png'/>
+    <file src = 'neons/dawidpers.png'/>
+
+    <export function='toggleNeons' type='client'/>
+
+</meta>

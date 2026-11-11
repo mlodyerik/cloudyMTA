@@ -1,0 +1,11 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server"/>
+
+    <file src="files/rozpierak.txd"/>
+    <file src="files/rozpierak.dff"/>
+    <file src="files/rozpierak.mp3"/>
+
+    <file src="files/waz.png"/>
+    <file src="files/hose.png"/>
+</meta>

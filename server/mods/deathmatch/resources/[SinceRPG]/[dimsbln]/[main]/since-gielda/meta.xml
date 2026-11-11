@@ -1,0 +1,46 @@
+<meta>
+
+    <script src='positions.lua' type='shared'/>
+    <script src='server.lua' type='server'/>
+    <script src='main.lua' type='shared'/>
+    <script src='octagons.lua' type='client' cache='false'/>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='selling.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+	<file src="data/choose/bg.png"/>
+	<file src="data/choose/button_cancel.png"/>
+	<file src="data/choose/list.png"/>
+	<file src="data/choose/button_add.png"/>
+	<file src="data/choose/add.png"/>
+	<file src="data/choose/mask.png"/>
+
+	<file src="data/selling/bg.png"/>
+	<file src="data/selling/editbox.png"/>
+	<file src="data/selling/money.png"/>
+	<file src="data/selling/button_cancel.png"/>
+	<file src="data/selling/button_offer.png"/>
+	<file src="data/selling/list_bg.png"/>
+	<file src="data/selling/tank.png"/>
+	<file src="data/selling/mileage.png"/>
+	<file src="data/selling/button.png"/>   
+	<file src="data/selling/mask.png"/>   
+	<file src="data/selling/list_bg_selected.png"/>   
+	<file src="data/selling/button_selected.png"/>   
+
+    <file src="data/offer/bg.png"/>
+	<file src="data/offer/button_cancel.png"/>
+	<file src="data/offer/button_buy.png"/>
+	<file src="data/offer/mask.png"/>
+
+	<file src="data/cars/bg.png"/>
+	<file src="data/cars/button_cancel.png"/>
+	<file src="data/cars/button_buy.png"/>
+	<file src="data/cars/mask.png"/>
+	<file src="data/cars/check.png"/>
+	<file src="data/cars/check_active.png"/>
+	<file src="data/cars/rtBg.png"/>
+
+	<min_mta_version client="1.5.9" server="1.5.9" />
+
+</meta>

@@ -1,0 +1,20 @@
+<meta>
+    <file src='files/images/bg.png' type='client'/>
+    <file src='files/images/bg_mask.png' type='client'/>
+    <file src='files/images/bar_1.png' type='client'/>
+    <file src='files/images/bar_2.png' type='client'/>
+    <file src='files/images/ETransporter.png' type='client'/>
+
+    <file src='files/images/barBackground.png' type='client'/>
+    <file src='files/images/barFilled.png' type='client'/>
+    <file src='files/images/levelBackground.png' type='client'/>
+    <file src='files/images/levelSelected.png' type='client'/>
+    <file src='files/images/optionalBackground.png' type='client'/>
+
+    <script src='imiona.lua' type='client' cache='false'/>
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+    
+    <export function='turnPanel' type='client'/>
+</meta>

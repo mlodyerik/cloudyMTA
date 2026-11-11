@@ -1,0 +1,9 @@
+<meta>
+   <min_mta_version client="1.3.0-9.04431" server="1.5.8" />
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server"/>
+
+    <file src="files/shader.fx"/>
+    <file src="files/Poppins-Regular.ttf"/>
+    <file src="files/bg.png"/>
+</meta>

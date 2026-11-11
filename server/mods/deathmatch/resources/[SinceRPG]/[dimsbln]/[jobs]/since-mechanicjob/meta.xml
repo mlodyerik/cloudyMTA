@@ -1,0 +1,16 @@
+<meta>
+
+    <script src='config.lua' type='shared'/>
+    <script src='useful.lua' type='shared'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src="data/background.png"/>
+	<file src="data/button_offer.png"/>
+	<file src="data/button_cancel.png"/>
+	<file src="data/list_bg.png"/>
+	<file src="data/list_top.png"/>
+	<file src="data/item_bg.png"/>
+	<file src="data/button_select.png"/>
+
+</meta>

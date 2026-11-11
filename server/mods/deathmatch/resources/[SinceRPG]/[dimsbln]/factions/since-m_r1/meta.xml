@@ -1,0 +1,11 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+        
+    <file src="model/r1z.dff"/>
+    <file src="model/r1z.col"/>
+    <file src="model/r1z.txd"/>
+    <file src="model/r1o.dff"/>
+    <file src="model/r1o.col"/>
+    <file src="model/r1o.txd"/>
+
+</meta>

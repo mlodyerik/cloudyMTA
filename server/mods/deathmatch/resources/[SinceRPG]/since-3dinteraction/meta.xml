@@ -1,0 +1,32 @@
+<meta>
+    <min_mta_version client="1.3.0-9.04431" />
+
+    <!-- server -->
+    <script src="server/interaction.lua" type="server" />
+
+    <!-- client -->
+    <script src="client/_anim.lua" type="client" cache='false'/>
+    <script src="client/g_interactions.lua" type="client" cache='false'/>
+    <script src="client/black_white.lua" type="client" cache='false'/>
+    <script src="client/interaction.lua" type="client" cache='false'/>
+    <export function='drawBWRectangle' type='client'/>
+
+    <!-- assets -->
+    <file src="assets/fx/ped_wall.fx"/>
+    <file src="assets/fx/ped_wall_mrt.fx"/>
+    <file src="assets/fx/post_edge.fx"/>
+    <file src="assets/fx/blackwhite.fx"/>
+
+    <file src="assets/images/add_organization.png"/>
+    <file src="assets/images/exit_icon.png"/>
+    <file src="assets/images/friend_invite.png"/>
+    <file src="assets/images/object_interaction.png"/>
+    <file src="assets/images/ped_interaction.png"/>
+    <file src="assets/images/player_interaction.png"/>
+    <file src="assets/images/send_trade.png"/>
+    <file src="assets/images/show_documents.png"/>
+    <file src="assets/images/vehicle_interaction.png"/>
+    <file src="assets/images/vignette.png"/>
+    <file src="assets/images/green_shadow.png"/>
+    <file src="assets/images/rectangle.png"/>
+</meta>

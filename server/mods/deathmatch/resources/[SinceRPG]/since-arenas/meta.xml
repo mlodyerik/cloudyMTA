@@ -1,0 +1,22 @@
+<meta>
+    <file src='files/images/bg.png' type='client'/>
+    <file src='files/images/bg_mask.png' type='client'/>
+    <file src='files/images/bg2.png' type='client'/>
+    <file src='files/images/button1.png' type='client'/>
+    <file src='files/images/button2.png' type='client'/>
+    <file src='files/images/editbox.png' type='client'/>
+    <file src='files/images/money.png' type='client'/>
+
+    <file src='files/images/arena_1.png' type='client'/>
+    <file src='files/images/arena_2.png' type='client'/>
+    <file src='files/images/arena_3.png' type='client'/>
+    <file src='files/images/arena_4.png' type='client'/>
+    <file src='files/images/arena_5.png' type='client'/>
+    <file src='files/images/arena_6.png' type='client'/>
+    <file src='files/images/arena_bg.png' type='client'/>
+
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='c_statsGui.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

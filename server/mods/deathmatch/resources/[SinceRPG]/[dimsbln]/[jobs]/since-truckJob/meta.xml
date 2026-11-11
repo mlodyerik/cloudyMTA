@@ -1,0 +1,19 @@
+<meta>
+    <file src='files/images/bg.png' type='client'/>
+    <file src='files/images/bg_mask.png' type='client'/>
+    <file src='files/images/bg2.png' type='client'/>
+    <file src='files/images/button.png' type='client'/>
+    <file src='files/images/close.png' type='client'/>
+    <file src='files/images/icon.png' type='client'/>
+    <file src='files/images/icon2.png' type='client'/>
+    <file src='files/images/icon3.png' type='client'/>
+    <file src='files/images/arrow.png' type='client'/>
+
+    <file src='files/images/panel_bg_mask.png' type='client'/>
+    <file src='files/images/panel_bg.png' type='client'/>
+    <file src='files/images/panel_icon.png' type='client'/>
+
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

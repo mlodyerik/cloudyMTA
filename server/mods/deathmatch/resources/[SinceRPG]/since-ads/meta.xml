@@ -1,0 +1,12 @@
+<meta>
+    <file src='files/images/bg.png'/>
+    <file src='files/images/bg2.png'/>
+    <file src='files/images/bg_mask.png'/>
+    <file src='files/images/avatar_frame.png'/>
+
+    <file src='files/shaders/circle.fx'/>
+
+    <script src='c_loader.lua' type='client' cache='false'/>
+    <script src='c.lua' type='client' cache='false'/>
+    <script src='s.lua' type='server'/>
+</meta>

@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/sk.txd" /> 
+    <file src="files/sk.dff" /> 
+    <file src="files/sk.col" /> 
+</meta> 

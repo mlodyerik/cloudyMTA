@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+    <object id="object (MED_OFFICE6_DESK_2) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="2184" scale="1" doublesided="false" collisions="true" posX="1681.1" posY="-1183.3" posZ="22.9" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (MED_OFFICE_CHAIR2) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="2309" scale="1" doublesided="false" collisions="true" posX="1679.1" posY="-1182.2" posZ="22.9" rotX="0" rotY="0" rotZ="-96"></object>
+    <object id="object (PC_1) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="2190" scale="1" doublesided="false" collisions="true" posX="1681" posY="-1181.8" posZ="23.7" rotX="0" rotY="0" rotZ="-90"></object>
+</map>

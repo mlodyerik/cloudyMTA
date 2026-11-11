@@ -1,0 +1,18 @@
+<meta>
+  <script src='client.lua' type='client' cache='false' />
+
+  <file src='files/38.dff' />
+  <file src='files/38.txd' />
+  <file src='files/309.dff' />
+  <file src='files/309.txd' />
+  <file src='files/273.dff' />
+  <file src='files/273.txd' />
+  <file src='files/304.dff' />
+  <file src='files/304.txd' />
+  <file src='files/173.dff' />
+  <file src='files/173.txd' />
+  <file src='files/76.dff' />
+  <file src='files/76.txd' />
+
+
+</meta>

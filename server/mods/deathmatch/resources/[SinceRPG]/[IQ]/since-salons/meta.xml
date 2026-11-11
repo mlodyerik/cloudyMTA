@@ -1,0 +1,14 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" cache="false" />
+
+    <file src="data/images/bg.png" />
+    <file src="data/images/info_bg.png" />
+    <file src="data/images/arrow_left.png" />
+    <file src="data/images/arrow_left_active.png" />
+    <file src="data/images/arrow_right.png" />
+    <file src="data/images/arrow_right_active.png" />
+    <file src="data/images/button.png" />
+    <file src="data/images/button_hovered.png" />
+</meta>

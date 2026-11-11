@@ -1,0 +1,13 @@
+<meta>
+
+    <script src='server.lua' type='server'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+    <file src='shaders/tex.fx'/>
+    <file src='tex/board.png'/>
+    <file src='tex/border.png'/>
+    <file src='tex/bg.png'/>
+
+    <min_mta_version client="1.5.9" server="1.5.9" />
+
+</meta>

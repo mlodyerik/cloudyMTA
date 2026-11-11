@@ -1,0 +1,7 @@
+<meta>
+    <file src="files/images/bar.png" type="client" />
+    <file src="files/images/bar_bg.png" type="client" />
+    
+    <script src="c.lua" type="client" cache="false" />
+    <script src="s.lua" type="server" />
+</meta>

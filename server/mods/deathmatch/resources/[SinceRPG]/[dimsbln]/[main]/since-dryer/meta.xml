@@ -1,0 +1,11 @@
+<meta>
+
+
+	<file src='background.png'/>
+	<script src="utils.lua" type="client" cache="false"/>
+	
+	<script src="c_dryer.lua" type="client" cache="false"/>
+	
+	<script src="s_dryer.lua" type="server"/>
+	
+</meta>

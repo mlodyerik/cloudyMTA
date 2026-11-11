@@ -1,0 +1,10 @@
+<meta>
+    <file src='files/images/background.png'/>
+    <file src='files/images/dxMemo.png'/>
+    <file src='files/images/close.png'/>
+    <file src='files/images/button.png'/>
+    
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+</meta>

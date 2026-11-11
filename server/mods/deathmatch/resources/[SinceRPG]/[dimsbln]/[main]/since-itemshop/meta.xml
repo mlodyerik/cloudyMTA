@@ -1,0 +1,62 @@
+<meta>
+
+    <script src='main.lua' type='shared' cache='false'/>
+	<script src='shared.lua' type='shared' cache='false'/>
+    <script src='server.lua' type='server'/>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='tabs.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+	<file src="data/bg.png"/>
+	<file src="data/line.png"/>
+	<file src="data/item_bg.png"/>
+	<file src="data/item_bg2.png"/>
+	<file src="data/buy_button.png"/>
+	<file src="data/modal_bg.png"/>
+	<file src="data/button_buy.png"/>
+	<file src="data/button_cancel.png"/>
+	<file src="data/editbox.png"/>
+	<file src="data/icon.png"/>
+	<file src="data/line2.png"/>
+    
+	<file src="data/vehs/nissan_skyline_r34.png"/>
+	<file src="data/vehs/audi_rs6.png"/>
+	<file src="data/vehs/audi_rs7.png"/>
+	<file src="data/vehs/bmw_m2.png"/>
+	<file src="data/vehs/bmw_m4.png"/>
+	<file src="data/vehs/bmw_m5.png"/>
+	<file src="data/vehs/dodge_challenger.png"/>
+	<file src="data/vehs/honda_civic.png"/>
+	<file src="data/vehs/mercedes_e63s.png"/>
+	<file src="data/vehs/lamborghini_huracan.png"/>
+	<file src="data/vehs/mercedes_g63_amg.png"/>
+	<file src="data/vehs/mercedes_gt63_amg.png"/>
+	<file src="data/vehs/mitsubushi_lancer_evo.png"/>
+	<file src="data/vehs/nissan_skyline_r35.png"/>
+	<file src="data/vehs/rolls_royce_wraith.png"/>
+	<file src="data/vehs/opel_vectra.png"/>
+	<file src="data/vehs/subaru_impreza_wrxsti.png"/>
+	<file src="data/vehs/toyota_supra.png"/>
+	<file src="data/vehs/honda_nsx.png"/>
+	<file src="data/vehs/honda_s2000.png"/>
+	<file src="data/vehs/bugatti_chiron.png"/>
+	<file src="data/vehs/bugatti_divo.png"/>
+	<file src="data/vehs/lamborghini_urus.png"/>
+	<file src="data/vehs/audi_r8.png"/>
+	<file src="data/vehs/koenigsegg_ccxr.png"/>
+	<file src="data/vehs/bmw_m3_e36.png"/>
+	<file src="data/vehs/bmw_m3_e46.png"/>
+	<file src="data/vehs/seat_leon_fr.png"/>
+	<file src="data/vehs/tesla_roadster.png"/>
+	<file src="data/vehs/tesla_cybertruck.png"/>
+	<file src="data/vehs/tesla_model_s.png"/>
+	<file src="data/vehs/rg21.png"/>
+	<file src="data/vehs/scorcher.png"/>
+	<file src="data/vehs/ford_raptor.png"/>
+	<file src="data/vehs/benefactor.png"/>
+
+    <export function='returnShopData' http='true'/>
+
+	<min_mta_version server="1.5.9" client="1.5.9" />
+
+</meta>

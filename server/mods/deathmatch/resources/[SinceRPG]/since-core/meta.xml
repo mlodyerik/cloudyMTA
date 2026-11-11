@@ -1,0 +1,50 @@
+<meta>
+    <script src="players/bannedwords.lua" type="shared" cache='false'/>
+    <script src="shared.lua" type="shared" cache='false'/>
+    <script src="main.lua" type="server" />
+    <script src="client.lua" type="client" cache='false'/>
+    <script src="players/time.lua" type="client" cache='false' />
+
+    <script src="players/id.lua" type="server" />
+    <script src="players/data.lua" type="server" />
+    <script src="players/chat.lua" type="server" />
+    <script src="players/utils.lua" type="server" />
+    <script src="players/ban.lua" type="server" />
+    <script src="players/licenses.lua" type="server" />
+    <script src="players/animations.lua" type="server" />
+
+    <script src="vehicles/main.lua" type="server" />
+    <script src="vehicles/data.lua" type="server" />
+    <script src="vehicles/fuel.lua" type="client" cache="false" />
+    <script src="vehicles/upgrades.lua" type="server" />
+
+    <export function="findPlayer" type="server" />
+    <export function="spawnPlr" type="server" />
+    <export function="loadPlayerData" type="server" />
+    <export function="savePlayerData" type="server" />
+    <export function="addPlayerTime" type="server" />
+    <export function="addPlayerLicense" type="server" />
+    <export function="isPlayerHaveLicense" type="server" />
+    <export function="createPrivateVehicle" type="server" />
+    <export function="saveVehicle" type="server" />
+    <export function="loadVehicle" type="server" />
+
+    <export function="generateDiscordCode" type="server" />
+
+    <export function="getRankHexColor" type="shared" />
+    <export function="getRankName" type="shared" />
+    <export function="getRankColor" type="shared" />
+
+    <export function="sendPremiumchatMessage" http='true' />
+    <export function="getPlayerCount" http='true' />
+
+    <export function="givePlayerBankMoney" type="server" />
+    <export function="takePlayerBankMoney" type="server" />
+    <export function="getPlayerBankMoney" type="server" />
+
+    <export function="replaceWords" type="shared" />
+
+    <export function="spawnPlr" type="server" />
+
+    <min_mta_version client="1.5.9" server="1.5.9" />
+</meta>

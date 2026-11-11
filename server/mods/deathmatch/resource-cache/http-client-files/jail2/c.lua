@@ -1,0 +1,11 @@
+local txd = engineLoadTXD("int.txd")
+engineImportTXD(txd,14821)
+local dff = engineLoadDFF("wiezienie.dff") 
+engineReplaceModel(dff,12855, true)
+local col = engineLoadCOL("wiezienie.col")  
+engineReplaceCOL(col,12855)
+
+local dff = engineLoadDFF("int.dff") 
+engineReplaceModel(dff,14821, true)
+local col = engineLoadCOL("int.col")  
+engineReplaceCOL(col,14821)

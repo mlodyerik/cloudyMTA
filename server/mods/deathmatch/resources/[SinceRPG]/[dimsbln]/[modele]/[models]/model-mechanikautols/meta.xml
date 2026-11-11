@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/warsztat.txd" /> 
+    <file src="files/warsztat.dff" /> 
+    <file src="files/warsztat.col" /> 
+</meta> 

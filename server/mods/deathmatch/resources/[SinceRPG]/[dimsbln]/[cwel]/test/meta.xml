@@ -1,0 +1,5 @@
+<meta>
+    <file src='test.dff'/>
+    <file src='test.txd'/>
+    <script src='client.lua' type='client' cache='false'/>
+</meta>

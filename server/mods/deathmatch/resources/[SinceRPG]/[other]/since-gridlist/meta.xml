@@ -1,0 +1,19 @@
+<meta>
+
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+    <file src='img/list.png'/>
+    <file src='img/background.png'/>
+    <file src='img/arrow.png'/>
+
+    <export function='createGridList' type='client'/>
+    <export function='addGridlistItem' type='client'/>
+    <export function='getGridlistItems' type='client'/>
+    <export function='removeGridlistItem' type='client'/>
+    <export function='getSelectedItem' type='client'/>
+    <export function='resetGridScroll' type='client'/>
+    <export function='isCursorOnGridlist' type='client'/>
+    <export function='destroyGridList' type='client'/>
+
+</meta>

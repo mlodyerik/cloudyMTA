@@ -1,0 +1,6 @@
+<meta>
+    <script src="c.lua" type="client" />
+    <file src="atm.dff"/>
+    <file src="atm.col"/>
+    <file src="atm.txd"/>
+</meta>

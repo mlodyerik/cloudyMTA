@@ -1,0 +1,11 @@
+<meta>
+	<script src="c.lua" type="client" cache="false"/>
+
+	<file src="melina.dff"/>
+	<file src="melina.col"/>
+	<file src="melina.txd"/>
+
+	<file src="monitor.dff"/>
+	<file src="monitor.col"/>
+	<file src="monitor.txd"/>
+</meta>

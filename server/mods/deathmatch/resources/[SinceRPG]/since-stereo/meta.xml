@@ -1,0 +1,25 @@
+<meta>
+    <script src='server.lua' type='server'/>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+	<file src="data/bg.png"/>
+	<file src="data/off.png"/>
+	<file src="data/editbox.png"/>
+	<file src="data/link.png"/>
+	<file src="data/close.png"/>
+	<file src="data/line_top.png"/>
+	<file src="data/line_center.png"/>
+	<file src="data/song_bg.png"/>
+	<file src="data/song_icon.png"/>
+	<file src="data/play_icon.png"/>
+	<file src="data/stop_icon.png"/>
+	<file src="data/album_bg.png"/>
+	<file src="data/album_cover.png"/>
+	<file src="data/add_bg.png"/>
+	<file src="data/add_icon.png"/>
+	<file src="data/mask.png"/>
+
+	<export function='isPanelOpened' type='client'/>
+	<export function='changeStereoToggle' type='client'/>
+</meta>

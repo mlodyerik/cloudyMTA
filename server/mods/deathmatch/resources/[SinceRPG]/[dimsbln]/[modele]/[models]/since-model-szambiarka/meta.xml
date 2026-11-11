@@ -1,0 +1,6 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+
+    <file src="data/duneride.dff"/>
+    <file src="data/duneride.txd"/>
+</meta>

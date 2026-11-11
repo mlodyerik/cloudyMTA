@@ -1,0 +1,8 @@
+<meta>
+    <file src='models/model.dff'/>
+    <file src='models/model.txd'/>
+
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='main.lua' type='server'/>
+    <script src='server.lua' type='server'/>
+</meta>

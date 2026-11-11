@@ -1,0 +1,13 @@
+<meta>
+
+    <script src = 'client.lua' type='client'/>
+
+    <oop>true</oop>
+
+    <file src = 'green.txd'/>
+    <file src = 'green.dff'/>
+
+    <file src = 'red.txd'/>
+    <file src = 'red.dff'/>
+
+</meta>

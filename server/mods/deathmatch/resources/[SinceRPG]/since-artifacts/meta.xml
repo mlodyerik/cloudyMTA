@@ -1,0 +1,13 @@
+<meta>
+
+    <script src='positions.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src='data/detector.png'/>
+    <file src='data/detector_light.png'/>
+    <file src='data/beep.ogg'/>
+
+    <export function='startArtifact' type='server'/>
+
+</meta>

@@ -1,0 +1,33 @@
+<meta>
+    <script src="classes.lua" type="shared" cache="false" />
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <file src='data/images/left-shadow.png' />
+    <file src='data/images/classes-bg.png' />
+    <file src='data/images/page-bg.png' />
+    <file src='data/images/page-active.png' />
+    <file src='data/images/money.png' />
+    <file src='data/images/biznesman.png' />
+    <file src='data/images/coin.png' />
+    <file src='data/images/gun.png' />
+    <file src='data/images/gangster.png' />
+    <file src='data/images/wheel.png' />
+    <file src='data/images/driver.png' />
+    <file src='data/images/factions.png' />
+    <file src='data/images/factions-image.png' />
+    <file src='data/images/circle.png' />
+    <file src='data/images/glow.png' />
+    <file src='data/images/bonuses-bg.png' />
+    <file src='data/images/bonuses-header.png' />
+    <file src='data/images/money-bg.png' />
+    <file src='data/images/select_button.png' />
+    <file src='data/images/profit-bg1.png' />
+    <file src='data/images/profit-bg2.png' />
+    <file src='data/images/profit-bg3.png' />
+    <file src='data/images/house-icon.png' />
+    <file src='data/images/car-icon.png' />
+
+    <export function="isPlayerChoosedClass" type="server" />
+</meta>

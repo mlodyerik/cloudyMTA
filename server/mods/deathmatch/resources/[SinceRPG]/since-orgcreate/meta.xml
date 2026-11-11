@@ -1,0 +1,15 @@
+<meta>
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src='data/bg.png'/>
+    <file src='data/button_cancel.png'/>
+    <file src='data/button_create.png'/>
+    <file src='data/button.png'/>
+    <file src='data/close.png'/>
+    <file src='data/editbox.png'/>
+    <file src='data/color.png'/>
+    <file src='data/tag.png'/>
+    <file src='data/group.png'/>
+</meta>

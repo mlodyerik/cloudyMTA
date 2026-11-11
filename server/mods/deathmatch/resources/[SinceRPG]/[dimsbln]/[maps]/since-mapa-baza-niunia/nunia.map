@@ -1,0 +1,9 @@
+<map edf:definitions="editor_main">
+    <object id="object (bollard) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="1214" scale="1" doublesided="false" collisions="true" posX="2179.5" posY="-1762.4" posZ="12.4" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollard) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="1214" scale="1" doublesided="false" collisions="true" posX="2177.3999" posY="-1762.4" posZ="12.4" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollard) (3)" breakable="false" interior="0" alpha="255" dimension="0" model="1214" scale="1" doublesided="false" collisions="true" posX="2175.3" posY="-1762.3" posZ="12.4" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollard) (4)" breakable="false" interior="0" alpha="255" dimension="0" model="1214" scale="1" doublesided="false" collisions="true" posX="2173.8" posY="-1762.4" posZ="12.4" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollard) (5)" breakable="false" interior="0" alpha="255" dimension="0" model="1214" scale="1" doublesided="false" collisions="true" posX="2190.7" posY="-1762.4" posZ="12.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollard) (6)" breakable="false" interior="0" alpha="255" dimension="0" model="1214" scale="1" doublesided="false" collisions="true" posX="2192.7" posY="-1762.3" posZ="12.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bollard) (7)" breakable="false" interior="0" alpha="255" dimension="0" model="1214" scale="1" doublesided="false" collisions="true" posX="2194.7" posY="-1762.3" posZ="12.4" rotX="0" rotY="0" rotZ="0"></object>
+</map>

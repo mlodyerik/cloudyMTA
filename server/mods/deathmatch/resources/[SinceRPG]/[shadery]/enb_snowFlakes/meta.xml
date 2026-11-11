@@ -1,0 +1,9 @@
+<meta>
+    <script src="snow.lua" type="client" />
+    <file src="flakes/snowflake1_real.png" />
+    <file src="flakes/snowflake2_real.png" />
+    <file src="flakes/snowflake3_real.png" />
+    <file src="flakes/snowflake4_real.png" />
+    <export function='toggleShader' type='client'/>
+    <export function='toggleWinterWeather' type='client'/>
+</meta>

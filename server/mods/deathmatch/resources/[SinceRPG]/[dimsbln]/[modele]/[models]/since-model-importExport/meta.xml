@@ -1,0 +1,6 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+    <file src="Object.txd" type="client"/>
+    <file src="Object.dff" type="client"/>
+    <file src="Object.col" type="client"/>
+</meta>

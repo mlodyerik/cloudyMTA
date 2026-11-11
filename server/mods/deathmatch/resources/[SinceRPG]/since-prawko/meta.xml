@@ -1,0 +1,15 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <file src="data/images/bg.png" />
+    <file src="data/images/bg2.png" />
+    <file src="data/images/bg_mask.png" />
+    <file src="data/images/a.png" />
+    <file src="data/images/b.png" />
+    <file src="data/images/c.png" />
+    <file src="data/images/close.png" />
+
+    <file src="data/images/bg_examin.png" />
+</meta>

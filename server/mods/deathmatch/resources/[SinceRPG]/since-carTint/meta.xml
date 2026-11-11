@@ -1,0 +1,7 @@
+<meta>
+
+    <script src="c.lua" type="client" cache="false"/>
+    <file src="szyby.fx"/>
+    <file src="mta-helper.fx"/>
+
+</meta>

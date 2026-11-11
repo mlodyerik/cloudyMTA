@@ -1,0 +1,13 @@
+<meta>
+    <script src="client.lua" type="client" cache="false" />
+    <script src="server.lua" type="server" />
+
+    <file src="data/images/bg.png" />
+    <file src="data/images/icon.png" />
+    <file src="data/images/line.png" />
+    <file src="data/images/list-bg.png" />
+    <file src="data/images/button.png" />
+
+    <export function="show" type="server" />
+    <export function="hide" type="server" />
+</meta>

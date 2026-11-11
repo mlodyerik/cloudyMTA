@@ -1,0 +1,12 @@
+<meta>
+
+    <script src='c.lua' type='client' cache='false'/>
+    <file src='img/shader.fx'/>
+    <file src='img/shaderOutter.fx'/>
+    <file src='img/mta-helper.fx'/>
+    <file src='img/wounds.png'/>
+    <file src='img/freio.png'/>
+    
+    <export function="hideWheels" type="client" />
+
+</meta>

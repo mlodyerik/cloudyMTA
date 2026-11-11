@@ -1,0 +1,12 @@
+<meta>
+    <file src='models/comet-retro.dff'/>
+    <file src='models/comet-retro.txd'/>
+
+    <file src='models/admiral.dff'/>
+    <file src='models/admiral.txd'/>
+
+    <file src='models/schafter.dff'/>
+    <file src='models/schafter.txd'/>
+
+    <script src='c.lua' type='client' cache='false'/>
+</meta>

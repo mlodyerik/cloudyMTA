@@ -1,0 +1,11 @@
+<meta>
+
+    <script src='client.lua' type='client' cache='false'/>
+
+    <file src='data/discord.png'/>
+    <file src='data/diamond.png'/>
+    <file src='data/loyality.png'/>
+
+    <export function='getUserBadges' type='client'/>
+
+</meta>

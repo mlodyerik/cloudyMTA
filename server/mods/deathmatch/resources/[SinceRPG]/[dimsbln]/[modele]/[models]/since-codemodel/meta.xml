@@ -1,0 +1,8 @@
+<meta>
+    <script src="s_core.lua" type="server" cache="false" validate="true"/>
+    <script src="c_core.lua" type="client" cache="false" validate="true"/>
+
+    <export function="decodeModel" type="client"/>
+
+    <download_priority_group>50</download_priority_group>
+</meta>

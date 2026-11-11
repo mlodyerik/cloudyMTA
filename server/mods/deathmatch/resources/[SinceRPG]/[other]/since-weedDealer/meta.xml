@@ -1,0 +1,63 @@
+<meta>
+    <file src="files/fonts/bold.ttf" type="client" />
+
+    <file src="files/images/plant_bg.png" type="client" />
+    <file src="files/images/circle_bg.png" type="client" />
+    <file src="files/images/circle_bar.png" type="client" />
+    <file src="files/images/circle_bg2.png" type="client" />
+    <file src="files/images/circle_bar2.png" type="client" />
+    <file src="files/images/gui1_bg.png" type="client" />
+    <file src="files/images/gui1_bg_mask.png" type="client" />
+    <file src="files/images/gui1_option.png" type="client" />
+    <file src="files/images/zbierz.png" type="client" />
+    <file src="files/images/posadz.png" type="client" />
+    <file src="files/images/podlej.png" type="client" />
+
+    <file src="files/images/gui1_circle_bar1.png" type="client" />
+    <file src="files/images/gui1_circle_bar2.png" type="client" />
+    <file src="files/images/gui1_circle_bg1.png" type="client" />
+
+    <file src="files/images/gui1_bg2.png" type="client" />
+    <file src="files/images/gui1_option2.png" type="client" />
+    <file src="files/images/gui1_info.png" type="client" />
+    <file src="files/images/seed.png" type="client" />
+    <file src="files/images/time.png" type="client" />
+    <file src="files/images/cube.png" type="client" />
+
+    <file src="files/images/gui1_leftMouseClick.png" type="client" />
+    <file src="files/images/gui1_barBg.png" type="client" />
+    <file src="files/images/gui1_bar.png" type="client" />
+    <file src="files/images/gui1_water.png" type="client" />
+    <file src="files/images/gui1_waterBg.png" type="client" />
+    <file src="files/images/gui1_thisPlace.png" type="client" />
+    <file src="files/images/gui1_collectBg.png" type="client" />
+    <file src="files/images/gui1_collectBar.png" type="client" />
+    <file src="files/images/gui1_top.png" type="client" />
+
+    <file src="files/images/gui2_bg.png" type="client" />
+    <file src="files/images/gui2_bg_mask.png" type="client" />
+    <file src="files/images/gui2_button.png" type="client" />
+    <file src="files/images/arrow.png" type="client" />
+    <file src="files/images/cross.png" type="client" />
+
+    <file src="files/images/gui3_bg.png" type="client" />
+    <file src="files/images/gui3_bg_mask.png" type="client" />
+    <file src="files/images/gui3_bg2.png" type="client" />
+    <file src="files/images/gui3_button.png" type="client" />
+    <file src="files/images/key.png" type="client" />
+    <file src="files/images/weed.png" type="client" />
+    <file src="files/images/joint.png" type="client" />
+    
+    <script src="config.lua" type="shared" cache="false" />
+    <script src="c_functions.lua" type="client" cache="false" />
+    <script src="c_diler.lua" type="client" cache="false" />
+    <script src="c_recast.lua" type="client" cache="false" />
+
+    <script src="s_diler.lua" type="server" />
+    <script src="s_recast.lua" type="server" />
+
+    <export function="canSmokeCheck" type="server" />
+    <export function="useWeed" type="server" />
+
+    <min_mta_version client="1.3.0-9.04431" />
+</meta>

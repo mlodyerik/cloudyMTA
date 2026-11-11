@@ -1,0 +1,11 @@
+<meta>
+    <file src='files/images/background.png'/>
+    <file src='files/images/backgroundGlow.png'/>
+    <file src='files/images/bar.png'/>
+
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='effects.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+    <export function='useWeed' type='client'/>
+</meta>

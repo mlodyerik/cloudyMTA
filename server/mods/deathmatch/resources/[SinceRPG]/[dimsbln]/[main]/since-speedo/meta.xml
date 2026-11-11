@@ -1,0 +1,36 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+
+    <file src="data/images/speedo_bg.png" />
+    <file src="data/images/rpm_bg.png" />
+    <file src="data/images/jaramcie.png" />
+    <file src="data/images/jaramcie2.png" />
+    <file src="data/images/fuel_icon.png" />
+    <file src="data/images/fuel_bg.png" />
+    <file src="data/images/lpg_bg.png" />
+    <file src="data/images/lpg_active.png" />
+    <file src="data/images/mask_speedo.png" />
+    <file src="data/images/mask_rpm.png" />
+    <file src="data/images/nitro.png" />
+    <file src="data/images/battery.png" />
+
+    <file src="data/images/speedo_bg_rgb.png" />
+    <file src="data/images/rpm_bg_rgb.png" />
+
+    <file src="data/fx/circle.fx" />
+    <file src="data/fx/mask.fx" />
+    <file src="data/fx/tex_matrix.fx" />
+
+    <file src="data/images/patterns/1.png" />
+    <file src="data/images/patterns/2.png" />
+    <file src="data/images/patterns/3.png" />
+    <file src="data/images/patterns/4.png" />
+    <file src="data/images/patterns/5.png" />
+    <file src="data/images/patterns/6.png" />
+
+    <file src='data/fonts/Inter-BlackItalic.ttf' />
+    <file src='data/fonts/Inter-MediumItalic.ttf' />
+
+    <export function='showSpeedoPatern' type='client'/>
+</meta>

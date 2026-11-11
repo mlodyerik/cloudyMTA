@@ -1,0 +1,7 @@
+<meta>
+	<script src='replace.lua' type='client' cache='false'/>
+
+	<file src="model_urzad.dff" />
+	<file src="model_urzad.txd" />
+	<file src="model_urzad.col" />
+</meta>

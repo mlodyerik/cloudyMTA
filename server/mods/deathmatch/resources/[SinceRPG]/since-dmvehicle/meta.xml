@@ -1,0 +1,4 @@
+<meta>
+    <script src="s_dmauta.lua" />
+    <script src="c_dmauta.lua" type='client' cache='false'/>
+</meta>

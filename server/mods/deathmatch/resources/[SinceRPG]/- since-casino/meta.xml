@@ -1,0 +1,67 @@
+<meta>
+    <min_mta_version client="1.3.0-9.04431"/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='slots.lua' type='client' cache='false'/>
+    <script src='mines.lua' type='client' cache='false'/>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src='files/bg.png'/>
+    <file src='files/logo.png'/>
+    <file src='files/icon_roulette.png'/>
+    <file src='files/icon_coinflip.png'/>
+    <file src='files/bg2.png'/>
+    <file src='files/coin_black_small.png'/>
+    <file src='files/coin_green_small.png'/>
+    <file src='files/coin_red_small.png'/>
+    <file src='files/bg3.png'/>
+    <file src='files/bg4.png'/>
+    <file src='files/bg5.png'/>
+    <file src='files/button_black.png'/>
+    <file src='files/button_green.png'/>
+    <file src='files/button_red.png'/>
+
+    <file src='files/coin_black.png'/>
+    <file src='files/coin_green.png'/>
+    <file src='files/coin_red.png'/>
+    <file src='files/coin_black_dark.png'/>
+    <file src='files/coin_green_dark.png'/>
+    <file src='files/coin_red_dark.png'/>
+    <file src='files/button_zaklad.png'/>
+    <file src='files/button.png'/>
+    <file src='files/button_l.png'/>
+    <file src='files/pointer.png'/>
+    <file src='files/icon_mycoins.png'/>
+    <file src='files/avatar.png'/>
+    <file src='files/coin_small.png'/>
+
+    <file src='files/cflip_bg1.png'/>
+    <file src='files/cflip_bg2.png'/>
+    <file src='files/cflip_game.png'/>
+    <file src='files/cflip_game2.png'/>
+    <file src='files/cflip_cred.png'/>
+    <file src='files/cflip_cblack.png'/>
+    <file src='files/cflip_button.png'/>
+    <file src='files/cflip_avatar.png'/>
+    <file src='files/cflip_button2.png'/>
+    <file src='files/cflip_price.png'/>
+    <file src='files/cflip_iprice.png'/>
+    <file src='files/cflip_rcoin.png'/>
+    <file src='files/cflip_bcoin.png'/>
+
+    <file src="hud_mask.fx"/>		
+	<file src="include/tex_matrix.fx"/>	
+    
+    <file src='files/mines/bomb.png'/>
+    <file src='files/mines/diamond.png'/>
+    <file src='files/mines/rectangle.png'/>
+    
+    <file src='files/slots/blueberry.png'/>
+    <file src='files/slots/cherry.png'/>
+    <file src='files/slots/diamond.png'/>
+    <file src='files/slots/watermelon.png'/>
+
+    <file src='files/icon_bombs.png'/>
+    <file src='files/icon_slots.png'/>
+    
+</meta>

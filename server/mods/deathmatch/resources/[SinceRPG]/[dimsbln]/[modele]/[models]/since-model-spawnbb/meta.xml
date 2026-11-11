@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/spawn.txd" /> 
+    <file src="files/spawn.dff" /> 
+    <file src="files/spawn.col" /> 
+</meta> 

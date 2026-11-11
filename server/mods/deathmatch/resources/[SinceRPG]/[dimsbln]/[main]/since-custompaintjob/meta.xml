@@ -1,0 +1,111 @@
+ <meta>
+ 
+	<min_mta_version client="1.3.0-9.04431" server="1.5.8" />
+
+	<script src="config.lua" type="client" cache='false'/>
+	<script src="s.lua" type="server" />	
+	<script src="c.lua" type="client" cache='false'/>
+
+    <export function='togglePaintjobs' type='client'/>
+
+	<file src="szyby.fx" />				
+
+	<file src='paintjobs/jabololo.png'/>
+    <file src='paintjobs/kubabgo.png'/>
+    <file src='paintjobs/harry.png'/>
+    <file src='paintjobs/elufina.png'/>
+    <file src='paintjobs/elufina2.png'/>
+    <file src='paintjobs/ketook.png'/>
+    <file src='paintjobs/czvjnik.png'/>
+    <file src='paintjobs/czvjnik2.png'/>
+    <file src='paintjobs/czvjnik3.png'/>
+    <file src='paintjobs/przybysz12.png'/>
+    <file src='paintjobs/leper.png'/>
+    <file src='paintjobs/quw3rty.png'/>
+    <file src='paintjobs/k1ndy.png'/>
+    <file src='paintjobs/wavyy.png'/>
+    <file src='paintjobs/leito.png'/>
+    <file src='paintjobs/guto.png'/>
+    <file src='paintjobs/elegypj.png'/>
+    <file src='paintjobs/skylinef2f.png'/>
+    <file src='paintjobs/suprapjanime.png'/>
+    <file src='paintjobs/leito.png'/>
+    <file src='paintjobs/quw3rty2.png'/>
+    <file src='paintjobs/wojtevent.png'/>
+    <file src='paintjobs/alanoskyy.png'/>
+    <file src='paintjobs/exmibmw.png'/>
+    <file src='paintjobs/ziomq.png'/>
+    <file src='paintjobs/aig.png'/>
+    <file src='paintjobs/pj1.png'/>
+    <file src='paintjobs/ziomo.png'/>
+    <file src='paintjobs/chudy.png'/>
+    <file src='paintjobs/marioK.png'/>
+    <file src='paintjobs/nuxel1.png'/>
+    <file src='paintjobs/zanitpaint.png'/>
+    <file src='paintjobs/leitopj.png'/>
+    <file src='paintjobs/quesek1.png'/>
+    <file src='paintjobs/stunter.png'/>
+    <file src='paintjobs/piters.png'/>
+    <file src='paintjobs/fabXX.png'/>
+    <file src='paintjobs/sntiago.png'/>
+    <file src='paintjobs/wavyyabol.png'/>
+    <file src='paintjobs/mariusz701.png'/>
+    <file src='paintjobs/leito.png'/>
+    <file src='paintjobs/leitopj2.png'/>
+    <file src='paintjobs/stunterpj.png'/>
+    <file src='paintjobs/sntiagopj.png'/>
+    <file src='paintjobs/mariusz701pj.png'/>
+    <file src='paintjobs/leitopj3.png'/>
+    <file src='paintjobs/marioKpj.png'/>
+    <file src='paintjobs/luki.png'/>
+    <file src='paintjobs/greens.png'/>
+    <file src='paintjobs/thefilipo.png'/>
+    <file src='paintjobs/fiagru.png'/>
+    <file src='paintjobs/kelly.png'/>
+    <file src='paintjobs/tomek112233.png'/>
+    <file src='paintjobs/eleguwa.png'/>
+    <file src='paintjobs/felipe.png'/>
+    <file src='paintjobs/sntiagopj2.png'/> 
+    <file src='paintjobs/zanitxu.png'/> 
+    <file src='paintjobs/szyszka.png'/>
+    <file src='paintjobs/lukipj.png'/>
+    <file src='paintjobs/lukipj2.png'/> 
+    <file src='paintjobs/wariacikpj.png'/> 
+    <file src='paintjobs/elegancik.png'/> 
+    <file src='paintjobs/elegant.png'/> 
+    <file src='paintjobs/greenspj.png'/> 
+    <file src='paintjobs/ziolo.png'/> 
+    <file src='paintjobs/brukarz.png'/> 
+    <file src='paintjobs/nawzyy.png'/> 
+    <file src='paintjobs/fiagrupj.png'/> 
+    <file src='paintjobs/pieczara.png'/> 
+    <file src='paintjobs/pieczara2.png'/> 
+    <file src='paintjobs/zigg.png'/>
+    <file src='paintjobs/beny.png'/>
+    <file src='paintjobs/benyy.png'/>
+    <file src='paintjobs/benypj.png'/>
+    <file src='paintjobs/benypj2.png'/>
+    <file src='paintjobs/bioly.png'/>
+    <file src='paintjobs/mariusz701pj2.png'/>
+    <file src='paintjobs/ciaparitto.png'/>
+    <file src='paintjobs/podklatka.png'/>
+    <file src='paintjobs/bakajlandokurwa.png'/>
+    <file src='paintjobs/xynego.png'/>
+    <file src='paintjobs/yhuz.png'/>
+    <file src='paintjobs/nixa.png'/>
+    <file src='paintjobs/domiqz.png'/>
+    <file src='paintjobs/domiqzpj.png'/>
+    <file src='paintjobs/tomsonekpj.png'/>
+    <file src='paintjobs/wariacik.png'/>
+    <file src='paintjobs/wariacik_pj.png'/>
+    <file src='paintjobs/estonski.png'/>
+    <file src='paintjobs/plazma.png'/>
+        <file src='paintjobs/dawidpers.png'/>
+        <file src='paintjobs/lucyfer.png'/>
+        <file src='paintjobs/discordpj.png'/>
+
+    <file src='paintjobs/lambo1.png'/>
+    <file src='paintjobs/lambo2.png'/>
+    <file src='paintjobs/urodziny.png'/>
+		
+</meta>

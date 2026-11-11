@@ -1,0 +1,22 @@
+<meta>
+    <script src='server.lua' type='server'/>
+    <script src='useful.lua' type='client' cache='false'/>
+    <script src='tabs.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+
+	<file src="data/background.png"/>
+	<file src="data/mask.png"/>
+	<file src="data/button.png"/>
+	<file src="data/logo.png"/>
+	<file src="data/cmd.png"/>
+	<file src="data/toprectangle.png"/>
+	<file src="data/home.png"/>
+	<file src="data/star.png"/>
+	<file src="data/rules.png"/>
+
+	<file src="data/premium_bg.png" />
+    <file src="data/premiumplus_bg.png" />
+    <file src="data/diamond_bg.png" />
+
+	<min_mta_version client="1.5.9" server="1.5.9"/>
+</meta>

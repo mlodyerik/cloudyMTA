@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/dilimore.txd" /> 
+    <file src="files/dilimore.dff" /> 
+    <file src="files/dilimore.col" /> 
+</meta> 

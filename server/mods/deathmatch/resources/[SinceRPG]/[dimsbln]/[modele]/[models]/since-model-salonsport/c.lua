@@ -1,0 +1,6 @@
+local txd = engineLoadTXD("SalonLV.txd")
+engineImportTXD(txd,8300)
+local dff = engineLoadDFF("SalonLV.dff") 
+engineReplaceModel(dff,8300, true)
+local col = engineLoadCOL("SalonLV.col")  
+engineReplaceCOL(col,8300)

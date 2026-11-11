@@ -1,0 +1,39 @@
+<meta>
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="useful.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server"/>
+
+    <file src="fonts/Poppins-Regular.ttf"/>
+    <file src="fonts/Poppins-Medium.ttf"/>
+    <file src="fonts/Poppins-SemiBold.ttf"/>
+
+    <file src="files/tablet.png"/>
+    <file src="files/logo.png"/>
+    <file src="files/logo2.png"/>
+    <file src="files/finger.png"/>
+    <file src="files/finger2.png"/>
+    <file src="files/bg.png"/>
+    <file src="files/bg2.png"/>
+    <file src="files/badge.png"/>
+    <file src="files/icon.png"/>
+    <file src="files/icon_l.png"/>
+    <file src="files/icon2.png"/>
+    <file src="files/icon2_l.png"/>
+    <file src="files/icon3.png"/>
+    <file src="files/icon3_l.png"/>
+    <file src="files/bg3.png"/>
+    <file src="files/line.png"/>
+    <file src="files/line2.png"/>
+    <file src="files/button.png"/>
+    <file src="files/button_l.png"/>
+    <file src="files/avatar.png"/>
+    <file src="files/no.png"/>
+    <file src="files/yes.png"/>
+    <file src="files/line3.png"/>
+    <file src="files/szczegoly.png"/>
+    <file src="files/search.png"/>
+    
+    <file src="include/tex_matrix.fx"/>
+    <file src="hud_mask.fx"/>
+
+</meta>

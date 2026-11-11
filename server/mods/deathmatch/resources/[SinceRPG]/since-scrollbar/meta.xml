@@ -1,0 +1,13 @@
+<meta>
+
+    <script src='client.lua' type='client' cache='false'/>
+    <file src='point.png'/>
+
+    <export function='createScrollbar' type='client'/>
+    <export function='destroyScroll' type='client'/>
+    <export function='getScrollProgress' type='client'/>
+    <export function='setProgressClickable' type='client'/>
+    <export function='setScrollProgress' type='client'/>
+    <export function='setScrollCircleText' type='client'/>
+    <export function='setScrollAlpha' type='client'/>
+</meta>

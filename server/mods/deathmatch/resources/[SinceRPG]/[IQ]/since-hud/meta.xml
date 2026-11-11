@@ -1,0 +1,62 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+
+    <file src="data/images/avatar_bg.png" />
+    <file src="data/images/mask.png" />
+    <file src="data/images/money_bg.png" />
+    <file src="data/images/money_icon.png" />
+    <file src="data/images/rounded.png" />
+    <file src="data/images/rounded_mask.png" />
+    <file src="data/images/nick_icon.png" />
+    <file src="data/images/circle.png" />
+    <file src="data/images/tlen.png" />
+    <file src="data/images/circle_filled.png" />
+    <file src="data/images/armor.png" />
+    <file src="data/images/heart.png" />
+    <file src="data/images/rank-icon.png" />
+    <file src="data/images/antydm-bg.png" />
+
+    <file src="data/weapons/1.png" />
+    <file src="data/weapons/2.png" />
+    <file src="data/weapons/3.png" />
+    <file src="data/weapons/4.png" />
+    <file src="data/weapons/5.png" />
+    <file src="data/weapons/6.png" />
+    <file src="data/weapons/7.png" />
+    <file src="data/weapons/8.png" />
+    <file src="data/weapons/9.png" />
+    <file src="data/weapons/10.png" />
+    <file src="data/weapons/11.png" />
+    <file src="data/weapons/12.png" />
+    <file src="data/weapons/14.png" />
+    <file src="data/weapons/15.png" />
+    <file src="data/weapons/16.png" />
+    <file src="data/weapons/17.png" />
+    <file src="data/weapons/18.png" />
+    <file src="data/weapons/22.png" />
+    <file src="data/weapons/23.png" />
+    <file src="data/weapons/24.png" />
+    <file src="data/weapons/25.png" />
+    <file src="data/weapons/26.png" />
+    <file src="data/weapons/27.png" />
+    <file src="data/weapons/28.png" />
+    <file src="data/weapons/29.png" />
+    <file src="data/weapons/30.png" />
+    <file src="data/weapons/31.png" />
+    <file src="data/weapons/32.png" />
+    <file src="data/weapons/33.png" />
+    <file src="data/weapons/34.png" />
+    <file src="data/weapons/35.png" />
+    <file src="data/weapons/36.png" />
+    <file src="data/weapons/37.png" />
+    <file src="data/weapons/38.png" />
+    <file src="data/weapons/39.png" />
+    <file src="data/weapons/40.png" />
+    <file src="data/weapons/41.png" />
+    <file src="data/weapons/42.png" />
+    <file src="data/weapons/43.png" />
+    <file src="data/weapons/44.png" />
+    <file src="data/weapons/45.png" />
+    <file src="data/weapons/46.png" />
+</meta>

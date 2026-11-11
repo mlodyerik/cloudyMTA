@@ -1,0 +1,25 @@
+<meta>
+    <script src='utils.lua' type='client' cache='false'/>
+    <script src='client.lua' type='client' cache='false'/>
+    <script src='server.lua' type='server'/>
+
+    <file src='assets/shaders/shader.fx'/>
+    <file src='assets/images/bg.png'/>
+    <file src='assets/images/black.png'/>
+    <file src='assets/images/blackTable.png'/>
+    <file src='assets/images/clearButton.png'/>
+    <file src='assets/images/editbox.png'/>
+    <file src='assets/images/green.png'/>
+    <file src='assets/images/greenTable.png'/>
+    <file src='assets/images/red.png'/>
+    <file src='assets/images/redTable.png'/>
+    <file src='assets/images/moneyIcon.png'/>
+    <file src='assets/images/selector.png'/>
+    <file src='assets/images/xButton.png'/>
+    <file src='assets/images/rows.png'/>
+    <file src='assets/images/mask.png'/>
+    <file src='assets/images/avatarMask.png'/>
+    <file src='assets/images/freeEditbox.png'/>
+
+    <min_mta_version client='1.3.0-9.04431'/>
+</meta>

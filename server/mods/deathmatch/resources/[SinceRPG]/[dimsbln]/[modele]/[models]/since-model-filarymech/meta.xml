@@ -1,0 +1,6 @@
+<meta> 
+    <script src="script.lua" type="client" /> 
+    <file src="files/filar.txd" /> 
+    <file src="files/filar.dff" /> 
+    <file src="files/filar.col" /> 
+</meta> 
